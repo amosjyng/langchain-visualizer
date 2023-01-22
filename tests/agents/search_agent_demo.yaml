@@ -1,0 +1,289 @@
+interactions:
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      [''\nObservation: '']), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: 'Answer the following questions as best you can. You have access to the
+      following tools:
+
+
+      Search: A search engine. Useful for when you need to answer questions about
+      current events. Input should be a search query.
+
+      Calculator: Useful for when you need to answer questions about math.
+
+
+      Use the following format:
+
+
+      Question: the input question you must answer
+
+      Thought: you should always think about what to do
+
+      Action: the action to take, should be one of [Search, Calculator]
+
+      Action Input: the input to the action
+
+      Observation: the result of the action
+
+      ... (this Thought/Action/Action Input/Observation can repeat N times)
+
+      Thought: I now know the final answer
+
+      Final Answer: the final answer to the original input question
+
+
+      Begin!
+
+
+      Question: Who is Olivia Wilde''s boyfriend? What is his current age raised to
+      the 0.23 power?
+
+      Thought:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - ' I need to find out who Olivia Wilde''s boyfriend is and then calculate his
+      age raised to the 0.23 power.
+
+      Action: Search
+
+      Action Input: "Olivia Wilde boyfriend"'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      [''\nObservation: '']), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: 'Answer the following questions as best you can. You have access to the
+      following tools:
+
+
+      Search: A search engine. Useful for when you need to answer questions about
+      current events. Input should be a search query.
+
+      Calculator: Useful for when you need to answer questions about math.
+
+
+      Use the following format:
+
+
+      Question: the input question you must answer
+
+      Thought: you should always think about what to do
+
+      Action: the action to take, should be one of [Search, Calculator]
+
+      Action Input: the input to the action
+
+      Observation: the result of the action
+
+      ... (this Thought/Action/Action Input/Observation can repeat N times)
+
+      Thought: I now know the final answer
+
+      Final Answer: the final answer to the original input question
+
+
+      Begin!
+
+
+      Question: Who is Olivia Wilde''s boyfriend? What is his current age raised to
+      the 0.23 power?
+
+      Thought: I need to find out who Olivia Wilde''s boyfriend is and then calculate
+      his age raised to the 0.23 power.
+
+      Action: Search
+
+      Action Input: "Olivia Wilde boyfriend"
+
+      Observation: Jason Sudeikis
+
+      Thought:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - ' I need to find out Jason Sudeikis'' age
+
+      Action: Search
+
+      Action Input: "Jason Sudeikis age"'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      [''\nObservation: '']), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: 'Answer the following questions as best you can. You have access to the
+      following tools:
+
+
+      Search: A search engine. Useful for when you need to answer questions about
+      current events. Input should be a search query.
+
+      Calculator: Useful for when you need to answer questions about math.
+
+
+      Use the following format:
+
+
+      Question: the input question you must answer
+
+      Thought: you should always think about what to do
+
+      Action: the action to take, should be one of [Search, Calculator]
+
+      Action Input: the input to the action
+
+      Observation: the result of the action
+
+      ... (this Thought/Action/Action Input/Observation can repeat N times)
+
+      Thought: I now know the final answer
+
+      Final Answer: the final answer to the original input question
+
+
+      Begin!
+
+
+      Question: Who is Olivia Wilde''s boyfriend? What is his current age raised to
+      the 0.23 power?
+
+      Thought: I need to find out who Olivia Wilde''s boyfriend is and then calculate
+      his age raised to the 0.23 power.
+
+      Action: Search
+
+      Action Input: "Olivia Wilde boyfriend"
+
+      Observation: Jason Sudeikis
+
+      Thought: I need to find out Jason Sudeikis'' age
+
+      Action: Search
+
+      Action Input: "Jason Sudeikis age"
+
+      Observation: 47 years
+
+      Thought:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - ' I need to calculate 47 raised to the 0.23 power
+
+      Action: Calculator
+
+      Action Input: 47^0.23'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      [''```output'']), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: "You are GPT-3, and you can't do math.\n\nYou can do basic math, and your
+      memorization abilities are impressive, but you can't do any complex calculations
+      that a human could not do in their head. You also have an annoying tendency
+      to just make up highly specific, but wrong, answers.\n\nSo we hooked you up
+      to a Python 3 kernel, and now you can execute code. If anyone gives you a hard
+      math problem, just use this format and we\u2019ll take care of the rest:\n\nQuestion:
+      ${Question with hard calculation.}\n```python\n${Code that prints what you need
+      to know}\n```\n```output\n${Output of your code}\n```\nAnswer: ${Answer}\n\nOtherwise,
+      use this simpler format:\n\nQuestion: ${Question without hard calculation}\nAnswer:
+      ${Answer}\n\nBegin.\n\nQuestion: What is 37593 * 67?\n\n```python\nprint(37593
+      * 67)\n```\n```output\n2518731\n```\nAnswer: 2518731\n\nQuestion: 47^0.23\n"
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+      ```python
+
+      import math
+
+      print(math.pow(47, 0.23))
+
+      ```
+
+      '
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      [''\nObservation: '']), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: 'Answer the following questions as best you can. You have access to the
+      following tools:
+
+
+      Search: A search engine. Useful for when you need to answer questions about
+      current events. Input should be a search query.
+
+      Calculator: Useful for when you need to answer questions about math.
+
+
+      Use the following format:
+
+
+      Question: the input question you must answer
+
+      Thought: you should always think about what to do
+
+      Action: the action to take, should be one of [Search, Calculator]
+
+      Action Input: the input to the action
+
+      Observation: the result of the action
+
+      ... (this Thought/Action/Action Input/Observation can repeat N times)
+
+      Thought: I now know the final answer
+
+      Final Answer: the final answer to the original input question
+
+
+      Begin!
+
+
+      Question: Who is Olivia Wilde''s boyfriend? What is his current age raised to
+      the 0.23 power?
+
+      Thought: I need to find out who Olivia Wilde''s boyfriend is and then calculate
+      his age raised to the 0.23 power.
+
+      Action: Search
+
+      Action Input: "Olivia Wilde boyfriend"
+
+      Observation: Jason Sudeikis
+
+      Thought: I need to find out Jason Sudeikis'' age
+
+      Action: Search
+
+      Action Input: "Jason Sudeikis age"
+
+      Observation: 47 years
+
+      Thought: I need to calculate 47 raised to the 0.23 power
+
+      Action: Calculator
+
+      Action Input: 47^0.23
+
+      Observation: Answer: 2.4242784855673896
+
+
+      Thought:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - ' I now know the final answer
+
+      Final Answer: Jason Sudeikis, Olivia Wilde''s boyfriend, is 47 years old and
+      his age raised to the 0.23 power is 2.4242784855673896.'
+    - finish_reason: stop
+      logprobs: null
+version: 1

@@ -1,0 +1,24 @@
+interactions:
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-ada-001''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: 'Give the antonym of every input
+
+
+      Word: happy
+
+      Antonym: sad
+
+
+      Word: big and huge and massive and large and gigantic and tall and much much
+      much much much bigger than everything else
+
+      Antonym: '
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - ' small and small bit of everything.'
+    - finish_reason: stop
+      logprobs: null
+version: 1

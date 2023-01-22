@@ -1,0 +1,194 @@
+interactions:
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 2), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-ada-001''),
+      (''n'', 2), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: Tell me a joke
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      Why did the chicken cross the road?
+
+
+      To get to the other side!'
+    - finish_reason: stop
+      logprobs: null
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      Why did the chicken cross the road?
+
+
+      To get to the other side!'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 2), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-ada-001''),
+      (''n'', 2), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: Tell me a poem
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      How can a little love be
+
+
+      So beautiful, so true
+
+
+      When everything is wrong
+
+
+      And you''re by my side
+
+
+      You always know just what to say
+
+
+      To make me feel better go
+
+
+      Your love is the light
+
+
+      That we can see through everything
+
+
+      To a better place.'
+    - finish_reason: stop
+      logprobs: null
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      How can a little love be
+
+
+      So beautiful, so true
+
+
+      When everything is wrong
+
+
+      And you''re by my side
+
+
+      You always know just what to say
+
+
+      To make me feel better go
+
+
+      Your love is the light
+
+
+      That we can see through everything
+
+
+      To a better place.'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 2), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-ada-001''),
+      (''n'', 2), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: Tell me a joke
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      Why did the chicken cross the road?
+
+
+      To get to the other side!'
+    - finish_reason: stop
+      logprobs: null
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      Why did the chicken cross the road?
+
+
+      To get to the other side!'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 2), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-ada-001''),
+      (''n'', 2), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: Tell me a poem
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      How can a little love be
+
+
+      So beautiful, so true
+
+
+      When everything is wrong
+
+
+      And you''re by my side
+
+
+      You always know just what to say
+
+
+      To make me feel better go
+
+
+      Your love is the light
+
+
+      That we can see through everything
+
+
+      To a better place.'
+    - finish_reason: stop
+      logprobs: null
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      How can a little love be
+
+
+      So beautiful, so true
+
+
+      When everything is wrong
+
+
+      And you''re by my side
+
+
+      You always know just what to say
+
+
+      To make me feel better go
+
+
+      Your love is the light
+
+
+      That we can see through everything
+
+
+      To a better place.'
+    - finish_reason: stop
+      logprobs: null
+version: 1

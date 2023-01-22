@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "langchain-visualizer"
+version = "0.0.0"
+description = "Visualization and debugging tool for LangChain workflows"
+authors = ["Amos Jun-yeung Ng <me@amos.ng>"]
+readme = "README.md"
+packages = [{include = "langchain_visualizer"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+langchain = "^0.0.66"
+ought-ice = "^0.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+black = "^22.12.0"
+isort = "^5.11.4"
+flake8 = "^6.0.0"
+pytest = "^7.2.1"
+openai = "^0.26.1"
+vcr-langchain = "^0.0.3"
+google-search-results = "^2.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

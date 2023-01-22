@@ -1,0 +1,30 @@
+interactions:
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: What is a good name for a company that makes colorful socks?
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      Socktastic!'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: "Write a catchphrase for the following company: \n\nSocktastic!"
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      "Step into Comfort with Socktastic!"'
+    - finish_reason: stop
+      logprobs: null
+version: 1

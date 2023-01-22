@@ -1,0 +1,96 @@
+interactions:
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: 'You are a playwright. Given the title of play and the era it is set in,
+      it is your job to write a synopsis for that title.
+
+
+      Title: Tragedy at sunset on the beach
+
+      Era: Victorian England
+
+      Playwright: This is a synopsis for the above play:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      Tragedy at Sunset on the Beach is a play set in Victorian England. It tells
+      the story of a young woman, Emily, who is struggling to make ends meet in a
+      small coastal town. She works as a maid for a wealthy family, but her dreams
+      of a better life are dashed when she discovers that her employer is involved
+      in a scandalous affair.
+
+
+      Emily is determined to make a better life for herself, but her plans are thwarted
+      when she meets a handsome stranger on the beach one evening. The two quickly
+      fall in love, but their happiness is short-lived when Emily discovers that the
+      stranger is actually a member of the wealthy family she works for.
+
+
+      The play follows Emily as she struggles to come to terms with the truth and
+      make sense of her life. As the sun sets on the beach, Emily must decide whether
+      to stay with the man she loves or to leave him and pursue her dreams. In the
+      end, Emily must make a heartbreaking decision that will change her life forever.'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: 'You are a play critic from the New York Times. Given the synopsis of
+      play, it is your job to write a review for that play.
+
+
+      Play Synopsis:
+
+
+
+      Tragedy at Sunset on the Beach is a play set in Victorian England. It tells
+      the story of a young woman, Emily, who is struggling to make ends meet in a
+      small coastal town. She works as a maid for a wealthy family, but her dreams
+      of a better life are dashed when she discovers that her employer is involved
+      in a scandalous affair.
+
+
+      Emily is determined to make a better life for herself, but her plans are thwarted
+      when she meets a handsome stranger on the beach one evening. The two quickly
+      fall in love, but their happiness is short-lived when Emily discovers that the
+      stranger is actually a member of the wealthy family she works for.
+
+
+      The play follows Emily as she struggles to come to terms with the truth and
+      make sense of her life. As the sun sets on the beach, Emily must decide whether
+      to stay with the man she loves or to leave him and pursue her dreams. In the
+      end, Emily must make a heartbreaking decision that will change her life forever.
+
+      Review from a New York Times play critic of the above play:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+
+      Tragedy at Sunset on the Beach is a captivating and heartbreaking play set in
+      Victorian England. The story follows Emily, a young woman struggling to make
+      ends meet in a small coastal town. Her dreams of a better life are dashed when
+      she discovers her employer is involved in a scandalous affair. Emily is determined
+      to make a better life for herself, but her plans are thwarted when she meets
+      a handsome stranger on the beach one evening.
+
+
+      The play is a powerful exploration of love, loss, and the choices we make in
+      life. The characters are well-developed and the story is engaging and thought-provoking.
+      The actors bring the characters to life with their passionate performances,
+      and the set design and costumes are stunning.
+
+
+      Overall, Tragedy at Sunset on the Beach is a beautiful and moving play that
+      will leave you with a heavy heart. It is a must-see for anyone looking for a
+      thought-provoking and emotionally charged experience.'
+    - finish_reason: stop
+      logprobs: null
+version: 1
