@@ -1,0 +1,257 @@
+interactions:
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: 'The following is a friendly conversation between a human and an AI. The
+      AI is talkative and provides lots of specific details from its context. If the
+      AI does not know the answer to a question, it truthfully says it does not know.
+
+
+      Current conversation:
+
+
+      Human: Hi, what''s up?
+
+      AI:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - ' Hi there! I''m doing great. I''m currently helping a customer with a technical
+      issue. How about you?'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.7), (''top_p'', 1)]'
+    prompt: 'Progressively summarize the lines of conversation provided, adding onto
+      the previous summary returning a new summary.
+
+
+      EXAMPLE
+
+      Current summary:
+
+      The human asks what the AI thinks of artificial intelligence. The AI thinks
+      artificial intelligence is a force for good.
+
+
+      New lines of conversation:
+
+      Human: Why do you think artificial intelligence is a force for good?
+
+      AI: Because artificial intelligence will help humans reach their full potential.
+
+
+      New summary:
+
+      The human asks what the AI thinks of artificial intelligence. The AI thinks
+      artificial intelligence is a force for good because it will help humans reach
+      their full potential.
+
+      END OF EXAMPLE
+
+
+      Current summary:
+
+
+
+      New lines of conversation:
+
+      Human: Hi, what''s up?
+
+      AI:  Hi there! I''m doing great. I''m currently helping a customer with a technical
+      issue. How about you?
+
+
+      New summary:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+      The human asks the AI what it is doing. The AI responds that it is helping a
+      customer with a technical issue.'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: 'The following is a friendly conversation between a human and an AI. The
+      AI is talkative and provides lots of specific details from its context. If the
+      AI does not know the answer to a question, it truthfully says it does not know.
+
+
+      Current conversation:
+
+
+      The human asks the AI what it is doing. The AI responds that it is helping a
+      customer with a technical issue.
+
+      Human: Tell me more about it!
+
+      AI:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - ' Sure! The customer is having trouble connecting to their home Wi-Fi network.
+      I''m helping them troubleshoot the issue and figure out what the problem is.
+      I''m currently running a diagnostic scan to see if I can identify the source
+      of the issue.'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.7), (''top_p'', 1)]'
+    prompt: 'Progressively summarize the lines of conversation provided, adding onto
+      the previous summary returning a new summary.
+
+
+      EXAMPLE
+
+      Current summary:
+
+      The human asks what the AI thinks of artificial intelligence. The AI thinks
+      artificial intelligence is a force for good.
+
+
+      New lines of conversation:
+
+      Human: Why do you think artificial intelligence is a force for good?
+
+      AI: Because artificial intelligence will help humans reach their full potential.
+
+
+      New summary:
+
+      The human asks what the AI thinks of artificial intelligence. The AI thinks
+      artificial intelligence is a force for good because it will help humans reach
+      their full potential.
+
+      END OF EXAMPLE
+
+
+      Current summary:
+
+
+      The human asks the AI what it is doing. The AI responds that it is helping a
+      customer with a technical issue.
+
+
+      New lines of conversation:
+
+      Human: Tell me more about it!
+
+      AI:  Sure! The customer is having trouble connecting to their home Wi-Fi network.
+      I''m helping them troubleshoot the issue and figure out what the problem is.
+      I''m currently running a diagnostic scan to see if I can identify the source
+      of the issue.
+
+
+      New summary:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+      The human asks the AI what it is doing and the AI responds that it is helping
+      a customer with a technical issue, specifically that they are having trouble
+      connecting to their home Wi-Fi network. The AI is running a diagnostic scan
+      to see if they can identify the source of the issue.'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: 'The following is a friendly conversation between a human and an AI. The
+      AI is talkative and provides lots of specific details from its context. If the
+      AI does not know the answer to a question, it truthfully says it does not know.
+
+
+      Current conversation:
+
+
+      The human asks the AI what it is doing and the AI responds that it is helping
+      a customer with a technical issue, specifically that they are having trouble
+      connecting to their home Wi-Fi network. The AI is running a diagnostic scan
+      to see if they can identify the source of the issue.
+
+      Human: Very cool -- what is the scope of the project?
+
+      AI:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - ' The scope of the project is to identify the source of the customer''s issue
+      with their home Wi-Fi network and to provide a solution to the issue. I am currently
+      running a diagnostic scan to see if I can identify the source of the issue.'
+    - finish_reason: stop
+      logprobs: null
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.7), (''top_p'', 1)]'
+    prompt: 'Progressively summarize the lines of conversation provided, adding onto
+      the previous summary returning a new summary.
+
+
+      EXAMPLE
+
+      Current summary:
+
+      The human asks what the AI thinks of artificial intelligence. The AI thinks
+      artificial intelligence is a force for good.
+
+
+      New lines of conversation:
+
+      Human: Why do you think artificial intelligence is a force for good?
+
+      AI: Because artificial intelligence will help humans reach their full potential.
+
+
+      New summary:
+
+      The human asks what the AI thinks of artificial intelligence. The AI thinks
+      artificial intelligence is a force for good because it will help humans reach
+      their full potential.
+
+      END OF EXAMPLE
+
+
+      Current summary:
+
+
+      The human asks the AI what it is doing and the AI responds that it is helping
+      a customer with a technical issue, specifically that they are having trouble
+      connecting to their home Wi-Fi network. The AI is running a diagnostic scan
+      to see if they can identify the source of the issue.
+
+
+      New lines of conversation:
+
+      Human: Very cool -- what is the scope of the project?
+
+      AI:  The scope of the project is to identify the source of the customer''s issue
+      with their home Wi-Fi network and to provide a solution to the issue. I am currently
+      running a diagnostic scan to see if I can identify the source of the issue.
+
+
+      New summary:'
+  response:
+  - !!python/object/new:langchain.schema.Generation
+    - '
+
+      The human asks the AI what it is doing and the AI responds that it is helping
+      a customer with a technical issue, specifically that they are having trouble
+      connecting to their home Wi-Fi network. The AI is running a diagnostic scan
+      to see if they can identify the source of the issue, and the scope of the project
+      is to identify the source and provide a solution to the issue.'
+    - finish_reason: stop
+      logprobs: null
+version: 1
