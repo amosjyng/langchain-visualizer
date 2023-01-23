@@ -2,8 +2,7 @@ import langchain_visualizer  # isort:skip  # noqa: F401
 import asyncio
 
 from langchain.chains import ConversationChain
-from langchain.chains.conversation.memory import (ConversationBufferMemory,
-                                                  ConversationSummaryMemory)
+from langchain.chains.conversation.memory import ConversationSummaryMemory
 from langchain.llms import OpenAI
 
 from tests import vcr
