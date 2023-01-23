@@ -9,9 +9,6 @@ class VisualizationWrapper(TracedABC):
         self.og_obj = og_obj
         self.og_fn = og_fn
 
-        # ICE displays class name in visualization
-        self.__class__.__name__ = self.og_obj.__class__.__name__
-
     async def run(self, *args, **kwargs):
         return self.og_fn(self.og_obj, *args, **kwargs)
 
@@ -49,6 +46,8 @@ def overridden_call(self, *args, **kwargs):
     """Preserve sync nature of OG call method"""
     ice_agent = self.get_ice_agent()
     if not hasattr(self.__class__, "_should_trace") or self.__class__._should_trace:
+        # ICE displays class name in visualization
+        ice_agent.__class__.__name__ = self.__class__.__name__
         return asyncio.get_event_loop().run_until_complete(
             ice_agent.run(*args, **kwargs)
         )
