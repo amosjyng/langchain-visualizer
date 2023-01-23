@@ -10,9 +10,22 @@ You can now
 - Tell from the coloring which parts of the prompt are hardcoded and which parts are templated substitutions
 - Inspect the execution flow and observe when each function goes up the stack
 
-### Visualizing an existing project
+## Quickstart
 
-Add `import langchain_visualizer` as **the first import** in your Python entrypoint file. 
+Install this library:
+
+```bash
+pip install langchain-visualizer
+```
+
+Then:
+
+1. Add `import langchain_visualizer` as **the first import** in your Python entrypoint file
+2. Write an async function to visualize whichever workflow you're running
+3. Call `langchain_visualizer.visualize` on that function
+
+See below instructions for an example on how to reproduce the above screenshot.
+
 
 ### Running the example screenshot
 
