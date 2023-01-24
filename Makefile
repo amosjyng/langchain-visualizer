@@ -12,7 +12,7 @@ lint:
 
 test: tests
 tests:
-	poetry run pytest
+	poetry run pytest -v -k 'not network'
 
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
