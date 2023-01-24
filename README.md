@@ -24,7 +24,7 @@ Then:
 2. Write an async function to visualize whichever workflow you're running
 3. Call `langchain_visualizer.visualize` on that function
 
-See below instructions for an example on how to reproduce the above screenshot.
+For an example, see below instructions on reproducing the screenshot.
 
 
 ### Running the example screenshot
@@ -35,7 +35,13 @@ To run the example you see in the screenshot, first install this library and opt
 pip install langchain-visualizer google-search-results openai
 ```
 
-If you haven't yet [set up your OpenAI API keys](https://openai.com/api/), do so now. Then run the following script (adapted from [LangChain docs](https://langchain.readthedocs.io/en/latest/modules/agents/getting_started.html)):
+If you haven't yet set up your [OpenAI API keys](https://openai.com/api/) or SERP API keys, you can [replay the recorded interactions](https://github.com/amosjyng/vcr-langchain) by cloning this repository and running
+
+```bash
+python tests/agents/test_langchain_getting_started.py
+```
+
+If you have set them up, you can run the following script (adapted from [LangChain docs](https://langchain.readthedocs.io/en/latest/modules/agents/getting_started.html)):
 
 ```python
 import langchain_visualizer
