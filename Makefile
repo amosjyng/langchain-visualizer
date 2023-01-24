@@ -14,6 +14,9 @@ test: tests
 tests:
 	poetry run pytest -v -k 'not network'
 
+tests-ci:
+	poetry run pytest -v
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 
