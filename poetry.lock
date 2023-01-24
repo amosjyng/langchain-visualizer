@@ -571,6 +571,22 @@ files = [
 requests = "*"
 
 [[package]]
+name = "gorilla"
+version = "0.4.0"
+description = "Convenient approach to monkey patching"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "gorilla-0.4.0-py2.py3-none-any.whl", hash = "sha256:25a407c783823db06a90f25303a49b2ab553b8527f4c826878ce5d6d2e25cb5c"},
+    {file = "gorilla-0.4.0.tar.gz", hash = "sha256:005ab8853b037162a7c77bb824604c6e081878ee03c09ad01ef41744856019d3"},
+]
+
+[package.extras]
+dev = ["coverage", "pycodestyle", "pydocstyle", "pylint", "sphinx (>=1.3)", "tox"]
+docs = ["sphinx (>=1.3)"]
+
+[[package]]
 name = "greenlet"
 version = "2.0.1"
 description = "Lightweight in-process concurrent programming"
@@ -2747,17 +2763,18 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 
 [[package]]
 name = "vcr-langchain"
-version = "0.0.4"
+version = "0.0.5"
 description = "Record and replay LLM interactions for langchain"
 category = "dev"
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "vcr_langchain-0.0.4-py3-none-any.whl", hash = "sha256:c6edbc5156859ee7ca448c7f6876adfe16a316d10b7b2a873c9df2e5dab00358"},
-    {file = "vcr_langchain-0.0.4.tar.gz", hash = "sha256:9a34ba570b005b63fcf71e7a974e2e5e20124d4c81e9b54fedd7129f47ddc21c"},
+    {file = "vcr_langchain-0.0.5-py3-none-any.whl", hash = "sha256:b74264bd5b8ff4e273bad6d3e5a0deea6609b8d6598f0bbad72f1235670c8230"},
+    {file = "vcr_langchain-0.0.5.tar.gz", hash = "sha256:469e3ea1525782b47b418d90fa8b4022512d89eb4fb4a899e48921eb578ee1dc"},
 ]
 
 [package.dependencies]
+gorilla = ">=0.4.0,<0.5.0"
 langchain = ">=0.0.66,<0.0.67"
 vcrpy = ">=4.2.1,<5.0.0"
 
@@ -3035,4 +3052,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.11"
-content-hash = "e80f053f839f62d84367de7dec7dc8bb8a3ed8bee098faa29a66f4b1eddbda60"
+content-hash = "ee8d8dd696a5979f2df40a0caf89f854b576ea8cadc544b7ced433dee72bc697"
