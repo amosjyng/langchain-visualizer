@@ -52,6 +52,10 @@ interactions:
     - finish_reason: stop
       logprobs: null
 - request:
+    query: Olivia Wilde boyfriend
+    tool: SerpAPIWrapper
+  response: Jason Sudeikis
+- request:
     llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
       0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
       (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
@@ -111,6 +115,10 @@ interactions:
       Action Input: "Jason Sudeikis age"'
     - finish_reason: stop
       logprobs: null
+- request:
+    query: Jason Sudeikis age
+    tool: SerpAPIWrapper
+  response: 47 years
 - request:
     llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
       0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
@@ -210,6 +218,16 @@ interactions:
       '
     - finish_reason: stop
       logprobs: null
+- request:
+    command: '
+
+      import math
+
+      print(math.pow(47, 0.23))'
+    tool: PythonREPL
+  response: '2.4242784855673896
+
+    '
 - request:
     llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
       0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),

@@ -2747,14 +2747,14 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 
 [[package]]
 name = "vcr-langchain"
-version = "0.0.3"
+version = "0.0.4"
 description = "Record and replay LLM interactions for langchain"
 category = "dev"
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "vcr_langchain-0.0.3-py3-none-any.whl", hash = "sha256:3a9e5006723ea19da7e21c736524a542b40ea4b4be73a9f7babafa6fa77f176b"},
-    {file = "vcr_langchain-0.0.3.tar.gz", hash = "sha256:236dc54acb59bd55fba591c7ceefb7dc859bf470f6500127fa5369c286a42419"},
+    {file = "vcr_langchain-0.0.4-py3-none-any.whl", hash = "sha256:c6edbc5156859ee7ca448c7f6876adfe16a316d10b7b2a873c9df2e5dab00358"},
+    {file = "vcr_langchain-0.0.4.tar.gz", hash = "sha256:9a34ba570b005b63fcf71e7a974e2e5e20124d4c81e9b54fedd7129f47ddc21c"},
 ]
 
 [package.dependencies]
@@ -3035,4 +3035,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.11"
-content-hash = "1c227c50ade57fc65c8f3a6a646114686b93291f41f1a031891d6dd9fb8d25b6"
+content-hash = "e80f053f839f62d84367de7dec7dc8bb8a3ed8bee098faa29a66f4b1eddbda60"
