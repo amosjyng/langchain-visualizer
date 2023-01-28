@@ -12,8 +12,11 @@ interactions:
 
       Playwright: This is a synopsis for the above play:'
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - "\n\nTragedy at Sunset on the Beach is a story of love, loss, and redemption.
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
+      logprobs: null
+    text: "\n\nTragedy at Sunset on the Beach is a story of love, loss, and redemption.
       It follows the story of two young lovers, Jack and Jill, who meet on a beach
       at sunset. They quickly fall in love and plan to marry, but their plans are
       shattered when Jack is tragically killed in a car accident. \n\nJill is left
@@ -26,8 +29,6 @@ interactions:
       is able to find closure and peace. \n\nIn the end, Jill is able to move on with
       her life and find happiness again. Tragedy at Sunset on the Beach is a story
       of love, loss, and redemption that will leave audiences moved and inspired."
-    - finish_reason: stop
-      logprobs: null
 - request:
     llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
       0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
@@ -50,27 +51,19 @@ interactions:
       and redemption that will leave audiences moved and inspired.\nReview from a
       New York Times play critic of the above play:"
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - '
-
-
-      Tragedy at Sunset on the Beach is a powerful and moving story of love, loss,
-      and redemption. The play follows the story of two young lovers, Jack and Jill,
-      whose plans for a future together are tragically cut short when Jack is killed
-      in a car accident. The play then follows Jill''s journey of self-discovery as
-      she struggles to come to terms with her grief and uncover the truth about Jack''s
-      past.
-
-
-      The play is beautifully written and the characters are well-developed and engaging.
-      The actors do a wonderful job of bringing the characters to life and conveying
-      the emotions of the story. The set design is also impressive, with the beach
-      setting providing a perfect backdrop for the story.
-
-
-      Overall, Tragedy at Sunset on the Beach is a touching and inspiring story that
-      will leave audiences moved and uplifted. It is a must-see for anyone looking
-      for a powerful and emotional theatrical experience.'
-    - finish_reason: stop
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
       logprobs: null
+    text: "\n\nTragedy at Sunset on the Beach is a powerful and moving story of love,
+      loss, and redemption. The play follows the story of two young lovers, Jack and
+      Jill, whose plans for a future together are tragically cut short when Jack is
+      killed in a car accident. The audience is taken on an emotional journey as Jill
+      struggles to cope with her grief and embarks on a journey of self-discovery.
+      \n\nThe play is beautifully written and the performances are outstanding. The
+      actors bring the characters to life and make the audience feel the pain and
+      sorrow of Jill's loss. The story is captivating and the characters are well-developed
+      and believable. \n\nThe play is a touching and inspiring story that will leave
+      audiences moved and uplifted. Tragedy at Sunset on the Beach is a must-see for
+      anyone looking for an emotional and thought-provoking experience."
 version: 1

@@ -6,13 +6,14 @@ interactions:
       None), (''temperature'', 0.7), (''top_p'', 1)]'
     prompt: What is a good name for a company that makes colorful socks?
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - '
-
-
-      Cozy Colours Socks.'
-    - finish_reason: stop
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
       logprobs: null
+    text: '
+
+
+      Rainbow Toes Co.'
 - request:
     llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
       0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
@@ -20,11 +21,12 @@ interactions:
       None), (''temperature'', 0.7), (''top_p'', 1)]'
     prompt: What is a good slogan for a company that makes colorful socks?
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - '
-
-
-      "Put Some Color in Your Step!"'
-    - finish_reason: stop
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
       logprobs: null
+    text: '
+
+
+      "Brighten Up Your Day with Colorful Socks!"'
 version: 1

@@ -68,9 +68,7 @@ def test_llm_usage_succeeds():
     assert (
         result["review"]
         .strip()
-        .startswith(
-            "Tragedy at Sunset on the Beach is a captivating and heartbreaking play"
-        )
+        .startswith("Tragedy at Sunset on the Beach is a captivating and heartbreaking")
     )
 
 

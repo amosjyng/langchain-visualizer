@@ -64,7 +64,10 @@ async def custom_chain_demo():
 def test_llm_usage_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(custom_chain_demo())
-    assert result.strip() == 'Cozy Colours Socks.\n\n"Put Some Color in Your Step!"'
+    assert (
+        result.strip()
+        == 'Rainbow Toes Co.\n\n"Brighten Up Your Day with Colorful Socks!"'
+    )
 
 
 if __name__ == "__main__":

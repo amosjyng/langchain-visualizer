@@ -6,11 +6,12 @@ interactions:
       None), (''temperature'', 0.0), (''top_p'', 1)]'
     prompt: What is a good name for a company that makes colorful socks?
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - '
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
+      logprobs: null
+    text: '
 
 
       Socktastic!'
-    - finish_reason: stop
-      logprobs: null
 version: 1

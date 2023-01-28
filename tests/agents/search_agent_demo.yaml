@@ -42,15 +42,16 @@ interactions:
 
       Thought:'
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - ' I need to find out who Olivia Wilde''s boyfriend is and then calculate his
-      age raised to the 0.23 power.
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
+      logprobs: null
+    text: ' I need to find out who Olivia Wilde''s boyfriend is and then calculate
+      his age raised to the 0.23 power.
 
       Action: Search
 
       Action Input: "Olivia Wilde boyfriend"'
-    - finish_reason: stop
-      logprobs: null
 - request:
     query: Olivia Wilde boyfriend
     tool: SerpAPIWrapper
@@ -107,14 +108,15 @@ interactions:
 
       Thought:'
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - ' I need to find out Jason Sudeikis'' age
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
+      logprobs: null
+    text: ' I need to find out Jason Sudeikis'' age
 
       Action: Search
 
       Action Input: "Jason Sudeikis age"'
-    - finish_reason: stop
-      logprobs: null
 - request:
     query: Jason Sudeikis age
     tool: SerpAPIWrapper
@@ -179,14 +181,15 @@ interactions:
 
       Thought:'
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - ' I need to calculate 47 raised to the 0.23 power
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
+      logprobs: null
+    text: ' I need to calculate 47 raised to the 0.23 power
 
       Action: Calculator
 
       Action Input: 47^0.23'
-    - finish_reason: stop
-      logprobs: null
 - request:
     llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
       0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
@@ -204,8 +207,11 @@ interactions:
       ${Answer}\n\nBegin.\n\nQuestion: What is 37593 * 67?\n\n```python\nprint(37593
       * 67)\n```\n```output\n2518731\n```\nAnswer: 2518731\n\nQuestion: 47^0.23\n"
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - '
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
+      logprobs: null
+    text: '
 
       ```python
 
@@ -216,8 +222,6 @@ interactions:
       ```
 
       '
-    - finish_reason: stop
-      logprobs: null
 - request:
     command: '
 
@@ -297,11 +301,12 @@ interactions:
 
       Thought:'
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - ' I now know the final answer
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
+      logprobs: null
+    text: ' I now know the final answer
 
       Final Answer: Jason Sudeikis, Olivia Wilde''s boyfriend, is 47 years old and
       his age raised to the 0.23 power is 2.4242784855673896.'
-    - finish_reason: stop
-      logprobs: null
 version: 1

@@ -17,8 +17,9 @@ interactions:
 
       Antonym: '
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - ' small and small bit of everything.'
-    - finish_reason: stop
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
       logprobs: null
+    text: ' small and small bit of everything.'
 version: 1

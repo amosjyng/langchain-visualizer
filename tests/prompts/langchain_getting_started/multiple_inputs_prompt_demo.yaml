@@ -6,14 +6,15 @@ interactions:
       None), (''temperature'', 0.0), (''top_p'', 1)]'
     prompt: Tell me a funny joke about chickens.
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - '
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
+      logprobs: null
+    text: '
 
 
       Why did the chicken cross the road?
 
 
       To get to the other side!'
-    - finish_reason: stop
-      logprobs: null
 version: 1

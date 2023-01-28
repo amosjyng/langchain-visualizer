@@ -21,8 +21,9 @@ interactions:
 
       Antonym: '
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - ' small'
-    - finish_reason: stop
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
       logprobs: null
+    text: ' small'
 version: 1

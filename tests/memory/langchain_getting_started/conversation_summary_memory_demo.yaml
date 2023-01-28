@@ -16,11 +16,12 @@ interactions:
 
       AI:'
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - ' Hi there! I''m doing great. I''m currently helping a customer with a technical
-      issue. How about you?'
-    - finish_reason: stop
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
       logprobs: null
+    text: ' Hi there! I''m doing great. I''m currently helping a customer with a technical
+      issue. How about you?'
 - request:
     llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
       0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
@@ -68,13 +69,14 @@ interactions:
 
       New summary:'
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - '
-
-      The human asks the AI what it is doing. The AI responds that it is helping a
-      customer with a technical issue.'
-    - finish_reason: stop
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
       logprobs: null
+    text: '
+
+      The human asks what the AI is doing, to which the AI responds that it is helping
+      a customer with a technical issue.'
 - request:
     llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
       0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
@@ -88,20 +90,21 @@ interactions:
       Current conversation:
 
 
-      The human asks the AI what it is doing. The AI responds that it is helping a
-      customer with a technical issue.
+      The human asks what the AI is doing, to which the AI responds that it is helping
+      a customer with a technical issue.
 
       Human: Tell me more about it!
 
       AI:'
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - ' Sure! The customer is having trouble connecting to their home Wi-Fi network.
-      I''m helping them troubleshoot the issue and figure out what the problem is.
-      I''m currently running a diagnostic scan to see if I can identify the source
-      of the issue.'
-    - finish_reason: stop
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
       logprobs: null
+    text: ' Sure! The customer is having trouble with their computer not connecting
+      to the internet. I''m helping them troubleshoot the issue and figure out what
+      the problem is. I''m currently running a diagnostic scan to see if I can identify
+      the source of the issue.'
 - request:
     llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
       0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
@@ -138,31 +141,32 @@ interactions:
       Current summary:
 
 
-      The human asks the AI what it is doing. The AI responds that it is helping a
-      customer with a technical issue.
+      The human asks what the AI is doing, to which the AI responds that it is helping
+      a customer with a technical issue.
 
 
       New lines of conversation:
 
       Human: Tell me more about it!
 
-      AI:  Sure! The customer is having trouble connecting to their home Wi-Fi network.
-      I''m helping them troubleshoot the issue and figure out what the problem is.
-      I''m currently running a diagnostic scan to see if I can identify the source
-      of the issue.
+      AI:  Sure! The customer is having trouble with their computer not connecting
+      to the internet. I''m helping them troubleshoot the issue and figure out what
+      the problem is. I''m currently running a diagnostic scan to see if I can identify
+      the source of the issue.
 
 
       New summary:'
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - '
-
-      The human asks the AI what it is doing and the AI responds that it is helping
-      a customer with a technical issue, specifically that they are having trouble
-      connecting to their home Wi-Fi network. The AI is running a diagnostic scan
-      to see if they can identify the source of the issue.'
-    - finish_reason: stop
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
       logprobs: null
+    text: '
+
+      The human asks what the AI is doing, to which the AI responds that it is helping
+      a customer with a technical issue. The customer is having trouble with their
+      computer not connecting to the internet, so the AI is running a diagnostic scan
+      to try and identify the source of the issue.'
 - request:
     llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
       0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
@@ -176,21 +180,23 @@ interactions:
       Current conversation:
 
 
-      The human asks the AI what it is doing and the AI responds that it is helping
-      a customer with a technical issue, specifically that they are having trouble
-      connecting to their home Wi-Fi network. The AI is running a diagnostic scan
-      to see if they can identify the source of the issue.
+      The human asks what the AI is doing, to which the AI responds that it is helping
+      a customer with a technical issue. The customer is having trouble with their
+      computer not connecting to the internet, so the AI is running a diagnostic scan
+      to try and identify the source of the issue.
 
       Human: Very cool -- what is the scope of the project?
 
       AI:'
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - ' The scope of the project is to identify the source of the customer''s issue
-      with their home Wi-Fi network and to provide a solution to the issue. I am currently
-      running a diagnostic scan to see if I can identify the source of the issue.'
-    - finish_reason: stop
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
       logprobs: null
+    text: ' The scope of the project is to identify the source of the customer''s
+      internet connectivity issue and provide a solution to resolve it. I am currently
+      running a diagnostic scan to check for any hardware or software issues that
+      may be causing the problem.'
 - request:
     llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
       0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
@@ -227,31 +233,36 @@ interactions:
       Current summary:
 
 
-      The human asks the AI what it is doing and the AI responds that it is helping
-      a customer with a technical issue, specifically that they are having trouble
-      connecting to their home Wi-Fi network. The AI is running a diagnostic scan
-      to see if they can identify the source of the issue.
+      The human asks what the AI is doing, to which the AI responds that it is helping
+      a customer with a technical issue. The customer is having trouble with their
+      computer not connecting to the internet, so the AI is running a diagnostic scan
+      to try and identify the source of the issue.
 
 
       New lines of conversation:
 
       Human: Very cool -- what is the scope of the project?
 
-      AI:  The scope of the project is to identify the source of the customer''s issue
-      with their home Wi-Fi network and to provide a solution to the issue. I am currently
-      running a diagnostic scan to see if I can identify the source of the issue.
+      AI:  The scope of the project is to identify the source of the customer''s internet
+      connectivity issue and provide a solution to resolve it. I am currently running
+      a diagnostic scan to check for any hardware or software issues that may be causing
+      the problem.
 
 
       New summary:'
   response:
-  - !!python/object/new:langchain.schema.Generation
-    - '
-
-      The human asks the AI what it is doing and the AI responds that it is helping
-      a customer with a technical issue, specifically that they are having trouble
-      connecting to their home Wi-Fi network. The AI is running a diagnostic scan
-      to see if they can identify the source of the issue, and the scope of the project
-      is to identify the source and provide a solution to the issue.'
-    - finish_reason: stop
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
       logprobs: null
+    text: '
+
+
+      The human asks what the AI is doing, to which the AI responds that it is helping
+      a customer with a technical issue. The customer is having trouble with their
+      computer not connecting to the internet, so the AI is running a diagnostic scan
+      to try and identify the source of the issue. The scope of the project is to
+      identify the source of the customer''s internet connectivity issue and provide
+      a solution to resolve it. The AI is currently running a diagnostic scan to check
+      for any hardware or software issues that may be causing the problem.'
 version: 1
