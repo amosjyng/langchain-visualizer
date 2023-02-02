@@ -63,7 +63,17 @@ langchain_visualizer.visualize(search_agent_demo)
 
 A browser window will open up, and you can actually see the agent execute happen in real-time!
 
-**Please note that there is a lot of langchain functionality that I haven't gotten around to hijacking for visualization.** If there's anything you need to show up in the execution trace, please open a PR or issue.
+## Why not just use LangChain's built-in tracer?
+
+For me personally:
+
+- I prefer the ICE UI. In particular:
+    - I like the colored highlighting of parts of the prompt that are filled-in template variables
+    - I like the ability to quickly inspect different LLM calls without leaving the trace page
+- I prefer the visualization of my agent logic to remain static when LLM calls are cached
+- I prefer seeing when the tool (e.g. `PythonREPL`) actually gets called, rather than just the high-level execution of the chain (e.g. `LLMMathChain`)
+
+That being said, LangChain's tracer is definitely better supported. **Please note that there is a lot of langchain functionality that I haven't gotten around to hijacking for visualization.** If there's anything you need to show up in the execution trace, please open a PR or issue.
 
 ## My other projects
 
