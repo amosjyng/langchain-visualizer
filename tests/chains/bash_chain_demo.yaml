@@ -1,0 +1,52 @@
+interactions:
+- request:
+    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
+      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
+      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
+      None), (''temperature'', 0.0), (''top_p'', 1)]'
+    prompt: 'If someone asks you to perform a task, your job is to come up with a
+      series of bash commands that will perform the task. There is no need to put
+      "#!/bin/bash" in your answer. Make sure to reason step by step, using this format:
+
+
+      Question: "copy the files in the directory named ''target'' into a new directory
+      at the same level as target called ''myNewDirectory''"
+
+
+      I need to take the following actions:
+
+      - List all files in the directory
+
+      - Create a new directory
+
+      - Copy the files from the first directory into the second directory
+
+      ```bash
+
+      ls
+
+      mkdir myNewDirectory
+
+      cp -r target/* myNewDirectory
+
+      ```
+
+
+      That is the format. Begin!
+
+
+      Question: What files are in my current directory?'
+  response:
+  - !!python/object:langchain.schema.Generation
+    generation_info:
+      finish_reason: stop
+      logprobs: null
+    text: '
+
+
+      ```bash
+
+      ls
+
+      ```'
+version: 1
