@@ -49,4 +49,31 @@ interactions:
       ls
 
       ```'
+- request:
+    commands:
+    - ls
+    tool: BashProcess
+  response: 'LICENSE
+
+    Makefile
+
+    README.md
+
+    dist
+
+    langchain_visualizer
+
+    mypy.ini
+
+    poetry.lock
+
+    pyproject.toml
+
+    screenshots
+
+    tests
+
+    venv
+
+    '
 version: 1
