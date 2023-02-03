@@ -34,7 +34,7 @@ def test_llm_usage_succeeds():
     result = asyncio.get_event_loop().run_until_complete(
         conversation_summary_memory_demo()
     )
-    assert result.strip().startswith("The scope of the project is to identify")
+    assert result.strip().startswith("The scope of the project is to")
 
 
 if __name__ == "__main__":

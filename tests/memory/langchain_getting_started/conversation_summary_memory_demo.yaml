@@ -1,268 +1,426 @@
 interactions:
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      None), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: 'The following is a friendly conversation between a human and an AI. The
-      AI is talkative and provides lots of specific details from its context. If the
-      AI does not know the answer to a question, it truthfully says it does not know.
-
-
-      Current conversation:
-
-
-      Human: Hi, what''s up?
-
-      AI:'
+    body: '{"prompt": ["The following is a friendly conversation between a human and
+      an AI. The AI is talkative and provides lots of specific details from its context.
+      If the AI does not know the answer to a question, it truthfully says it does
+      not know.\n\nCurrent conversation:\n\nHuman: Hi, what''s up?\nAI:"], "model":
+      "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '468'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: ' Hi there! I''m doing great. I''m currently helping a customer with a technical
-      issue. How about you?'
+    body:
+      string: '{"id":"cmpl-6fkyEG7myI6kWfX7Kg0is92qHaStZ","object":"text_completion","created":1675410022,"model":"text-davinci-003","choices":[{"text":"
+        Hi there! I''m doing great. I''m currently helping a customer with a technical
+        issue. How about you?","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":67,"completion_tokens":23,"total_tokens":90}}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '361'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:40:24 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '1782'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 6bd31cd53485df53d896008574fd01a2
+    status:
+      code: 200
+      message: OK
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      None), (''temperature'', 0.7), (''top_p'', 1)]'
-    prompt: 'Progressively summarize the lines of conversation provided, adding onto
-      the previous summary returning a new summary.
-
-
-      EXAMPLE
-
-      Current summary:
-
-      The human asks what the AI thinks of artificial intelligence. The AI thinks
-      artificial intelligence is a force for good.
-
-
-      New lines of conversation:
-
-      Human: Why do you think artificial intelligence is a force for good?
-
-      AI: Because artificial intelligence will help humans reach their full potential.
-
-
-      New summary:
-
-      The human asks what the AI thinks of artificial intelligence. The AI thinks
-      artificial intelligence is a force for good because it will help humans reach
-      their full potential.
-
-      END OF EXAMPLE
-
-
-      Current summary:
-
-
-
-      New lines of conversation:
-
-      Human: Hi, what''s up?
-
-      AI:  Hi there! I''m doing great. I''m currently helping a customer with a technical
-      issue. How about you?
-
-
-      New summary:'
+    body: '{"prompt": ["Progressively summarize the lines of conversation provided,
+      adding onto the previous summary returning a new summary.\n\nEXAMPLE\nCurrent
+      summary:\nThe human asks what the AI thinks of artificial intelligence. The
+      AI thinks artificial intelligence is a force for good.\n\nNew lines of conversation:\nHuman:
+      Why do you think artificial intelligence is a force for good?\nAI: Because artificial
+      intelligence will help humans reach their full potential.\n\nNew summary:\nThe
+      human asks what the AI thinks of artificial intelligence. The AI thinks artificial
+      intelligence is a force for good because it will help humans reach their full
+      potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\n\nNew lines of conversation:\nHuman:
+      Hi, what''s up?\nAI:  Hi there! I''m doing great. I''m currently helping a customer
+      with a technical issue. How about you?\n\nNew summary:"], "model": "text-davinci-003",
+      "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1038'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: '
+    body:
+      string: '{"id":"cmpl-6fkyHI5ZbYcLPwPWLBsECHerNy4AC","object":"text_completion","created":1675410025,"model":"text-davinci-003","choices":[{"text":"\nThe
+        human greets the AI and the AI responds, saying it is currently helping a
+        customer with a technical issue.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":183,"completion_tokens":23,"total_tokens":206}}
 
-      The human asks what the AI is doing, to which the AI responds that it is helping
-      a customer with a technical issue.'
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '376'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:40:26 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '1428'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 430fdfc4b3ca11be1447b36e6a1900ba
+    status:
+      code: 200
+      message: OK
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      None), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: 'The following is a friendly conversation between a human and an AI. The
-      AI is talkative and provides lots of specific details from its context. If the
-      AI does not know the answer to a question, it truthfully says it does not know.
-
-
-      Current conversation:
-
-
-      The human asks what the AI is doing, to which the AI responds that it is helping
-      a customer with a technical issue.
-
-      Human: Tell me more about it!
-
-      AI:'
+    body: '{"prompt": ["The following is a friendly conversation between a human and
+      an AI. The AI is talkative and provides lots of specific details from its context.
+      If the AI does not know the answer to a question, it truthfully says it does
+      not know.\n\nCurrent conversation:\n\nThe human greets the AI and the AI responds,
+      saying it is currently helping a customer with a technical issue.\nHuman: Tell
+      me more about it!\nAI:"], "model": "text-davinci-003", "temperature": 0.0, "max_tokens":
+      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of":
+      1, "logit_bias": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '588'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: ' Sure! The customer is having trouble with their computer not connecting
-      to the internet. I''m helping them troubleshoot the issue and figure out what
-      the problem is. I''m currently running a diagnostic scan to see if I can identify
-      the source of the issue.'
+    body:
+      string: '{"id":"cmpl-6fkyJjKrOnEEJ3TYzMHloD9ofV3If","object":"text_completion","created":1675410027,"model":"text-davinci-003","choices":[{"text":"
+        Sure! The customer is having trouble connecting to their Wi-Fi network. I''m
+        helping them troubleshoot the issue and figure out what the problem is.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":90,"completion_tokens":32,"total_tokens":122}}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '411'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:40:31 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '4081'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 8eecd5b52198b647d54606dec91f5035
+    status:
+      code: 200
+      message: OK
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      None), (''temperature'', 0.7), (''top_p'', 1)]'
-    prompt: 'Progressively summarize the lines of conversation provided, adding onto
-      the previous summary returning a new summary.
-
-
-      EXAMPLE
-
-      Current summary:
-
-      The human asks what the AI thinks of artificial intelligence. The AI thinks
-      artificial intelligence is a force for good.
-
-
-      New lines of conversation:
-
-      Human: Why do you think artificial intelligence is a force for good?
-
-      AI: Because artificial intelligence will help humans reach their full potential.
-
-
-      New summary:
-
-      The human asks what the AI thinks of artificial intelligence. The AI thinks
-      artificial intelligence is a force for good because it will help humans reach
-      their full potential.
-
-      END OF EXAMPLE
-
-
-      Current summary:
-
-
-      The human asks what the AI is doing, to which the AI responds that it is helping
-      a customer with a technical issue.
-
-
-      New lines of conversation:
-
-      Human: Tell me more about it!
-
-      AI:  Sure! The customer is having trouble with their computer not connecting
-      to the internet. I''m helping them troubleshoot the issue and figure out what
-      the problem is. I''m currently running a diagnostic scan to see if I can identify
-      the source of the issue.
-
-
-      New summary:'
+    body: '{"prompt": ["Progressively summarize the lines of conversation provided,
+      adding onto the previous summary returning a new summary.\n\nEXAMPLE\nCurrent
+      summary:\nThe human asks what the AI thinks of artificial intelligence. The
+      AI thinks artificial intelligence is a force for good.\n\nNew lines of conversation:\nHuman:
+      Why do you think artificial intelligence is a force for good?\nAI: Because artificial
+      intelligence will help humans reach their full potential.\n\nNew summary:\nThe
+      human asks what the AI thinks of artificial intelligence. The AI thinks artificial
+      intelligence is a force for good because it will help humans reach their full
+      potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\nThe human greets the AI and
+      the AI responds, saying it is currently helping a customer with a technical
+      issue.\n\nNew lines of conversation:\nHuman: Tell me more about it!\nAI:  Sure!
+      The customer is having trouble connecting to their Wi-Fi network. I''m helping
+      them troubleshoot the issue and figure out what the problem is.\n\nNew summary:"],
+      "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias":
+      {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1207'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: '
+    body:
+      string: '{"id":"cmpl-6fkyORbWQspyzwMwRyzrzDIyhWJOu","object":"text_completion","created":1675410032,"model":"text-davinci-003","choices":[{"text":"\n\nThe
+        human greets the AI and the AI responds, saying it is currently helping a
+        customer with a technical issue. The AI then explains that the customer is
+        having trouble connecting to their Wi-Fi network and the AI is helping them
+        troubleshoot the issue.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":216,"completion_tokens":53,"total_tokens":269}}
 
-      The human asks what the AI is doing, to which the AI responds that it is helping
-      a customer with a technical issue. The customer is having trouble with their
-      computer not connecting to the internet, so the AI is running a diagnostic scan
-      to try and identify the source of the issue.'
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '520'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:40:35 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '3152'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 6a9d43f5b9b8f2e31f540239d683c504
+    status:
+      code: 200
+      message: OK
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      None), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: 'The following is a friendly conversation between a human and an AI. The
-      AI is talkative and provides lots of specific details from its context. If the
-      AI does not know the answer to a question, it truthfully says it does not know.
-
-
-      Current conversation:
-
-
-      The human asks what the AI is doing, to which the AI responds that it is helping
-      a customer with a technical issue. The customer is having trouble with their
-      computer not connecting to the internet, so the AI is running a diagnostic scan
-      to try and identify the source of the issue.
-
-      Human: Very cool -- what is the scope of the project?
-
-      AI:'
+    body: '{"prompt": ["The following is a friendly conversation between a human and
+      an AI. The AI is talkative and provides lots of specific details from its context.
+      If the AI does not know the answer to a question, it truthfully says it does
+      not know.\n\nCurrent conversation:\n\n\nThe human greets the AI and the AI responds,
+      saying it is currently helping a customer with a technical issue. The AI then
+      explains that the customer is having trouble connecting to their Wi-Fi network
+      and the AI is helping them troubleshoot the issue.\nHuman: Very cool -- what
+      is the scope of the project?\nAI:"], "model": "text-davinci-003", "temperature":
+      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '756'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: ' The scope of the project is to identify the source of the customer''s
-      internet connectivity issue and provide a solution to resolve it. I am currently
-      running a diagnostic scan to check for any hardware or software issues that
-      may be causing the problem.'
+    body:
+      string: '{"id":"cmpl-6fkySKXBN382t3lTIazyhT9Zfrzrj","object":"text_completion","created":1675410036,"model":"text-davinci-003","choices":[{"text":"
+        The scope of the project is to help the customer troubleshoot their Wi-Fi
+        connection issue. I am currently helping them identify the source of the problem
+        and providing them with solutions to resolve it.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":124,"completion_tokens":40,"total_tokens":164}}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '468'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:40:38 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '2061'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 15a8cad65a4adb906cf996b62d70f80f
+    status:
+      code: 200
+      message: OK
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      None), (''temperature'', 0.7), (''top_p'', 1)]'
-    prompt: 'Progressively summarize the lines of conversation provided, adding onto
-      the previous summary returning a new summary.
-
-
-      EXAMPLE
-
-      Current summary:
-
-      The human asks what the AI thinks of artificial intelligence. The AI thinks
-      artificial intelligence is a force for good.
-
-
-      New lines of conversation:
-
-      Human: Why do you think artificial intelligence is a force for good?
-
-      AI: Because artificial intelligence will help humans reach their full potential.
-
-
-      New summary:
-
-      The human asks what the AI thinks of artificial intelligence. The AI thinks
-      artificial intelligence is a force for good because it will help humans reach
-      their full potential.
-
-      END OF EXAMPLE
-
-
-      Current summary:
-
-
-      The human asks what the AI is doing, to which the AI responds that it is helping
-      a customer with a technical issue. The customer is having trouble with their
-      computer not connecting to the internet, so the AI is running a diagnostic scan
-      to try and identify the source of the issue.
-
-
-      New lines of conversation:
-
-      Human: Very cool -- what is the scope of the project?
-
-      AI:  The scope of the project is to identify the source of the customer''s internet
-      connectivity issue and provide a solution to resolve it. I am currently running
-      a diagnostic scan to check for any hardware or software issues that may be causing
-      the problem.
-
-
-      New summary:'
+    body: '{"prompt": ["Progressively summarize the lines of conversation provided,
+      adding onto the previous summary returning a new summary.\n\nEXAMPLE\nCurrent
+      summary:\nThe human asks what the AI thinks of artificial intelligence. The
+      AI thinks artificial intelligence is a force for good.\n\nNew lines of conversation:\nHuman:
+      Why do you think artificial intelligence is a force for good?\nAI: Because artificial
+      intelligence will help humans reach their full potential.\n\nNew summary:\nThe
+      human asks what the AI thinks of artificial intelligence. The AI thinks artificial
+      intelligence is a force for good because it will help humans reach their full
+      potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\n\nThe human greets the AI
+      and the AI responds, saying it is currently helping a customer with a technical
+      issue. The AI then explains that the customer is having trouble connecting to
+      their Wi-Fi network and the AI is helping them troubleshoot the issue.\n\nNew
+      lines of conversation:\nHuman: Very cool -- what is the scope of the project?\nAI:  The
+      scope of the project is to help the customer troubleshoot their Wi-Fi connection
+      issue. I am currently helping them identify the source of the problem and providing
+      them with solutions to resolve it.\n\nNew summary:"], "model": "text-davinci-003",
+      "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1431'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: '
+    body:
+      string: '{"id":"cmpl-6fkyUeCoI6sepJMHZeykCdBt1Rgr7","object":"text_completion","created":1675410038,"model":"text-davinci-003","choices":[{"text":"\nThe
+        human greets the AI and the AI responds, saying it is currently helping a
+        customer with a technical issue related to their Wi-Fi connection. The AI
+        explains that the scope of the project is to help the customer troubleshoot
+        the issue and identify solutions to resolve it.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":258,"completion_tokens":56,"total_tokens":314}}
 
-
-      The human asks what the AI is doing, to which the AI responds that it is helping
-      a customer with a technical issue. The customer is having trouble with their
-      computer not connecting to the internet, so the AI is running a diagnostic scan
-      to try and identify the source of the issue. The scope of the project is to
-      identify the source of the customer''s internet connectivity issue and provide
-      a solution to resolve it. The AI is currently running a diagnostic scan to check
-      for any hardware or software issues that may be causing the problem.'
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '541'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:40:41 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '3015'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 6b63478749f7b4b3e8156745e9b0763f
+    status:
+      code: 200
+      message: OK
 version: 1

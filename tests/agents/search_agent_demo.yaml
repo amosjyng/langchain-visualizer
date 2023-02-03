@@ -1,312 +1,944 @@
 interactions:
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      [''\nObservation: '']), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: 'Answer the following questions as best you can. You have access to the
-      following tools:
-
-
-      Search: A search engine. Useful for when you need to answer questions about
-      current events. Input should be a search query.
-
-      Calculator: Useful for when you need to answer questions about math.
-
-
-      Use the following format:
-
-
-      Question: the input question you must answer
-
-      Thought: you should always think about what to do
-
-      Action: the action to take, should be one of [Search, Calculator]
-
-      Action Input: the input to the action
-
-      Observation: the result of the action
-
-      ... (this Thought/Action/Action Input/Observation can repeat N times)
-
-      Thought: I now know the final answer
-
-      Final Answer: the final answer to the original input question
-
-
-      Begin!
-
-
-      Question: Who is Olivia Wilde''s boyfriend? What is his current age raised to
-      the 0.23 power?
-
-      Thought:'
+    body: '{"prompt": ["Answer the following questions as best you can. You have access
+      to the following tools:\n\nSearch: A search engine. Useful for when you need
+      to answer questions about current events. Input should be a search query.\nCalculator:
+      Useful for when you need to answer questions about math.\n\nUse the following
+      format:\n\nQuestion: the input question you must answer\nThought: you should
+      always think about what to do\nAction: the action to take, should be one of
+      [Search, Calculator]\nAction Input: the input to the action\nObservation: the
+      result of the action\n... (this Thought/Action/Action Input/Observation can
+      repeat N times)\nThought: I now know the final answer\nFinal Answer: the final
+      answer to the original input question\n\nBegin!\n\nQuestion: Who is Olivia Wilde''s
+      boyfriend? What is his current age raised to the 0.23 power?\nThought:"], "model":
+      "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias": {}, "stop": ["\nObservation:
+      "]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1057'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: ' I need to find out who Olivia Wilde''s boyfriend is and then calculate
-      his age raised to the 0.23 power.
+    body:
+      string: '{"id":"cmpl-6fkwYJRzFEVtym1AgokkldBaPbNaW","object":"text_completion","created":1675409918,"model":"text-davinci-003","choices":[{"text":"
+        I need to find out who Olivia Wilde''s boyfriend is and then calculate his
+        age raised to the 0.23 power.\nAction: Search\nAction Input: \"Olivia Wilde
+        boyfriend\"","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":196,"completion_tokens":39,"total_tokens":235}}
 
-      Action: Search
-
-      Action Input: "Olivia Wilde boyfriend"'
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '426'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:38:40 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '2911'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - c5ed06dd3e3b23cc32f0cfc3e1012e20
+    status:
+      code: 200
+      message: OK
 - request:
-    query: Olivia Wilde boyfriend
-    tool: SerpAPIWrapper
-  response: Jason Sudeikis
-- request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      [''\nObservation: '']), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: 'Answer the following questions as best you can. You have access to the
-      following tools:
-
-
-      Search: A search engine. Useful for when you need to answer questions about
-      current events. Input should be a search query.
-
-      Calculator: Useful for when you need to answer questions about math.
-
-
-      Use the following format:
-
-
-      Question: the input question you must answer
-
-      Thought: you should always think about what to do
-
-      Action: the action to take, should be one of [Search, Calculator]
-
-      Action Input: the input to the action
-
-      Observation: the result of the action
-
-      ... (this Thought/Action/Action Input/Observation can repeat N times)
-
-      Thought: I now know the final answer
-
-      Final Answer: the final answer to the original input question
-
-
-      Begin!
-
-
-      Question: Who is Olivia Wilde''s boyfriend? What is his current age raised to
-      the 0.23 power?
-
-      Thought: I need to find out who Olivia Wilde''s boyfriend is and then calculate
-      his age raised to the 0.23 power.
-
-      Action: Search
-
-      Action Input: "Olivia Wilde boyfriend"
-
-      Observation: Jason Sudeikis
-
-      Thought:'
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://serpapi.com/search?engine=google&google_domain=google.com&gl=us&hl=en&api_key=6cb17652f23fd358d90acc7bf235f61a75c84b2be584c0948c4aada86535a9cf&q=Olivia+Wilde+boyfriend&output=json&source=python
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: ' I need to find out Jason Sudeikis'' age
-
-      Action: Search
-
-      Action Input: "Jason Sudeikis age"'
+    body:
+      string: !!binary |
+        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
+    headers:
+      CF-Cache-Status:
+      - EXPIRED
+      CF-Ray:
+      - 79398226fe792eb0-SIN
+      Cache-Control:
+      - max-age=3600, public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 03 Feb 2023 07:38:41 GMT
+      ETag:
+      - W/"73228dc2fd6face96203ebb196ed0d78"
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      serpapi-search-id:
+      - 63dcb911654a8cae93c43305
+      x-content-type-options:
+      - nosniff
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-request-id:
+      - be18dd2d-c29f-4325-8b28-223d208c739b
+      x-robots-tag:
+      - noindex, nofollow
+      x-runtime:
+      - '0.100798'
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
 - request:
-    query: Jason Sudeikis age
-    tool: SerpAPIWrapper
-  response: 47 years
-- request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      [''\nObservation: '']), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: 'Answer the following questions as best you can. You have access to the
-      following tools:
-
-
-      Search: A search engine. Useful for when you need to answer questions about
-      current events. Input should be a search query.
-
-      Calculator: Useful for when you need to answer questions about math.
-
-
-      Use the following format:
-
-
-      Question: the input question you must answer
-
-      Thought: you should always think about what to do
-
-      Action: the action to take, should be one of [Search, Calculator]
-
-      Action Input: the input to the action
-
-      Observation: the result of the action
-
-      ... (this Thought/Action/Action Input/Observation can repeat N times)
-
-      Thought: I now know the final answer
-
-      Final Answer: the final answer to the original input question
-
-
-      Begin!
-
-
-      Question: Who is Olivia Wilde''s boyfriend? What is his current age raised to
-      the 0.23 power?
-
-      Thought: I need to find out who Olivia Wilde''s boyfriend is and then calculate
-      his age raised to the 0.23 power.
-
-      Action: Search
-
-      Action Input: "Olivia Wilde boyfriend"
-
-      Observation: Jason Sudeikis
-
-      Thought: I need to find out Jason Sudeikis'' age
-
-      Action: Search
-
-      Action Input: "Jason Sudeikis age"
-
-      Observation: 47 years
-
-      Thought:'
+    body: '{"prompt": ["Answer the following questions as best you can. You have access
+      to the following tools:\n\nSearch: A search engine. Useful for when you need
+      to answer questions about current events. Input should be a search query.\nCalculator:
+      Useful for when you need to answer questions about math.\n\nUse the following
+      format:\n\nQuestion: the input question you must answer\nThought: you should
+      always think about what to do\nAction: the action to take, should be one of
+      [Search, Calculator]\nAction Input: the input to the action\nObservation: the
+      result of the action\n... (this Thought/Action/Action Input/Observation can
+      repeat N times)\nThought: I now know the final answer\nFinal Answer: the final
+      answer to the original input question\n\nBegin!\n\nQuestion: Who is Olivia Wilde''s
+      boyfriend? What is his current age raised to the 0.23 power?\nThought: I need
+      to find out who Olivia Wilde''s boyfriend is and then calculate his age raised
+      to the 0.23 power.\nAction: Search\nAction Input: \"Olivia Wilde boyfriend\"\nObservation:
+      Jason Sudeikis\nThought:"], "model": "text-davinci-003", "temperature": 0.0,
+      "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0,
+      "n": 1, "best_of": 1, "logit_bias": {}, "stop": ["\nObservation: "]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1258'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: ' I need to calculate 47 raised to the 0.23 power
+    body:
+      string: '{"id":"cmpl-6fkwc4olVh3JIThqcMYRC3WsHiuwU","object":"text_completion","created":1675409922,"model":"text-davinci-003","choices":[{"text":"
+        I need to find out Jason Sudeikis'' age\nAction: Search\nAction Input: \"Jason
+        Sudeikis age\"","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":248,"completion_tokens":28,"total_tokens":276}}
 
-      Action: Calculator
-
-      Action Input: 47^0.23'
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '357'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:38:44 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '2008'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 89e51885a067c011d33e965a7d90d4cc
+    status:
+      code: 200
+      message: OK
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      [''```output'']), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: "You are GPT-3, and you can't do math.\n\nYou can do basic math, and your
-      memorization abilities are impressive, but you can't do any complex calculations
-      that a human could not do in their head. You also have an annoying tendency
-      to just make up highly specific, but wrong, answers.\n\nSo we hooked you up
-      to a Python 3 kernel, and now you can execute code. If anyone gives you a hard
-      math problem, just use this format and we\u2019ll take care of the rest:\n\nQuestion:
-      ${Question with hard calculation.}\n```python\n${Code that prints what you need
-      to know}\n```\n```output\n${Output of your code}\n```\nAnswer: ${Answer}\n\nOtherwise,
-      use this simpler format:\n\nQuestion: ${Question without hard calculation}\nAnswer:
-      ${Answer}\n\nBegin.\n\nQuestion: What is 37593 * 67?\n\n```python\nprint(37593
-      * 67)\n```\n```output\n2518731\n```\nAnswer: 2518731\n\nQuestion: 47^0.23\n"
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://serpapi.com/search?engine=google&google_domain=google.com&gl=us&hl=en&api_key=6cb17652f23fd358d90acc7bf235f61a75c84b2be584c0948c4aada86535a9cf&q=Jason+Sudeikis+age&output=json&source=python
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: '
-
-      ```python
-
-      import math
-
-      print(math.pow(47, 0.23))
-
-      ```
-
-      '
+    body:
+      string: !!binary |
+        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
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-Ray:
+      - 793982453ad54af6-SIN
+      Cache-Control:
+      - max-age=3600, public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 03 Feb 2023 07:38:47 GMT
+      ETag:
+      - W/"23037e140399e50196f8b46a9aa758ee"
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      serpapi-search-id:
+      - 63dcb914272aa54fcfc35d6e
+      x-content-type-options:
+      - nosniff
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-request-id:
+      - 495af932-d332-4115-8b20-ffb2d3678b9b
+      x-robots-tag:
+      - noindex, nofollow
+      x-runtime:
+      - '0.118201'
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
 - request:
-    command: '
+    body: '{"prompt": ["Answer the following questions as best you can. You have access
+      to the following tools:\n\nSearch: A search engine. Useful for when you need
+      to answer questions about current events. Input should be a search query.\nCalculator:
+      Useful for when you need to answer questions about math.\n\nUse the following
+      format:\n\nQuestion: the input question you must answer\nThought: you should
+      always think about what to do\nAction: the action to take, should be one of
+      [Search, Calculator]\nAction Input: the input to the action\nObservation: the
+      result of the action\n... (this Thought/Action/Action Input/Observation can
+      repeat N times)\nThought: I now know the final answer\nFinal Answer: the final
+      answer to the original input question\n\nBegin!\n\nQuestion: Who is Olivia Wilde''s
+      boyfriend? What is his current age raised to the 0.23 power?\nThought: I need
+      to find out who Olivia Wilde''s boyfriend is and then calculate his age raised
+      to the 0.23 power.\nAction: Search\nAction Input: \"Olivia Wilde boyfriend\"\nObservation:
+      Jason Sudeikis\nThought: I need to find out Jason Sudeikis'' age\nAction: Search\nAction
+      Input: \"Jason Sudeikis age\"\nObservation: 47 years\nThought:"], "model": "text-davinci-003",
+      "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}, "stop": ["\nObservation: "]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1384'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: '{"id":"cmpl-6fkwhmvl1NbEZxPGPQkO3kCwUXyoV","object":"text_completion","created":1675409927,"model":"text-davinci-003","choices":[{"text":"
+        I need to calculate 47 raised to the 0.23 power\nAction: Calculator\nAction
+        Input: 47^0.23","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":286,"completion_tokens":25,"total_tokens":311}}
 
-      import math
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '355'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:38:51 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '4131'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 4554361946668e97659d9d72ad09728f
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"prompt": ["You are GPT-3, and you can''t do math.\n\nYou can do basic
+      math, and your memorization abilities are impressive, but you can''t do any
+      complex calculations that a human could not do in their head. You also have
+      an annoying tendency to just make up highly specific, but wrong, answers.\n\nSo
+      we hooked you up to a Python 3 kernel, and now you can execute code. If anyone
+      gives you a hard math problem, just use this format and we\u2019ll take care
+      of the rest:\n\nQuestion: ${Question with hard calculation.}\n```python\n${Code
+      that prints what you need to know}\n```\n```output\n${Output of your code}\n```\nAnswer:
+      ${Answer}\n\nOtherwise, use this simpler format:\n\nQuestion: ${Question without
+      hard calculation}\nAnswer: ${Answer}\n\nBegin.\n\nQuestion: What is 37593 *
+      67?\n\n```python\nprint(37593 * 67)\n```\n```output\n2518731\n```\nAnswer: 2518731\n\nQuestion:
+      47^0.23\n"], "model": "text-davinci-003", "temperature": 0.0, "max_tokens":
+      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of":
+      1, "logit_bias": {}, "stop": ["```output"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1082'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: '{"id":"cmpl-6fkwlDHtlT2tEdNqMmNE3XJmW3Niu","object":"text_completion","created":1675409931,"model":"text-davinci-003","choices":[{"text":"\n```python\nimport
+        math\nprint(math.pow(47, 0.23))\n```\n","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":241,"completion_tokens":25,"total_tokens":266}}
 
-      print(math.pow(47, 0.23))'
-    tool: PythonREPL
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '322'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:38:54 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '2374'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 980049bdb11020d94f45d5fdd04db095
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"command": "\nimport math\nprint(math.pow(47, 0.23))"}'
+    headers: {}
+    method: POST
+    uri: tool://PythonREPL
   response: '2.4242784855673896
 
     '
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      [''\nObservation: '']), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: 'Answer the following questions as best you can. You have access to the
-      following tools:
-
-
-      Search: A search engine. Useful for when you need to answer questions about
-      current events. Input should be a search query.
-
-      Calculator: Useful for when you need to answer questions about math.
-
-
-      Use the following format:
-
-
-      Question: the input question you must answer
-
-      Thought: you should always think about what to do
-
-      Action: the action to take, should be one of [Search, Calculator]
-
-      Action Input: the input to the action
-
-      Observation: the result of the action
-
-      ... (this Thought/Action/Action Input/Observation can repeat N times)
-
-      Thought: I now know the final answer
-
-      Final Answer: the final answer to the original input question
-
-
-      Begin!
-
-
-      Question: Who is Olivia Wilde''s boyfriend? What is his current age raised to
-      the 0.23 power?
-
-      Thought: I need to find out who Olivia Wilde''s boyfriend is and then calculate
-      his age raised to the 0.23 power.
-
-      Action: Search
-
-      Action Input: "Olivia Wilde boyfriend"
-
-      Observation: Jason Sudeikis
-
-      Thought: I need to find out Jason Sudeikis'' age
-
-      Action: Search
-
-      Action Input: "Jason Sudeikis age"
-
-      Observation: 47 years
-
-      Thought: I need to calculate 47 raised to the 0.23 power
-
-      Action: Calculator
-
-      Action Input: 47^0.23
-
-      Observation: Answer: 2.4242784855673896
-
-
-      Thought:'
+    body: '{"prompt": ["Answer the following questions as best you can. You have access
+      to the following tools:\n\nSearch: A search engine. Useful for when you need
+      to answer questions about current events. Input should be a search query.\nCalculator:
+      Useful for when you need to answer questions about math.\n\nUse the following
+      format:\n\nQuestion: the input question you must answer\nThought: you should
+      always think about what to do\nAction: the action to take, should be one of
+      [Search, Calculator]\nAction Input: the input to the action\nObservation: the
+      result of the action\n... (this Thought/Action/Action Input/Observation can
+      repeat N times)\nThought: I now know the final answer\nFinal Answer: the final
+      answer to the original input question\n\nBegin!\n\nQuestion: Who is Olivia Wilde''s
+      boyfriend? What is his current age raised to the 0.23 power?\nThought: I need
+      to find out who Olivia Wilde''s boyfriend is and then calculate his age raised
+      to the 0.23 power.\nAction: Search\nAction Input: \"Olivia Wilde boyfriend\"\nObservation:
+      Jason Sudeikis\nThought: I need to find out Jason Sudeikis'' age\nAction: Search\nAction
+      Input: \"Jason Sudeikis age\"\nObservation: 47 years\nThought: I need to calculate
+      47 raised to the 0.23 power\nAction: Calculator\nAction Input: 47^0.23\nObservation:
+      Answer: 2.4242784855673896\n\nThought:"], "model": "text-davinci-003", "temperature":
+      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}, "stop": ["\nObservation: "]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1528'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: ' I now know the final answer
+    body:
+      string: '{"id":"cmpl-6fkwpHtHgJhAT9xzgtJpW9XKOZeV4","object":"text_completion","created":1675409935,"model":"text-davinci-003","choices":[{"text":"
+        I now know the final answer\nFinal Answer: Jason Sudeikis, Olivia Wilde''s
+        boyfriend, is 47 years old and his age raised to the 0.23 power is 2.4242784855673896.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":331,"completion_tokens":46,"total_tokens":377}}
 
-      Final Answer: Jason Sudeikis, Olivia Wilde''s boyfriend, is 47 years old and
-      his age raised to the 0.23 power is 2.4242784855673896.'
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '425'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:38:57 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '2470'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - d2b674ddcb4d2f64124cf108286b8b09
+    status:
+      code: 200
+      message: OK
 version: 1

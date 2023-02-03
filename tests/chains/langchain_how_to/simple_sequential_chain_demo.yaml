@@ -1,41 +1,82 @@
 interactions:
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      None), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: 'You are a playwright. Given the title of play, it is your job to write
-      a synopsis for that title.
-
-
-      Title: Tragedy at sunset on the beach
-
-      Playwright: This is a synopsis for the above play:'
+    body: '{"prompt": ["You are a playwright. Given the title of play, it is your
+      job to write a synopsis for that title.\n\nTitle: Tragedy at sunset on the beach\nPlaywright:
+      This is a synopsis for the above play:"], "model": "text-davinci-003", "temperature":
+      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '373'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: "\n\nTragedy at Sunset on the Beach is a story of love, loss, and redemption.
-      It follows the story of two young lovers, Jack and Jill, who meet on a beach
-      at sunset. They quickly fall in love and plan to marry, but their plans are
-      shattered when Jack is tragically killed in a car accident. \n\nJill is left
-      devastated and struggles to cope with her grief. She finds solace in the company
-      of her best friend, Sarah, who helps her to come to terms with her loss. As
-      Jill begins to heal, she discovers that Jack had a secret past that he had kept
-      hidden from her. \n\nJill is determined to uncover the truth and embarks on
-      a journey of self-discovery. Along the way, she meets a mysterious stranger
-      who helps her to understand the truth about Jack's past. With his help, Jill
-      is able to find closure and peace. \n\nIn the end, Jill is able to move on with
-      her life and find happiness again. Tragedy at Sunset on the Beach is a story
-      of love, loss, and redemption that will leave audiences moved and inspired."
+    body:
+      string: '{"id":"cmpl-6fkxgJsLbCp8mVtBLySoK2HQb10Rq","object":"text_completion","created":1675409988,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
+        at Sunset on the Beach is a story of love, loss, and redemption. It follows
+        the story of two young lovers, Jack and Jill, who meet on a beach at sunset.
+        They quickly fall in love and plan to marry, but their plans are shattered
+        when Jack is tragically killed in a car accident. \n\nJill is left devastated
+        and struggles to cope with her grief. She finds solace in the company of her
+        best friend, Sarah, who helps her to come to terms with her loss. As Jill
+        begins to heal, she discovers that Jack had a secret past that he had kept
+        hidden from her. \n\nJill is determined to uncover the truth and embarks on
+        a journey of self-discovery. Along the way, she meets a mysterious stranger
+        who helps her to understand the truth about Jack''s past. With his help, Jill
+        is able to find closure and peace. \n\nIn the end, Jill is able to move on
+        with her life and find happiness again. Tragedy at Sunset on the Beach is
+        a story of love, loss, and redemption that will leave audiences moved and
+        inspired.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":49,"completion_tokens":234,"total_tokens":283}}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1269'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:40:09 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '21991'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 9a566d575083d64b476b9abfcd84ce87
+    status:
+      code: 200
+      message: OK
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      None), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: "You are a play critic from the New York Times. Given the synopsis of
-      play, it is your job to write a review for that play.\n\nPlay Synopsis:\n\n\nTragedy
+    body: '{"prompt": ["You are a play critic from the New York Times. Given the synopsis
+      of play, it is your job to write a review for that play.\n\nPlay Synopsis:\n\n\nTragedy
       at Sunset on the Beach is a story of love, loss, and redemption. It follows
       the story of two young lovers, Jack and Jill, who meet on a beach at sunset.
       They quickly fall in love and plan to marry, but their plans are shattered when
@@ -45,25 +86,77 @@ interactions:
       to heal, she discovers that Jack had a secret past that he had kept hidden from
       her. \n\nJill is determined to uncover the truth and embarks on a journey of
       self-discovery. Along the way, she meets a mysterious stranger who helps her
-      to understand the truth about Jack's past. With his help, Jill is able to find
+      to understand the truth about Jack''s past. With his help, Jill is able to find
       closure and peace. \n\nIn the end, Jill is able to move on with her life and
       find happiness again. Tragedy at Sunset on the Beach is a story of love, loss,
       and redemption that will leave audiences moved and inspired.\nReview from a
-      New York Times play critic of the above play:"
+      New York Times play critic of the above play:"], "model": "text-davinci-003",
+      "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1391'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: "\n\nTragedy at Sunset on the Beach is a powerful and moving story of love,
-      loss, and redemption. The play follows the story of two young lovers, Jack and
-      Jill, whose plans for a future together are tragically cut short when Jack is
-      killed in a car accident. The audience is taken on an emotional journey as Jill
-      struggles to cope with her grief and embarks on a journey of self-discovery.
-      \n\nThe play is beautifully written and the performances are outstanding. The
-      actors bring the characters to life and make the audience feel the pain and
-      sorrow of Jill's loss. The story is captivating and the characters are well-developed
-      and believable. \n\nThe play is a touching and inspiring story that will leave
-      audiences moved and uplifted. Tragedy at Sunset on the Beach is a must-see for
-      anyone looking for an emotional and thought-provoking experience."
+    body:
+      string: '{"id":"cmpl-6fky2AgWqwTVI0O1KrI1vK5O8ieXn","object":"text_completion","created":1675410010,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
+        at Sunset on the Beach is a powerful and moving story of love, loss, and redemption.
+        The play follows the story of two young lovers, Jack and Jill, whose plans
+        for a future together are tragically cut short when Jack is killed in a car
+        accident. The audience is taken on an emotional journey as Jill struggles
+        to cope with her grief and embarks on a journey of self-discovery. \n\nThe
+        play is beautifully written and the performances are outstanding. The actors
+        bring the characters to life and make the audience feel the pain and sorrow
+        of Jill''s loss. The story is captivating and the characters are well-developed
+        and believable. \n\nThe play is a touching and inspiring story that will leave
+        audiences moved and uplifted. Tragedy at Sunset on the Beach is a must-see
+        for anyone looking for an emotional and thought-provoking experience.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":283,"completion_tokens":181,"total_tokens":464}}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1117'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:40:20 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '9868'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - fe1910cd64a2de27e868d87aa20b17fc
+    status:
+      code: 200
+      message: OK
 version: 1

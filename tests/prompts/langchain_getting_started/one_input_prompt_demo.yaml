@@ -1,20 +1,62 @@
 interactions:
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-ada-001''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      None), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: Tell me a funny joke.
+    body: '{"prompt": ["Tell me a funny joke."], "model": "text-ada-001", "temperature":
+      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '200'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: '
+    body:
+      string: '{"id":"cmpl-6fkyfPjGptwmuzTy3cUUNVtHZunAv","object":"text_completion","created":1675410049,"model":"text-ada-001","choices":[{"text":"\n\nWhy
+        did the chicken cross the road?\n\nTo get to the other side!","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":6,"completion_tokens":19,"total_tokens":25}}
 
-
-      Why did the chicken cross the road?
-
-
-      To get to the other side!'
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '325'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:40:50 GMT
+      Openai-Model:
+      - text-ada-001
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '197'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - b14007dc869ce86d121e4dc47384c789
+    status:
+      code: 200
+      message: OK
 version: 1

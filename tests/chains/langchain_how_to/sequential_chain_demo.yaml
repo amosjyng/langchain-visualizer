@@ -1,99 +1,162 @@
 interactions:
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      None), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: 'You are a playwright. Given the title of play and the era it is set in,
-      it is your job to write a synopsis for that title.
-
-
-      Title: Tragedy at sunset on the beach
-
-      Era: Victorian England
-
-      Playwright: This is a synopsis for the above play:'
+    body: '{"prompt": ["You are a playwright. Given the title of play and the era
+      it is set in, it is your job to write a synopsis for that title.\n\nTitle: Tragedy
+      at sunset on the beach\nEra: Victorian England\nPlaywright: This is a synopsis
+      for the above play:"], "model": "text-davinci-003", "temperature": 0.0, "max_tokens":
+      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of":
+      1, "logit_bias": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '422'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: '
+    body:
+      string: '{"id":"cmpl-6fkx56MEGwhkwBgFjwUPE3tqfqayT","object":"text_completion","created":1675409951,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
+        at Sunset on the Beach is a play set in Victorian England. It tells the story
+        of a young woman, Emily, who is struggling to make ends meet in a small coastal
+        town. She works as a maid for a wealthy family, but her dreams of a better
+        life are dashed when she discovers that her employer is involved in a scandalous
+        affair.\n\nEmily is determined to make a better life for herself, but her
+        plans are thwarted when she meets a handsome stranger on the beach one evening.
+        The two quickly fall in love, but their happiness is short-lived when Emily
+        discovers that the stranger is actually a member of the wealthy family she
+        works for.\n\nThe play follows Emily as she struggles to come to terms with
+        the truth and make sense of her life. As the sun sets on the beach, Emily
+        must decide whether to stay with the man she loves or to leave him and pursue
+        her dreams. In the end, Emily must make a heartbreaking decision that will
+        change her life forever.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":62,"completion_tokens":205,"total_tokens":267}}
 
-
-      Tragedy at Sunset on the Beach is a play set in Victorian England. It tells
-      the story of a young woman, Emily, who is struggling to make ends meet in a
-      small coastal town. She works as a maid for a wealthy family, but her dreams
-      of a better life are dashed when she discovers that her employer is involved
-      in a scandalous affair.
-
-
-      Emily is determined to make a better life for herself, but her plans are thwarted
-      when she meets a handsome stranger on the beach one evening. The two quickly
-      fall in love, but their happiness is short-lived when Emily discovers that the
-      stranger is actually a member of the wealthy family she works for.
-
-
-      The play follows Emily as she struggles to come to terms with the truth and
-      make sense of her life. As the sun sets on the beach, Emily must decide whether
-      to stay with the man she loves or to leave him and pursue her dreams. In the
-      end, Emily must make a heartbreaking decision that will change her life forever.'
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1222'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:39:22 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '11821'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - b11516c248c11a152da20ce4d28ce797
+    status:
+      code: 200
+      message: OK
 - request:
-    llm_string: '[(''_type'', ''openai''), (''best_of'', 1), (''frequency_penalty'',
-      0), (''logit_bias'', {}), (''max_tokens'', 256), (''model_name'', ''text-davinci-003''),
-      (''n'', 1), (''presence_penalty'', 0), (''request_timeout'', None), (''stop'',
-      None), (''temperature'', 0.0), (''top_p'', 1)]'
-    prompt: 'You are a play critic from the New York Times. Given the synopsis of
-      play, it is your job to write a review for that play.
-
-
-      Play Synopsis:
-
-
-
-      Tragedy at Sunset on the Beach is a play set in Victorian England. It tells
-      the story of a young woman, Emily, who is struggling to make ends meet in a
-      small coastal town. She works as a maid for a wealthy family, but her dreams
-      of a better life are dashed when she discovers that her employer is involved
-      in a scandalous affair.
-
-
-      Emily is determined to make a better life for herself, but her plans are thwarted
-      when she meets a handsome stranger on the beach one evening. The two quickly
-      fall in love, but their happiness is short-lived when Emily discovers that the
-      stranger is actually a member of the wealthy family she works for.
-
-
-      The play follows Emily as she struggles to come to terms with the truth and
-      make sense of her life. As the sun sets on the beach, Emily must decide whether
-      to stay with the man she loves or to leave him and pursue her dreams. In the
-      end, Emily must make a heartbreaking decision that will change her life forever.
-
-      Review from a New York Times play critic of the above play:'
+    body: '{"prompt": ["You are a play critic from the New York Times. Given the synopsis
+      of play, it is your job to write a review for that play.\n\nPlay Synopsis:\n\n\nTragedy
+      at Sunset on the Beach is a play set in Victorian England. It tells the story
+      of a young woman, Emily, who is struggling to make ends meet in a small coastal
+      town. She works as a maid for a wealthy family, but her dreams of a better life
+      are dashed when she discovers that her employer is involved in a scandalous
+      affair.\n\nEmily is determined to make a better life for herself, but her plans
+      are thwarted when she meets a handsome stranger on the beach one evening. The
+      two quickly fall in love, but their happiness is short-lived when Emily discovers
+      that the stranger is actually a member of the wealthy family she works for.\n\nThe
+      play follows Emily as she struggles to come to terms with the truth and make
+      sense of her life. As the sun sets on the beach, Emily must decide whether to
+      stay with the man she loves or to leave him and pursue her dreams. In the end,
+      Emily must make a heartbreaking decision that will change her life forever.\nReview
+      from a New York Times play critic of the above play:"], "model": "text-davinci-003",
+      "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1344'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.26.4
+      X-OpenAI-Client-User-Agent:
+      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
+        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
+        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-  - !!python/object:langchain.schema.Generation
-    generation_info:
-      finish_reason: stop
-      logprobs: null
-    text: '
+    body:
+      string: '{"id":"cmpl-6fkxJj4h9CAximkVX8fSfs3CzqNU6","object":"text_completion","created":1675409965,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
+        at Sunset on the Beach is a captivating and heartbreaking play set in Victorian
+        England. The story follows Emily, a young woman struggling to make ends meet
+        in a small coastal town. Her dreams of a better life are dashed when she discovers
+        her employer is involved in a scandalous affair. Emily is determined to make
+        a better life for herself, but her plans are thwarted when she meets a handsome
+        stranger on the beach one evening.\n\nThe play is a powerful exploration of
+        love, loss, and the choices we make in life. The characters are well-developed
+        and the story is engaging and thought-provoking. The actors bring the characters
+        to life with their passionate performances, and the set design and costumes
+        are stunning.\n\nOverall, Tragedy at Sunset on the Beach is a beautiful and
+        moving play that will leave you with a heavy heart. It is a must-see for anyone
+        looking for a thought-provoking and emotionally charged experience.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":254,"completion_tokens":196,"total_tokens":450}}
 
-
-      Tragedy at Sunset on the Beach is a captivating and heartbreaking story of love
-      and loss. Set in Victorian England, the play follows Emily, a young woman struggling
-      to make ends meet in a small coastal town. Emily''s dreams of a better life
-      are dashed when she discovers her employer is involved in a scandalous affair.
-      When she meets a handsome stranger on the beach one evening, Emily finds herself
-      in a difficult situation.
-
-
-      The play is beautifully written and the performances are outstanding. The actors
-      bring the characters to life with their nuanced and heartfelt performances.
-      The set design is also impressive, with the beach setting providing a stunning
-      backdrop for the story.
-
-
-      Overall, Tragedy at Sunset on the Beach is a powerful and moving play. It is
-      a story of love, loss, and the difficult choices we must make in life. It is
-      a must-see for anyone looking for an emotionally charged and thought-provoking
-      evening of theatre.'
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1209'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 03 Feb 2023 07:39:44 GMT
+      Openai-Model:
+      - text-davinci-003
+      Openai-Organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Processing-Ms:
+      - '19622'
+      Openai-Version:
+      - '2020-10-01'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 3833b7ebefc1b75784453403c3504d7e
+    status:
+      code: 200
+      message: OK
 version: 1

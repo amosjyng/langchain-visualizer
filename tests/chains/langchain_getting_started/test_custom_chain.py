@@ -66,7 +66,7 @@ def test_llm_usage_succeeds():
     result = asyncio.get_event_loop().run_until_complete(custom_chain_demo())
     assert (
         result.strip()
-        == 'Rainbow Toes Co.\n\n"Brighten Up Your Day with Colorful Socks!"'
+        == 'Colorful Toes.\n\n"Step into Colorful Comfort!"'
     )
 
 
