@@ -6,6 +6,7 @@ from .ice import visualize as ice_visualize
 
 from .agents.tools import SerpAPIWrapper  # noqa
 from .chains.base import Chain  # noqa
+from .embeddings import visualize_embeddings  # noqa
 from .llms.base import BaseLLM  # noqa
 from .prompts.few_shot import FewShotPromptTemplate  # noqa
 from .prompts.prompt import PromptTemplate  # noqa
