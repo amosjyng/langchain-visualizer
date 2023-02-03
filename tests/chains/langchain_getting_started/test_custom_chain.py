@@ -2,12 +2,11 @@ import langchain_visualizer  # isort:skip  # noqa: F401
 import asyncio
 from typing import Dict, List
 
+import vcr_langchain as vcr
 from langchain import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains.base import Chain
 from langchain.llms import OpenAI
-
-from tests import vcr
 
 # ========================== Start of langchain example code ==========================
 # https://langchain.readthedocs.io/en/latest/modules/chains/getting_started.html
@@ -64,10 +63,7 @@ async def custom_chain_demo():
 def test_llm_usage_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(custom_chain_demo())
-    assert (
-        result.strip()
-        == 'Colorful Toes.\n\n"Step into Colorful Comfort!"'
-    )
+    assert result.strip() == 'Colorful Toes.\n\n"Step into Colorful Comfort!"'
 
 
 if __name__ == "__main__":

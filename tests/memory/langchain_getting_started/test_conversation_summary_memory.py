@@ -1,11 +1,10 @@
 import langchain_visualizer  # isort:skip  # noqa: F401
 import asyncio
 
+import vcr_langchain as vcr
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationSummaryMemory
 from langchain.llms import OpenAI
-
-from tests import vcr
 
 # ========================== Start of langchain example code ==========================
 # https://langchain.readthedocs.io/en/latest/modules/memory/getting_started.html

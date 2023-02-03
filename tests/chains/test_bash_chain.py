@@ -1,10 +1,9 @@
 import langchain_visualizer  # isort:skip  # noqa: F401
 import asyncio
 
+import vcr_langchain as vcr
 from langchain.chains import LLMBashChain
 from langchain.llms import OpenAI
-
-from tests import vcr
 
 llm = OpenAI(temperature=0)
 chain = LLMBashChain(llm=llm)

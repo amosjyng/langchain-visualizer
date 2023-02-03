@@ -1,11 +1,10 @@
 import langchain_visualizer  # isort:skip  # noqa: F401
 import asyncio
 
+import vcr_langchain as vcr
 from langchain import PromptTemplate
 from langchain.chains import LLMChain, SimpleSequentialChain
 from langchain.llms import OpenAI
-
-from tests import vcr
 
 # ========================== Start of langchain example code ==========================
 # https://langchain.readthedocs.io/en/latest/modules/chains/getting_started.html
