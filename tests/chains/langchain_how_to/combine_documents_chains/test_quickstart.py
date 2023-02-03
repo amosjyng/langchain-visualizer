@@ -25,7 +25,7 @@ async def quickstart_demo():
 # ================================== Execute example ==================================
 
 
-def test_llm_usage_succeeds():
+def test_quickstart_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(quickstart_demo())
     assert "The president thanked" in result["output_text"]

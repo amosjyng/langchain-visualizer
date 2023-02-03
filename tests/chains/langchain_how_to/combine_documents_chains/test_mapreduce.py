@@ -25,10 +25,10 @@ async def mapreduce_demo():
 # ================================== Execute example ==================================
 
 
-def test_llm_usage_succeeds():
+def test_mapreduce_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(mapreduce_demo())
-    assert "The president thanked" in result["output_text"]
+    assert "The president said that" in result["output_text"]
 
 
 if __name__ == "__main__":

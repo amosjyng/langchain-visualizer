@@ -25,10 +25,10 @@ async def map_rerank_demo():
 # ================================== Execute example ==================================
 
 
-def test_llm_usage_succeeds():
+def test_map_rerank_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(map_rerank_demo())
-    assert "The president thanked" in result["output_text"]
+    assert "The President thanked" in result["output_text"]
 
 
 if __name__ == "__main__":

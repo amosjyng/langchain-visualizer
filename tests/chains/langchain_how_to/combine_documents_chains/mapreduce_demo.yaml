@@ -2540,7 +2540,7 @@ interactions:
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: "{\"id\":\"cmpl-6fmzbn1sGCh6Ut9NY5NoZJyYtyN83\",\"object\":\"text_completion\",\"created\":1675417795,\"model\":\"text-davinci-003\",\"choices\":[{\"text\":\"
+      string: "{\"id\":\"cmpl-6fo2suOH5Rx7f4wwhEMvsk3DOLwvT\",\"object\":\"text_completion\",\"created\":1675421842,\"model\":\"text-davinci-003\",\"choices\":[{\"text\":\"
         \\\"Tonight, I\u2019d like to honor someone who has dedicated his life to
         serve this country: Justice Stephen Breyer\u2014an Army veteran, Constitutional
         scholar, and retiring Justice of the United States Supreme Court. Justice
@@ -2562,18 +2562,18 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 09:49:58 GMT
+      - Fri, 03 Feb 2023 10:57:28 GMT
       Openai-Model:
       - text-davinci-003
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '4204'
+      - '5254'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 97381ab182e17423965ce184302fe7b9
+      - fdd1c0a97337341aaeef68fecf281e10
     status:
       code: 200
       message: OK
@@ -2686,7 +2686,7 @@ interactions:
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fnAILi16Z2QoubLuLEWGBMAS04hw","object":"text_completion","created":1675418458,"model":"text-davinci-003","choices":[{"text":"
+      string: '{"id":"cmpl-6fo6fKJbZmjAn1B9E3XqahYZ0NVVH","object":"text_completion","created":1675422077,"model":"text-davinci-003","choices":[{"text":"
         The president said that Justice Breyer has dedicated his life to serve this
         country and thanked him for his service.\nSOURCES: 30-pl","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":1666,"completion_tokens":31,"total_tokens":1697}}
 
@@ -2703,18 +2703,18 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 10:01:00 GMT
+      - Fri, 03 Feb 2023 11:01:19 GMT
       Openai-Model:
       - text-davinci-003
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '2292'
+      - '2067'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 2113164ca226c659f370a4a691b8b61d
+      - ce7c6e7b9c5089eac9473035c9119800
     status:
       code: 200
       message: OK
