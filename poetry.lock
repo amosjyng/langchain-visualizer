@@ -903,14 +903,14 @@ files = [
 
 [[package]]
 name = "langchain"
-version = "0.0.75"
+version = "0.0.76"
 description = "Building applications with LLMs through composability"
 category = "main"
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "langchain-0.0.75-py3-none-any.whl", hash = "sha256:e14f1bfc709ad46c621020cfb5663a66c130975cc8bf79a15992180fd970ef33"},
-    {file = "langchain-0.0.75.tar.gz", hash = "sha256:919c3b39c529e4fb28700a368ded8cd5eb8d54de7c5fadcb08067d18de92fb3d"},
+    {file = "langchain-0.0.76-py3-none-any.whl", hash = "sha256:a8b735bfbeac62b056bc91c151e94e6007d246acbcd9e31a3b4f3b4e46ff5c80"},
+    {file = "langchain-0.0.76.tar.gz", hash = "sha256:f5dac4e69d58f0c15d280544a608a371baf54472809890f1ab836aeb74b65ff8"},
 ]
 
 [package.dependencies]
@@ -2837,19 +2837,19 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 
 [[package]]
 name = "vcr-langchain"
-version = "0.0.8"
+version = "0.0.9"
 description = "Record and replay LLM interactions for langchain"
 category = "dev"
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "vcr_langchain-0.0.8-py3-none-any.whl", hash = "sha256:ba42a369b79bf0fc2f086f299c75cfead20ea14e8087531cbf0d56689112f74a"},
-    {file = "vcr_langchain-0.0.8.tar.gz", hash = "sha256:45db883373c18e7b5f30f5c8155e236be58feac99f71a3c4cd44964afa855326"},
+    {file = "vcr_langchain-0.0.9-py3-none-any.whl", hash = "sha256:35a922c7ea5acf8449bf06f40cfe0665230ae774d9f87fffacb6763fe78dccb4"},
+    {file = "vcr_langchain-0.0.9.tar.gz", hash = "sha256:3f0ab8505efcfd9839e15a4dd45df6eef4ee36a8ef19ddb3a753b5816ca82e8c"},
 ]
 
 [package.dependencies]
 gorilla = ">=0.4.0,<0.5.0"
-langchain = ">=0.0.75,<0.0.76"
+langchain = ">=0.0.76,<0.0.77"
 vcrpy = ">=4.2.1,<5.0.0"
 
 [[package]]
@@ -3126,4 +3126,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.11"
-content-hash = "e3f7536461c6d0ec5a762033a56a699d956e11db8bb9e45f9a0df63a465fc575"
+content-hash = "f76575f77d25b5293556aea2bf413a90662673c6acf46d477e45ee2ed678a311"
