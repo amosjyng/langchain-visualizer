@@ -16,8 +16,6 @@ interactions:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
-      Authorization:
-      - Bearer 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
       Connection:
       - keep-alive
       Content-Length:
@@ -26,16 +24,11 @@ interactions:
       - application/json
       User-Agent:
       - OpenAI/v1 PythonBindings/0.26.4
-      X-OpenAI-Client-User-Agent:
-      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
-        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
-        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
-        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fkwsQNSpdvyOmfSEfStuTtZeTS9Y","object":"text_completion","created":1675409938,"model":"text-davinci-003","choices":[{"text":"\n\n```bash\nls\n```","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":168,"completion_tokens":10,"total_tokens":178}}
+      string: '{"id":"cmpl-6flO8RZsPyuL5n6BH4PfwUvBTELvV","object":"text_completion","created":1675411628,"model":"text-davinci-003","choices":[{"text":"\n\n```bash\nls\n```","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":168,"completion_tokens":10,"total_tokens":178}}
 
         '
     headers:
@@ -50,19 +43,18 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 07:38:59 GMT
+      - Fri, 03 Feb 2023 08:07:10 GMT
       Openai-Model:
       - text-davinci-003
-      Openai-Organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '1023'
+      - '1603'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - ba3b5704b9fdf0915861abd6d922a6af
+      - 47bceb3c92f06f0c09909a93b2cda4d9
     status:
       code: 200
       message: OK

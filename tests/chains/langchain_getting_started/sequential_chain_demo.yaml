@@ -9,8 +9,6 @@ interactions:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
-      Authorization:
-      - Bearer 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
       Connection:
       - keep-alive
       Content-Length:
@@ -19,16 +17,11 @@ interactions:
       - application/json
       User-Agent:
       - OpenAI/v1 PythonBindings/0.26.4
-      X-OpenAI-Client-User-Agent:
-      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
-        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
-        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
-        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fkx22VlEMdDBPqvC8NiavP5JUnDG","object":"text_completion","created":1675409948,"model":"text-davinci-003","choices":[{"text":"\n\nSocktastic!","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":13,"completion_tokens":7,"total_tokens":20}}
+      string: '{"id":"cmpl-6flOKPQ3aU6EDhguJCBm5q0ih0dLs","object":"text_completion","created":1675411640,"model":"text-davinci-003","choices":[{"text":"\n\nSocktastic!","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":13,"completion_tokens":7,"total_tokens":20}}
 
         '
     headers:
@@ -43,19 +36,18 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 07:39:08 GMT
+      - Fri, 03 Feb 2023 08:07:21 GMT
       Openai-Model:
       - text-davinci-003
-      Openai-Organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '332'
+      - '992'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 1cacbf15718e5720123dd8e61d4e2f81
+      - 7d307586ce443006d856ba7335b638e4
     status:
       code: 200
       message: OK
@@ -69,8 +61,6 @@ interactions:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
-      Authorization:
-      - Bearer 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
       Connection:
       - keep-alive
       Content-Length:
@@ -79,16 +69,11 @@ interactions:
       - application/json
       User-Agent:
       - OpenAI/v1 PythonBindings/0.26.4
-      X-OpenAI-Client-User-Agent:
-      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
-        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
-        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
-        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fkx2Rk1MYgjS4WhgcJiP3lwhf1rb","object":"text_completion","created":1675409948,"model":"text-davinci-003","choices":[{"text":"\n\n\"Step
+      string: '{"id":"cmpl-6flOLjTLmjW0WjQgaozn5LMbmPOrx","object":"text_completion","created":1675411641,"model":"text-davinci-003","choices":[{"text":"\n\n\"Step
         into Comfort with Socktastic!\"","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":17,"completion_tokens":12,"total_tokens":29}}
 
         '
@@ -104,19 +89,18 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 07:39:10 GMT
+      - Fri, 03 Feb 2023 08:07:22 GMT
       Openai-Model:
       - text-davinci-003
-      Openai-Organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '1628'
+      - '699'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 5a3caf449ad18d76a878d366b661e90c
+      - 0d442df82c896a5ef8ab44cc1a3c7780
     status:
       code: 200
       message: OK

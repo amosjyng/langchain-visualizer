@@ -9,8 +9,6 @@ interactions:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
-      Authorization:
-      - Bearer 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
       Connection:
       - keep-alive
       Content-Length:
@@ -19,16 +17,11 @@ interactions:
       - application/json
       User-Agent:
       - OpenAI/v1 PythonBindings/0.26.4
-      X-OpenAI-Client-User-Agent:
-      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
-        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
-        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
-        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fkyDPkMRz7yQRkOEQnaUBYcLHSEa","object":"text_completion","created":1675410021,"model":"text-ada-001","choices":[{"text":"\n\nWhy
+      string: '{"id":"cmpl-6flP5HZMie8DNyieCpGqUO4U40vKl","object":"text_completion","created":1675411687,"model":"text-ada-001","choices":[{"text":"\n\nWhy
         did the chicken cross the road?\n\nTo get to the other side!","index":0,"logprobs":null,"finish_reason":"stop"},{"text":"\n\nWhy
         did the chicken cross the road?\n\nTo get to the other side!","index":1,"logprobs":null,"finish_reason":"stop"},{"text":"\n\nHow
         can a little love be\n\nSo beautiful, so true\n\nWhen everything is wrong\n\nAnd
@@ -63,19 +56,18 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 07:40:21 GMT
+      - Fri, 03 Feb 2023 08:08:08 GMT
       Openai-Model:
       - text-ada-001
-      Openai-Organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '628'
+      - '600'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - b701f9cb29ab0b5825c1bafb0877a4a9
+      - bc7ba158ba0c285ff3381642d9ae8bbf
     status:
       code: 200
       message: OK

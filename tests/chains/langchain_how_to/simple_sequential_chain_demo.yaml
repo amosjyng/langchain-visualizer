@@ -10,8 +10,6 @@ interactions:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
-      Authorization:
-      - Bearer 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
       Connection:
       - keep-alive
       Content-Length:
@@ -20,16 +18,11 @@ interactions:
       - application/json
       User-Agent:
       - OpenAI/v1 PythonBindings/0.26.4
-      X-OpenAI-Client-User-Agent:
-      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
-        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
-        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
-        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fkxgJsLbCp8mVtBLySoK2HQb10Rq","object":"text_completion","created":1675409988,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
+      string: '{"id":"cmpl-6flOkFYOPmf9NjgSJkYzGFOLLzCB5","object":"text_completion","created":1675411666,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
         at Sunset on the Beach is a story of love, loss, and redemption. It follows
         the story of two young lovers, Jack and Jill, who meet on a beach at sunset.
         They quickly fall in love and plan to marry, but their plans are shattered
@@ -58,19 +51,18 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 07:40:09 GMT
+      - Fri, 03 Feb 2023 08:07:57 GMT
       Openai-Model:
       - text-davinci-003
-      Openai-Organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '21991'
+      - '10606'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 9a566d575083d64b476b9abfcd84ce87
+      - c506e17d93668d79a929dbf79f5fafb7
     status:
       code: 200
       message: OK
@@ -98,8 +90,6 @@ interactions:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
-      Authorization:
-      - Bearer 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
       Connection:
       - keep-alive
       Content-Length:
@@ -108,27 +98,23 @@ interactions:
       - application/json
       User-Agent:
       - OpenAI/v1 PythonBindings/0.26.4
-      X-OpenAI-Client-User-Agent:
-      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
-        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
-        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
-        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fky2AgWqwTVI0O1KrI1vK5O8ieXn","object":"text_completion","created":1675410010,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
+      string: '{"id":"cmpl-6flOvnvyF2h0Wnmqjcb2r8WM7m8o2","object":"text_completion","created":1675411677,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
         at Sunset on the Beach is a powerful and moving story of love, loss, and redemption.
         The play follows the story of two young lovers, Jack and Jill, whose plans
         for a future together are tragically cut short when Jack is killed in a car
-        accident. The audience is taken on an emotional journey as Jill struggles
-        to cope with her grief and embarks on a journey of self-discovery. \n\nThe
-        play is beautifully written and the performances are outstanding. The actors
-        bring the characters to life and make the audience feel the pain and sorrow
-        of Jill''s loss. The story is captivating and the characters are well-developed
-        and believable. \n\nThe play is a touching and inspiring story that will leave
-        audiences moved and uplifted. Tragedy at Sunset on the Beach is a must-see
-        for anyone looking for an emotional and thought-provoking experience.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":283,"completion_tokens":181,"total_tokens":464}}
+        accident. The play then follows Jill''s journey of self-discovery as she struggles
+        to come to terms with her grief and uncover the truth about Jack''s past.\n\nThe
+        play is beautifully written and the characters are well-developed and engaging.
+        The actors do a wonderful job of bringing the characters to life and conveying
+        the emotions of the story. The set design is also impressive, with the beach
+        setting providing a perfect backdrop for the story.\n\nOverall, Tragedy at
+        Sunset on the Beach is a touching and inspiring story that will leave audiences
+        moved and uplifted. It is a must-see for anyone looking for a powerful and
+        emotional theatrical experience.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":283,"completion_tokens":189,"total_tokens":472}}
 
         '
     headers:
@@ -139,23 +125,22 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1117'
+      - '1173'
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 07:40:20 GMT
+      - Fri, 03 Feb 2023 08:08:06 GMT
       Openai-Model:
       - text-davinci-003
-      Openai-Organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '9868'
+      - '8424'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - fe1910cd64a2de27e868d87aa20b17fc
+      - 1c6ca1fbf578bced2e5e0e54fa4581bf
     status:
       code: 200
       message: OK

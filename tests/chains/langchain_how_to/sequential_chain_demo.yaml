@@ -11,8 +11,6 @@ interactions:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
-      Authorization:
-      - Bearer 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
       Connection:
       - keep-alive
       Content-Length:
@@ -21,16 +19,11 @@ interactions:
       - application/json
       User-Agent:
       - OpenAI/v1 PythonBindings/0.26.4
-      X-OpenAI-Client-User-Agent:
-      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
-        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
-        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
-        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fkx56MEGwhkwBgFjwUPE3tqfqayT","object":"text_completion","created":1675409951,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
+      string: '{"id":"cmpl-6flONdDnnh26m7UbwvUhfK8FXfZI0","object":"text_completion","created":1675411643,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
         at Sunset on the Beach is a play set in Victorian England. It tells the story
         of a young woman, Emily, who is struggling to make ends meet in a small coastal
         town. She works as a maid for a wealthy family, but her dreams of a better
@@ -58,19 +51,18 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 07:39:22 GMT
+      - Fri, 03 Feb 2023 08:07:33 GMT
       Openai-Model:
       - text-davinci-003
-      Openai-Organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '11821'
+      - '9674'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - b11516c248c11a152da20ce4d28ce797
+      - 6f14b95f6cebce072b240b0d9f7a7cc0
     status:
       code: 200
       message: OK
@@ -97,8 +89,6 @@ interactions:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
-      Authorization:
-      - Bearer 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
       Connection:
       - keep-alive
       Content-Length:
@@ -107,16 +97,11 @@ interactions:
       - application/json
       User-Agent:
       - OpenAI/v1 PythonBindings/0.26.4
-      X-OpenAI-Client-User-Agent:
-      - '{"bindings_version": "0.26.4", "httplib": "requests", "lang": "python", "lang_version":
-        "3.10.9", "platform": "Linux-5.10.74.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
-        "publisher": "openai", "uname": "Linux 5.10.74.3-microsoft-standard-WSL2 #1
-        SMP Sun Jan 16 04:21:14 +08 2022 x86_64 x86_64"}'
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fkxJj4h9CAximkVX8fSfs3CzqNU6","object":"text_completion","created":1675409965,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
+      string: '{"id":"cmpl-6flOYNS3ZMHbsIePogiEFWgw5e4dr","object":"text_completion","created":1675411654,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
         at Sunset on the Beach is a captivating and heartbreaking play set in Victorian
         England. The story follows Emily, a young woman struggling to make ends meet
         in a small coastal town. Her dreams of a better life are dashed when she discovers
@@ -143,19 +128,18 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 07:39:44 GMT
+      - Fri, 03 Feb 2023 08:07:43 GMT
       Openai-Model:
       - text-davinci-003
-      Openai-Organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
+      Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '19622'
+      - '9381'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 3833b7ebefc1b75784453403c3504d7e
+      - 9b609e498bfb92cf5a6641b1cfe01ff4
     status:
       code: 200
       message: OK
