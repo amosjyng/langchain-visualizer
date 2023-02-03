@@ -463,6 +463,41 @@ files = [
 tests = ["asttokens", "littleutils", "pytest", "rich"]
 
 [[package]]
+name = "faiss-cpu"
+version = "1.7.3"
+description = "A library for efficient similarity search and clustering of dense vectors."
+category = "dev"
+optional = false
+python-versions = "*"
+files = [
+    {file = "faiss-cpu-1.7.3.tar.gz", hash = "sha256:cb71fe3f2934732d157d9d8cfb6ed2dd4020a0065571c84842ff6a3f0beab310"},
+    {file = "faiss_cpu-1.7.3-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:343f025e0846239d987d0c719772387ad685b74e5ef62b2e5616cabef9062729"},
+    {file = "faiss_cpu-1.7.3-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:8b7b1cf693d7c24b5a633ff024717bd715fec501af4854357da0805b4899bcec"},
+    {file = "faiss_cpu-1.7.3-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:1c37e5fc0a266839844798a53dd42dd6afbee0c5905611f3f278297053fccbd7"},
+    {file = "faiss_cpu-1.7.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0628f7b0c6263ef4431995bb4f5f39833f999e96e6663935cbf0a1f2243dc4ac"},
+    {file = "faiss_cpu-1.7.3-cp310-cp310-win_amd64.whl", hash = "sha256:e22d1887c617156a673665c913ee82a30bfc1a3bc939ba8500b61328bce5a625"},
+    {file = "faiss_cpu-1.7.3-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:6d411449a5f3c3abfcafadaac3190ab1ab206023fc9110da86649506dcbe8a27"},
+    {file = "faiss_cpu-1.7.3-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:a10ea8622908f9f9ca4003e66da809dfad4af5c7d9fb7f582722d703bbc6c8bd"},
+    {file = "faiss_cpu-1.7.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:7c5ced43ae058a62f63b12194ec9aa4c34066b0ea813ecbd936c65b7d52848c8"},
+    {file = "faiss_cpu-1.7.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:3df6371012248dea8e9509949e2d2c6d73dea7c1bdaa4ba4563eb1c3cd8021a6"},
+    {file = "faiss_cpu-1.7.3-cp311-cp311-win_amd64.whl", hash = "sha256:8b6ff7854c3f46104718c6b34e81cd48c156d970dd87703c5122ca90217bb8dc"},
+    {file = "faiss_cpu-1.7.3-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:ab6314a8fbcce11dc3ecb6f48dda8c4ec274ed11c1f336f599f480bf0561442c"},
+    {file = "faiss_cpu-1.7.3-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:877c0bbf4c4a1806d88e091aba4c91ff3fa35c3ede5663b7fafc5b39247a369e"},
+    {file = "faiss_cpu-1.7.3-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f6f199be10d30ecc6ed65350931006eca01b7bb8faa27d63069318eea0f6a0c1"},
+    {file = "faiss_cpu-1.7.3-cp37-cp37m-win_amd64.whl", hash = "sha256:1ca2b7cdbfdcc6a2e8fa75a09594916b50ec8260913ca48334dc3ce797179b5f"},
+    {file = "faiss_cpu-1.7.3-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:7b3f91856c19cfb8464178bab7e8ea94a391f6947b556be6754f9fc10b3c25fb"},
+    {file = "faiss_cpu-1.7.3-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:7a238a0ef4d36c614d6f60e1ea308288b3920091638a3687f708de6071d007c1"},
+    {file = "faiss_cpu-1.7.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:af53bee502c629eaaaf8b5ec648484a726be0fd2768ad4ef2bd4b829384b2682"},
+    {file = "faiss_cpu-1.7.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:441d1c305595d925138f2cde63dabe8c10ee05fc8ad66bf750e278a7e8c409bd"},
+    {file = "faiss_cpu-1.7.3-cp38-cp38-win_amd64.whl", hash = "sha256:2766cc14b9004c1aae3b3943e693c3a9566eb1a25168b681981f9048276fe1e7"},
+    {file = "faiss_cpu-1.7.3-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:20ef191bb6164c8e794b11d20427568a75d15980b6d66732071e9aa57ea06e2d"},
+    {file = "faiss_cpu-1.7.3-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:c57c293c4682066955626c2a2956be9a3b92594f69ed1a33abd72260a6911b69"},
+    {file = "faiss_cpu-1.7.3-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:bd128170446ff3c3e28d89e813d32cd04f17fa3025794778a01a0d81524275dc"},
+    {file = "faiss_cpu-1.7.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a14d832b5361ce9af21977eb1dcdebe23b9edcc12aad40316df7ca1bd86bc6b5"},
+    {file = "faiss_cpu-1.7.3-cp39-cp39-win_amd64.whl", hash = "sha256:52df8895c5e59d1c9eda368a63790381a6f7fceddb22bed08f9c90a706d8a148"},
+]
+
+[[package]]
 name = "faker"
 version = "16.6.1"
 description = "Faker is a Python package that generates fake data for you."
@@ -3126,4 +3161,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.11"
-content-hash = "f76575f77d25b5293556aea2bf413a90662673c6acf46d477e45ee2ed678a311"
+content-hash = "fa4a4aaaedbdfbd139a739ba4be0583afd851b87002181a4709082bc63468efb"
