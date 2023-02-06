@@ -33,6 +33,7 @@ filterwarnings = [
     "error",
     'ignore:There is no current event loop:DeprecationWarning',
     'ignore:distutils Version classes are deprecated:DeprecationWarning',
+    'ignore:unclosed <ssl.SSLSocket:ResourceWarning',
 ]
 
 [build-system]
