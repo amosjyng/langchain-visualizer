@@ -2495,7 +2495,7 @@ interactions:
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fo35EeeMGnr7y01wbVEgOsOHrpNK","object":"text_completion","created":1675421855,"model":"text-davinci-003","choices":[{"text":"\nThe
+      string: '{"id":"cmpl-6goojCqfugxxS4BAzRVEfwkAomvO4","object":"text_completion","created":1675663137,"model":"text-davinci-003","choices":[{"text":"\nThe
         president said that he was honoring Justice Breyer for his dedication to serving
         the country and his legacy of excellence.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":257,"completion_tokens":24,"total_tokens":281}}
 
@@ -2512,18 +2512,18 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 10:57:38 GMT
+      - Mon, 06 Feb 2023 05:58:59 GMT
       Openai-Model:
       - text-davinci-003
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '3060'
+      - '2138'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - b46250ba780cf8525fd02fe873663d64
+      - 26bba21c60550281aea53b30f593af4e
     status:
       code: 200
       message: OK
@@ -2533,23 +2533,24 @@ interactions:
       \nThe president said that he was honoring Justice Breyer for his dedication
       to serving the country and his legacy of excellence.\nWe have the opportunity
       to refine the existing answer(only if needed) with some more context below.\n------------\nContent:
-      And for our LGBTQ+ Americans, let\u2019s finally get the bipartisan Equality
-      Act to my desk. The onslaught of state laws targeting transgender Americans
-      and their families is wrong. \n\nAs I said last year, especially to our younger
-      transgender Americans, I will always have your back as your President, so you
-      can be yourself and reach your God-given potential. \n\nWhile it often appears
-      that we never agree, that isn\u2019t true. I signed 80 bipartisan bills into
-      law last year. From preventing government shutdowns to protecting Asian-Americans
-      from still-too-common hate crimes to reforming military justice. \n\nAnd soon,
-      we\u2019ll strengthen the Violence Against Women Act that I first wrote three
-      decades ago. It is important for us to show the nation that we can come together
-      and do big things. \n\nSo tonight I\u2019m offering a Unity Agenda for the Nation.
-      Four big things we can do together.  \n\nFirst, beat the opioid epidemic.\nSource:
-      33\n------------\nGiven the new context, refine the original answer to better
-      answer the question. If you do update it, please update the sources as well.
-      If the context isn''t useful, return the original answer."], "model": "text-davinci-003",
-      "temperature": 0.0, "max_tokens": 500, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      A former top litigator in private practice. A former federal public defender.
+      And from a family of public school educators and police officers. A consensus
+      builder. Since she\u2019s been nominated, she\u2019s received a broad range
+      of support\u2014from the Fraternal Order of Police to former judges appointed
+      by Democrats and Republicans. \n\nAnd if we are to advance liberty and justice,
+      we need to secure the Border and fix the immigration system. \n\nWe can do both.
+      At our border, we\u2019ve installed new technology like cutting-edge scanners
+      to better detect drug smuggling.  \n\nWe\u2019ve set up joint patrols with Mexico
+      and Guatemala to catch more human traffickers.  \n\nWe\u2019re putting in place
+      dedicated immigration judges so families fleeing persecution and violence can
+      have their cases heard faster. \n\nWe\u2019re securing commitments and supporting
+      partners in South and Central America to host more refugees and secure their
+      own borders.\nSource: 31\n------------\nGiven the new context, refine the original
+      answer to better answer the question. If you do update it, please update the
+      sources as well. If the context isn''t useful, return the original answer."],
+      "model": "text-davinci-003", "temperature": 0.0, "max_tokens": 500, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias":
+      {}}'
     headers:
       Accept:
       - '*/*'
@@ -2558,7 +2559,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1743'
+      - '1760'
       Content-Type:
       - application/json
       User-Agent:
@@ -2567,14 +2568,18 @@ interactions:
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fo39CSda0hw3uqnNmmCkEnqT4qE2","object":"text_completion","created":1675421859,"model":"text-davinci-003","choices":[{"text":"\n\nThe
+      string: '{"id":"cmpl-6goomsjTrBLohSOQ9hKAt7Y4Cfkdh","object":"text_completion","created":1675663140,"model":"text-davinci-003","choices":[{"text":"\n\nThe
         president said that he was honoring Justice Breyer for his dedication to serving
-        the country and his legacy of excellence, and for his commitment to protecting
-        the rights of LGBTQ+ Americans, including his support for the Equality Act
-        and his promise to always have the backs of transgender Americans. He also
-        highlighted his commitment to bipartisan legislation, citing his signing of
-        80 bipartisan bills into law last year, and his plans to strengthen the Violence
-        Against Women Act.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":329,"completion_tokens":89,"total_tokens":418}}
+        the country, his legacy of excellence, and his commitment to advancing liberty
+        and justice. He noted that Justice Breyer had been a top litigator in private
+        practice, a federal public defender, and from a family of public school educators
+        and police officers, and that he was a consensus builder who had received
+        a broad range of support from the Fraternal Order of Police to former judges
+        appointed by Democrats and Republicans. He also highlighted the efforts the
+        administration had taken to secure the border and fix the immigration system,
+        such as installing new technology, setting up joint patrols with Mexico and
+        Guatemala, putting in place dedicated immigration judges, and securing commitments
+        and supporting partners in South and Central America.\nSource: 31","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":320,"completion_tokens":155,"total_tokens":475}}
 
         '
     headers:
@@ -2585,22 +2590,22 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '757'
+      - '1122'
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 10:57:48 GMT
+      - Mon, 06 Feb 2023 05:59:08 GMT
       Openai-Model:
       - text-davinci-003
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '9943'
+      - '8300'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 52b53adcaacb3b18d89b78e056ca7df3
+      - 35045767ae9224c0aabdbf3b95f17795
     status:
       code: 200
       message: OK
@@ -2608,30 +2613,35 @@ interactions:
     body: '{"prompt": ["The original question is as follows: What did the president
       say about Justice Breyer\nWe have provided an existing answer, including sources:
       \n\nThe president said that he was honoring Justice Breyer for his dedication
-      to serving the country and his legacy of excellence, and for his commitment
-      to protecting the rights of LGBTQ+ Americans, including his support for the
-      Equality Act and his promise to always have the backs of transgender Americans.
-      He also highlighted his commitment to bipartisan legislation, citing his signing
-      of 80 bipartisan bills into law last year, and his plans to strengthen the Violence
-      Against Women Act.\nWe have the opportunity to refine the existing answer(only
-      if needed) with some more context below.\n------------\nContent: And for our
-      LGBTQ+ Americans, let\u2019s finally get the bipartisan Equality Act to my desk.
-      The onslaught of state laws targeting transgender Americans and their families
-      is wrong. \n\nAs I said last year, especially to our younger transgender Americans,
-      I will always have your back as your President, so you can be yourself and reach
-      your God-given potential. \n\nWhile it often appears that we never agree, that
-      isn\u2019t true. I signed 80 bipartisan bills into law last year. From preventing
-      government shutdowns to protecting Asian-Americans from still-too-common hate
-      crimes to reforming military justice. \n\nAnd soon, we\u2019ll strengthen the
-      Violence Against Women Act that I first wrote three decades ago. It is important
-      for us to show the nation that we can come together and do big things. \n\nSo
-      tonight I\u2019m offering a Unity Agenda for the Nation. Four big things we
-      can do together.  \n\nFirst, beat the opioid epidemic.\nSource: 33\n------------\nGiven
-      the new context, refine the original answer to better answer the question. If
-      you do update it, please update the sources as well. If the context isn''t useful,
-      return the original answer."], "model": "text-davinci-003", "temperature": 0.0,
-      "max_tokens": 500, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0,
-      "n": 1, "best_of": 1, "logit_bias": {}}'
+      to serving the country, his legacy of excellence, and his commitment to advancing
+      liberty and justice. He noted that Justice Breyer had been a top litigator in
+      private practice, a federal public defender, and from a family of public school
+      educators and police officers, and that he was a consensus builder who had received
+      a broad range of support from the Fraternal Order of Police to former judges
+      appointed by Democrats and Republicans. He also highlighted the efforts the
+      administration had taken to secure the border and fix the immigration system,
+      such as installing new technology, setting up joint patrols with Mexico and
+      Guatemala, putting in place dedicated immigration judges, and securing commitments
+      and supporting partners in South and Central America.\nSource: 31\nWe have the
+      opportunity to refine the existing answer(only if needed) with some more context
+      below.\n------------\nContent: And for our LGBTQ+ Americans, let\u2019s finally
+      get the bipartisan Equality Act to my desk. The onslaught of state laws targeting
+      transgender Americans and their families is wrong. \n\nAs I said last year,
+      especially to our younger transgender Americans, I will always have your back
+      as your President, so you can be yourself and reach your God-given potential.
+      \n\nWhile it often appears that we never agree, that isn\u2019t true. I signed
+      80 bipartisan bills into law last year. From preventing government shutdowns
+      to protecting Asian-Americans from still-too-common hate crimes to reforming
+      military justice. \n\nAnd soon, we\u2019ll strengthen the Violence Against Women
+      Act that I first wrote three decades ago. It is important for us to show the
+      nation that we can come together and do big things. \n\nSo tonight I\u2019m
+      offering a Unity Agenda for the Nation. Four big things we can do together.  \n\nFirst,
+      beat the opioid epidemic.\nSource: 33\n------------\nGiven the new context,
+      refine the original answer to better answer the question. If you do update it,
+      please update the sources as well. If the context isn''t useful, return the
+      original answer."], "model": "text-davinci-003", "temperature": 0.0, "max_tokens":
+      500, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of":
+      1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -2640,7 +2650,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '2108'
+      - '2472'
       Content-Type:
       - application/json
       User-Agent:
@@ -2649,21 +2659,25 @@ interactions:
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fo6loDOeyzgWGxNcew4eDKp0SM0W","object":"text_completion","created":1675422083,"model":"text-davinci-003","choices":[{"text":"\n\nThe
+      string: '{"id":"cmpl-6goouvsVxgmatdGZcvdeVZNvmrNeU","object":"text_completion","created":1675663148,"model":"text-davinci-003","choices":[{"text":"\n\nThe
         president said that he was honoring Justice Breyer for his dedication to serving
-        the country and his legacy of excellence, and for his commitment to protecting
-        the rights of LGBTQ+ Americans, including his support for the Equality Act
-        and his promise to always have the backs of transgender Americans. He also
-        highlighted his commitment to bipartisan legislation, citing his signing of
-        80 bipartisan bills into law last year, and his plans to strengthen the Violence
-        Against Women Act. He also expressed his support for the Equality Act, stating
-        that he wanted to get it to his desk, and his promise to always have the backs
-        of transgender Americans, especially younger ones. He also noted his signing
-        of 80 bipartisan bills into law last year, including those that prevent government
-        shutdowns, protect Asian-Americans from hate crimes, and reform military justice.
-        He also mentioned his plans to strengthen the Violence Against Women Act,
-        which he first wrote three decades ago, as a way to show the nation that they
-        can come together and do big things.\n\nSource: 33","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":394,"completion_tokens":204,"total_tokens":598}}
+        the country, his legacy of excellence, and his commitment to advancing liberty
+        and justice. He noted that Justice Breyer had been a top litigator in private
+        practice, a federal public defender, and from a family of public school educators
+        and police officers, and that he was a consensus builder who had received
+        a broad range of support from the Fraternal Order of Police to former judges
+        appointed by Democrats and Republicans. He also highlighted the efforts the
+        administration had taken to secure the border and fix the immigration system,
+        such as installing new technology, setting up joint patrols with Mexico and
+        Guatemala, putting in place dedicated immigration judges, and securing commitments
+        and supporting partners in South and Central America. Additionally, he expressed
+        his commitment to the LGBTQ+ community, noting his support for the Equality
+        Act and his opposition to state laws targeting transgender Americans and their
+        families. He also highlighted his commitment to bipartisan legislation, citing
+        the 80 bipartisan bills he signed into law last year, including those to prevent
+        government shutdowns, protect Asian-Americans from hate crimes, and reform
+        military justice. He concluded by offering a Unity Agenda for the Nation,
+        which includes beating the opioid epidemic. \nSource: 31, 33","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":460,"completion_tokens":250,"total_tokens":710}}
 
         '
     headers:
@@ -2674,22 +2688,22 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1342'
+      - '1662'
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 11:01:34 GMT
+      - Mon, 06 Feb 2023 05:59:34 GMT
       Openai-Model:
       - text-davinci-003
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '11530'
+      - '25685'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 03d86f190dbffea508953e69d47deb85
+      - 9b0792cd2883561da78c5a69d39b5dc4
     status:
       code: 200
       message: OK
@@ -2697,19 +2711,23 @@ interactions:
     body: '{"prompt": ["The original question is as follows: What did the president
       say about Justice Breyer\nWe have provided an existing answer, including sources:
       \n\nThe president said that he was honoring Justice Breyer for his dedication
-      to serving the country and his legacy of excellence, and for his commitment
-      to protecting the rights of LGBTQ+ Americans, including his support for the
-      Equality Act and his promise to always have the backs of transgender Americans.
-      He also highlighted his commitment to bipartisan legislation, citing his signing
-      of 80 bipartisan bills into law last year, and his plans to strengthen the Violence
-      Against Women Act. He also expressed his support for the Equality Act, stating
-      that he wanted to get it to his desk, and his promise to always have the backs
-      of transgender Americans, especially younger ones. He also noted his signing
-      of 80 bipartisan bills into law last year, including those that prevent government
-      shutdowns, protect Asian-Americans from hate crimes, and reform military justice.
-      He also mentioned his plans to strengthen the Violence Against Women Act, which
-      he first wrote three decades ago, as a way to show the nation that they can
-      come together and do big things.\n\nSource: 33\nWe have the opportunity to refine
+      to serving the country, his legacy of excellence, and his commitment to advancing
+      liberty and justice. He noted that Justice Breyer had been a top litigator in
+      private practice, a federal public defender, and from a family of public school
+      educators and police officers, and that he was a consensus builder who had received
+      a broad range of support from the Fraternal Order of Police to former judges
+      appointed by Democrats and Republicans. He also highlighted the efforts the
+      administration had taken to secure the border and fix the immigration system,
+      such as installing new technology, setting up joint patrols with Mexico and
+      Guatemala, putting in place dedicated immigration judges, and securing commitments
+      and supporting partners in South and Central America. Additionally, he expressed
+      his commitment to the LGBTQ+ community, noting his support for the Equality
+      Act and his opposition to state laws targeting transgender Americans and their
+      families. He also highlighted his commitment to bipartisan legislation, citing
+      the 80 bipartisan bills he signed into law last year, including those to prevent
+      government shutdowns, protect Asian-Americans from hate crimes, and reform military
+      justice. He concluded by offering a Unity Agenda for the Nation, which includes
+      beating the opioid epidemic. \nSource: 31, 33\nWe have the opportunity to refine
       the existing answer(only if needed) with some more context below.\n------------\nContent:
       So what are we waiting for? Let\u2019s get this done. And while you\u2019re
       at it, confirm my nominees to the Federal Reserve, which plays a critical role
@@ -2737,7 +2755,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '2749'
+      - '3069'
       Content-Type:
       - application/json
       User-Agent:
@@ -2746,27 +2764,28 @@ interactions:
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6foB0yW4vAkjNkGSfd8ehwZlbR5y1","object":"text_completion","created":1675422346,"model":"text-davinci-003","choices":[{"text":"\n\nThe
+      string: '{"id":"cmpl-6gopKvECs37OaRcixAUepqPFyC6y3","object":"text_completion","created":1675663174,"model":"text-davinci-003","choices":[{"text":"\n\nThe
         president said that he was honoring Justice Breyer for his dedication to serving
-        the country and his legacy of excellence, and for his commitment to protecting
-        the rights of LGBTQ+ Americans, including his support for the Equality Act
-        and his promise to always have the backs of transgender Americans. He also
-        highlighted his commitment to bipartisan legislation, citing his signing of
-        80 bipartisan bills into law last year, and his plans to strengthen the Violence
-        Against Women Act. He also expressed his support for the Equality Act, stating
-        that he wanted to get it to his desk, and his promise to always have the backs
-        of transgender Americans, especially younger ones. He also noted his signing
-        of 80 bipartisan bills into law last year, including those that prevent government
-        shutdowns, protect Asian-Americans from hate crimes, and reform military justice.
-        He also mentioned his plans to strengthen the Violence Against Women Act,
-        which he first wrote three decades ago, as a way to show the nation that they
-        can come together and do big things. He also discussed his plan to lower costs
-        to give families a fair shot, lower the deficit, and go after criminals who
-        stole billions in relief money meant for small businesses and millions of
-        Americans. He also announced that the Justice Department will name a chief
-        prosecutor for pandemic fraud, and that the deficit will be down to less than
-        half what it was before he took office by the end of this year.\n\nSource:
-        33, 20","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":525,"completion_tokens":286,"total_tokens":811}}
+        the country, his legacy of excellence, and his commitment to advancing liberty
+        and justice. He noted that Justice Breyer had been a top litigator in private
+        practice, a federal public defender, and from a family of public school educators
+        and police officers, and that he was a consensus builder who had received
+        a broad range of support from the Fraternal Order of Police to former judges
+        appointed by Democrats and Republicans. He also highlighted the efforts the
+        administration had taken to secure the border and fix the immigration system,
+        such as installing new technology, setting up joint patrols with Mexico and
+        Guatemala, putting in place dedicated immigration judges, and securing commitments
+        and supporting partners in South and Central America. Additionally, he expressed
+        his commitment to the LGBTQ+ community, noting his support for the Equality
+        Act and his opposition to state laws targeting transgender Americans and their
+        families. He also highlighted his commitment to bipartisan legislation, citing
+        the 80 bipartisan bills he signed into law last year, including those to prevent
+        government shutdowns, protect Asian-Americans from hate crimes, and reform
+        military justice. He also discussed his plan to lower costs to give families
+        a fair shot, lower the deficit, and go after criminals who stole billions
+        in relief money meant for small businesses and millions of Americans. He concluded
+        by offering a Unity Agenda for the Nation, which includes beating the opioid
+        epidemic. \nSource: 20, 31, 33","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":571,"completion_tokens":290,"total_tokens":861}}
 
         '
     headers:
@@ -2777,22 +2796,22 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1755'
+      - '1869'
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 11:06:19 GMT
+      - Mon, 06 Feb 2023 05:59:49 GMT
       Openai-Model:
       - text-davinci-003
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '33204'
+      - '14570'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 110186485e717770feee27f73aa9601f
+      - e37c1ee6566bdc2f4a834264e0992888
     status:
       code: 200
       message: OK

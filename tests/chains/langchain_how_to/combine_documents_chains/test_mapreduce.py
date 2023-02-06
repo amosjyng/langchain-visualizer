@@ -4,6 +4,7 @@ import asyncio
 import vcr_langchain as vcr
 from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 from langchain.llms import OpenAI
+from tiktoken_ext.openai_public import p50k_base
 
 from tests.sotu import load_sotu
 
@@ -23,6 +24,9 @@ async def mapreduce_demo():
 
 
 # ================================== Execute example ==================================
+
+
+p50k_base() # run this before cassette to download blob first
 
 
 def test_mapreduce_succeeds():
