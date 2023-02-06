@@ -26,7 +26,7 @@ async def mapreduce_demo():
 # ================================== Execute example ==================================
 
 
-p50k_base() # run this before cassette to download blob first
+p50k_base()  # run this before cassette to download blob first
 
 
 def test_mapreduce_succeeds():
