@@ -63,6 +63,20 @@ langchain_visualizer.visualize(search_agent_demo)
 
 A browser window will open up, and you can actually see the agent execute happen in real-time!
 
+### Visualizing embeddings
+
+If you want to also visualize documents being chunked up for embeddings, you can now do so by calling the `visualize_embeddings` function before you visualize the main chain:
+
+```python
+from langchain_visualizer import visualize, visualize_embeddings
+
+async def run_chain():
+    ...
+
+visualize_embeddings()
+visualize(run_chain)
+```
+
 ## Why not just use LangChain's built-in tracer?
 
 For me personally:
