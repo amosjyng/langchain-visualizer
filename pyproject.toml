@@ -29,6 +29,11 @@ tiktoken = "^0.1.2"
 markers = [
     "network: marks tests as requiring network services",
 ]
+filterwarnings = [
+    "error",
+    'ignore:There is no current event loop:DeprecationWarning',
+    'ignore:distutils Version classes are deprecated:DeprecationWarning',
+]
 
 [build-system]
 requires = ["poetry-core"]
