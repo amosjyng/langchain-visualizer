@@ -12,9 +12,11 @@ from tests.sotu import load_sotu
 # https://langchain.readthedocs.io/en/latest/modules/chains/combine_docs_examples/qa_with_sources.html
 
 
+docsearch = load_sotu()
+
+
 @vcr.use_cassette()
 async def mapreduce_demo():
-    docsearch = load_sotu()
     query = "What did the president say about Justice Breyer"
     docs = docsearch.similarity_search(query)
     chain = load_qa_with_sources_chain(
