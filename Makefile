@@ -1,5 +1,7 @@
 .PHONY: format lint tests
 
+all: format lint test
+
 format:
 	poetry run black .
 	poetry run isort .
@@ -30,5 +32,3 @@ release:
 	git tag -a -m "Creating version v$$(poetry version -s)" "v$$(poetry version -s)"
 	git push --follow-tags
 	poetry publish --build --username $$PYPI_USERNAME --password $$PYPI_PASSWORD
-
-all: test format lint
