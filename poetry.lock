@@ -1754,14 +1754,14 @@ wandb = ["numpy", "openpyxl (>=3.0.7)", "pandas (>=1.2.3)", "pandas-stubs (>=1.1
 
 [[package]]
 name = "ought-ice"
-version = "0.4.0"
+version = "0.5.0"
 description = "Interactive Composition Explorer"
 category = "main"
 optional = false
-python-versions = "<3.11,>=3.10"
+python-versions = ">=3.9"
 files = [
-    {file = "ought-ice-0.4.0.tar.gz", hash = "sha256:b0f941ff7cc3e1200a25cc9c2b883c76df15dfae0686cf7a22eca9c22e0373d3"},
-    {file = "ought_ice-0.4.0-py3-none-any.whl", hash = "sha256:e70fd33465b15686f1a4f654e2e20df34a1e6566191c689718f49dbbef1bdfc1"},
+    {file = "ought-ice-0.5.0.tar.gz", hash = "sha256:96768e80ce6fce194b90f74d9ec99fb05b9dfc04f79aeed2dab751d277155c2e"},
+    {file = "ought_ice-0.5.0-py3-none-any.whl", hash = "sha256:0caa08d95b3360cd8d30490e5c53cd98a1ffdd9d2e10efe187d26944c2a19655"},
 ]
 
 [package.dependencies]
@@ -1781,6 +1781,7 @@ pandas = "*"
 pydantic = "*"
 python-dotenv = "*"
 python-Levenshtein = "*"
+python-ulid = "*"
 questionary = "*"
 rich = "*"
 rouge-metric = "*"
@@ -1791,7 +1792,7 @@ tenacity = "*"
 thefuzz = "*"
 tqdm = "*"
 transformers = "*"
-ulid-py = "*"
+typing-extensions = "*"
 uvicorn = "*"
 websockets = "*"
 
@@ -2239,6 +2240,18 @@ files = [
 
 [package.dependencies]
 Levenshtein = "0.20.9"
+
+[[package]]
+name = "python-ulid"
+version = "1.1.0"
+description = "Universally Unique Lexicographically Sortable Identifier"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "python-ulid-1.1.0.tar.gz", hash = "sha256:5fb5e4a91db8ca93e8938a613360b3def299b60d41f847279a8c39c9b2e9c65e"},
+    {file = "python_ulid-1.1.0-py3-none-any.whl", hash = "sha256:88c952f6be133dbede19c907d72d26717d2691ec8421512b573144794d891e24"},
+]
 
 [[package]]
 name = "pytz"
@@ -3152,18 +3165,6 @@ mypy-extensions = ">=0.3.0"
 typing-extensions = ">=3.7.4"
 
 [[package]]
-name = "ulid-py"
-version = "1.1.0"
-description = "Universally Unique Lexicographically Sortable Identifier"
-category = "main"
-optional = false
-python-versions = "*"
-files = [
-    {file = "ulid-py-1.1.0.tar.gz", hash = "sha256:dc6884be91558df077c3011b9fb0c87d1097cb8fc6534b11f310161afd5738f0"},
-    {file = "ulid_py-1.1.0-py2.py3-none-any.whl", hash = "sha256:b56a0f809ef90d6020b21b89a87a48edc7c03aea80e5ed5174172e82d76e3987"},
-]
-
-[[package]]
 name = "urllib3"
 version = "1.26.14"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -3490,4 +3491,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.11"
-content-hash = "c344c27c88ac29fd929117ade807ea62bb52c4189d292929d67e0ed726dd7910"
+content-hash = "6f2c98196c536be36a6bfd50f003a99d7cc2af985db603ced49c346158d46d1f"
