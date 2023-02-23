@@ -1,5 +1,5 @@
 import string
-from typing import Optional
+from typing import List, Optional, Union
 
 from fvalues import F, FValue
 from langchain import FewShotPromptTemplate
@@ -9,10 +9,10 @@ from langchain_visualizer.prompts.prompt import format_f
 
 
 class FBuilder:
-    def __init__(self, segments: Optional[list[F | str]] = None):
+    def __init__(self, segments: Optional[List[Union[F, str]]] = None):
         self.f_values = segments or []
 
-    def add_segment(self, segment: F | str):
+    def add_segment(self, segment: Union[F, str]):
         if not hasattr(segment, "parts"):
             segment = F(segment, parts=(segment,))
         self.f_values.append(segment)
