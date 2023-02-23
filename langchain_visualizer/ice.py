@@ -1,4 +1,4 @@
-from typing import Any, List
+from typing import Any, List, Union
 
 from ice import json_value
 from langchain.schema import LLMResult
@@ -9,7 +9,7 @@ og_json_value = json_value.to_json_value
 def to_json_value(x: Any) -> json_value.JSONValue:
     if isinstance(x, LLMResult):
         generations = x.generations
-        texts: List[List[str]] | List[str] | str = [
+        texts: Union[List[List[str]], List[str], str] = [
             g.text for sublist in generations for g in sublist
         ]
         if len(texts) == 1:
