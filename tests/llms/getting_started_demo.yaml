@@ -1,8 +1,36 @@
 interactions:
 - request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - 0.0.0.0:8935
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: http://0.0.0.0:8935/ping
+  response:
+    content: ought-ice says pong
+    headers:
+      content-length:
+      - '19'
+      content-type:
+      - text/plain; charset=utf-8
+      date:
+      - Fri, 24 Feb 2023 16:44:21 GMT
+      server:
+      - uvicorn
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
     body: '{"prompt": ["Tell me a joke", "Tell me a poem", "Tell me a joke", "Tell
-      me a poem"], "model": "text-ada-001", "temperature": 0.0, "max_tokens": 256,
-      "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 2, "best_of":
+      me a poem"], "model": "text-davinci-003", "temperature": 1.0, "max_tokens":
+      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 2, "best_of":
       2, "logit_bias": {}}'
     headers:
       Accept:
@@ -12,38 +40,33 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '247'
+      - '251'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.26.5
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flP5HZMie8DNyieCpGqUO4U40vKl","object":"text_completion","created":1675411687,"model":"text-ada-001","choices":[{"text":"\n\nWhy
-        did the chicken cross the road?\n\nTo get to the other side!","index":0,"logprobs":null,"finish_reason":"stop"},{"text":"\n\nWhy
-        did the chicken cross the road?\n\nTo get to the other side!","index":1,"logprobs":null,"finish_reason":"stop"},{"text":"\n\nHow
-        can a little love be\n\nSo beautiful, so true\n\nWhen everything is wrong\n\nAnd
-        you''re by my side\n\nYou always know just what to say\n\nTo make me feel
-        better go\n\nYour love is the light\n\nThat we can see through everything\n\nTo
-        a better place.","index":2,"logprobs":null,"finish_reason":"stop"},{"text":"\n\nHow
-        can a little love be\n\nSo beautiful, so true\n\nWhen everything is wrong\n\nAnd
-        you''re by my side\n\nYou always know just what to say\n\nTo make me feel
-        better go\n\nYour love is the light\n\nThat we can see through everything\n\nTo
-        a better place.","index":3,"logprobs":null,"finish_reason":"stop"},{"text":"\n\nWhy
-        did the chicken cross the road?\n\nTo get to the other side!","index":4,"logprobs":null,"finish_reason":"stop"},{"text":"\n\nWhy
-        did the chicken cross the road?\n\nTo get to the other side!","index":5,"logprobs":null,"finish_reason":"stop"},{"text":"\n\nHow
-        can a little love be\n\nSo beautiful, so true\n\nWhen everything is wrong\n\nAnd
-        you''re by my side\n\nYou always know just what to say\n\nTo make me feel
-        better go\n\nYour love is the light\n\nThat we can see through everything\n\nTo
-        a better place.","index":6,"logprobs":null,"finish_reason":"stop"},{"text":"\n\nHow
-        can a little love be\n\nSo beautiful, so true\n\nWhen everything is wrong\n\nAnd
-        you''re by my side\n\nYou always know just what to say\n\nTo make me feel
-        better go\n\nYour love is the light\n\nThat we can see through everything\n\nTo
-        a better place.","index":7,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":16,"completion_tokens":348,"total_tokens":364}}
-
-        '
+      string: "{\"id\":\"cmpl-6nVTDUqQh6og2UTI30TJYc9y6Ppsa\",\"object\":\"text_completion\",\"created\":1677257063,\"model\":\"text-davinci-003\",\"choices\":[{\"text\":\"\\n\\nQ:
+        What did one ocean say to the other ocean?\\nA: Nothing, they just waved.\",\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nQ:
+        What did the fish say when it hit the wall?\\nA: Dam!\",\"index\":1,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nRoses
+        are red,\\nViolets are blue,\\nSugar is sweet,\\nAnd so are you.\",\"index\":2,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nMy
+        soul is a hidden orchestra;\\nI know not what instruments,\\nWhat wild rhythms
+        - orffered\\nAs concert to the Creator -\\nPlay inside me day and night.\\n\\nI
+        only know a voice within\\nCommanding me to sound His praise -\\nEqually with
+        sweetest joy\\nAnd deepest sorrow, in the depths\\nOf my hidden symphony.\",\"index\":3,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nQ:
+        What did the fish say when it ran into a wall? \\nA: Dam!\",\"index\":4,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nQ:
+        What did one hat say to the other?\\nA: You stay here, I'll go on ahead.\",\"index\":5,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nRoses
+        are red,\\nViolets are blue,\\nSugar is sweet,\\nAnd so are you.\",\"index\":6,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\n\u2018Hope
+        is the thing with feathers\u2019\\n\\nBy Emily Dickinson\\n\\nHope is the
+        thing with feathers\u2014\\nThat perches in the soul\u2014\\nAnd sings the
+        tune without the words\u2014\\nAnd never stops\u2014at all\u2014\\n\\nAnd
+        sweetest\u2014in the Gale\u2014is heard\u2014\\nAnd sore must be the storm\u2014\\nThat
+        could abash the little Bird\\nThat kept so many warm\u2014\\n\\nI\u2019ve
+        heard it in the chillest land\u2014\\nAnd on the strangest Sea\u2014\\nYet,
+        never, in Extremity,\\nIt asked a crumb\u2014of me.\",\"index\":7,\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":16,\"completion_tokens\":349,\"total_tokens\":365}}\n"
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -51,23 +74,23 @@ interactions:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '1987'
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:08:08 GMT
+      - Fri, 24 Feb 2023 16:44:29 GMT
       Openai-Model:
-      - text-ada-001
+      - text-davinci-003
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '600'
+      - '6651'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       X-Request-Id:
-      - bc7ba158ba0c285ff3381642d9ae8bbf
+      - 1d729750cdbd0ab6f977755b707f7989
     status:
       code: 200
       message: OK

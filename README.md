@@ -9,6 +9,7 @@ You can now
 - See the full prompt text being sent with every interaction with the LLM
 - Tell from the coloring which parts of the prompt are hardcoded and which parts are templated substitutions
 - Inspect the execution flow and observe when each function goes up the stack
+- See the costs of each LLM call, and of the entire run, if you are using OpenAI's `text-davinci-003` model
 
 ## Quickstart
 

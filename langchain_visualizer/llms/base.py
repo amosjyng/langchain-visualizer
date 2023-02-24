@@ -1,26 +1,28 @@
-import asyncio
 from typing import List, Optional
 
+from ice.trace import add_fields
 from langchain.llms.base import BaseLLM
+from langchain.llms.openai import OpenAI
 from langchain.schema import LLMResult
 
-from langchain_visualizer.hijacking import ice_hijack
+from langchain_visualizer.hijacking import VisualizationWrapper, ice_hijack
 
 
-def overridden_generate(
-    self, prompts: List[str], stop: Optional[List[str]] = None
-) -> LLMResult:
-    """Preserve langchain's sync generate method"""
-    ice_agent = self.get_ice_agent()
-    generations = []
-    llm_output = {}
-    for prompt in prompts:
-        llm_result = asyncio.get_event_loop().run_until_complete(
-            ice_agent.generate(prompt=prompt, stop=stop)
-        )
-        generations.extend(llm_result.generations)
-        llm_output.update(llm_result.llm_output)
-    return LLMResult(generations, llm_output)
+class LlmVisualizer(VisualizationWrapper):
+    async def run(
+        self, prompts: List[str], stop: Optional[List[str]] = None
+    ) -> LLMResult:
+        """Run the LLM on the given prompt and input."""
+        result = self.og_fn(self.og_obj, prompts=prompts, stop=stop)
+        if (
+            isinstance(self.og_obj, OpenAI)
+            and self.og_obj.model_name == "text-davinci-003"
+        ):
+            total_tokens = result.llm_output.get("token_usage", {}).get(
+                "total_tokens", 0
+            )
+            add_fields(davinci_equivalent_tokens=total_tokens)
+        return result
 
 
-ice_hijack(BaseLLM, "generate")
+ice_hijack(BaseLLM, "generate", LlmVisualizer)

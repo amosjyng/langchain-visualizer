@@ -18,7 +18,7 @@ class VisualizationWrapper(TracedABC):
         return self.og_fn(self.og_obj, *args, **kwargs)
 
 
-def get_viz_wrapper(og_self, og_fn_name: str):
+def get_viz_wrapper(viz_cls, og_self, og_fn_name: str):
     vcr_key = VCR_VIZ_INTEROP_PREFIX + og_fn_name
     if hasattr(og_self.__class__, vcr_key):
         # if vcr-langchain is here as well, call them so that caching can
@@ -28,13 +28,13 @@ def get_viz_wrapper(og_self, og_fn_name: str):
         og_fn = gorilla.get_original_attribute(
             og_self.__class__, og_fn_name, LANGCHAIN_VISUALIZER_PATCH_ID
         )
-    return VisualizationWrapper(og_self, og_fn=og_fn)
+    return viz_cls(og_self, og_fn=og_fn)
 
 
-def get_overridden_call(og_method_name):
+def get_overridden_call(viz_cls, og_method_name):
     def overridden_call(og_self, *args, **kwargs):
         """Preserve sync nature of OG call method"""
-        ice_agent = get_viz_wrapper(og_self, og_method_name)
+        ice_agent = get_viz_wrapper(viz_cls, og_self, og_method_name)
         if (
             not hasattr(og_self.__class__, "_should_trace")
             or og_self.__class__._should_trace
@@ -55,12 +55,12 @@ def hijack(cls, fn_name, get_replacement):
     setattr(cls, fn_name, replacement)
 
 
-def ice_hijack(cls, og_method_name):
+def ice_hijack(cls, og_method_name, viz_cls=VisualizationWrapper):
     gorilla.apply(
         gorilla.Patch(
             destination=cls,
             name=og_method_name,
-            obj=get_overridden_call(og_method_name),
+            obj=get_overridden_call(viz_cls, og_method_name),
             settings=gorilla.Settings(store_hit=True, allow_hit=True),
         ),
         id=LANGCHAIN_VISUALIZER_PATCH_ID,
