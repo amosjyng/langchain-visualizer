@@ -1,5 +1,33 @@
 interactions:
 - request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - 0.0.0.0:8935
+      user-agent:
+      - python-httpx/0.23.3
+    method: GET
+    uri: http://0.0.0.0:8935/ping
+  response:
+    content: ought-ice says pong
+    headers:
+      content-length:
+      - '19'
+      content-type:
+      - text/plain; charset=utf-8
+      date:
+      - Fri, 24 Feb 2023 16:44:21 GMT
+      server:
+      - uvicorn
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
     body: '{"prompt": ["Answer the following questions as best you can. You have access
       to the following tools:\n\nSearch: A search engine. Useful for when you need
       to answer questions about current events. Input should be a search query.\nCalculator:
