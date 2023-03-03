@@ -36,6 +36,9 @@ filterwarnings = [
     'ignore:unclosed <ssl.SSLSocket:ResourceWarning',
 ]
 
+[tool.mypy]
+ignore_missing_imports = "True"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
