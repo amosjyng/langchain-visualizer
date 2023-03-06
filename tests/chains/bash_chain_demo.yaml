@@ -62,7 +62,7 @@ interactions:
     body: '{"commands": ["ls"]}'
     headers: {}
     method: POST
-    uri: tool://BashProcess
+    uri: tool://BashProcess/run
   response: 'LICENSE
 
     Makefile
