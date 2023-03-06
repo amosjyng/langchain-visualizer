@@ -918,7 +918,7 @@ interactions:
     body: '{"command": "\nimport math\nprint(math.pow(47, 0.23))"}'
     headers: {}
     method: POST
-    uri: tool://PythonREPL
+    uri: tool://PythonREPL/run
   response: '2.4242784855673896
 
     '
