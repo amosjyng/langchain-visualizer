@@ -14,7 +14,7 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.1
     method: POST
     uri: https://api.openai.com/v1/engines/text-embedding-ada-002/embeddings
   response:
@@ -33,16 +33,16 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 09:49:53 GMT
+      - Fri, 10 Mar 2023 05:02:15 GMT
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '125'
+      - '18'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 5e9fee8d8339269994ea680948ee4f09
+      - e576ef953f07fb9e62980271e9160851
     status:
       code: 200
       message: OK
@@ -62,11 +62,9 @@ interactions:
       what type was the car?\nHelpful Answer: a sports car or an suv\nScore: 60\n\nExample
       #3\n\nContext:\n---------\nPears are either red or orange\n---------\nQuestion:
       what color are apples?\nHelpful Answer: This document does not answer the question\nScore:
-      0\n\nBegin!\n\nContext:\n---------\nIn state after state, new laws have been
-      passed, not only to suppress the vote, but to subvert entire elections. \n\nWe
-      cannot let this happen. \n\nTonight. I call on the Senate to: Pass the Freedom
-      to Vote Act. Pass the John Lewis Voting Rights Act. And while you\u2019re at
-      it, pass the Disclose Act so Americans can know who is funding our elections.
+      0\n\nBegin!\n\nContext:\n---------\nTonight. I call on the Senate to: Pass the
+      Freedom to Vote Act. Pass the John Lewis Voting Rights Act. And while you\u2019re
+      at it, pass the Disclose Act so Americans can know who is funding our elections.
       \n\nTonight, I\u2019d like to honor someone who has dedicated his life to serve
       this country: Justice Stephen Breyer\u2014an Army veteran, Constitutional scholar,
       and retiring Justice of the United States Supreme Court. Justice Breyer, thank
@@ -119,51 +117,50 @@ interactions:
       what type was the car?\nHelpful Answer: a sports car or an suv\nScore: 60\n\nExample
       #3\n\nContext:\n---------\nPears are either red or orange\n---------\nQuestion:
       what color are apples?\nHelpful Answer: This document does not answer the question\nScore:
-      0\n\nBegin!\n\nContext:\n---------\nAnd for our LGBTQ+ Americans, let\u2019s
-      finally get the bipartisan Equality Act to my desk. The onslaught of state laws
-      targeting transgender Americans and their families is wrong. \n\nAs I said last
-      year, especially to our younger transgender Americans, I will always have your
-      back as your President, so you can be yourself and reach your God-given potential.
-      \n\nWhile it often appears that we never agree, that isn\u2019t true. I signed
-      80 bipartisan bills into law last year. From preventing government shutdowns
-      to protecting Asian-Americans from still-too-common hate crimes to reforming
-      military justice. \n\nAnd soon, we\u2019ll strengthen the Violence Against Women
-      Act that I first wrote three decades ago. It is important for us to show the
-      nation that we can come together and do big things. \n\nSo tonight I\u2019m
-      offering a Unity Agenda for the Nation. Four big things we can do together.  \n\nFirst,
-      beat the opioid epidemic.\n---------\nQuestion: What did the president say about
-      Justice Breyer\nHelpful Answer:", "Use the following pieces of context to answer
-      the question at the end. If you don''t know the answer, just say that you don''t
-      know, don''t try to make up an answer.\n\nIn addition to giving an answer, also
-      return a score of how fully it answered the user''s question. This should be
-      in the following format:\n\nQuestion: [question here]\nHelpful Answer: [answer
-      here]\nScore: [score between 0 and 100]\n\nHow to determine the score:\n- Higher
-      is a better answer\n- Better responds fully to the asked question, with sufficient
-      level of detail\n- If you do not know the answer based on the context, that
-      should be a score of 0\n- Don''t be overconfident!\n\nExample #1\n\nContext:\n---------\nApples
-      are red\n---------\nQuestion: what color are apples?\nHelpful Answer: red\nScore:
-      100\n\nExample #2\n\nContext:\n---------\nit was night and the witness forgot
-      his glasses. he was not sure if it was a sports car or an suv\n---------\nQuestion:
-      what type was the car?\nHelpful Answer: a sports car or an suv\nScore: 60\n\nExample
-      #3\n\nContext:\n---------\nPears are either red or orange\n---------\nQuestion:
-      what color are apples?\nHelpful Answer: This document does not answer the question\nScore:
-      0\n\nBegin!\n\nContext:\n---------\nSo what are we waiting for? Let\u2019s get
-      this done. And while you\u2019re at it, confirm my nominees to the Federal Reserve,
-      which plays a critical role in fighting inflation.  \n\nMy plan will not only
-      lower costs to give families a fair shot, it will lower the deficit. \n\nThe
-      previous Administration not only ballooned the deficit with tax cuts for the
-      very wealthy and corporations, it undermined the watchdogs whose job was to
-      keep pandemic relief funds from being wasted. \n\nBut in my administration,
-      the watchdogs have been welcomed back. \n\nWe\u2019re going after the criminals
-      who stole billions in relief money meant for small businesses and millions of
-      Americans.  \n\nAnd tonight, I\u2019m announcing that the Justice Department
-      will name a chief prosecutor for pandemic fraud. \n\nBy the end of this year,
-      the deficit will be down to less than half what it was before I took office.  \n\nThe
-      only president ever to cut the deficit by more than one trillion dollars in
-      a single year.\n---------\nQuestion: What did the president say about Justice
-      Breyer\nHelpful Answer:"], "model": "text-davinci-003", "temperature": 0.0,
-      "max_tokens": 500, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0,
-      "n": 1, "best_of": 1, "logit_bias": {}}'
+      0\n\nBegin!\n\nContext:\n---------\nWe\u2019re going after the criminals who
+      stole billions in relief money meant for small businesses and millions of Americans.  \n\nAnd
+      tonight, I\u2019m announcing that the Justice Department will name a chief prosecutor
+      for pandemic fraud. \n\nBy the end of this year, the deficit will be down to
+      less than half what it was before I took office.  \n\nThe only president ever
+      to cut the deficit by more than one trillion dollars in a single year. \n\nLowering
+      your costs also means demanding more competition. \n\nI\u2019m a capitalist,
+      but capitalism without competition isn\u2019t capitalism. \n\nIt\u2019s exploitation\u2014and
+      it drives up prices. \n\nWhen corporations don\u2019t have to compete, their
+      profits go up, your prices go up, and small businesses and family farmers and
+      ranchers go under. \n\nWe see it happening with ocean carriers moving goods
+      in and out of America. \n\nDuring the pandemic, these foreign-owned companies
+      raised prices by as much as 1,000% and made record profits.\n---------\nQuestion:
+      What did the president say about Justice Breyer\nHelpful Answer:", "Use the
+      following pieces of context to answer the question at the end. If you don''t
+      know the answer, just say that you don''t know, don''t try to make up an answer.\n\nIn
+      addition to giving an answer, also return a score of how fully it answered the
+      user''s question. This should be in the following format:\n\nQuestion: [question
+      here]\nHelpful Answer: [answer here]\nScore: [score between 0 and 100]\n\nHow
+      to determine the score:\n- Higher is a better answer\n- Better responds fully
+      to the asked question, with sufficient level of detail\n- If you do not know
+      the answer based on the context, that should be a score of 0\n- Don''t be overconfident!\n\nExample
+      #1\n\nContext:\n---------\nApples are red\n---------\nQuestion: what color are
+      apples?\nHelpful Answer: red\nScore: 100\n\nExample #2\n\nContext:\n---------\nit
+      was night and the witness forgot his glasses. he was not sure if it was a sports
+      car or an suv\n---------\nQuestion: what type was the car?\nHelpful Answer:
+      a sports car or an suv\nScore: 60\n\nExample #3\n\nContext:\n---------\nPears
+      are either red or orange\n---------\nQuestion: what color are apples?\nHelpful
+      Answer: This document does not answer the question\nScore: 0\n\nBegin!\n\nContext:\n---------\nAnd
+      for our LGBTQ+ Americans, let\u2019s finally get the bipartisan Equality Act
+      to my desk. The onslaught of state laws targeting transgender Americans and
+      their families is wrong. \n\nAs I said last year, especially to our younger
+      transgender Americans, I will always have your back as your President, so you
+      can be yourself and reach your God-given potential. \n\nWhile it often appears
+      that we never agree, that isn\u2019t true. I signed 80 bipartisan bills into
+      law last year. From preventing government shutdowns to protecting Asian-Americans
+      from still-too-common hate crimes to reforming military justice. \n\nAnd soon,
+      we\u2019ll strengthen the Violence Against Women Act that I first wrote three
+      decades ago. It is important for us to show the nation that we can come together
+      and do big things. \n\nSo tonight I\u2019m offering a Unity Agenda for the Nation.
+      Four big things we can do together.  \n\nFirst, beat the opioid epidemic.\n---------\nQuestion:
+      What did the president say about Justice Breyer\nHelpful Answer:"], "model":
+      "text-davinci-003", "temperature": 0.0, "max_tokens": 500, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -172,21 +169,21 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '9332'
+      - '9183'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.1
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fo2pPojd4ohvXmzgDZRwHelZtpJw","object":"text_completion","created":1675421839,"model":"text-davinci-003","choices":[{"text":"
+      string: '{"id":"cmpl-6sPBQ4viDqvffY4t1L4HbK7A23z5P","object":"text_completion","created":1678424536,"model":"text-davinci-003","choices":[{"text":"
         The President thanked Justice Breyer for his service and honored him for dedicating
         his life to serve the country.\nScore: 100","index":0,"logprobs":null,"finish_reason":"stop"},{"text":"
         This document does not answer the question\nScore: 0","index":1,"logprobs":null,"finish_reason":"stop"},{"text":"
         This document does not answer the question\nScore: 0","index":2,"logprobs":null,"finish_reason":"stop"},{"text":"
-        This document does not answer the question\nScore: 0","index":3,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":2157,"completion_tokens":59,"total_tokens":2216}}
+        This document does not answer the question\nScore: 0","index":3,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":2126,"completion_tokens":59,"total_tokens":2185}}
 
         '
     headers:
@@ -201,18 +198,18 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 10:57:21 GMT
+      - Fri, 10 Mar 2023 05:02:17 GMT
       Openai-Model:
       - text-davinci-003
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '2079'
+      - '1448'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 294787296183d759a98f820b97ebc78e
+      - 8ec984b351c0d1749f0f676c8fd7a5a0
     status:
       code: 200
       message: OK

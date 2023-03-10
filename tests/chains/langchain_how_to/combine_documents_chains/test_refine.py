@@ -30,7 +30,7 @@ async def refine_demo():
 def test_refine_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(refine_demo())
-    assert "The president said that he was" in result["output_text"]
+    assert "The president said that he wanted" in result["output_text"]
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.1
     method: POST
     uri: https://api.openai.com/v1/engines/text-embedding-ada-002/embeddings
   response:
@@ -33,24 +33,22 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 09:49:53 GMT
+      - Fri, 10 Mar 2023 05:02:20 GMT
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '125'
+      - '24'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 5e9fee8d8339269994ea680948ee4f09
+      - 01e550cf1413aed48379c99d4377318b
     status:
       code: 200
       message: OK
 - request:
     body: '{"prompt": ["Use the following portion of a long document to see if any
-      of the text is relevant to answer the question. \nReturn any relevant text verbatim.\nIn
-      state after state, new laws have been passed, not only to suppress the vote,
-      but to subvert entire elections. \n\nWe cannot let this happen. \n\nTonight.
+      of the text is relevant to answer the question. \nReturn any relevant text verbatim.\nTonight.
       I call on the Senate to: Pass the Freedom to Vote Act. Pass the John Lewis Voting
       Rights Act. And while you\u2019re at it, pass the Disclose Act so Americans
       can know who is funding our elections. \n\nTonight, I\u2019d like to honor someone
@@ -78,35 +76,35 @@ interactions:
       partners in South and Central America to host more refugees and secure their
       own borders.\nQuestion: What did the president say about Justice Breyer\nRelevant
       text, if any:", "Use the following portion of a long document to see if any
-      of the text is relevant to answer the question. \nReturn any relevant text verbatim.\nAnd
-      for our LGBTQ+ Americans, let\u2019s finally get the bipartisan Equality Act
-      to my desk. The onslaught of state laws targeting transgender Americans and
-      their families is wrong. \n\nAs I said last year, especially to our younger
-      transgender Americans, I will always have your back as your President, so you
-      can be yourself and reach your God-given potential. \n\nWhile it often appears
-      that we never agree, that isn\u2019t true. I signed 80 bipartisan bills into
-      law last year. From preventing government shutdowns to protecting Asian-Americans
-      from still-too-common hate crimes to reforming military justice. \n\nAnd soon,
-      we\u2019ll strengthen the Violence Against Women Act that I first wrote three
-      decades ago. It is important for us to show the nation that we can come together
-      and do big things. \n\nSo tonight I\u2019m offering a Unity Agenda for the Nation.
-      Four big things we can do together.  \n\nFirst, beat the opioid epidemic.\nQuestion:
-      What did the president say about Justice Breyer\nRelevant text, if any:", "Use
-      the following portion of a long document to see if any of the text is relevant
-      to answer the question. \nReturn any relevant text verbatim.\nSo what are we
-      waiting for? Let\u2019s get this done. And while you\u2019re at it, confirm
-      my nominees to the Federal Reserve, which plays a critical role in fighting
-      inflation.  \n\nMy plan will not only lower costs to give families a fair shot,
-      it will lower the deficit. \n\nThe previous Administration not only ballooned
-      the deficit with tax cuts for the very wealthy and corporations, it undermined
-      the watchdogs whose job was to keep pandemic relief funds from being wasted.
-      \n\nBut in my administration, the watchdogs have been welcomed back. \n\nWe\u2019re
+      of the text is relevant to answer the question. \nReturn any relevant text verbatim.\nWe\u2019re
       going after the criminals who stole billions in relief money meant for small
       businesses and millions of Americans.  \n\nAnd tonight, I\u2019m announcing
       that the Justice Department will name a chief prosecutor for pandemic fraud.
       \n\nBy the end of this year, the deficit will be down to less than half what
       it was before I took office.  \n\nThe only president ever to cut the deficit
-      by more than one trillion dollars in a single year.\nQuestion: What did the
+      by more than one trillion dollars in a single year. \n\nLowering your costs
+      also means demanding more competition. \n\nI\u2019m a capitalist, but capitalism
+      without competition isn\u2019t capitalism. \n\nIt\u2019s exploitation\u2014and
+      it drives up prices. \n\nWhen corporations don\u2019t have to compete, their
+      profits go up, your prices go up, and small businesses and family farmers and
+      ranchers go under. \n\nWe see it happening with ocean carriers moving goods
+      in and out of America. \n\nDuring the pandemic, these foreign-owned companies
+      raised prices by as much as 1,000% and made record profits.\nQuestion: What
+      did the president say about Justice Breyer\nRelevant text, if any:", "Use the
+      following portion of a long document to see if any of the text is relevant to
+      answer the question. \nReturn any relevant text verbatim.\nAnd for our LGBTQ+
+      Americans, let\u2019s finally get the bipartisan Equality Act to my desk. The
+      onslaught of state laws targeting transgender Americans and their families is
+      wrong. \n\nAs I said last year, especially to our younger transgender Americans,
+      I will always have your back as your President, so you can be yourself and reach
+      your God-given potential. \n\nWhile it often appears that we never agree, that
+      isn\u2019t true. I signed 80 bipartisan bills into law last year. From preventing
+      government shutdowns to protecting Asian-Americans from still-too-common hate
+      crimes to reforming military justice. \n\nAnd soon, we\u2019ll strengthen the
+      Violence Against Women Act that I first wrote three decades ago. It is important
+      for us to show the nation that we can come together and do big things. \n\nSo
+      tonight I\u2019m offering a Unity Agenda for the Nation. Four big things we
+      can do together.  \n\nFirst, beat the opioid epidemic.\nQuestion: What did the
       president say about Justice Breyer\nRelevant text, if any:"], "model": "text-davinci-003",
       "temperature": 0.0, "max_tokens": 500, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
       0, "n": 1, "best_of": 1, "logit_bias": {}}'
@@ -118,16 +116,16 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '4976'
+      - '4827'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.1
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: "{\"id\":\"cmpl-6gooCbTRbzIrMVp1PwWw9aI2Z3Pc1\",\"object\":\"text_completion\",\"created\":1675663104,\"model\":\"text-davinci-003\",\"choices\":[{\"text\":\"
+      string: "{\"id\":\"cmpl-6sPBVUJmIP4P4g4qqrwvzfRQdzvTT\",\"object\":\"text_completion\",\"created\":1678424541,\"model\":\"text-davinci-003\",\"choices\":[{\"text\":\"
         \\\"Tonight, I\u2019d like to honor someone who has dedicated his life to
         serve this country: Justice Stephen Breyer\u2014an Army veteran, Constitutional
         scholar, and retiring Justice of the United States Supreme Court. Justice
@@ -138,7 +136,7 @@ interactions:
         of support\u2014from the Fraternal Order of Police to former judges appointed
         by Democrats and Republicans.\",\"index\":1,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"
         None\",\"index\":2,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"
-        None\",\"index\":3,\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":1045,\"completion_tokens\":121,\"total_tokens\":1166}}\n"
+        None\",\"index\":3,\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":1014,\"completion_tokens\":121,\"total_tokens\":1135}}\n"
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -149,12 +147,12 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 06 Feb 2023 05:58:32 GMT
+      - Fri, 10 Mar 2023 05:02:24 GMT
       Openai-Model:
       - text-davinci-003
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '8264'
+      - '2840'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
@@ -162,7 +160,7 @@ interactions:
       Transfer-Encoding:
       - chunked
       X-Request-Id:
-      - 3eec1a747fb4ad1dfab08b1fcf8627ec
+      - e0c36f15e102e5a89833a7203d95f149
     status:
       code: 200
       message: OK
@@ -250,12 +248,12 @@ interactions:
       I\u2019d like to honor someone who has dedicated his life to serve this country:
       Justice Stephen Breyer\u2014an Army veteran, Constitutional scholar, and retiring
       Justice of the United States Supreme Court. Justice Breyer, thank you for your
-      service.\"\nSource: 30\n\nContent:  A former top litigator in private practice.
+      service.\"\nSource: 31\n\nContent:  A former top litigator in private practice.
       A former federal public defender. And from a family of public school educators
       and police officers. A consensus builder. Since she\u2019s been nominated, she\u2019s
       received a broad range of support\u2014from the Fraternal Order of Police to
-      former judges appointed by Democrats and Republicans.\nSource: 31\n\nContent:  None\nSource:
-      33\n\nContent:  None\nSource: 20\n=========\nFINAL ANSWER:"], "model": "text-davinci-003",
+      former judges appointed by Democrats and Republicans.\nSource: 32\n\nContent:  None\nSource:
+      21\n\nContent:  None\nSource: 34\n=========\nFINAL ANSWER:"], "model": "text-davinci-003",
       "temperature": 0.0, "max_tokens": 500, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
       0, "n": 1, "best_of": 1, "logit_bias": {}}'
     headers:
@@ -270,14 +268,14 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.1
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6goocwI6GiPVu9bO75ghfO3eQ0Rgz","object":"text_completion","created":1675663130,"model":"text-davinci-003","choices":[{"text":"
+      string: '{"id":"cmpl-6sPBYMg5TJ2QxLeJoaX3H2C8MtyhJ","object":"text_completion","created":1678424544,"model":"text-davinci-003","choices":[{"text":"
         The president said that Justice Breyer has dedicated his life to serve this
-        country and thanked him for his service.\nSOURCES: 30-pl","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":1666,"completion_tokens":31,"total_tokens":1697}}
+        country and thanked him for his service.\nSOURCES: 31","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":1666,"completion_tokens":29,"total_tokens":1695}}
 
         '
     headers:
@@ -288,22 +286,22 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '399'
+      - '396'
       Content-Type:
       - application/json
       Date:
-      - Mon, 06 Feb 2023 05:58:54 GMT
+      - Fri, 10 Mar 2023 05:02:26 GMT
       Openai-Model:
       - text-davinci-003
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '4095'
+      - '1882'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 0fb29ac57975f030f62f33dc30bfbcfa
+      - 08cb48f0e101b82a25fe0cfb0e379883
     status:
       code: 200
       message: OK

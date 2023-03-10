@@ -14,7 +14,7 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.1
     method: POST
     uri: https://api.openai.com/v1/engines/text-embedding-ada-002/embeddings
   response:
@@ -33,16 +33,16 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 09:49:53 GMT
+      - Fri, 10 Mar 2023 05:02:28 GMT
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '125'
+      - '17'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 5e9fee8d8339269994ea680948ee4f09
+      - 89ced21a3cd839c5f7568818a6014054
     status:
       code: 200
       message: OK
@@ -126,20 +126,18 @@ interactions:
       itself. \n\nIt is in this moment that our character is formed. Our purpose is
       found. Our future is forged. \n\nWell I know this nation.\nSource: 34-pl\n=========\nFINAL
       ANSWER: The president did not mention Michael Jackson.\nSOURCES:\n\nQUESTION:
-      What did the president say about Justice Breyer\n=========\nContent: In state
-      after state, new laws have been passed, not only to suppress the vote, but to
-      subvert entire elections. \n\nWe cannot let this happen. \n\nTonight. I call
-      on the Senate to: Pass the Freedom to Vote Act. Pass the John Lewis Voting Rights
-      Act. And while you\u2019re at it, pass the Disclose Act so Americans can know
-      who is funding our elections. \n\nTonight, I\u2019d like to honor someone who
-      has dedicated his life to serve this country: Justice Stephen Breyer\u2014an
+      What did the president say about Justice Breyer\n=========\nContent: Tonight.
+      I call on the Senate to: Pass the Freedom to Vote Act. Pass the John Lewis Voting
+      Rights Act. And while you\u2019re at it, pass the Disclose Act so Americans
+      can know who is funding our elections. \n\nTonight, I\u2019d like to honor someone
+      who has dedicated his life to serve this country: Justice Stephen Breyer\u2014an
       Army veteran, Constitutional scholar, and retiring Justice of the United States
       Supreme Court. Justice Breyer, thank you for your service. \n\nOne of the most
       serious constitutional responsibilities a President has is nominating someone
       to serve on the United States Supreme Court. \n\nAnd I did that 4 days ago,
       when I nominated Circuit Court of Appeals Judge Ketanji Brown Jackson. One of
       our nation\u2019s top legal minds, who will continue Justice Breyer\u2019s legacy
-      of excellence.\nSource: 30\n\nContent: A former top litigator in private practice.
+      of excellence.\nSource: 31\n\nContent: A former top litigator in private practice.
       A former federal public defender. And from a family of public school educators
       and police officers. A consensus builder. Since she\u2019s been nominated, she\u2019s
       received a broad range of support\u2014from the Fraternal Order of Police to
@@ -151,7 +149,20 @@ interactions:
       putting in place dedicated immigration judges so families fleeing persecution
       and violence can have their cases heard faster. \n\nWe\u2019re securing commitments
       and supporting partners in South and Central America to host more refugees and
-      secure their own borders.\nSource: 31\n\nContent: And for our LGBTQ+ Americans,
+      secure their own borders.\nSource: 32\n\nContent: We\u2019re going after the
+      criminals who stole billions in relief money meant for small businesses and
+      millions of Americans.  \n\nAnd tonight, I\u2019m announcing that the Justice
+      Department will name a chief prosecutor for pandemic fraud. \n\nBy the end of
+      this year, the deficit will be down to less than half what it was before I took
+      office.  \n\nThe only president ever to cut the deficit by more than one trillion
+      dollars in a single year. \n\nLowering your costs also means demanding more
+      competition. \n\nI\u2019m a capitalist, but capitalism without competition isn\u2019t
+      capitalism. \n\nIt\u2019s exploitation\u2014and it drives up prices. \n\nWhen
+      corporations don\u2019t have to compete, their profits go up, your prices go
+      up, and small businesses and family farmers and ranchers go under. \n\nWe see
+      it happening with ocean carriers moving goods in and out of America. \n\nDuring
+      the pandemic, these foreign-owned companies raised prices by as much as 1,000%
+      and made record profits.\nSource: 21\n\nContent: And for our LGBTQ+ Americans,
       let\u2019s finally get the bipartisan Equality Act to my desk. The onslaught
       of state laws targeting transgender Americans and their families is wrong. \n\nAs
       I said last year, especially to our younger transgender Americans, I will always
@@ -163,20 +174,7 @@ interactions:
       Against Women Act that I first wrote three decades ago. It is important for
       us to show the nation that we can come together and do big things. \n\nSo tonight
       I\u2019m offering a Unity Agenda for the Nation. Four big things we can do together.  \n\nFirst,
-      beat the opioid epidemic.\nSource: 33\n\nContent: So what are we waiting for?
-      Let\u2019s get this done. And while you\u2019re at it, confirm my nominees to
-      the Federal Reserve, which plays a critical role in fighting inflation.  \n\nMy
-      plan will not only lower costs to give families a fair shot, it will lower the
-      deficit. \n\nThe previous Administration not only ballooned the deficit with
-      tax cuts for the very wealthy and corporations, it undermined the watchdogs
-      whose job was to keep pandemic relief funds from being wasted. \n\nBut in my
-      administration, the watchdogs have been welcomed back. \n\nWe\u2019re going
-      after the criminals who stole billions in relief money meant for small businesses
-      and millions of Americans.  \n\nAnd tonight, I\u2019m announcing that the Justice
-      Department will name a chief prosecutor for pandemic fraud. \n\nBy the end of
-      this year, the deficit will be down to less than half what it was before I took
-      office.  \n\nThe only president ever to cut the deficit by more than one trillion
-      dollars in a single year.\nSource: 20\n=========\nFINAL ANSWER:"], "model":
+      beat the opioid epidemic.\nSource: 34\n=========\nFINAL ANSWER:"], "model":
       "text-davinci-003", "temperature": 0.0, "max_tokens": 500, "top_p": 1, "frequency_penalty":
       0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias": {}}'
     headers:
@@ -187,17 +185,19 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '10538'
+      - '10389'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.1
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6fo309ig12VAZDhDDTMfBPzYiPE7H","object":"text_completion","created":1675421850,"model":"text-davinci-003","choices":[{"text":"
-        The president thanked Justice Breyer for his service.\nSOURCES: 30-pl","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":2374,"completion_tokens":19,"total_tokens":2393}}
+      string: '{"id":"cmpl-6sPBdw3oPlToW90xPsGmwvQlOpiqz","object":"text_completion","created":1678424549,"model":"text-davinci-003","choices":[{"text":"
+        The president thanked Justice Breyer for his service and mentioned that he
+        nominated Circuit Court of Appeals Judge Ketanji Brown Jackson to continue
+        Justice Breyer''s legacy of excellence.\nSOURCES: 31-pl","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":2343,"completion_tokens":43,"total_tokens":2386}}
 
         '
     headers:
@@ -208,22 +208,22 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '336'
+      - '471'
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 10:57:32 GMT
+      - Fri, 10 Mar 2023 05:02:31 GMT
       Openai-Model:
       - text-davinci-003
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '3169'
+      - '1975'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - c7b7f55bb611e9c30d23171908067e8f
+      - 2c5d74c19e96210d352cf7e1512364a1
     status:
       code: 200
       message: OK
