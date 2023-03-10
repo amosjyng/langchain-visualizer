@@ -3,6 +3,7 @@
 all: format lint test
 
 format:
+	poetry run autoflake .
 	poetry run black .
 	poetry run isort .
 

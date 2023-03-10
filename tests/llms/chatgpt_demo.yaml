@@ -17,19 +17,22 @@ interactions:
   response:
     content: ought-ice says pong
     headers:
+      cache-control:
+      - no-transform
       content-length:
       - '19'
       content-type:
       - text/plain; charset=utf-8
       date:
-      - Fri, 03 Mar 2023 07:56:45 GMT
+      - Fri, 10 Mar 2023 05:29:31 GMT
       server:
       - uvicorn
     http_version: HTTP/1.1
     status_code: 200
 - request:
-    body: '{"messages": [{"role": "user", "content": "Write me 5 paragraphs on why
-      technological progress is necessary"}], "model": "gpt-3.5-turbo"}'
+    body: '{"messages": [{"role": "system", "content": "You are a helpful assistant
+      that translates English to French."}, {"role": "user", "content": "I love programming."}],
+      "model": "gpt-3.5-turbo", "max_tokens": 256, "stream": false, "n": 1}'
     headers:
       Accept:
       - '*/*'
@@ -38,48 +41,17 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '137'
+      - '233'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.0
+      - OpenAI/v1 PythonBindings/0.27.1
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
-      string: '{"id":"chatcmpl-6puZQiK0T0tuAlqkxPkWcDqE4l2ua","object":"chat.completion","created":1677830204,"model":"gpt-3.5-turbo-0301","usage":{"prompt_tokens":18,"completion_tokens":412,"total_tokens":430},"choices":[{"message":{"role":"assistant","content":"\n\nTechnological
-        progress is essential for human society''s growth and development. Perhaps
-        the most apparent reason for this is that technology improves our quality
-        of life. Technological advancements have led to the creation of power grids,
-        transportation networks, and the internet, among others. The development of
-        these essential systems has allowed us to do more with less, making our lives
-        more comfortable, efficient, and convenient.\n\nIn addition to improving our
-        well-being, technology has been instrumental in advancing critical fields
-        such as medicine and science. Medical technology such as x-rays, CT scans,
-        and MRI machines have revolutionized healthcare by enabling doctors to diagnose
-        diseases accurately and provide better treatment. In the field of science,
-        technology plays a critical role in advancing our knowledge of the world around
-        us.\n\nTechnological progress is also necessary for economic growth. As technology
-        improves, businesses become more efficient, leading to cost savings, increased
-        productivity, and a larger supply of goods and services. Businesses that can
-        innovate and adopt new technologies are more likely to succeed in competitive
-        markets, leading to economic growth and job creation.\n\nMoreover, technological
-        progress is essential for addressing many of the world''s most pressing problems.
-        Climate change, for instance, requires technological solutions to reduce greenhouse
-        gas emissions and develop sustainable energy systems. Technological advancements
-        in agriculture can help farmers produce more food, while reducing environmental
-        impact. In short, technology can be a powerful tool for solving global challenges.\n\nFinally,
-        technological progress is necessary to maintain our competitive edge in an
-        increasingly globalized world. Countries that lead in technological innovation
-        will enjoy economic growth, political influence, and global prestige. As such,
-        investing in research and development can help countries maintain their strategic
-        advantage and ensure their citizens enjoy the benefits of technological progress.\n\nIn
-        conclusion, technological progress is necessary for human society''s growth
-        and development. It improves our quality of life, advances critical fields
-        such as medicine and science, drives economic growth, helps solve global problems,
-        and confers competitive advantage. As such, it is our responsibility to invest
-        in research and development and ensure that technological progress continues
-        for generations to come."},"finish_reason":"stop","index":0}]}
+      string: '{"id":"chatcmpl-6sPbjVxiO5rlVl2ea1VHW5kwfPaOF","object":"chat.completion","created":1678426167,"model":"gpt-3.5-turbo-0301","usage":{"prompt_tokens":27,"completion_tokens":8,"total_tokens":35},"choices":[{"message":{"role":"assistant","content":"J''adore
+        programmer."},"finish_reason":null,"index":0}]}
 
         '
     headers:
@@ -90,22 +62,22 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '2781'
+      - '302'
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Mar 2023 07:56:53 GMT
+      - Fri, 10 Mar 2023 05:29:28 GMT
       Openai-Model:
       - gpt-3.5-turbo-0301
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '9359'
+      - '776'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       X-Request-Id:
-      - 3de96b9c157124c6feb47bd496b5b325
+      - be988947c3e1ff0c67f9f4b353c35409
     status:
       code: 200
       message: OK

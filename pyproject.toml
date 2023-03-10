@@ -24,6 +24,7 @@ vcr-langchain = "^0.0.18"
 google-search-results = "^2.4.1"
 faiss-cpu = "^1.7.3"
 tiktoken = "^0.1.2"
+autoflake = "^2.0.1"
 
 [tool.pytest.ini_options]
 markers = [
@@ -38,6 +39,20 @@ filterwarnings = [
 
 [tool.mypy]
 ignore_missing_imports = "True"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+line_length = 88
+profile = "black"
+
+[tool.autoflake]
+in-place = true
+recursive = true
+remove-all-unused-imports = true
+remove-duplicate-keys = true
+remove-unused-variables = true
 
 [build-system]
 requires = ["poetry-core"]
