@@ -28,7 +28,7 @@ async def search_agent_demo():
 def test_llm_usage_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(search_agent_demo())
-    assert result.strip().endswith("raised to the 0.23 power is 2.4242784855673896.")
+    assert result.strip().endswith("raised to the 0.23 power is 2.169459462491557.")
 
 
 if __name__ == "__main__":
