@@ -1,38 +1,8 @@
 interactions:
 - request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - 0.0.0.0:8935
-      user-agent:
-      - python-httpx/0.23.3
-    method: GET
-    uri: http://0.0.0.0:8935/ping
-  response:
-    content: ought-ice says pong
-    headers:
-      cache-control:
-      - no-transform
-      content-length:
-      - '19'
-      content-type:
-      - text/plain; charset=utf-8
-      date:
-      - Fri, 10 Mar 2023 05:29:31 GMT
-      server:
-      - uvicorn
-    http_version: HTTP/1.1
-    status_code: 200
-- request:
     body: '{"messages": [{"role": "system", "content": "You are a helpful assistant
       that translates English to French."}, {"role": "user", "content": "I love programming."}],
-      "model": "gpt-3.5-turbo", "max_tokens": 256, "stream": false, "n": 1}'
+      "model": "gpt-3.5-turbo", "max_tokens": null, "stream": false, "n": 1}'
     headers:
       Accept:
       - '*/*'
@@ -41,17 +11,17 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '233'
+      - '234'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.1
+      - OpenAI/v1 PythonBindings/0.27.2
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
-      string: '{"id":"chatcmpl-6sPbjVxiO5rlVl2ea1VHW5kwfPaOF","object":"chat.completion","created":1678426167,"model":"gpt-3.5-turbo-0301","usage":{"prompt_tokens":27,"completion_tokens":8,"total_tokens":35},"choices":[{"message":{"role":"assistant","content":"J''adore
-        programmer."},"finish_reason":null,"index":0}]}
+      string: '{"id":"chatcmpl-6x23lQENxVZaG2hX4owM1iQ6hRziW","object":"chat.completion","created":1679527289,"model":"gpt-3.5-turbo-0301","usage":{"prompt_tokens":27,"completion_tokens":7,"total_tokens":34},"choices":[{"message":{"role":"assistant","content":"J''adore
+        programmer."},"finish_reason":"stop","index":0}]}
 
         '
     headers:
@@ -62,22 +32,28 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '302'
+      - '304'
       Content-Type:
       - application/json
       Date:
-      - Fri, 10 Mar 2023 05:29:28 GMT
+      - Wed, 22 Mar 2023 23:21:30 GMT
       Openai-Model:
       - gpt-3.5-turbo-0301
       Openai-Organization: user-dummy
       Openai-Processing-Ms:
-      - '776'
+      - '518'
       Openai-Version:
       - '2020-10-01'
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
+      X-Ratelimit-Limit-Requests:
+      - '3500'
+      X-Ratelimit-Remaining-Requests:
+      - '3499'
+      X-Ratelimit-Reset-Requests:
+      - 17ms
       X-Request-Id:
-      - be988947c3e1ff0c67f9f4b353c35409
+      - b78d3cc6eafcef44cb6578f5ace5444d
     status:
       code: 200
       message: OK
