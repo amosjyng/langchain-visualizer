@@ -2,7 +2,6 @@ import langchain_visualizer  # isort:skip  # noqa: F401
 import asyncio
 
 import vcr_langchain as vcr
-from fvalues import FValue
 from langchain import FewShotPromptTemplate, PromptTemplate
 from langchain.llms import OpenAI
 
@@ -43,18 +42,19 @@ prompt = few_shot_prompt.format(input="big")
 
 
 def test_prompt():
-    assert prompt.parts == (
-        "Give the antonym of every input\n\nWord: ",
-        FValue(source="word", value="happy", formatted="happy"),
-        "\nAntonym: ",
-        FValue(source="antonym", value="sad", formatted="sad"),
-        "\n\nWord: ",
-        FValue(source="word", value="tall", formatted="tall"),
-        "\nAntonym: ",
-        FValue(source="antonym", value="short", formatted="short"),
-        "\n\nWord: ",
-        FValue(source="input", value="big", formatted="big"),
-        "\nAntonym: ",
+    assert (
+        prompt
+        == """
+Give the antonym of every input
+
+Word: happy
+Antonym: sad
+
+Word: tall
+Antonym: short
+
+Word: big
+Antonym: """.lstrip()
     )
 
 

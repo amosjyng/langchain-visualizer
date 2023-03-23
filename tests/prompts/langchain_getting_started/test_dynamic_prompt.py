@@ -59,12 +59,16 @@ prompt = dynamic_prompt.format(input=long_string)
 
 
 def test_prompt():
-    assert prompt.parts == (
-        "Give the antonym of every input\n\nWord: ",
+    print([repr(x) for x in prompt.flatten().parts])
+    assert prompt.flatten().parts == (
+        "Give the antonym of every input",
+        FValue(source="self.example_separator", value="\n\n", formatted="\n\n"),
+        "Word: ",
         FValue(source="word", value="happy", formatted="happy"),
         "\nAntonym: ",
         FValue(source="antonym", value="sad", formatted="sad"),
-        "\n\nWord: ",
+        FValue(source="self.example_separator", value="\n\n", formatted="\n\n"),
+        "Word: ",
         FValue(
             source="input",
             value="big and huge and massive and large and gigantic and tall "

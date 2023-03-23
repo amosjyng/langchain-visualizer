@@ -71,3 +71,15 @@ def test_strip():
         " hello",
     )
     assert s.strip().strip("ho").strip() == "ell"
+
+
+def test_partial_f():
+    partial = PromptTemplate.from_template("hello {foo} world {bar}").partial(foo="3")
+    final = partial.format(bar="7")
+    assert final == "hello 3 world 7"
+    assert final.parts == (
+        "hello ",
+        FValue(source="foo", value="3", formatted="3"),
+        " world ",
+        FValue(source="bar", value="7", formatted="7"),
+    )

@@ -28,16 +28,21 @@ def test_few_shot_f():
     assert (
         s == "Give the antonym of every input:  w=happy,a=sad  w=tall,a=short  w=big,a="
     )
-    assert s.parts == (
-        "Give the antonym of every input:  w=",
+    print([repr(x) for x in s.flatten().parts])
+    assert s.flatten().parts == (
+        "Give the antonym of every input:",
+        FValue(source="self.example_separator", value="  ", formatted="  "),
+        "w=",
         FValue(source="word", value="happy", formatted="happy"),
         ",a=",
         FValue(source="antonym", value="sad", formatted="sad"),
-        "  w=",
+        FValue(source="self.example_separator", value="  ", formatted="  "),
+        "w=",
         FValue(source="word", value="tall", formatted="tall"),
         ",a=",
         FValue(source="antonym", value="short", formatted="short"),
-        "  w=",
+        FValue(source="self.example_separator", value="  ", formatted="  "),
+        "w=",
         FValue(source="input", value="big", formatted="big"),
         ",a=",
     )

@@ -1,40 +1,28 @@
 from fvalues import F, FValue
-from langchain import PromptTemplate
-from langchain.formatting import formatter
-
-from langchain_visualizer.hijacking import hijack
+from langchain.formatting import formatter as og_formatter
+from langchain.prompts.base import DEFAULT_FORMATTER_MAPPING
 
 
-def format_f(formatter, string, *args, **kwargs) -> F:
+def new_format(format_string, /, *args, **kwargs):
     # if there are any issues with the formatting, let the formatter expose them first
-    result = formatter.format(string, *args, **kwargs)
+    result = og_formatter.format(format_string, *args, **kwargs)
     parts = []
     # modified from string._vformat
-    for literal_text, field_name, format_spec, _ in formatter.parse(string):
+    for literal_text, field_name, format_spec, _ in og_formatter.parse(format_string):
         if literal_text:
             parts.append(literal_text)
 
         if field_name is not None:
-            obj, _ = formatter.get_field(field_name, args, kwargs)
+            obj, _ = og_formatter.get_field(field_name, args, kwargs)
             parts.append(
                 FValue(
                     source=field_name,
                     value=obj,
-                    formatted=formatter.format_field(obj, format_spec),
+                    formatted=og_formatter.format_field(obj, format_spec),
                 )
             )
 
     return F(result, parts=tuple(parts))
 
 
-def get_new_format(og_format):
-    def new_format(self, *args, **kwargs) -> str:
-        if self.template_format != "f-string":
-            return og_format(*args, **kwargs)
-
-        return format_f(formatter, self.template, *args, **kwargs)
-
-    return new_format
-
-
-hijack(PromptTemplate, "format", get_new_format)
+DEFAULT_FORMATTER_MAPPING["f-string"] = new_format
