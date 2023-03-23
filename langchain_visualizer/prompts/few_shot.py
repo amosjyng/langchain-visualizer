@@ -1,43 +1,33 @@
-import string
-from typing import List, Optional, Union
+from typing import Iterable
 
-from fvalues import F, FValue
+from fvalues import F
 from langchain import FewShotPromptTemplate
+from langchain.prompts.prompt import PromptTemplate
 
 from langchain_visualizer.hijacking import hijack
-from langchain_visualizer.prompts.prompt import format_f
 
 
-class FBuilder:
-    def __init__(self, segments: Optional[List[Union[F, str]]] = None):
-        self.f_values = segments or []
+def preserved_join(self, iterable: Iterable[str]) -> "F":
+    """Copied from https://github.com/oughtinc/fvalues/pull/11 pending merge."""
+    joined = ""
+    parts = []
+    for substring in iterable:
+        joined += substring
+        parts.append(substring)
 
-    def add_segment(self, segment: Union[F, str]):
-        if not hasattr(segment, "parts"):
-            segment = F(segment, parts=(segment,))
-        self.f_values.append(segment)
+        # avoid polluting parts when joining with empty string
+        if str(self) != "":
+            joined += self
+            parts.append(self)
 
-    def pop(self):
-        return self.f_values.pop()
+    if len(parts) > 0 and str(self) != "":  # pop the last joiner
+        joined = joined[: -len(self)]
+        parts.pop()
 
-    def build(self):
-        finaL_str = "".join(self.f_values)
-        final_parts = []
-        previous_was_str = False
-        for f_value in self.f_values:
-            for part in f_value.flatten().parts:
-                if isinstance(part, FValue):
-                    final_parts.append(part)
-                    previous_was_str = False
-                else:  # it's a simple str
-                    if previous_was_str:  # concatenate the two strings
-                        final_parts[-1] = final_parts[-1] + part
-                    else:
-                        final_parts.append(part)
+    return F(joined, parts=tuple(parts))
 
-                    previous_was_str = True
 
-        return F(finaL_str, parts=tuple(final_parts))
+setattr(F, "preserved_join", preserved_join)
 
 
 def get_new_format(og_format):
@@ -45,28 +35,31 @@ def get_new_format(og_format):
         if self.template_format != "f-string":
             return og_format(*args, **kwargs)
 
-        f_builder = FBuilder()
-        if self.prefix:
-            f_builder.add_segment(
-                format_f(string.Formatter(), self.prefix, *args, **kwargs)
-            )
-            f_builder.add_segment(self.example_separator)
-
+        # copied from FewShotPromptTemplate.format
+        kwargs = self._merge_partial_and_user_variables(**kwargs)
+        # Get the examples to use.
         examples = self._get_examples(**kwargs)
-        # ignore nested templating for now
-        for example in examples:
-            example_f = self.example_prompt.format(**example)
-            f_builder.add_segment(example_f)
-            f_builder.add_segment(self.example_separator)
-        f_builder.pop()  # pop last separator in case there's no suffix
-
-        if self.suffix:
-            f_builder.add_segment(self.example_separator)
-            f_builder.add_segment(
-                format_f(string.Formatter(), self.suffix, *args, **kwargs)
-            )
-
-        return f_builder.build()
+        # Format the examples.
+        example_strings = [
+            self.example_prompt.format(**example) for example in examples
+        ]
+        # Create the overall template.
+        prefix_template = PromptTemplate.from_template(self.prefix)
+        suffix_template = PromptTemplate.from_template(self.suffix)
+        prefix_args = {
+            k: v for k, v in kwargs.items() if k in prefix_template.input_variables
+        }
+        suffix_args = {
+            k: v for k, v in kwargs.items() if k in suffix_template.input_variables
+        }
+        pieces = [
+            prefix_template.format(**prefix_args),
+            *example_strings,
+            suffix_template.format(**suffix_args),
+        ]
+        return F(self.example_separator).preserved_join(  # type: ignore
+            [piece for piece in pieces if piece]
+        )
 
     return new_format
 

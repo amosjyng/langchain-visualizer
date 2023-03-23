@@ -25,8 +25,10 @@ google-search-results = "^2.4.1"
 faiss-cpu = "^1.7.3"
 tiktoken = "^0.1.2"
 autoflake = "^2.0.1"
+pytest-asyncio = "^0.21.0"
 
 [tool.pytest.ini_options]
+asyncio_mode = "auto"
 markers = [
     "network: marks tests as requiring network services",
 ]
