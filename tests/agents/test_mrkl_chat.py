@@ -2,8 +2,14 @@ import langchain_visualizer  # isort:skip  # noqa: F401
 import asyncio
 
 import vcr_langchain as vcr
-from langchain import OpenAI, LLMMathChain, SerpAPIWrapper, SQLDatabase, SQLDatabaseChain
-from langchain.agents import initialize_agent, Tool
+from langchain import (
+    LLMMathChain,
+    OpenAI,
+    SerpAPIWrapper,
+    SQLDatabase,
+    SQLDatabaseChain,
+)
+from langchain.agents import Tool, initialize_agent
 from langchain.chat_models import ChatOpenAI
 
 # ========================== Start of langchain example code ==========================
@@ -20,23 +26,35 @@ async def mrkl_chat_demo():
     db_chain = SQLDatabaseChain(llm=llm1, database=db, verbose=True)
     tools = [
         Tool(
-            name = "Search",
+            name="Search",
             func=search.run,
-            description="useful for when you need to answer questions about current events. You should ask targeted questions"
+            description=(
+                "useful for when you need to answer questions about current events. "
+                "You should ask targeted questions"
+            ),
         ),
         Tool(
             name="Calculator",
             func=llm_math_chain.run,
-            description="useful for when you need to answer questions about math"
+            description="useful for when you need to answer questions about math",
         ),
         Tool(
             name="FooBar DB",
             func=db_chain.run,
-            description="useful for when you need to answer questions about FooBar. Input should be in the form of a question containing full context"
-        )
+            description=(
+                "useful for when you need to answer questions about FooBar. Input "
+                "should be in the form of a question containing full context"
+            ),
+        ),
     ]
-    mrkl = initialize_agent(tools, llm, agent="chat-zero-shot-react-description", verbose=True)
-    return mrkl.run("What is the full name of the artist who recently released an album called 'The Storm Before the Calm' and are they in the FooBar database? If so, what albums of theirs are in the FooBar database?")
+    mrkl = initialize_agent(
+        tools, llm, agent="chat-zero-shot-react-description", verbose=True
+    )
+    return mrkl.run(
+        "What is the full name of the artist who recently released an album called "
+        "'The Storm Before the Calm' and are they in the FooBar database? If so, what "
+        "albums of theirs are in the FooBar database?"
+    )
 
 
 # ================================== Execute example ==================================
@@ -45,7 +63,9 @@ async def mrkl_chat_demo():
 def test_llm_usage_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(mrkl_chat_demo())
-    assert result.strip().endswith("raised to the 0.23 power is 2.169459462491557.")
+    assert result.strip().endswith(
+        "The album 'Jagged Little Pill' is in the FooBar database."
+    )
 
 
 if __name__ == "__main__":

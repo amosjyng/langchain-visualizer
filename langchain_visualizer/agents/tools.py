@@ -1,7 +1,7 @@
 from langchain.python import PythonREPL
 from langchain.serpapi import SerpAPIWrapper
-from langchain.utilities.bash import BashProcess
 from langchain.sql_database import SQLDatabase
+from langchain.utilities.bash import BashProcess
 
 from langchain_visualizer.hijacking import ice_hijack
 
