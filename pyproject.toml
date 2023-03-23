@@ -35,6 +35,7 @@ filterwarnings = [
     'ignore:There is no current event loop:DeprecationWarning',
     'ignore:distutils Version classes are deprecated:DeprecationWarning',
     'ignore:unclosed <ssl.SSLSocket:ResourceWarning',
+    'ignore:Dialect sqlite:sqlalchemy.exc.SAWarning',
 ]
 
 [tool.mypy]
