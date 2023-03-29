@@ -49,9 +49,3 @@ def to_json_value(x: Any) -> json_value.JSONValue:
 
 
 json_value.to_json_value = to_json_value
-
-# this import cannot happen earlier because otherwise ice.json_value.to_json_value
-# does not get successfully overwritten
-from ice.recipe import recipe  # noqa: E402
-
-visualize = recipe.main
