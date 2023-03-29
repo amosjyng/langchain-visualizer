@@ -64,6 +64,12 @@ langchain_visualizer.visualize(search_agent_demo)
 
 A browser window will open up, and you can actually see the agent execute happen in real-time!
 
+### Jupyter notebook support
+
+Jupyter notebooks are now supported! To use this inside a Jupyter notebook, **make sure to import the `visualize` function from `langchain_visualizer.jupyter` instead.**
+
+Please look at [the demo notebook](/tests/demo.ipynb) to see an example of how it can be used in Jupyter.
+
 ### Visualizing embeddings
 
 If you want to also visualize documents being chunked up for embeddings, you can now do so by calling the `visualize_embeddings` function before you visualize the main chain:
