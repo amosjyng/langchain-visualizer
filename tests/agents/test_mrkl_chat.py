@@ -64,7 +64,7 @@ def test_llm_usage_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(mrkl_chat_demo())
     assert result.strip().endswith(
-        "The album 'Jagged Little Pill' is in the FooBar database."
+        "in the FooBar database with the album 'Jagged Little Pill'."
     )
 
 
