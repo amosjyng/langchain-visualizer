@@ -24,7 +24,7 @@ interactions:
       content-type:
       - text/plain; charset=utf-8
       date:
-      - Wed, 22 Mar 2023 23:37:18 GMT
+      - Sun, 02 Apr 2023 09:48:49 GMT
       server:
       - uvicorn
     http_version: HTTP/1.1
@@ -51,7 +51,7 @@ interactions:
       full name of the artist who recently released an album called ''The Storm Before
       the Calm'' and are they in the FooBar database? If so, what albums of theirs
       are in the FooBar database?\n\n"}], "model": "gpt-3.5-turbo", "max_tokens":
-      null, "stream": false, "n": 1, "temperature": 0, "stop": ["Observation:"]}'
+      null, "stream": false, "n": 1, "stop": ["Observation:"]}'
     headers:
       Accept:
       - '*/*'
@@ -60,55 +60,65 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1768'
+      - '1750'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.2
+      - OpenAI/v1 PythonBindings/0.27.3
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
-      string: '{"id":"chatcmpl-6x2IyUsD4bZGG6JifbHkiu05Wgnhj","object":"chat.completion","created":1679528232,"model":"gpt-3.5-turbo-0301","usage":{"prompt_tokens":364,"completion_tokens":119,"total_tokens":483},"choices":[{"message":{"role":"assistant","content":"Question:
-        What is the full name of the artist who recently released an album called
-        ''The Storm Before the Calm'' and are they in the FooBar database? If so,
-        what albums of theirs are in the FooBar database?\nThought: I should use the
-        Search tool to find the answer to the first part of the question and then
-        use the FooBar DB tool to find the answer to the second part.\nAction:\n```\n{\n  \"action\":
-        \"Search\",\n  \"action_input\": \"Who recently released an album called ''The
-        Storm Before the Calm''\"\n}\n```\n"},"finish_reason":"stop","index":0}]}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA3RQTW/TQBC98ytGc+nFiZwmaeheEG5VqRKXqpEqwCiZ2ON4y3rH7I4VSpT/XsVx
+        Cwh6fW/ex7w92hINFjVp0bRutJjczX5tsuvp58eH7vwmc5+Wu+zH/LK6mn2pMUHZPHKhg2JcSNM6
+        ViseEywCk3KJZnLxPp0vzi+n0wQbKdmhwW2ro+l4PtIubGSUTtMJJthF2jKaPbZBmlZXKt/ZRzTT
+        i3mCv71f8Uk6T1BFyb1Cs0V6SLCoxRYc0XzdY8PxxTaIYzRIMdqo5PVYUryyPz5w13E8uht4qEnB
+        RtCaoeqcA08Ng1Q9QEFtVNjVAoEL9uqeILBjilwCeSC36RooyDku4WxZM9yrhAYyriRwb3FFrjkD
+        8iXQCXkC63vmRiSjACUpbSjyB7itIEoCu2Oj3jkOPWyIvfoNYe6XtXTbWg3cQqylcyV08RR/zxSK
+        GlTEgQpU1pc9/p8vaaAG++vsH5UNQ69x7j8W/X65X6/Xud/nHiBH6sEcDeR4Ss4x+ZNaWd92ejr4
+        a9yXTftB3xwyx9wfhkg8JFhZb2O9CkxRPBqMKi0maH3JP9Gkh2+Hd88AAAD//wMAc45gxOQCAAA=
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7b25e4407a9c86ed-ORD
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '802'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Wed, 22 Mar 2023 23:37:17 GMT
-      Openai-Model:
+      - Tue, 04 Apr 2023 01:48:57 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - gpt-3.5-turbo-0301
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '5182'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '4321'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Ratelimit-Limit-Requests:
+      x-ratelimit-limit-requests:
       - '3500'
-      X-Ratelimit-Remaining-Requests:
+      x-ratelimit-remaining-requests:
       - '3499'
-      X-Ratelimit-Reset-Requests:
+      x-ratelimit-reset-requests:
       - 17ms
-      X-Request-Id:
-      - 7782c1ca08a9467ad6223ed1434c6fed
+      x-request-id:
+      - 5b184a660f8fda860fb9a269f3033775
     status:
       code: 200
       message: OK
@@ -124,144 +134,301 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://serpapi.com/search?engine=google&gl=us&google_domain=google.com&hl=en&output=json&q=Who+recently+released+an+album+called+%27The+Storm+Before+the+Calm%27&source=python
+    uri: https://serpapi.com/search?engine=google&gl=us&google_domain=google.com&hl=en&output=json&q=artist+who+released+album+The+Storm+Before+the+Calm&source=python
   response:
     body:
       string: !!binary |
-        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
+        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
+        TnGSuCAzAQA=
     headers:
       CF-Cache-Status:
       - MISS
       CF-Ray:
-      - 7ac2431f8def42fe-EWR
+      - 7b25e465293986f8-ORD
       Cache-Control:
       - max-age=3600, public
       Connection:
@@ -271,9 +438,9 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 22 Mar 2023 23:37:24 GMT
+      - Tue, 04 Apr 2023 01:49:17 GMT
       ETag:
-      - W/"f00690642ae64244be7465f7accf7eff"
+      - W/"62caee25e4ae9d2ae3f09155df64b3cc"
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -285,7 +452,7 @@ interactions:
       referrer-policy:
       - strict-origin-when-cross-origin
       serpapi-search-id:
-      - 641b9133f2180158859a864a
+      - 642b820b1baebb49b4af2510
       x-content-type-options:
       - nosniff
       x-download-options:
@@ -295,11 +462,11 @@ interactions:
       x-permitted-cross-domain-policies:
       - none
       x-request-id:
-      - 7067e900-130d-4dbb-b32b-2d6c32eb63a4
+      - 6403b72a-ac9f-4ac5-939e-5dc3319f450e
       x-robots-tag:
       - noindex, nofollow
       x-runtime:
-      - '1.458195'
+      - '18.807963'
       x-xss-protection:
       - 1; mode=block
     status:
@@ -331,11 +498,13 @@ interactions:
       full name of the artist who recently released an album called ''The Storm Before
       the Calm'' and are they in the FooBar database? If so, what albums of theirs
       are in the FooBar database?\nThought: I should use the Search tool to find the
-      answer to the first part of the question and then use the FooBar DB tool to
-      find the answer to the second part.\nAction:\n```\n{\n  \"action\": \"Search\",\n  \"action_input\":
-      \"Who recently released an album called ''The Storm Before the Calm''\"\n}\n```\n\nObservation:
-      Alanis Morissette\nThought:"}], "model": "gpt-3.5-turbo", "max_tokens": null,
-      "stream": false, "n": 1, "temperature": 0, "stop": ["Observation:"]}'
+      name of the artist and the FooBar DB tool to find their albums.\nAction:\n```\n{\n  \"action\":
+      \"Search\",\n  \"action_input\": \"artist who released album The Storm Before
+      the Calm\"\n}\n```\n\nObservation: Alanis Nadine Morissette is a Canadian-American
+      singer-songwriter and actress. Known for her emotive mezzo-soprano voice and
+      confessional songwriting, Morissette began her career in Canada in the early
+      1990s with two dance-pop albums.\nThought:"}], "model": "gpt-3.5-turbo", "max_tokens":
+      null, "stream": false, "n": 1, "stop": ["Observation:"]}'
     headers:
       Accept:
       - '*/*'
@@ -344,52 +513,64 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '2428'
+      - '2565'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.2
+      - OpenAI/v1 PythonBindings/0.27.3
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
-      string: '{"id":"chatcmpl-6x2JBj0Pu7gNBzwOUltE9uM4AX2h9","object":"chat.completion","created":1679528245,"model":"gpt-3.5-turbo-0301","usage":{"prompt_tokens":518,"completion_tokens":72,"total_tokens":590},"choices":[{"message":{"role":"assistant","content":"Now
-        that I know the artist''s name, I can use the FooBar DB tool to find out if
-        they are in the database and what albums of theirs are in it.\nAction:\n```\n{\n  \"action\":
-        \"FooBar DB\",\n  \"action_input\": \"What albums does Alanis Morissette have
-        in the database?\"\n}\n```\n\n"},"finish_reason":"stop","index":0}]}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA1RPTW/UMBC98ytGc/aukpb0w7dWgCiCFg4VlXC168SzjcGZiewJBa3y39Ful1a9
+        jd578z62GANa7Hqv3TCmxWn9rbmp7qpPt+2jfnyfj6q7+nv63N5+DXqDBqX9SZ0ePpadDGMijcJo
+        sMvklQLa+uSsak6Pzpszg4MESmjxYdTF8bJZ6JRbWVTHVY0Gp+IfCO0WxyzDqCuVX8QFbdM0Bl+8
+        X/Bzgyrq0zNyUr+dDXa9xI4K2h9bHKj8d82SCC36UmJRz7rrKKzEu/7X8gjae4Ur6P1vAu0J2A8E
+        stnfPmssauAKSi9TCjCVJ9EHkUuf4d0lqEgCFdhEDjsqZvCpnYYCkffS4NW3vtDS8UW3W2Idr9dr
+        x1vHAAAO/R52aMHhs7FD85pfRR4nfVIdEtq/cJE8xwLXPkQm+CI5lkKq5NDxfAjC2eAmciz9KpMv
+        wmixqIxoMHKgP2ir+X5+8w8AAP//AwDMdW3DBgIAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7b25e4de3ae286ed-ORD
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '569'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Wed, 22 Mar 2023 23:37:28 GMT
-      Openai-Model:
+      - Tue, 04 Apr 2023 01:49:21 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - gpt-3.5-turbo-0301
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '2966'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '2618'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Ratelimit-Limit-Requests:
+      x-ratelimit-limit-requests:
       - '3500'
-      X-Ratelimit-Remaining-Requests:
+      x-ratelimit-remaining-requests:
       - '3499'
-      X-Ratelimit-Reset-Requests:
+      x-ratelimit-reset-requests:
       - 17ms
-      X-Request-Id:
-      - 59b67214ab4da6989ad6715f07d24512
+      x-request-id:
+      - dce2620889f2f873916a386109dfb932
     status:
       code: 200
       message: OK
@@ -463,9 +644,9 @@ interactions:
       INTEGER NOT NULL, \n\tPRIMARY KEY (\"PlaylistId\", \"TrackId\"), \n\tFOREIGN
       KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN KEY(\"PlaylistId\")
       REFERENCES \"Playlist\" (\"PlaylistId\")\n)\n/*\n3 rows from PlaylistTrack table:\nPlaylistId\tTrackId\n\n*/\n\nQuestion:
-      What albums does Alanis Morissette have in the database? \nSQLQuery:"], "model":
-      "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty":
-      0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias": {}, "stop": ["\nSQLResult:"]}'
+      albums by Alanis Nadine Morissette \nSQLQuery:"], "model": "text-davinci-003",
+      "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}, "stop": ["\nSQLResult:"]}'
     headers:
       Accept:
       - '*/*'
@@ -474,192 +655,217 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '6416'
+      - '6394'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.2
+      - OpenAI/v1 PythonBindings/0.27.3
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6x2JE41wBAjsDKMqi8dCFcxlzDEJZ","object":"text_completion","created":1679528248,"model":"text-davinci-003","choices":[{"text":"
-        SELECT Title FROM Album WHERE ArtistId IN (SELECT ArtistId FROM Artist WHERE
-        Name = ''Alanis Morissette'') LIMIT 5;","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":2116,"completion_tokens":28,"total_tokens":2144}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0zQXUvDMBgF4Ht/RXhhTCGDtu7LeFW00+E+cBaUiYw0ed0y06Q078Zg7L+Lczgv
+        zznP1dmD0SBAlZVt9eLnzqyXRjZfbwcP7cF9Hr+N5qpYrROaAwdfrFERCCDc0UL5srJIxjvgoGqU
+        hBpE3O1HnV5y0405lF6jPfGWllvjlGlF0fWPX3mjMIB43x9nEMBeslF2l7PckEU2mE3HLLXFpmSv
+        j9ksY2lNJtBQs+GEXZ7oX/erj+nEJ7JENho+ZazZSK10JrCJ1MYhG/vahIBE2Ghe3QIH4zTuQEQc
+        rF9WtS8CCLexlsOncSasFjXK4B0ICOQrOHxw2AS5RBB7qGpfVrQg/4UugEjiOOFwfuY89DmQJ2n/
+        0XZ0OFx8AwAA//8DAN82S96AAQAA
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7b25e4f09d1f86ed-ORD
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '380'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Wed, 22 Mar 2023 23:37:29 GMT
-      Openai-Model:
-      - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '1159'
-      Openai-Version:
-      - '2020-10-01'
-      Strict-Transport-Security:
-      - max-age=15724800; includeSubDomains
-      X-Ratelimit-Limit-Requests:
-      - '3000'
-      X-Ratelimit-Limit-Tokens:
-      - '250000'
-      X-Ratelimit-Remaining-Requests:
-      - '2999'
-      X-Ratelimit-Remaining-Tokens:
-      - '249487'
-      X-Ratelimit-Reset-Requests:
-      - 20ms
-      X-Ratelimit-Reset-Tokens:
-      - 122ms
-      X-Request-Id:
-      - ed7a0fedff7d0a5854aadf414c39f0f8
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"prompt": ["Given an input question, first create a syntactically correct
-      sqlite query to run, then look at the results of the query and return the answer.
-      Unless the user specifies in his question a specific number of examples he wishes
-      to obtain, always limit your query to at most 5 results. You can order the results
-      by a relevant column to return the most interesting examples in the database.\n\nNever
-      query for all the columns from a specific table, only ask for a the few relevant
-      columns given the question.\n\nPay attention to use only the column names that
-      you can see in the schema description. Be careful to not query for columns that
-      do not exist. Also, pay attention to which column is in which table.\n\nUse
-      the following format:\n\nQuestion: \"Question here\"\nSQLQuery: \"SQL Query
-      to run\"\nSQLResult: \"Result of the SQLQuery\"\nAnswer: \"Final answer here\"\n\nOnly
-      use the tables listed below.\n\n\nCREATE TABLE \"Artist\" (\n\t\"ArtistId\"
-      INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120), \n\tPRIMARY KEY (\"ArtistId\")\n)\n/*\n3
-      rows from Artist table:\nArtistId\tName\n1\tAC/DC\n2\tAccept\n3\tAerosmith\n*/\n\n\nCREATE
-      TABLE \"Employee\" (\n\t\"EmployeeId\" INTEGER NOT NULL, \n\t\"LastName\" NVARCHAR(20)
-      NOT NULL, \n\t\"FirstName\" NVARCHAR(20) NOT NULL, \n\t\"Title\" NVARCHAR(30),
-      \n\t\"ReportsTo\" INTEGER, \n\t\"BirthDate\" DATETIME, \n\t\"HireDate\" DATETIME,
-      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
-      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
-      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60), \n\tPRIMARY
-      KEY (\"EmployeeId\"), \n\tFOREIGN KEY(\"ReportsTo\") REFERENCES \"Employee\"
-      (\"EmployeeId\")\n)\n/*\n3 rows from Employee table:\nEmployeeId\tLastName\tFirstName\tTitle\tReportsTo\tBirthDate\tHireDate\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\n\n*/\n\n\nCREATE
-      TABLE \"Genre\" (\n\t\"GenreId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
-      \n\tPRIMARY KEY (\"GenreId\")\n)\n/*\n3 rows from Genre table:\nGenreId\tName\n1\tRock\n2\tJazz\n3\tMetal\n*/\n\n\nCREATE
-      TABLE \"MediaType\" (\n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
-      \n\tPRIMARY KEY (\"MediaTypeId\")\n)\n/*\n3 rows from MediaType table:\nMediaTypeId\tName\n1\tMPEG
-      audio file\n2\tProtected AAC audio file\n3\tProtected MPEG-4 video file\n*/\n\n\nCREATE
-      TABLE \"Playlist\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
-      \n\tPRIMARY KEY (\"PlaylistId\")\n)\n/*\n3 rows from Playlist table:\nPlaylistId\tName\n\n*/\n\n\nCREATE
-      TABLE \"Album\" (\n\t\"AlbumId\" INTEGER NOT NULL, \n\t\"Title\" NVARCHAR(160)
-      NOT NULL, \n\t\"ArtistId\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"AlbumId\"),
-      \n\tFOREIGN KEY(\"ArtistId\") REFERENCES \"Artist\" (\"ArtistId\")\n)\n/*\n3
-      rows from Album table:\nAlbumId\tTitle\tArtistId\n1\tFor Those About To Rock
-      We Salute You\t1\n2\tBalls to the Wall\t2\n3\tRestless and Wild\t2\n*/\n\n\nCREATE
-      TABLE \"Customer\" (\n\t\"CustomerId\" INTEGER NOT NULL, \n\t\"FirstName\" NVARCHAR(40)
-      NOT NULL, \n\t\"LastName\" NVARCHAR(20) NOT NULL, \n\t\"Company\" NVARCHAR(80),
-      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
-      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
-      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60) NOT NULL,
-      \n\t\"SupportRepId\" INTEGER, \n\tPRIMARY KEY (\"CustomerId\"), \n\tFOREIGN
-      KEY(\"SupportRepId\") REFERENCES \"Employee\" (\"EmployeeId\")\n)\n/*\n3 rows
-      from Customer table:\nCustomerId\tFirstName\tLastName\tCompany\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\tSupportRepId\n\n*/\n\n\nCREATE
-      TABLE \"Invoice\" (\n\t\"InvoiceId\" INTEGER NOT NULL, \n\t\"CustomerId\" INTEGER
-      NOT NULL, \n\t\"InvoiceDate\" DATETIME NOT NULL, \n\t\"BillingAddress\" NVARCHAR(70),
-      \n\t\"BillingCity\" NVARCHAR(40), \n\t\"BillingState\" NVARCHAR(40), \n\t\"BillingCountry\"
-      NVARCHAR(40), \n\t\"BillingPostalCode\" NVARCHAR(10), \n\t\"Total\" NUMERIC(10,
-      2) NOT NULL, \n\tPRIMARY KEY (\"InvoiceId\"), \n\tFOREIGN KEY(\"CustomerId\")
-      REFERENCES \"Customer\" (\"CustomerId\")\n)\n/*\n3 rows from Invoice table:\nInvoiceId\tCustomerId\tInvoiceDate\tBillingAddress\tBillingCity\tBillingState\tBillingCountry\tBillingPostalCode\tTotal\n\n*/\n\n\nCREATE
-      TABLE \"Track\" (\n\t\"TrackId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(200)
-      NOT NULL, \n\t\"AlbumId\" INTEGER, \n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"GenreId\"
-      INTEGER, \n\t\"Composer\" NVARCHAR(220), \n\t\"Milliseconds\" INTEGER NOT NULL,
-      \n\t\"Bytes\" INTEGER, \n\t\"UnitPrice\" NUMERIC(10, 2) NOT NULL, \n\tPRIMARY
-      KEY (\"TrackId\"), \n\tFOREIGN KEY(\"MediaTypeId\") REFERENCES \"MediaType\"
-      (\"MediaTypeId\"), \n\tFOREIGN KEY(\"GenreId\") REFERENCES \"Genre\" (\"GenreId\"),
-      \n\tFOREIGN KEY(\"AlbumId\") REFERENCES \"Album\" (\"AlbumId\")\n)\n/*\n3 rows
-      from Track table:\nTrackId\tName\tAlbumId\tMediaTypeId\tGenreId\tComposer\tMilliseconds\tBytes\tUnitPrice\n1\tFor
-      Those About To Rock (We Salute You)\t1\t1\t1\tAngus Young, Malcolm Young, Brian
-      Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
-      As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\n\nCREATE
-      TABLE \"InvoiceLine\" (\n\t\"InvoiceLineId\" INTEGER NOT NULL, \n\t\"InvoiceId\"
-      INTEGER NOT NULL, \n\t\"TrackId\" INTEGER NOT NULL, \n\t\"UnitPrice\" NUMERIC(10,
-      2) NOT NULL, \n\t\"Quantity\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"InvoiceLineId\"),
-      \n\tFOREIGN KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN
-      KEY(\"InvoiceId\") REFERENCES \"Invoice\" (\"InvoiceId\")\n)\n/*\n3 rows from
-      InvoiceLine table:\nInvoiceLineId\tInvoiceId\tTrackId\tUnitPrice\tQuantity\n\n*/\n\n\nCREATE
-      TABLE \"PlaylistTrack\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"TrackId\"
-      INTEGER NOT NULL, \n\tPRIMARY KEY (\"PlaylistId\", \"TrackId\"), \n\tFOREIGN
-      KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN KEY(\"PlaylistId\")
-      REFERENCES \"Playlist\" (\"PlaylistId\")\n)\n/*\n3 rows from PlaylistTrack table:\nPlaylistId\tTrackId\n\n*/\n\nQuestion:
-      What albums does Alanis Morissette have in the database? \nSQLQuery: SELECT
-      Title FROM Album WHERE ArtistId IN (SELECT ArtistId FROM Artist WHERE Name =
-      ''Alanis Morissette'') LIMIT 5;\nSQLResult: [(''Jagged Little Pill'',)]\nAnswer:"],
-      "model": "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias":
-      {}, "stop": ["\nSQLResult:"]}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '6577'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.2
-    method: POST
-    uri: https://api.openai.com/v1/completions
-  response:
-    body:
-      string: '{"id":"cmpl-6x2JHwvmez5sD3fIby7F8ONJ0Ll6J","object":"text_completion","created":1679528251,"model":"text-davinci-003","choices":[{"text":"
-        Alanis Morissette has the album ''Jagged Little Pill'' in the database.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":2159,"completion_tokens":18,"total_tokens":2177}}
-
-        '
-    headers:
-      Access-Control-Allow-Origin:
+      - Tue, 04 Apr 2023 01:49:23 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
       - '*'
-      Cache-Control:
-      - no-cache, must-revalidate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '336'
-      Content-Type:
-      - application/json
-      Date:
-      - Wed, 22 Mar 2023 23:37:32 GMT
-      Openai-Model:
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '1371'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '1555'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Ratelimit-Limit-Requests:
+      x-ratelimit-limit-requests:
       - '3000'
-      X-Ratelimit-Limit-Tokens:
+      x-ratelimit-limit-tokens:
       - '250000'
-      X-Ratelimit-Remaining-Requests:
+      x-ratelimit-remaining-requests:
       - '2999'
-      X-Ratelimit-Remaining-Tokens:
+      x-ratelimit-remaining-tokens:
       - '249488'
-      X-Ratelimit-Reset-Requests:
+      x-ratelimit-reset-requests:
       - 20ms
-      X-Ratelimit-Reset-Tokens:
+      x-ratelimit-reset-tokens:
       - 122ms
-      X-Request-Id:
-      - 298552973e4fcbefdcf79b777d8691db
+      x-request-id:
+      - a6c3cf080a4791bc942c6702e5e853e9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"prompt": ["Given an input question, first create a syntactically correct
+      sqlite query to run, then look at the results of the query and return the answer.
+      Unless the user specifies in his question a specific number of examples he wishes
+      to obtain, always limit your query to at most 5 results. You can order the results
+      by a relevant column to return the most interesting examples in the database.\n\nNever
+      query for all the columns from a specific table, only ask for a the few relevant
+      columns given the question.\n\nPay attention to use only the column names that
+      you can see in the schema description. Be careful to not query for columns that
+      do not exist. Also, pay attention to which column is in which table.\n\nUse
+      the following format:\n\nQuestion: \"Question here\"\nSQLQuery: \"SQL Query
+      to run\"\nSQLResult: \"Result of the SQLQuery\"\nAnswer: \"Final answer here\"\n\nOnly
+      use the tables listed below.\n\n\nCREATE TABLE \"Artist\" (\n\t\"ArtistId\"
+      INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120), \n\tPRIMARY KEY (\"ArtistId\")\n)\n/*\n3
+      rows from Artist table:\nArtistId\tName\n1\tAC/DC\n2\tAccept\n3\tAerosmith\n*/\n\n\nCREATE
+      TABLE \"Employee\" (\n\t\"EmployeeId\" INTEGER NOT NULL, \n\t\"LastName\" NVARCHAR(20)
+      NOT NULL, \n\t\"FirstName\" NVARCHAR(20) NOT NULL, \n\t\"Title\" NVARCHAR(30),
+      \n\t\"ReportsTo\" INTEGER, \n\t\"BirthDate\" DATETIME, \n\t\"HireDate\" DATETIME,
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60), \n\tPRIMARY
+      KEY (\"EmployeeId\"), \n\tFOREIGN KEY(\"ReportsTo\") REFERENCES \"Employee\"
+      (\"EmployeeId\")\n)\n/*\n3 rows from Employee table:\nEmployeeId\tLastName\tFirstName\tTitle\tReportsTo\tBirthDate\tHireDate\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\n\n*/\n\n\nCREATE
+      TABLE \"Genre\" (\n\t\"GenreId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"GenreId\")\n)\n/*\n3 rows from Genre table:\nGenreId\tName\n1\tRock\n2\tJazz\n3\tMetal\n*/\n\n\nCREATE
+      TABLE \"MediaType\" (\n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"MediaTypeId\")\n)\n/*\n3 rows from MediaType table:\nMediaTypeId\tName\n1\tMPEG
+      audio file\n2\tProtected AAC audio file\n3\tProtected MPEG-4 video file\n*/\n\n\nCREATE
+      TABLE \"Playlist\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"PlaylistId\")\n)\n/*\n3 rows from Playlist table:\nPlaylistId\tName\n\n*/\n\n\nCREATE
+      TABLE \"Album\" (\n\t\"AlbumId\" INTEGER NOT NULL, \n\t\"Title\" NVARCHAR(160)
+      NOT NULL, \n\t\"ArtistId\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"AlbumId\"),
+      \n\tFOREIGN KEY(\"ArtistId\") REFERENCES \"Artist\" (\"ArtistId\")\n)\n/*\n3
+      rows from Album table:\nAlbumId\tTitle\tArtistId\n1\tFor Those About To Rock
+      We Salute You\t1\n2\tBalls to the Wall\t2\n3\tRestless and Wild\t2\n*/\n\n\nCREATE
+      TABLE \"Customer\" (\n\t\"CustomerId\" INTEGER NOT NULL, \n\t\"FirstName\" NVARCHAR(40)
+      NOT NULL, \n\t\"LastName\" NVARCHAR(20) NOT NULL, \n\t\"Company\" NVARCHAR(80),
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60) NOT NULL,
+      \n\t\"SupportRepId\" INTEGER, \n\tPRIMARY KEY (\"CustomerId\"), \n\tFOREIGN
+      KEY(\"SupportRepId\") REFERENCES \"Employee\" (\"EmployeeId\")\n)\n/*\n3 rows
+      from Customer table:\nCustomerId\tFirstName\tLastName\tCompany\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\tSupportRepId\n\n*/\n\n\nCREATE
+      TABLE \"Invoice\" (\n\t\"InvoiceId\" INTEGER NOT NULL, \n\t\"CustomerId\" INTEGER
+      NOT NULL, \n\t\"InvoiceDate\" DATETIME NOT NULL, \n\t\"BillingAddress\" NVARCHAR(70),
+      \n\t\"BillingCity\" NVARCHAR(40), \n\t\"BillingState\" NVARCHAR(40), \n\t\"BillingCountry\"
+      NVARCHAR(40), \n\t\"BillingPostalCode\" NVARCHAR(10), \n\t\"Total\" NUMERIC(10,
+      2) NOT NULL, \n\tPRIMARY KEY (\"InvoiceId\"), \n\tFOREIGN KEY(\"CustomerId\")
+      REFERENCES \"Customer\" (\"CustomerId\")\n)\n/*\n3 rows from Invoice table:\nInvoiceId\tCustomerId\tInvoiceDate\tBillingAddress\tBillingCity\tBillingState\tBillingCountry\tBillingPostalCode\tTotal\n\n*/\n\n\nCREATE
+      TABLE \"Track\" (\n\t\"TrackId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(200)
+      NOT NULL, \n\t\"AlbumId\" INTEGER, \n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"GenreId\"
+      INTEGER, \n\t\"Composer\" NVARCHAR(220), \n\t\"Milliseconds\" INTEGER NOT NULL,
+      \n\t\"Bytes\" INTEGER, \n\t\"UnitPrice\" NUMERIC(10, 2) NOT NULL, \n\tPRIMARY
+      KEY (\"TrackId\"), \n\tFOREIGN KEY(\"MediaTypeId\") REFERENCES \"MediaType\"
+      (\"MediaTypeId\"), \n\tFOREIGN KEY(\"GenreId\") REFERENCES \"Genre\" (\"GenreId\"),
+      \n\tFOREIGN KEY(\"AlbumId\") REFERENCES \"Album\" (\"AlbumId\")\n)\n/*\n3 rows
+      from Track table:\nTrackId\tName\tAlbumId\tMediaTypeId\tGenreId\tComposer\tMilliseconds\tBytes\tUnitPrice\n1\tFor
+      Those About To Rock (We Salute You)\t1\t1\t1\tAngus Young, Malcolm Young, Brian
+      Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
+      As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\n\nCREATE
+      TABLE \"InvoiceLine\" (\n\t\"InvoiceLineId\" INTEGER NOT NULL, \n\t\"InvoiceId\"
+      INTEGER NOT NULL, \n\t\"TrackId\" INTEGER NOT NULL, \n\t\"UnitPrice\" NUMERIC(10,
+      2) NOT NULL, \n\t\"Quantity\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"InvoiceLineId\"),
+      \n\tFOREIGN KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN
+      KEY(\"InvoiceId\") REFERENCES \"Invoice\" (\"InvoiceId\")\n)\n/*\n3 rows from
+      InvoiceLine table:\nInvoiceLineId\tInvoiceId\tTrackId\tUnitPrice\tQuantity\n\n*/\n\n\nCREATE
+      TABLE \"PlaylistTrack\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"TrackId\"
+      INTEGER NOT NULL, \n\tPRIMARY KEY (\"PlaylistId\", \"TrackId\"), \n\tFOREIGN
+      KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN KEY(\"PlaylistId\")
+      REFERENCES \"Playlist\" (\"PlaylistId\")\n)\n/*\n3 rows from PlaylistTrack table:\nPlaylistId\tTrackId\n\n*/\n\nQuestion:
+      albums by Alanis Nadine Morissette \nSQLQuery: SELECT Title FROM Album WHERE
+      ArtistId IN (SELECT ArtistId FROM Artist WHERE Name LIKE ''%Alanis Nadine Morissette%'');\nSQLResult:
+      []\nAnswer:"], "model": "text-davinci-003", "temperature": 0.0, "max_tokens":
+      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of":
+      1, "logit_bias": {}, "stop": ["\nSQLResult:"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6536'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.27.3
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0zPvU7DMBSG4Z2rsL7ZRUl/0uINiQEGUBkqBAhVbnxI3Do+VnyCiqLeOwIh6Pw+
+        yzvCOxjUXQqTZfm42Bz3zWGzjL5JlQzNen13e/Py/FRuoMG7PdUCA6GjbGvuUiDxHKFR92SFHExZ
+        rYrFcnpVzTU6dhR++cTZDx9rPymK2bdv2deUYV7HnwwDdR1s9Fk9WOcjqXvufc4kQqq1WUUW1VMg
+        m8kpGz+VDbuhy5fQ8NHREabQCNyknncZJg4haLz76HO77clmjjDIwgmnN40h24ZgRqSeuyRb4QPF
+        DDMt5yuN/7O/UM40hMWGM1qVp9PFFwAAAP//AwB13elOQAEAAA==
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7b25e4feff7a86ed-ORD
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 04 Apr 2023 01:49:24 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
+      - text-davinci-003
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '909'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249488'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 122ms
+      x-request-id:
+      - 5f34824363054ab186bb8f05d67a786f
     status:
       code: 200
       message: OK
@@ -689,16 +895,16 @@ interactions:
       full name of the artist who recently released an album called ''The Storm Before
       the Calm'' and are they in the FooBar database? If so, what albums of theirs
       are in the FooBar database?\nThought: I should use the Search tool to find the
-      answer to the first part of the question and then use the FooBar DB tool to
-      find the answer to the second part.\nAction:\n```\n{\n  \"action\": \"Search\",\n  \"action_input\":
-      \"Who recently released an album called ''The Storm Before the Calm''\"\n}\n```\n\nObservation:
-      Alanis Morissette\nThought:Now that I know the artist''s name, I can use the
-      FooBar DB tool to find out if they are in the database and what albums of theirs
-      are in it.\nAction:\n```\n{\n  \"action\": \"FooBar DB\",\n  \"action_input\":
-      \"What albums does Alanis Morissette have in the database?\"\n}\n```\n\n\nObservation:  Alanis
-      Morissette has the album ''Jagged Little Pill'' in the database.\nThought:"}],
-      "model": "gpt-3.5-turbo", "max_tokens": null, "stream": false, "n": 1, "temperature":
-      0, "stop": ["Observation:"]}'
+      name of the artist and the FooBar DB tool to find their albums.\nAction:\n```\n{\n  \"action\":
+      \"Search\",\n  \"action_input\": \"artist who released album The Storm Before
+      the Calm\"\n}\n```\n\nObservation: Alanis Nadine Morissette is a Canadian-American
+      singer-songwriter and actress. Known for her emotive mezzo-soprano voice and
+      confessional songwriting, Morissette began her career in Canada in the early
+      1990s with two dance-pop albums.\nThought:Now that I have the name of the artist,
+      I should use the FooBar DB tool to find their albums in the database.\nAction:\n```\n{\n    \"action\":
+      \"FooBar DB\",\n    \"action_input\": \"albums by Alanis Nadine Morissette\"\n}\n```\n\nObservation:  Alanis
+      Nadine Morissette has not released any albums.\nThought:"}], "model": "gpt-3.5-turbo",
+      "max_tokens": null, "stream": false, "n": 1, "stop": ["Observation:"]}'
     headers:
       Accept:
       - '*/*'
@@ -707,51 +913,469 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '2804'
+      - '2874'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.2
+      - OpenAI/v1 PythonBindings/0.27.3
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
-      string: '{"id":"chatcmpl-6x2JJWTTEXIllLHn3g1eVkzD6Aetx","object":"chat.completion","created":1679528253,"model":"gpt-3.5-turbo-0301","usage":{"prompt_tokens":613,"completion_tokens":54,"total_tokens":667},"choices":[{"message":{"role":"assistant","content":"I
-        have found the answer to both parts of the question.\nFinal Answer: The artist
-        who recently released an album called ''The Storm Before the Calm'' is Alanis
-        Morissette. The album ''Jagged Little Pill'' is in the FooBar database."},"finish_reason":"stop","index":0}]}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA1SQX2/TUAzF3/kUlp/TKqVrO+7bJjRtQyDxMoR2UesmbnMhscO1MxFV/e6o7E/F
+        67F9zu/4gKnGgFVDXnV9O1nNvi4e7nfD7Seuv+f7p4uV9A+7i29y05S3WKBuf3LlLxfTSru+ZU8q
+        WGCVmZxrDLPlZblYvf+wXBTYac0tBtz3PplPFxMf8lYn5bycYYGD0Z4xHLDP2vW+dv3FYhiW83mB
+        Z++zflmgq1P7pqzK2bHAqtFUsWF4PGDH9uqatWUMSGbJnMRPjCrOcuK/czDmzsAbcvCGM0NHI2wZ
+        SIBz1gyWpGK4akmSwReqkzB81pzM2J2hIYPMLZNxDcZPnKkFardDZ1O4A2t0aGvotE67EboRjClX
+        DfweOI+w03xKhRvVa8rw8RpctQWSGjyPQHtKMo1yVZ0+EKJsNpsohygAABHpnxwxQMQ3h4jF//N1
+        kn7w561nLtiOr33ORSJGOb4kRMFjgbskyZp1ZjIVDGiuPRaYpOY/GMrjj+O7vwAAAP//AwBjF+SS
+        OQIAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7b25e50afd1f86ed-ORD
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '514'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Wed, 22 Mar 2023 23:37:35 GMT
-      Openai-Model:
+      - Tue, 04 Apr 2023 01:49:28 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - gpt-3.5-turbo-0301
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '2506'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '2871'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Ratelimit-Limit-Requests:
+      x-ratelimit-limit-requests:
       - '3500'
-      X-Ratelimit-Remaining-Requests:
+      x-ratelimit-remaining-requests:
       - '3499'
-      X-Ratelimit-Reset-Requests:
+      x-ratelimit-reset-requests:
       - 17ms
-      X-Request-Id:
-      - 114a363542ddf8a8717dbe320356e94d
+      x-request-id:
+      - 22385a8e907e610b9fe9837bc1a760b3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"prompt": ["Given an input question, first create a syntactically correct
+      sqlite query to run, then look at the results of the query and return the answer.
+      Unless the user specifies in his question a specific number of examples he wishes
+      to obtain, always limit your query to at most 5 results. You can order the results
+      by a relevant column to return the most interesting examples in the database.\n\nNever
+      query for all the columns from a specific table, only ask for a the few relevant
+      columns given the question.\n\nPay attention to use only the column names that
+      you can see in the schema description. Be careful to not query for columns that
+      do not exist. Also, pay attention to which column is in which table.\n\nUse
+      the following format:\n\nQuestion: \"Question here\"\nSQLQuery: \"SQL Query
+      to run\"\nSQLResult: \"Result of the SQLQuery\"\nAnswer: \"Final answer here\"\n\nOnly
+      use the tables listed below.\n\n\nCREATE TABLE \"Artist\" (\n\t\"ArtistId\"
+      INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120), \n\tPRIMARY KEY (\"ArtistId\")\n)\n/*\n3
+      rows from Artist table:\nArtistId\tName\n1\tAC/DC\n2\tAccept\n3\tAerosmith\n*/\n\n\nCREATE
+      TABLE \"Employee\" (\n\t\"EmployeeId\" INTEGER NOT NULL, \n\t\"LastName\" NVARCHAR(20)
+      NOT NULL, \n\t\"FirstName\" NVARCHAR(20) NOT NULL, \n\t\"Title\" NVARCHAR(30),
+      \n\t\"ReportsTo\" INTEGER, \n\t\"BirthDate\" DATETIME, \n\t\"HireDate\" DATETIME,
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60), \n\tPRIMARY
+      KEY (\"EmployeeId\"), \n\tFOREIGN KEY(\"ReportsTo\") REFERENCES \"Employee\"
+      (\"EmployeeId\")\n)\n/*\n3 rows from Employee table:\nEmployeeId\tLastName\tFirstName\tTitle\tReportsTo\tBirthDate\tHireDate\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\n\n*/\n\n\nCREATE
+      TABLE \"Genre\" (\n\t\"GenreId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"GenreId\")\n)\n/*\n3 rows from Genre table:\nGenreId\tName\n1\tRock\n2\tJazz\n3\tMetal\n*/\n\n\nCREATE
+      TABLE \"MediaType\" (\n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"MediaTypeId\")\n)\n/*\n3 rows from MediaType table:\nMediaTypeId\tName\n1\tMPEG
+      audio file\n2\tProtected AAC audio file\n3\tProtected MPEG-4 video file\n*/\n\n\nCREATE
+      TABLE \"Playlist\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"PlaylistId\")\n)\n/*\n3 rows from Playlist table:\nPlaylistId\tName\n\n*/\n\n\nCREATE
+      TABLE \"Album\" (\n\t\"AlbumId\" INTEGER NOT NULL, \n\t\"Title\" NVARCHAR(160)
+      NOT NULL, \n\t\"ArtistId\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"AlbumId\"),
+      \n\tFOREIGN KEY(\"ArtistId\") REFERENCES \"Artist\" (\"ArtistId\")\n)\n/*\n3
+      rows from Album table:\nAlbumId\tTitle\tArtistId\n1\tFor Those About To Rock
+      We Salute You\t1\n2\tBalls to the Wall\t2\n3\tRestless and Wild\t2\n*/\n\n\nCREATE
+      TABLE \"Customer\" (\n\t\"CustomerId\" INTEGER NOT NULL, \n\t\"FirstName\" NVARCHAR(40)
+      NOT NULL, \n\t\"LastName\" NVARCHAR(20) NOT NULL, \n\t\"Company\" NVARCHAR(80),
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60) NOT NULL,
+      \n\t\"SupportRepId\" INTEGER, \n\tPRIMARY KEY (\"CustomerId\"), \n\tFOREIGN
+      KEY(\"SupportRepId\") REFERENCES \"Employee\" (\"EmployeeId\")\n)\n/*\n3 rows
+      from Customer table:\nCustomerId\tFirstName\tLastName\tCompany\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\tSupportRepId\n\n*/\n\n\nCREATE
+      TABLE \"Invoice\" (\n\t\"InvoiceId\" INTEGER NOT NULL, \n\t\"CustomerId\" INTEGER
+      NOT NULL, \n\t\"InvoiceDate\" DATETIME NOT NULL, \n\t\"BillingAddress\" NVARCHAR(70),
+      \n\t\"BillingCity\" NVARCHAR(40), \n\t\"BillingState\" NVARCHAR(40), \n\t\"BillingCountry\"
+      NVARCHAR(40), \n\t\"BillingPostalCode\" NVARCHAR(10), \n\t\"Total\" NUMERIC(10,
+      2) NOT NULL, \n\tPRIMARY KEY (\"InvoiceId\"), \n\tFOREIGN KEY(\"CustomerId\")
+      REFERENCES \"Customer\" (\"CustomerId\")\n)\n/*\n3 rows from Invoice table:\nInvoiceId\tCustomerId\tInvoiceDate\tBillingAddress\tBillingCity\tBillingState\tBillingCountry\tBillingPostalCode\tTotal\n\n*/\n\n\nCREATE
+      TABLE \"Track\" (\n\t\"TrackId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(200)
+      NOT NULL, \n\t\"AlbumId\" INTEGER, \n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"GenreId\"
+      INTEGER, \n\t\"Composer\" NVARCHAR(220), \n\t\"Milliseconds\" INTEGER NOT NULL,
+      \n\t\"Bytes\" INTEGER, \n\t\"UnitPrice\" NUMERIC(10, 2) NOT NULL, \n\tPRIMARY
+      KEY (\"TrackId\"), \n\tFOREIGN KEY(\"MediaTypeId\") REFERENCES \"MediaType\"
+      (\"MediaTypeId\"), \n\tFOREIGN KEY(\"GenreId\") REFERENCES \"Genre\" (\"GenreId\"),
+      \n\tFOREIGN KEY(\"AlbumId\") REFERENCES \"Album\" (\"AlbumId\")\n)\n/*\n3 rows
+      from Track table:\nTrackId\tName\tAlbumId\tMediaTypeId\tGenreId\tComposer\tMilliseconds\tBytes\tUnitPrice\n1\tFor
+      Those About To Rock (We Salute You)\t1\t1\t1\tAngus Young, Malcolm Young, Brian
+      Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
+      As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\n\nCREATE
+      TABLE \"InvoiceLine\" (\n\t\"InvoiceLineId\" INTEGER NOT NULL, \n\t\"InvoiceId\"
+      INTEGER NOT NULL, \n\t\"TrackId\" INTEGER NOT NULL, \n\t\"UnitPrice\" NUMERIC(10,
+      2) NOT NULL, \n\t\"Quantity\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"InvoiceLineId\"),
+      \n\tFOREIGN KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN
+      KEY(\"InvoiceId\") REFERENCES \"Invoice\" (\"InvoiceId\")\n)\n/*\n3 rows from
+      InvoiceLine table:\nInvoiceLineId\tInvoiceId\tTrackId\tUnitPrice\tQuantity\n\n*/\n\n\nCREATE
+      TABLE \"PlaylistTrack\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"TrackId\"
+      INTEGER NOT NULL, \n\tPRIMARY KEY (\"PlaylistId\", \"TrackId\"), \n\tFOREIGN
+      KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN KEY(\"PlaylistId\")
+      REFERENCES \"Playlist\" (\"PlaylistId\")\n)\n/*\n3 rows from PlaylistTrack table:\nPlaylistId\tTrackId\n\n*/\n\nQuestion:
+      albums by Alanis Morissette \nSQLQuery:"], "model": "text-davinci-003", "temperature":
+      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}, "stop": ["\nSQLResult:"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6387'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.27.3
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0zQzU7CQBQF4L1PMbkbNBmSFgK0Y1wQraERUPkJCcaQ0l5gYDq3dm6VhPDuRiTi
+        8pzzrc4BdAYK0rww9Y7/2pqHQfiwjcc4++o8zVfedNqj3ctHNQcJtNxiyqCAcc+LlPLCIGuyICEt
+        MWHMQPntwGt1GmE7lJBThubM61nyqW2q657X/PEb0ik6UG+H0wwKxDjqR/cTMdFsUDyOngeia5ZV
+        Lma9aBSJbsnacZyJeCiuz/Sv+9WndObDJEdxJ2pdk1jtxIBK7RwyY+1G9ONBPBGtW5CgbYZ7UJ4E
+        Q+uipKUDZStjJKy01W6zKDFxZEGBYyrg+C6hcskaQR2gKCkveMG0Q+tANXzfk3B55TIEEpg4Mf9o
+        Mzger74BAAD//wMA9UfdKHwBAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7b25e5250f9d86ed-ORD
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 04 Apr 2023 01:49:31 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
+      - text-davinci-003
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '1304'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249488'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 122ms
+      x-request-id:
+      - 42388e9e0ea7da9a05bc0ed264d48f21
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"prompt": ["Given an input question, first create a syntactically correct
+      sqlite query to run, then look at the results of the query and return the answer.
+      Unless the user specifies in his question a specific number of examples he wishes
+      to obtain, always limit your query to at most 5 results. You can order the results
+      by a relevant column to return the most interesting examples in the database.\n\nNever
+      query for all the columns from a specific table, only ask for a the few relevant
+      columns given the question.\n\nPay attention to use only the column names that
+      you can see in the schema description. Be careful to not query for columns that
+      do not exist. Also, pay attention to which column is in which table.\n\nUse
+      the following format:\n\nQuestion: \"Question here\"\nSQLQuery: \"SQL Query
+      to run\"\nSQLResult: \"Result of the SQLQuery\"\nAnswer: \"Final answer here\"\n\nOnly
+      use the tables listed below.\n\n\nCREATE TABLE \"Artist\" (\n\t\"ArtistId\"
+      INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120), \n\tPRIMARY KEY (\"ArtistId\")\n)\n/*\n3
+      rows from Artist table:\nArtistId\tName\n1\tAC/DC\n2\tAccept\n3\tAerosmith\n*/\n\n\nCREATE
+      TABLE \"Employee\" (\n\t\"EmployeeId\" INTEGER NOT NULL, \n\t\"LastName\" NVARCHAR(20)
+      NOT NULL, \n\t\"FirstName\" NVARCHAR(20) NOT NULL, \n\t\"Title\" NVARCHAR(30),
+      \n\t\"ReportsTo\" INTEGER, \n\t\"BirthDate\" DATETIME, \n\t\"HireDate\" DATETIME,
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60), \n\tPRIMARY
+      KEY (\"EmployeeId\"), \n\tFOREIGN KEY(\"ReportsTo\") REFERENCES \"Employee\"
+      (\"EmployeeId\")\n)\n/*\n3 rows from Employee table:\nEmployeeId\tLastName\tFirstName\tTitle\tReportsTo\tBirthDate\tHireDate\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\n\n*/\n\n\nCREATE
+      TABLE \"Genre\" (\n\t\"GenreId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"GenreId\")\n)\n/*\n3 rows from Genre table:\nGenreId\tName\n1\tRock\n2\tJazz\n3\tMetal\n*/\n\n\nCREATE
+      TABLE \"MediaType\" (\n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"MediaTypeId\")\n)\n/*\n3 rows from MediaType table:\nMediaTypeId\tName\n1\tMPEG
+      audio file\n2\tProtected AAC audio file\n3\tProtected MPEG-4 video file\n*/\n\n\nCREATE
+      TABLE \"Playlist\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"PlaylistId\")\n)\n/*\n3 rows from Playlist table:\nPlaylistId\tName\n\n*/\n\n\nCREATE
+      TABLE \"Album\" (\n\t\"AlbumId\" INTEGER NOT NULL, \n\t\"Title\" NVARCHAR(160)
+      NOT NULL, \n\t\"ArtistId\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"AlbumId\"),
+      \n\tFOREIGN KEY(\"ArtistId\") REFERENCES \"Artist\" (\"ArtistId\")\n)\n/*\n3
+      rows from Album table:\nAlbumId\tTitle\tArtistId\n1\tFor Those About To Rock
+      We Salute You\t1\n2\tBalls to the Wall\t2\n3\tRestless and Wild\t2\n*/\n\n\nCREATE
+      TABLE \"Customer\" (\n\t\"CustomerId\" INTEGER NOT NULL, \n\t\"FirstName\" NVARCHAR(40)
+      NOT NULL, \n\t\"LastName\" NVARCHAR(20) NOT NULL, \n\t\"Company\" NVARCHAR(80),
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60) NOT NULL,
+      \n\t\"SupportRepId\" INTEGER, \n\tPRIMARY KEY (\"CustomerId\"), \n\tFOREIGN
+      KEY(\"SupportRepId\") REFERENCES \"Employee\" (\"EmployeeId\")\n)\n/*\n3 rows
+      from Customer table:\nCustomerId\tFirstName\tLastName\tCompany\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\tSupportRepId\n\n*/\n\n\nCREATE
+      TABLE \"Invoice\" (\n\t\"InvoiceId\" INTEGER NOT NULL, \n\t\"CustomerId\" INTEGER
+      NOT NULL, \n\t\"InvoiceDate\" DATETIME NOT NULL, \n\t\"BillingAddress\" NVARCHAR(70),
+      \n\t\"BillingCity\" NVARCHAR(40), \n\t\"BillingState\" NVARCHAR(40), \n\t\"BillingCountry\"
+      NVARCHAR(40), \n\t\"BillingPostalCode\" NVARCHAR(10), \n\t\"Total\" NUMERIC(10,
+      2) NOT NULL, \n\tPRIMARY KEY (\"InvoiceId\"), \n\tFOREIGN KEY(\"CustomerId\")
+      REFERENCES \"Customer\" (\"CustomerId\")\n)\n/*\n3 rows from Invoice table:\nInvoiceId\tCustomerId\tInvoiceDate\tBillingAddress\tBillingCity\tBillingState\tBillingCountry\tBillingPostalCode\tTotal\n\n*/\n\n\nCREATE
+      TABLE \"Track\" (\n\t\"TrackId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(200)
+      NOT NULL, \n\t\"AlbumId\" INTEGER, \n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"GenreId\"
+      INTEGER, \n\t\"Composer\" NVARCHAR(220), \n\t\"Milliseconds\" INTEGER NOT NULL,
+      \n\t\"Bytes\" INTEGER, \n\t\"UnitPrice\" NUMERIC(10, 2) NOT NULL, \n\tPRIMARY
+      KEY (\"TrackId\"), \n\tFOREIGN KEY(\"MediaTypeId\") REFERENCES \"MediaType\"
+      (\"MediaTypeId\"), \n\tFOREIGN KEY(\"GenreId\") REFERENCES \"Genre\" (\"GenreId\"),
+      \n\tFOREIGN KEY(\"AlbumId\") REFERENCES \"Album\" (\"AlbumId\")\n)\n/*\n3 rows
+      from Track table:\nTrackId\tName\tAlbumId\tMediaTypeId\tGenreId\tComposer\tMilliseconds\tBytes\tUnitPrice\n1\tFor
+      Those About To Rock (We Salute You)\t1\t1\t1\tAngus Young, Malcolm Young, Brian
+      Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
+      As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\n\nCREATE
+      TABLE \"InvoiceLine\" (\n\t\"InvoiceLineId\" INTEGER NOT NULL, \n\t\"InvoiceId\"
+      INTEGER NOT NULL, \n\t\"TrackId\" INTEGER NOT NULL, \n\t\"UnitPrice\" NUMERIC(10,
+      2) NOT NULL, \n\t\"Quantity\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"InvoiceLineId\"),
+      \n\tFOREIGN KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN
+      KEY(\"InvoiceId\") REFERENCES \"Invoice\" (\"InvoiceId\")\n)\n/*\n3 rows from
+      InvoiceLine table:\nInvoiceLineId\tInvoiceId\tTrackId\tUnitPrice\tQuantity\n\n*/\n\n\nCREATE
+      TABLE \"PlaylistTrack\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"TrackId\"
+      INTEGER NOT NULL, \n\tPRIMARY KEY (\"PlaylistId\", \"TrackId\"), \n\tFOREIGN
+      KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN KEY(\"PlaylistId\")
+      REFERENCES \"Playlist\" (\"PlaylistId\")\n)\n/*\n3 rows from PlaylistTrack table:\nPlaylistId\tTrackId\n\n*/\n\nQuestion:
+      albums by Alanis Morissette \nSQLQuery: SELECT Title FROM Album WHERE ArtistId
+      IN (SELECT ArtistId FROM Artist WHERE Name = ''Alanis Morissette'') LIMIT 5;\nSQLResult:
+      [(''Jagged Little Pill'',)]\nAnswer:"], "model": "text-davinci-003", "temperature":
+      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "best_of": 1, "logit_bias": {}, "stop": ["\nSQLResult:"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6548'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.27.3
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0zPwUrDQBRG4b1PMfzriSRp09TZVdCFWFQQNyJlMrlNb53MhMyNVkrfXRRR1+fb
+        nCO4hYHrB5/VxUPVWFdOqb9erp94tS1X23qfv1/Or+6gEZs9OYGB0EE2LvaDJ+EYoOFGskItTLFY
+        5lVdXtSFRh9b8j88a+0bB8dZns++/C6yowTzfPzOMFCPO1LWN1OfVPOhVt4GTmodR06JREjZkdSN
+        7Tpq1S2LeFL37P05NDi0dIDJNXzshjE2CSZM3mtsOXDabUayKQYYJIkDTi8aU7IdwRwxjLEfZCPx
+        lUKCKYtqpvH39huKuYZEsf4fXdSn09knAAAA//8DACJN5WRCAQAA
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7b25e52f9b9286ed-ORD
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 04 Apr 2023 01:49:32 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
+      - text-davinci-003
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '849'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249488'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 122ms
+      x-request-id:
+      - 040dea6f0b616c844ed3c0f54db05246
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "system", "content": "Answer the following questions
+      as best you can. You have access to the following tools:\n\nSearch: useful for
+      when you need to answer questions about current events. You should ask targeted
+      questions\nCalculator: useful for when you need to answer questions about math\nFooBar
+      DB: useful for when you need to answer questions about FooBar. Input should
+      be in the form of a question containing full context\n\nThe way you use the
+      tools is by specifying a json blob.\nSpecifically, this json should have a `action`
+      key (with the name of the tool to use) and a `action_input` key (with the input
+      to the tool going here).\n\nThe only values that should be in the \"action\"
+      field are: Search, Calculator, FooBar DB\n\nThe $JSON_BLOB should only contain
+      a SINGLE action, do NOT return a list of multiple actions. Here is an example
+      of a valid $JSON_BLOB:\n\n```\n{\n  \"action\": $TOOL_NAME,\n  \"action_input\":
+      $INPUT\n}\n```\n\nALWAYS use the following format:\n\nQuestion: the input question
+      you must answer\nThought: you should always think about what to do\nAction:\n```\n$JSON_BLOB\n```\nObservation:
+      the result of the action\n... (this Thought/Action/Observation can repeat N
+      times)\nThought: I now know the final answer\nFinal Answer: the final answer
+      to the original input question\n\nBegin! Reminder to always use the exact characters
+      `Final Answer` when responding."}, {"role": "user", "content": "What is the
+      full name of the artist who recently released an album called ''The Storm Before
+      the Calm'' and are they in the FooBar database? If so, what albums of theirs
+      are in the FooBar database?\n\nThis was your previous work (but I haven''t seen
+      any of it! I only see what you return as final answer):\nQuestion: What is the
+      full name of the artist who recently released an album called ''The Storm Before
+      the Calm'' and are they in the FooBar database? If so, what albums of theirs
+      are in the FooBar database?\nThought: I should use the Search tool to find the
+      name of the artist and the FooBar DB tool to find their albums.\nAction:\n```\n{\n  \"action\":
+      \"Search\",\n  \"action_input\": \"artist who released album The Storm Before
+      the Calm\"\n}\n```\n\nObservation: Alanis Nadine Morissette is a Canadian-American
+      singer-songwriter and actress. Known for her emotive mezzo-soprano voice and
+      confessional songwriting, Morissette began her career in Canada in the early
+      1990s with two dance-pop albums.\nThought:Now that I have the name of the artist,
+      I should use the FooBar DB tool to find their albums in the database.\nAction:\n```\n{\n    \"action\":
+      \"FooBar DB\",\n    \"action_input\": \"albums by Alanis Nadine Morissette\"\n}\n```\n\nObservation:  Alanis
+      Nadine Morissette has not released any albums.\nThought:It seems that there
+      may be an error since Alanis Nadine Morissette has released several albums.
+      I should modify my search query for the FooBar DB tool and try again.\nAction:\n```\n{\n    \"action\":
+      \"FooBar DB\",\n    \"action_input\": \"albums by Alanis Morissette\"\n}\n```\n\n\nObservation:  The
+      albums by Alanis Morissette are Jagged Little Pill.\nThought:"}], "model": "gpt-3.5-turbo",
+      "max_tokens": null, "stream": false, "n": 1, "stop": ["Observation:"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3236'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.27.3
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA3TPTW8TQQwG4Du/wvIll0mUbJWvuTVIqYRAFMGJD1XOrLM71DNezTgKEOW/o4RC
+        L/Rq+X38+oSxRY+hJwtpkPFy9mEeNnfbhXxu4krXd+tf1Gy6+/cU9BEd6u47B3tKTIKmQdiiZnQY
+        CpNxi362WE3ny2a9bBwmbVnQYzfY+GYyH9uh7HQ8vZnO0OGhUsfoTzgUTYM9mD5yruiXzczhs/1v
+        vpg7NDWS583V4uww9BoDV/RfTpi4/lWLCqNHqjVWo2yXjpqN86X/p55hfxCBTIlB92A9AxWL1eDY
+        KxQOnE1+QmFhqtwCZSDZHRIEEuEWRhfio2lJsOG9Fr4Sr0nSCGKFW6EcK7zTEmtlMwbKLfRcnpTR
+        G+o6buFtNBOG+yhyzcV8dbaqGyrQktGOKk++5m3MJHCb65GL/w//YhaO0fo//714eYJnh/uYY+0f
+        ClPVjB6r6YAOY275B/rp+dv51W8AAAD//wMAksO7jzACAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7b25e5374b6886ed-ORD
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 04 Apr 2023 01:49:35 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
+      - gpt-3.5-turbo-0301
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '2654'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '3500'
+      x-ratelimit-remaining-requests:
+      - '3499'
+      x-ratelimit-reset-requests:
+      - 17ms
+      x-request-id:
+      - f8d1c7aa2ec9f1d4391a993ae1ba9b66
     status:
       code: 200
       message: OK

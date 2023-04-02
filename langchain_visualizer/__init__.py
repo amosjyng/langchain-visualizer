@@ -1,6 +1,8 @@
 # override ICE to_json_value before anything else starts importing other ICE stuff
 # isort: off
 
+from .ice import to_json_value  # noqa
+
 # isort: on
 
 from .agents.tools import SerpAPIWrapper  # noqa
