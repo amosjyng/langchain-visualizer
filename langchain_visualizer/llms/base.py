@@ -21,7 +21,7 @@ class LlmVisualizer(VisualizationWrapper):
     ) -> LLMResult:
         """Run the LLM on the given prompt and input."""
         result = self.og_fn(self.og_obj, prompts=prompts, stop=stop)
-        if isinstance(self.og_obj, OpenAI) or isinstance(self.og_obj, OpenAIChat):
+        if isinstance(self.og_obj, OpenAI):
             total_tokens = result.llm_output.get("token_usage", {}).get(
                 "total_tokens", 0
             )
@@ -39,7 +39,7 @@ class ChatLlmVisualizer(VisualizationWrapper):
     ) -> LLMResult:
         """Run the LLM on the given prompt and input."""
         result = self.og_fn(self.og_obj, messages=messages, stop=stop)
-        if isinstance(self.og_obj, OpenAI) or isinstance(self.og_obj, OpenAIChat):
+        if isinstance(self.og_obj, OpenAIChat) or isinstance(self.og_obj, ChatOpenAI):
             total_tokens = result.llm_output.get("token_usage", {}).get(
                 "total_tokens", 0
             )
