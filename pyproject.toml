@@ -8,7 +8,7 @@ packages = [{include = "langchain_visualizer"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-langchain = "^0.0.130"
+langchain = ">=0.0.130"
 ought-ice = "^0.5.0"
 gorilla = "^0.4.0"
 
