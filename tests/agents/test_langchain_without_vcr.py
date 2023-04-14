@@ -5,7 +5,7 @@ import langchain_visualizer  # isort:skip  # noqa: F401
 import asyncio
 
 import pytest
-from langchain.agents import initialize_agent, load_tools
+from langchain.agents import AgentType, initialize_agent, load_tools
 from langchain.llms import OpenAI
 
 # ========================== Start of langchain example code ==========================
@@ -13,7 +13,9 @@ from langchain.llms import OpenAI
 
 llm = OpenAI(temperature=0)
 tools = load_tools(["serpapi", "llm-math"], llm=llm)
-agent = initialize_agent(tools, llm, agent="zero-shot-react-description", verbose=True)
+agent = initialize_agent(
+    tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True
+)
 
 
 # ================================== Execute example ==================================

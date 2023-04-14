@@ -47,7 +47,7 @@ def test_llm_usage_succeeds():
     Also, record playback for easy visualization.
     """
     result = asyncio.get_event_loop().run_until_complete(chatgpt_demo())
-    assert result.content == "J'adore programmer."
+    assert result.content == "J'aime la programmation."
 
 
 if __name__ == "__main__":
