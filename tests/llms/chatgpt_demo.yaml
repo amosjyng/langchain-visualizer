@@ -2,7 +2,8 @@ interactions:
 - request:
     body: '{"messages": [{"role": "system", "content": "You are a helpful assistant
       that translates English to French."}, {"role": "user", "content": "I love programming."}],
-      "model": "gpt-3.5-turbo", "max_tokens": null, "stream": false, "n": 1}'
+      "model": "gpt-3.5-turbo", "max_tokens": null, "stream": false, "n": 1, "temperature":
+      0.7}'
     headers:
       Accept:
       - '*/*'
@@ -11,49 +12,62 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '234'
+      - '254'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.2
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
-      string: '{"id":"chatcmpl-6x23lQENxVZaG2hX4owM1iQ6hRziW","object":"chat.completion","created":1679527289,"model":"gpt-3.5-turbo-0301","usage":{"prompt_tokens":27,"completion_tokens":7,"total_tokens":34},"choices":[{"message":{"role":"assistant","content":"J''adore
-        programmer."},"finish_reason":"stop","index":0}]}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0SOwUrDQBRF935FuRs3k5K2pomzVFw0iKA7ESnTyWsyNjNvmHkFoeTfJaB1e+Ce
+        ey5wHTTsYMT6OBZ11eze0rFtd+3zw+mxWm9f3s1rWjf3T+0KCnz4Iiu/i6VlH0cSxwEKNpER6qBX
+        22Z1V9VNUyt47miERh+l2CyrQs7pwEW5KWfZOZueoC+IiX2UvfCJQoZeNwr/6iuuFYTFjFewqSYF
+        O7CzlKE/LvCU/5SJR4KGydllMUHmQA5CYY5vb43ztBjNIibuk/HezE9LTApHF1we9olM5gCNLByh
+        4EJH39Dl9Dnd/AAAAP//AwDFPs7zNQEAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7b7a49954fe5824b-IAD
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '304'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Wed, 22 Mar 2023 23:21:30 GMT
-      Openai-Model:
+      - Fri, 14 Apr 2023 07:38:08 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - gpt-3.5-turbo-0301
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '518'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '657'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Ratelimit-Limit-Requests:
+      x-ratelimit-limit-requests:
       - '3500'
-      X-Ratelimit-Remaining-Requests:
+      x-ratelimit-remaining-requests:
       - '3499'
-      X-Ratelimit-Reset-Requests:
+      x-ratelimit-reset-requests:
       - 17ms
-      X-Request-Id:
-      - b78d3cc6eafcef44cb6578f5ace5444d
+      x-request-id:
+      - fb34277fa02e78d85c6d31d3d4fc35cb
     status:
       code: 200
       message: OK
