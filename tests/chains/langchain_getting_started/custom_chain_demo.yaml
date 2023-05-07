@@ -2,8 +2,7 @@ interactions:
 - request:
     body: '{"prompt": ["What is a good name for a company that makes colorful socks?"],
       "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias":
-      {}}'
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -12,50 +11,75 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '243'
+      - '229'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flOBwkQjl9nAPN3Xc0hrFDXdPiTn","object":"text_completion","created":1675411631,"model":"text-davinci-003","choices":[{"text":"\n\nSocktopia.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":13,"completion_tokens":6,"total_tokens":19}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0SOQUvDQBQG7/4K+c4bSZpq6t4Ee6koYhBEK2G7ebZrN/uW3RcplPx3UaReZ+Yw
+        R7geGnaIvmhujW9u7jmsHubkls3lsn19TKuX6m7x9AwF3nySFWgIHaSzPERP4jhAwSYyQj10dbWo
+        5019PasUBu7J/+VFb75csK4oy/qn37GzlKHfjr8aGuuwDi3b/XkbyYqxozfpAgou9HSALhU8b2Pi
+        TYYOo/cKHy64vOsSmcwBGlk4YnpXGLPZEvQRMfEQpRPeU8jQVa3wv33CjYKwGH8Cs3Kazr4BAAD/
+        /wMAh/kLYxoBAAA=
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a8d282c702748-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '275'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:07:12 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:38:42 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '1052'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '1168'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - e7fd29fb63d1292cfdcbe181f076097a
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - e84d972db90dc5705f3fa1fe0f47ead3
     status:
       code: 200
       message: OK
 - request:
     body: '{"prompt": ["What is a good slogan for a company that makes colorful socks?"],
       "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias":
-      {}}'
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -64,43 +88,68 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '245'
+      - '231'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flOCmsQIHE7trXXiLJW133C2lKfB","object":"text_completion","created":1675411632,"model":"text-davinci-003","choices":[{"text":"\n\n\"Step
-        Up Your Style with Colorful Socks!\"","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":13,"completion_tokens":13,"total_tokens":26}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA1SPzUrDQBRG9z5F/NZTSBvpz+zEKgoqSBQsRko6uU3GTuYOmZtaCX13UURxe87Z
+        nAG2goZpgxvNlqWbX92eN9f18nH1cH+T7mkR03h5Z5+nUODNGxmBhtBB1obb4EgseyiYjkqhCno8
+        nWdns2wxmSi0XJH7yUdVubfe2FGaZl99w9ZQhH4ZvjU0Cl/4ArlQSJ5CsuK+S3L5cJS8W2mSC3bc
+        bXuX5Gx28bQAFKyv6ACdKjiuQ8ebCO175xS21tvYrDsqI3toROGA46tCH8uaoAeEjtsga+Ed+Qg9
+        zhT+hv5hYSndL5lMj8eTTwAAAP//AwBI0GkxNQEAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a8d314a7c2748-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '309'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:07:13 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:38:43 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '608'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '772'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - d518c77358df6c2ee1dbc5845d91fe65
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - 025c6c37c22dd8632e342d5d8e521c83
     status:
       code: 200
       message: OK

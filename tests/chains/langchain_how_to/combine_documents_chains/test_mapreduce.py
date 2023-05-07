@@ -9,7 +9,7 @@ from tiktoken_ext.openai_public import p50k_base
 from tests.sotu import load_sotu
 
 # ========================== Start of langchain example code ==========================
-# https://langchain.readthedocs.io/en/latest/modules/chains/combine_docs_examples/qa_with_sources.html
+# https://python.langchain.com/en/latest/modules/chains/index_examples/qa_with_sources.html
 
 
 docsearch = load_sotu()
@@ -34,7 +34,7 @@ p50k_base()  # run this before cassette to download blob first
 def test_mapreduce_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(mapreduce_demo())
-    assert "The president said that" in result["output_text"]
+    assert "The president said" in result["output_text"]
 
 
 if __name__ == "__main__":

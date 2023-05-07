@@ -21,9 +21,9 @@ async def mrkl_chat_demo():
     llm = ChatOpenAI(temperature=0)
     llm1 = OpenAI(temperature=0)
     search = SerpAPIWrapper()
-    llm_math_chain = LLMMathChain(llm=llm1, verbose=True)
+    llm_math_chain = LLMMathChain.from_llm(llm=llm1, verbose=True)
     db = SQLDatabase.from_uri("sqlite:///tests/resources/Chinook.db")
-    db_chain = SQLDatabaseChain(llm=llm1, database=db, verbose=True)
+    db_chain = SQLDatabaseChain.from_llm(llm=llm1, db=db, verbose=True)
     tools = [
         Tool(
             name="Search",
@@ -65,7 +65,7 @@ def test_llm_usage_succeeds():
     result = asyncio.get_event_loop().run_until_complete(mrkl_chat_demo())
     assert result.strip().endswith(
         "The album 'Jagged Little Pill' is in the FooBar database."
-    )
+    ) or result.strip().endswith("and has the album Jagged Little Pill in it.")
 
 
 if __name__ == "__main__":

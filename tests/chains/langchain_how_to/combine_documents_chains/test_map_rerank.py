@@ -8,7 +8,7 @@ from langchain.llms import OpenAI
 from tests.sotu import load_sotu
 
 # ========================== Start of langchain example code ==========================
-# https://langchain.readthedocs.io/en/latest/modules/chains/combine_docs_examples/qa_with_sources.html
+# https://python.langchain.com/en/latest/modules/chains/index_examples/qa_with_sources.html
 
 
 docsearch = load_sotu()
@@ -19,7 +19,10 @@ async def map_rerank_demo():
     query = "What did the president say about Justice Breyer"
     docs = docsearch.similarity_search(query)
     chain = load_qa_with_sources_chain(
-        OpenAI(temperature=0, max_tokens=500), chain_type="map_rerank"
+        OpenAI(temperature=0, max_tokens=500),
+        chain_type="map_rerank",
+        metadata_keys=["source"],
+        return_intermediate_steps=True,
     )
     return chain({"input_documents": docs, "question": query}, return_only_outputs=True)
 

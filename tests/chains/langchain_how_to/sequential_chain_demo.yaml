@@ -4,8 +4,8 @@ interactions:
       it is set in, it is your job to write a synopsis for that title.\n\nTitle: Tragedy
       at sunset on the beach\nEra: Victorian England\nPlaywright: This is a synopsis
       for the above play:"], "model": "text-davinci-003", "temperature": 0.0, "max_tokens":
-      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of":
-      1, "logit_bias": {}}'
+      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}}'
     headers:
       Accept:
       - '*/*'
@@ -14,55 +14,76 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '422'
+      - '408'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flONdDnnh26m7UbwvUhfK8FXfZI0","object":"text_completion","created":1675411643,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
-        at Sunset on the Beach is a play set in Victorian England. It tells the story
-        of a young woman, Emily, who is struggling to make ends meet in a small coastal
-        town. She works as a maid for a wealthy family, but her dreams of a better
-        life are dashed when she discovers that her employer is involved in a scandalous
-        affair.\n\nEmily is determined to make a better life for herself, but her
-        plans are thwarted when she meets a handsome stranger on the beach one evening.
-        The two quickly fall in love, but their happiness is short-lived when Emily
-        discovers that the stranger is actually a member of the wealthy family she
-        works for.\n\nThe play follows Emily as she struggles to come to terms with
-        the truth and make sense of her life. As the sun sets on the beach, Emily
-        must decide whether to stay with the man she loves or to leave him and pursue
-        her dreams. In the end, Emily must make a heartbreaking decision that will
-        change her life forever.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":62,"completion_tokens":205,"total_tokens":267}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA1yUT2/VOhDF93yKkdfpVemFFmUH71V6bJAQFUL8UTWJJ7HftT3BM0kaVf3uyElo
+        Kdt4nPM750xyb7w1tWnjEM6u/sXG6vV1/5KbL1/l4p+vHy8/3PhX7/x/d72pDDf/U6umNkp3etty
+        HAKp52Qq02ZCJWvql5dvjq+ujsfjsTKRLYV9/Mzi5FPrz87Pj2XesW9JTP3tfj02tfmevqebjD3Z
+        BVDh05iEFDiBOoJ3hK0DL4AwBFygHPkEn32rnD0muE59wGQP8F5BKQRZr4lyXoA7QFh4TD3MHDFV
+        cB19WCqYHZd3iuax74NPPShDxBMBJSsQaVNBkIghQMsoigGU53SAT45g5nwSwIIV0VvoOAPCTBjU
+        LdDhJtOMCo4y2EwYZcNpSJUyBN8RYCawKI4szI4SiCOwXlqeKBcfuF2nOAReKBdknyYOE9kdr8Vk
+        MfAogF2HPh9KmKvJMmxJKUefyD76ew5QsB1lodA90Q4Bk6xs6mbM+iddSaaYdpiscCxBZ0w95d99
+        NWtfnAhoouRTf4AbR6Azw8/Rt6dQ0gmh4AeeaFNVRz6Dw2HwiUTWahxnPQt++q2+mforna3qnaAs
+        SasjhrCUWig2Batbh543s1rZKux4y6xArgvWcQg8y66Hss7ui0JScmyLb2Uo2QrMXt0qoXlUB5js
+        FrRQEirybg/7AG/33RxTWWN5Ftm+mhBHUbDUekvFt5bbyiCKy5NUxK2NkqAArxOBcCJwPq4Iw5hl
+        pD+W7wDvNzVK9pnWvhWOMGuTCU/laygA4lc+VJh9+QZcSfnRTQmOJsoHUxmfLN2Z+rwygfshcyOm
+        TmMIlel88uJuM6FwMrUR5cE8/KjMKNiTqe/NkDkOeqt8oiSmvryozNP/5fHxxfnryigrhqdHl1cP
+        Dy9+AQAA//8DAJGVeJXGBAAA
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a7ecef8313e6a-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '1222'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:07:33 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:29:06 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '9674'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '12884'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 6f14b95f6cebce072b240b0d9f7a7cc0
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - d0325d0130626312d292a92fb1859a0e
     status:
       code: 200
       message: OK
@@ -83,7 +104,7 @@ interactions:
       Emily must make a heartbreaking decision that will change her life forever.\nReview
       from a New York Times play critic of the above play:"], "model": "text-davinci-003",
       "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -92,54 +113,76 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1344'
+      - '1330'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flOYNS3ZMHbsIePogiEFWgw5e4dr","object":"text_completion","created":1675411654,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
-        at Sunset on the Beach is a captivating and heartbreaking play set in Victorian
-        England. The story follows Emily, a young woman struggling to make ends meet
-        in a small coastal town. Her dreams of a better life are dashed when she discovers
-        her employer is involved in a scandalous affair. Emily is determined to make
-        a better life for herself, but her plans are thwarted when she meets a handsome
-        stranger on the beach one evening.\n\nThe play is a powerful exploration of
-        love, loss, and the choices we make in life. The characters are well-developed
-        and the story is engaging and thought-provoking. The actors bring the characters
-        to life with their passionate performances, and the set design and costumes
-        are stunning.\n\nOverall, Tragedy at Sunset on the Beach is a beautiful and
-        moving play that will leave you with a heavy heart. It is a must-see for anyone
-        looking for a thought-provoking and emotionally charged experience.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":254,"completion_tokens":196,"total_tokens":450}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA4xUwW7dNhC89ysWPOs92LXjNDoGTtAeiqCoUbRoCmMlrkTWy12FXEl+MfzvBSXn
+        NUEvvS5XM8OZoZ5c9K51fZr48PoWu0/vxzdy98cU7t5+vv398v3tzzfzh18+dZ9d47T7m3pzrTN6
+        tPte08RkUcU1rs+ERt61lzc/XF2/vrq6vmlcUk/8sn7wuETp4+Hi4qruB409Fdf++bQdu9Z9lI9y
+        l3EkfwI0+HWWQgYqYIHgLWEfIBZA6HGyuKBFGQHFQyDM1mXChzqZGE9QP4wCv8XeNEcUeCcjo/gj
+        3AWCYppPMCizrgXepcinBhBOOssIqyYUKJbnceQKaAoJHwhIfIFEOzJCScgMvWIxZDBd5Qg/Ugaf
+        CVMBHQChIzPKwHEgwEzgsQTysAYSKIHAx9LrQrlAoAyUJtYT5XrLKIvyQv6Fq0fxyDoXwGHAmI+7
+        6rrpySinKOTPSr8lHjRX+EI8NNDNtnFNjFI2TRZWzPa1qnrH6nNA8UVT9SujjJS/ZNFtWagQ0EIS
+        ZTxu0QXazd9CmnSlPMwM9DixZqw1qaawLtQAaynNFl7Fe+kCrLTrj7Ip38PqA2bsrZpU5a7EfPC0
+        EOtE/gyxRxoLkIw4fmmGBZ3HYIcp66K1HTsk1lYU6PIW77ccprtra7RQz2KGCUuJKmgEE+VBc0Lp
+        6Sv9tW2eShxlG/VabE606y02y9miDwtlZG7g/9S8I5wtVgsraNLl3G4LaLBGZmDChWpxd71Y38Jy
+        2l/EEX6yHSnNxQ6F9iqgnGpyrJsh++i/Rm2clLTGhsynzaKRfI2TciTp6egaF8XTo2svGsc6Tlm7
+        4lqZmRs3RIkl3GfCouJaV0wn9/xX4+aCI7n2yU1Z02T3pg8kxbXfv7pu3L+/lPP88s1N40wN+Ty6
+        fnXx/PzdPwAAAP//AwAJes+fuQQAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a7f21afbb3e6a-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '1209'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:07:43 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:29:21 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '9381'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '14274'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 9b609e498bfb92cf5a6641b1cfe01ff4
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - c4932c8f6b88101451ce8a411c4f747d
     status:
       code: 200
       message: OK

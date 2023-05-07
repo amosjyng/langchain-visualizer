@@ -8,7 +8,7 @@ from langchain.llms import OpenAI
 from tests.sotu import load_sotu
 
 # ========================== Start of langchain example code ==========================
-# https://langchain.readthedocs.io/en/latest/modules/chains/combine_docs_examples/qa_with_sources.html
+# https://python.langchain.com/en/latest/modules/chains/index_examples/qa_with_sources.html
 
 
 docsearch = load_sotu()

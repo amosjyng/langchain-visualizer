@@ -1,37 +1,9 @@
 interactions:
 - request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - 0.0.0.0:8935
-      user-agent:
-      - python-httpx/0.23.3
-    method: GET
-    uri: http://0.0.0.0:8935/ping
-  response:
-    content: ought-ice says pong
-    headers:
-      content-length:
-      - '19'
-      content-type:
-      - text/plain; charset=utf-8
-      date:
-      - Fri, 24 Feb 2023 16:44:21 GMT
-      server:
-      - uvicorn
-    http_version: HTTP/1.1
-    status_code: 200
-- request:
     body: '{"prompt": ["Tell me a joke", "Tell me a poem", "Tell me a joke", "Tell
       me a poem"], "model": "text-davinci-003", "temperature": 1.0, "max_tokens":
-      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 2, "best_of":
-      2, "logit_bias": {}}'
+      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 2, "logit_bias":
+      {}, "best_of": 2}'
     headers:
       Accept:
       - '*/*'
@@ -44,53 +16,68 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.5
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: "{\"id\":\"cmpl-6nVTDUqQh6og2UTI30TJYc9y6Ppsa\",\"object\":\"text_completion\",\"created\":1677257063,\"model\":\"text-davinci-003\",\"choices\":[{\"text\":\"\\n\\nQ:
-        What did one ocean say to the other ocean?\\nA: Nothing, they just waved.\",\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nQ:
-        What did the fish say when it hit the wall?\\nA: Dam!\",\"index\":1,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nRoses
-        are red,\\nViolets are blue,\\nSugar is sweet,\\nAnd so are you.\",\"index\":2,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nMy
-        soul is a hidden orchestra;\\nI know not what instruments,\\nWhat wild rhythms
-        - orffered\\nAs concert to the Creator -\\nPlay inside me day and night.\\n\\nI
-        only know a voice within\\nCommanding me to sound His praise -\\nEqually with
-        sweetest joy\\nAnd deepest sorrow, in the depths\\nOf my hidden symphony.\",\"index\":3,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nQ:
-        What did the fish say when it ran into a wall? \\nA: Dam!\",\"index\":4,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nQ:
-        What did one hat say to the other?\\nA: You stay here, I'll go on ahead.\",\"index\":5,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\nRoses
-        are red,\\nViolets are blue,\\nSugar is sweet,\\nAnd so are you.\",\"index\":6,\"logprobs\":null,\"finish_reason\":\"stop\"},{\"text\":\"\\n\\n\u2018Hope
-        is the thing with feathers\u2019\\n\\nBy Emily Dickinson\\n\\nHope is the
-        thing with feathers\u2014\\nThat perches in the soul\u2014\\nAnd sings the
-        tune without the words\u2014\\nAnd never stops\u2014at all\u2014\\n\\nAnd
-        sweetest\u2014in the Gale\u2014is heard\u2014\\nAnd sore must be the storm\u2014\\nThat
-        could abash the little Bird\\nThat kept so many warm\u2014\\n\\nI\u2019ve
-        heard it in the chillest land\u2014\\nAnd on the strangest Sea\u2014\\nYet,
-        never, in Extremity,\\nIt asked a crumb\u2014of me.\",\"index\":7,\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":16,\"completion_tokens\":349,\"total_tokens\":365}}\n"
+      string: !!binary |
+        H4sIAAAAAAAAA7SU32saQRDH3/tXTOelL6totJrcSzDkpaVS0l+h9Iqst+Pd6t7OdXdOc4j/ezkt
+        mBoKaZq+LbMDnw8zX2aL1mCCWVm5zvhaZ3oy52b4eTRdLqfvpvTj5n15q1dvqw0q5PmSMsEEhe5k
+        lnFZORLLHhVmgbSQwaQ/Oh8Mx4PBxZnCkg25X+0do9fWZ7bT6w3a/oJtRhGTb9v9NyaY+tTfJHBb
+        aAFjDUhBsLCxgKgb2BTkwQoUVvYfG+3cZeonCVzr8iUqtN7QHSY9hY7zKvA8YuJr5xQurLexmAXS
+        kT0mGIUr3Knfud2/5HZPuP2ncT9wpAg6EAQyCr5YdiSHwtzVpOBjnesANkLcEImCiTcQed/QcN09
+        Cpw9g8AD/gkermoBz1JYn0O7fh0owifeT8bxmuANFHpNsODQ6h3tBk9cy0kc2ne7FTkgY6bD4pCC
+        r1xDoX0OOnDtDWwK61qdnIE96IK0uTes4T/oNGDYvxKImSUvNkoECXUU0MJlvGz7JglcUabrSK1m
+        A6VeEdQV0JpCs5/eveS8/i/JeXxwRs/CT/2D7Kb+1CH1f7QYP9biu8I66pww2WIVuKxkJrwiH9vT
+        o/B4lI7l875CYdHuWLoY73YvfgIAAP//AwCJ+psi+wQAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a803de80d3e6f-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 24 Feb 2023 16:44:29 GMT
-      Openai-Model:
-      - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '6651'
-      Openai-Version:
-      - '2020-10-01'
-      Strict-Transport-Security:
-      - max-age=15724800; includeSubDomains
+      - Sun, 07 May 2023 15:29:54 GMT
+      Server:
+      - cloudflare
       Transfer-Encoding:
       - chunked
-      X-Request-Id:
-      - 1d729750cdbd0ab6f977755b707f7989
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
+      - text-davinci-003
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '2179'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '245903'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 983ms
+      x-request-id:
+      - 2bea53cc975f902267948fe6288ea43b
     status:
       code: 200
       message: OK

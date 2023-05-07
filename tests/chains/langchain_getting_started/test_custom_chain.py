@@ -1,9 +1,10 @@
 import langchain_visualizer  # isort:skip  # noqa: F401
 import asyncio
-from typing import Dict, List
+from typing import Any, Dict, List, Optional
 
 import vcr_langchain as vcr
 from langchain import PromptTemplate
+from langchain.callbacks.manager import CallbackManagerForChainRun
 from langchain.chains import LLMChain
 from langchain.chains.base import Chain
 from langchain.llms import OpenAI
@@ -28,9 +29,13 @@ class ConcatenateChain(Chain):
     def output_keys(self) -> List[str]:
         return ["concat_output"]
 
-    def _call(self, inputs: Dict[str, str]) -> Dict[str, str]:
-        output_1 = self.chain_1.run(**inputs)
-        output_2 = self.chain_2.run(**inputs)
+    def _call(
+        self,
+        inputs: Dict[str, str],
+        run_manager: Optional[CallbackManagerForChainRun] = None,
+    ) -> Dict[str, Any]:
+        output_1 = self.chain_1.run(inputs)
+        output_2 = self.chain_2.run(inputs)
         return {"concat_output": output_1 + output_2}
 
 
@@ -63,7 +68,10 @@ async def custom_chain_demo():
 def test_llm_usage_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(custom_chain_demo())
-    assert result.strip() == 'Socktopia.\n\n"Step Up Your Style with Colorful Socks!"'
+    assert (
+        result.strip()
+        == 'Sock Spectacular.\n\n"Step Up Your Style with Colorful Socks!"'
+    )
 
 
 if __name__ == "__main__":

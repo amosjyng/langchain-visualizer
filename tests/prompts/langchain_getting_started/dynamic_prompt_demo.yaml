@@ -4,7 +4,7 @@ interactions:
       big and huge and massive and large and gigantic and tall and much much much
       much much bigger than everything else\nAntonym: "], "model": "text-ada-001",
       "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -13,43 +13,68 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '373'
+      - '359'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flPSOvqa01kmEj0MeJqPa9QcPoGq","object":"text_completion","created":1675411710,"model":"text-ada-001","choices":[{"text":"
-        small and small bit of everything.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":48,"completion_tokens":7,"total_tokens":55}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0SPsWqEQBRF+3yF3HoMGt24TL1dQJIiRQhBRuepk4zzxHmGXcR/DwnLpruce5qz
+        wVlodNPs0+pkuvWluNTS12xfSZ6fZBlrkmJ6O0GB20/qBBpCZ2k6nmZP4jhAoVvICFno/PFYlFVR
+        5g8KE1vyVz011qRZlv+6I7uOIvT79ndBI4mT8T4xwV5X6yThPqFvWi4yujDcQ8EFS2foTMHzMC/c
+        Ruiweq/Qu+Di2CxkIgdoROEZ+4fCGs1A0BvmhadZGuEvChG6PCr8B9xwpSAsxt/A4bDvdz8AAAD/
+        /wMAUNmHJCQBAAA=
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a80ba4b06f2fd-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '292'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:08:30 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:30:12 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-ada-001
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
       - '68'
-      Openai-Version:
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - b1951077594aec6308dbd21b71dc7ef5
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - eaf62fbdaa7d10d0038090ba32f339ad
     status:
       code: 200
       message: OK

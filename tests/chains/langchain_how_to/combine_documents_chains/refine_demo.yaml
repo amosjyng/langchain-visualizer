@@ -1,5 +1,35 @@
 interactions:
 - request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - 0.0.0.0:8935
+      user-agent:
+      - python-httpx/0.24.0
+    method: GET
+    uri: http://0.0.0.0:8935/ping
+  response:
+    content: ought-ice says pong
+    headers:
+      cache-control:
+      - no-transform
+      content-length:
+      - '19'
+      content-type:
+      - text/plain; charset=utf-8
+      date:
+      - Sun, 07 May 2023 15:58:58 GMT
+      server:
+      - uvicorn
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
     body: '{"input": ["What did the president say about Justice Breyer"], "encoding_format":
       "base64"}'
     headers:
@@ -14,35 +44,158 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.1
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/engines/text-embedding-ada-002/embeddings
   response:
     body:
-      string: "{\n  \"object\": \"list\",\n  \"data\": [\n    {\n      \"object\":
-        \"embedding\",\n      \"index\": 0,\n      \"embedding\": \"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\"\n
-        \   }\n  ],\n  \"model\": \"text-embedding-ada-002-v2\",\n  \"usage\": {\n
-        \   \"prompt_tokens\": 10,\n    \"total_tokens\": 10\n  }\n}\n"
+      string: !!binary |
+        H4sIAAAAAAAAA1R6WRO6vJrn/fkUb723zCkVgYRzx6KALAkCKk5NTYELiyJrAklXf/cp/Z/q6b7x
+        AgOa8OS3PfmPf/z1199tXj9u09//+uvvdzVOf/+v77V7NmV//+uv//2Pv/7666//+H3+j5GPJn/c
+        79Wn+A3/fVl97o/l73/9tf6vK/9/0L/++nsBr5CGbvf2FlicEKD5OBMgP4qhvTrNGpx31pls+MoC
+        ix7JAkwMRybCUQ1rcbUhEaj91qduOMmAww6NCmHyHSViIZts15oGZK4f4VyZx3zZgnUj31+2TG0J
+        HTizFoKADj8C4Z/3LmefAYyQfW5nGgKjN8nQX1yoTumMvTm98IkuZxH6gt0iJXrqwwbDMAPG2T6S
+        DaK1OSYv5MMaxiYB1mTxzfhIb0pZiTusFbMNeE+PTA3rpKSmVqd8PhaupLTzY01U7eCYXNwMGiRh
+        0ePDbbP2ZtO5PGBsIh0HzSn1mEqAAYfldKB79DLzOV9iCQTDZcTaiVn5Iu0va+gZrxHjIZT5xIzF
+        Aul4uGCTkXfN9nFrAYVfVgRuNIuv70npwtxLJHzwEsFjvDhC9aFfVCIH22hgq2bwwSocfbJpiyaf
+        H1iPoOtYL6pptzlfXu2phWjnaWj55Njkzhb64Ds/onTS7HW7JDiDl+0kSK7TNl7AWdFAEjKA7eN0
+        z3kfrdawUs8e1Z6HVc0mICewwFVLLVWgMVeq+AbN4n2lefk+e8vWXRHYiweDatZ6B5i+UUZF8BJO
+        0dZYD5NebgxwdfcZ9pOSDv24OyCoyf6ZXvoq8cZufGcQHNiT7vn6Y073QyIAsS4YPpX+PucDGCVA
+        dKmlyH1gTnfPhilxcdvTGwbGwHzWzjCSNYrRJ7bqdQrjFtDwUGLr/pS8Oe7IDhxZfCXr1VIOc7b2
+        1vBmFStqvIfDsD7kgQFWtbUiRn8TvUHD6RlsA22HTVwqJvN28Vp9Xz0BB/nlXHdFxxDM+sQkZZ/U
+        5uzcIQSZn2pouxE33sybuoLBcBoJ69w+X5564IB+WM1ELV9DTc036uF5x07YMj4tZxdQCnBBiY+v
+        wZbVbJ2xHUSXgFG3X93MZox3Ebgd0xAnBRLBbPTXECZKGND9dXrVA5lUHwb+1BNwdQ/e5hqUN/Bs
+        zDPZXNzQHJ8TTuH8rmS8M+kqn+7+TlLwtUjx7SgAbzFt5kMJrhbC05sZiwXuIbTwLGMjRp98Md3K
+        XfElfNLrZtPXy3FJe/DwgY/15mlw0YRvAdxz5YID57XxZmDABAabQqDf++Plqe9dcHk0d+o+KOLt
+        GLgECFtfxjpqpJxOZbWDwaUBSIEnls/aLnHg65Wl1LauMJ+GUsvgd/0QDAzEl3NaIiiKnxfdhcnB
+        nI3+GKnDZSNi57rywTL19QsUICU43QJaL7PnKPCLPxj7ac+Xx3qB6vpRVNSwnMfQXnT+gvcgOpHE
+        shNvtNlTAj3LjtgpLvrAVU0TobS2jt/9oeZjYck3iKY2wp4yj/GS7Y8tqNJjhzXpcI7nLyKC4ijf
+        yALcu7nUN6OAinFykSSNt3w5jBFTurRxSAXUgXM9rx9wFxzuJPDuDl9f5YGALDcMRPOzbw7W4kDo
+        MDMggmFWgDJH6eHuk1DseTEfmOsPLXSEMMeaDULA+WnP4EYLLgTGb9PkUl+H0CiimqwlW8/XFD12
+        4H66b8kmupr1PDzUEV4/lwc+aJoaf/ebAuOjaGJtH0A+ft6KA1+PQSSfNT2YYnU+I3jKVR0f9p93
+        zOElH+G5uR+wHxgI8Ov7oYGDimNqP9omnl/7RIKrkwvRxswNj3WbhwKk9RxSwxlik03BmCmf3M4p
+        njiKGXF2BWB02BIJvENvzt7ODL2jMmH7LLzBWxzlCqxYrqH1l0+ohtMEvt0aklv9nAFz9lIKS+bu
+        0ex2e48XxTyqVG45qY1Ci/kDPypgCNILa9vgAGZGeALizHxR6/5MzXl0M6Z88ZvsgdOaC6wDFyLn
+        MxNZ09R8Gqe4gt1dk+jVDZjZIV06/+qfeuVb9KaOzDv1fNna6Ny/Cz6iua9gJsE9NY9x5bEyF63f
+        emB7yltz3l+XXg0apFJ8KQe+zE4KlWG37PDV7u/1Qt7eCOtp0Kl9utz5spX9Hgh4qbHT7JS865si
+        gsnQenR/Nl8ez+XWgbul0rHTMlIv9mHfAPv6MdBUDZeBtU28Bt01snEgXI14uXzGCD6Ct4efq96s
+        +fnltiDX7u0fPuSRdT+DRtk1hB+6sp48XGiwc/s9UX20qZlnewwogozwbqi2NQs1nAB2P+7wfaes
+        B/JoVBE6+nih+WatmTMy7g08kM8RsRjZ8RxltQbhTmioVVuax44XPVN7lh6JqBq11wVXE0FdozI+
+        ICPK+T6zFCj1LwFxvllq/rqNCFT6zcL7z+4OyPhahWCXjhPatCerJqUUanB/6d4IDsqdj5e4ecEU
+        gZjQu1wM0+W0RHBo7hINVgWJaSLsH0CHbwEbzzjh7P12HiA/Sw5+KNsE9C+Yn5Xnekixmylo4M7h
+        E8KTzme0/b5P9jy5a3AzZoR1VTrmy+/9VI084J1qBvXMpXMFfXpvqD4Jdc23j9AByHnPOAjNDWf5
+        u79BJrIL1oeQxvM6chqwb+IPkXX2Nsft2ZRgiFbqF8+fOVO1xoJasuForNIXZ4YRKAp6GiGCvlX9
+        wWvYHkWGnbdDzCYkSQTPlXalrlRE3vaeCCkU2HzAgfKqPL59pC70m8bCe0/EHtu/YwsKYOiwnYRH
+        wL1cv0HDvmOimoJjbmZPU8BbQAXZxCcM6qIuetkRopww/cK8WfZ2LohPzRqbiVoNYwrjHuLtLcdn
+        kCt8QhXJoMthTzVhdOsxciQD/sZ7xcP1tu3h1kNKeEUG570aaLeWW+XLlwTeIPz3+rN7vEPLct/l
+        YjBpivrml5DalW1726FbJCEVz91PfwHi5mSEX31K5IFv4tmX2Bn6aW9SZztjzoQudtUlsgTUNLM2
+        8PaQ9FDT9wYptNscz6q17eElumAkCc5uEM/CVQJBdfNptlHvA9GlvgVoNi0i3mqPr2X5aIGbu6LU
+        F23Gl74LffVzbgec3F5i3qxqEMp7aDhEedtmPZvimAI9/xyofuhHk3C2E+DrNJ+pVm5jvkivksBD
+        75bY6E6uyaNt5gOQZiU15rXLeSkIIqShVyJVoTqYJWEW4E9f/tmvSY8ZSAoLUsTrmLPXZ85A6RKK
+        8WNX5Mt+VSXwJrQxWtvXJ1/wyjnDMH2GRPDeOeDlQ5vBOU4vqBBGd+DyWTursr016EHJtzm5VaxS
+        /IFs0G4Fy/i90ZNKLfeNhq1UHuLZEzIf3owdxqfwdvPYjLYMtO93Tf1DjbxlHgQB9vUuxAg5c76c
+        HroF/Qvc0a/eB3y1lQSwX4OO6reImEzI0h1UlNsD2/U14jzaRkj96UlnO1NAhQeCAIjn10+vAEZk
+        PQVjdRHQmvqSx7XSPMO3xT0Cq3o3zJW7ZnApJo26Y/6ql3N/88Ewdy56PaM+XhIbG9D5HCBS74pn
+        MleRGqjw0wojwzQA88MGQrx95NSpsiufQqd+AblMTjR9qShe/+pfeDk2ta/6I/7qVwbBh1TUvQpV
+        zupZ8yGeLxApG/Vez7dM18Dzck3IUi9k+MNHYqLMFPXqx+T+J2ngcm8Dqp0JG3i46g2Ij5NC3biZ
+        hllMgajIEYmpga8fbyzDpIXxiu2phuJ3TYI+FNS7sDqg7ay0vMVKMMLPG47UftIon396h6HBINJi
+        AM7W916DTKkd7Dzma8zazvu+v0+NxGPm1ksa62co6fuR6p8G8eV6e1VwP2UWxqtnzdunfzxDyZFc
+        1ArOq17u21KBP/1o3gMMqI1tB/AbABSRjz0sRpBZcKqFN0qr7Arob34nfZn/6LfRSo6zeq2biWTn
+        pOSz7PkuXN6HGVt2usmXcTZvkA+lSvf7hzKQ33rbVhFSnOHCnL3gnoAvP2AnnUqTnYWroiyrk07N
+        a41zfk/EFN5azJE0pSCfE63woQXaFXbaDwGzUHQtFNma06OwVgfmmM4DhocNwj5pI4+rdSPC7Slo
+        sH7YDJyfuqpSOYplqm2DDrDp+UxB+RE4ma3VrmbKKmuhnskutbzgNPCf/qNvxcBuJ4UeaztzhsOz
+        T/C+Laycj5+DAPYHvUYbvrbNbc/0EXQoFentGt28zghdQ8HifKM7yS5zmoXcgsrqHWBcEo2LwHuL
+        cB13Ed49oz6fRVsT1Yh4D6SWdIgn33Uc2f+Ee+wL1QoMGfJc2A2tQui4Nbxx+xEl2Jr+TB3u1t7P
+        v6jXlN7Q0iemNyz3ewO38utApI4ogO88U4Tn23GLD4a8mKzaDQiGlnX/5Qv1OF3vaxDIK4Jq41QM
+        fCenTHGz54W6LL57zGnITXEOsoTR9bjUxISTALe9YNM9XzV8GuxHBrQnNf/ww1Q9lBvUdK7/9G0+
+        e6CPYBIQB62C5GLykvIZ7iGxqeUZG/59HoTnde5TU6zffD5WTFS/+wUjG4CcS6kUQfAZKxrwXAN8
+        midH/jhaR81Dpw/8qLgujI3KQLKbHsHw89O7YXlS7T0mHqs2rQW+fId9mHzAbNeJqKCZ7jHqvFU8
+        yvLVku6ymJERJcrAQnKLYGLHLbZAnoEBeM4Lbm/Jnj7V6hYvG3bM4LaPHOwGppwPq5RaUGibLdXT
+        dqoXkLgW7K6hjX9+kQXQFOB5bnN8cc0b50dv48Nhfze/63ms/11PcLTpbRrfYL7XLx9aV+jRS/x8
+        /xs/3DNpsHO8aiYn0wbBcqOI33qovCVz9AbkXQiQoGwTvmzd7QhPhwZRB7MLX8I7Kn7zIUSeW86v
+        77MGX680pf5ybuJxqQqkFvfbgIOpk81ZDtYWrD0hQOobjeYcm6kDpE5ZEU53b5MFAlAAleAawSBA
+        9VdvrsEXn7Fbvag5Zc7hBc4Xz6GWWZ88ttqQEH7yfU4dcW0OW3FTazBYLIQGq7I9lg3uGRRF/aAH
+        2m7qxVLch/LlWxrMlylm4a0LoRElBRoG5vLlpuoMwErqKPo8rJzR5NLCiEsa1h5BnJNVzUOgPhih
+        uIYp/37fA3L0O+or0iqfT48mAeWY19/6OwFuCnMPh0p3vv44jdl+a1nQVKyB7piY1l22v/bwx7dG
+        57o5c5rmIaP4qVMzYRVgBjcYLPcvjT513A285lsLWNFhQvNRtTw2r2D/R29+qqjh9K7lN6CcbYA9
+        bnlgac14B3y5ldDqHeg1P2x2ETyqTvfHb4xs9DIFA+zTr/6MZ9xmIzwF5xXiKEPe5uvX1W+eQo3N
+        +5Lz6iRBkHdQwftvnkOd7RrBdh28UX0PKGfEhTdobSWEkfugnNwK4/XzA2QDHMcc+1NWQf9wNqif
+        lHhglpdGsHi4Pd0Lahuz4+WQAqDwBPHP+xXzEzgVcDPdM8SrA/RYqNkJrNTEw7m9jgBJepvBoHr4
+        GL/TMl7Wh/EMfVfTsXf+rGvmJPymXpdqRuIJ94AcSvSCw2av4OCpXzzepU+iLIpypGbsZTUzuMtg
+        pmYb7GlgZY4DZq36rUdszN1gcuZVL1UAXUfxZfQGloqGpYjhQ6NGpW7yUaeLqwrJ2qLHekH1MvXD
+        68dXeBcsSU0yqCbyD4/n0BPyV/86NfDFyRXbb2jn2yptJfjYaCV1hsKo+TS/XbDSMw+bN8sEc+VC
+        BmifMFLjUvHo+MoMcMjE4qcHzPkqAgblVXTBu+fd9TahOBeqFiQh1s4kqjvflyxQmHH20/veCP1n
+        AelgLIg/nmDgtD2dYQnMN1mW+yvmynOoFPuhMzJ/84OukNTol+9QY8VGcyrF4KyMeOVS6+xtvXne
+        ei7gircKlG4K41k8SAy8afOgpjraJvWjpYcaueypM6UgZsOhs2D7sDQibkhlfvNQBFUp0slbYG29
+        XE5yCJ7rLqW72u4HupNDBvtmoyM4lY35+PIzkJ7ThHdBswZMt6cZlp9oTX1NLfNvfldAG8QiUe5t
+        BUjzLBoo5QKkbjfNcdt16gN0d7Kl7p1Xw7wfXr26rTct/uZRnnhb1BcoVt4TI+0IPL5SWgX09wtB
+        UwQPg1LrIIRbQZOxN5JL/M1Xz0AUUgOjvWSaRN4pDfziAcld3/7WlzH/0VN2jbi3xJ2zhkYR1thF
+        G93jhq1V6nf/EnFTGzE/7OwUGGszwTu9tPO5y5QUfPmNANNs4vk52Rm8WdWKrNJIqmf5tnIVckQd
+        RS3m5rTCmxe0Im/CO/1s1zzR1Bu03VhH8BXeh3njF0SVGgcRIHdavL43iaP+/PddD9dmX9qxC2O7
+        XahbRnVMXEV6QeEaiahuz0eTUV5WsrF61QQ+yC7fFnXbg8ctCKjmPt7x7IX7EJZ3Xv47P/vWHzxR
+        naPl6ZWARBtcga/eRmo1XGo+H90H7JMHwm6qZ+A73wy+jSRH95J6MaunMFL7vRNQzTy9zDng2QNO
+        Z62i6Ll+c1ax2YWEgTs+3Pp1PuWNTeDQPCUiYAxjrvttBtvS5fSAhMfA9b4p4PVzeqCVU7s1O6hF
+        BdF7u6bWAXR8DteTCC9jVaA+epbD8us3TDxqfno0nuML30HyOuZ07zMwTF6Za+AuqAdqbYjhLTgE
+        KWzU7YXQuaxq3uu7tVSsDs9vHp2Zi5AGmfJxSEudYTByVubCDjoJP2DDERlfjhfSwu946lzXgUeX
+        IijAl/9pJn8e5uYgBDP45vWoZmRfM59Ka/jLi3l7XrztDjoE6vY6pf4hJfEIhzKF4f29InLxXNdk
+        GxipmhQ7SM9kp9eiiFkC+marU82bj95bJr4CFOPikvdKToavHrR+eIa2rgkB1WaUKWWi6GRx6sJc
+        TvrH+fEv9S9ZHc/9Kap+6/tHf/HX7eWDZdZ1bOucDvwa1wbU+ldCrevmUne5URIo8JuDVrIEAL2t
+        tUi1usjHf/ohv7yaqtfX933vweJxZChf/049Q7LqPhC4Am6uSpFKG63m8tvLwDOK3vTAvN787q8C
+        rlX39dV/eTyL02NWEpTZZPOb3z6cXfUsl4DuxOLq0Y0UCX/w+Xf//MCHCMz2S8Tm0anyOUXWqNxO
+        G428/L4dfn5WaRSrwdZsZ2bX3E8SNEenpfrT08EsQ91QqZ9RApOS1vyqz4aq+e2RZr4dmF9/tIN1
+        J4X06iWCuXwugvbLg+mvXriaDEzJO0HBP316jyI0w/vgp9iKSnFgP3z79su+/J7l9N1uz5BQZ/jm
+        8VHOpbxFcBlDjLWHEQ/rees5cKWnHs2wpoHNTT0wSAOLYC1/Ps0RLHoILS850CzVFf7HrzJxvuA4
+        YQanuP0I8H40bYpFlMdU94tUFSzFpProA85x+4HwlWELB/CT1d88ewbJ7ez+yZ/meWs6f/zRKT5R
+        PkvV04CEiv03T+beN19A8NzLMgHZ8WSy91u7QcnvAVrysox5H23X0A+3bzRT2eFLa+YW9F6rJ7Uv
+        h3c9Ls85grp0QGTtP1swqEcuwqoBA6oqvTOZOVUK7JUPo/tSf9dL36UIfvGdXFT37C2Dfc5gctcO
+        CLgXO+ZfVAYFyAj11FjjW/0g3eAvX14XSORd0KLwD/78+qXkIina7/mIn3dkYHaWn+Fig5Ga4BAN
+        3BSkFv783hi/zT/51i/fI3TV18MYObMGP5twwsEmlodZuTwjJbklLnU/p7ymr6B01G++i+Z4F5mL
+        duok+A6F+69fZv78j2J1oY/kMPuYi2BFGfzyHVmCZKzHbz4AEpTaZMlLPWYxkl/wy3doztLY+6OP
+        f3m2vrQ788//198sp7/87+cn4c+/ffujsQitACr7583EmV1q3lY1pBkcniuMvv2yH95WMObFFj9Q
+        PJuL6fbuzw9g3zlW8aKBraiU1XqH8SbCJg/K9Sj/8Gw23V3MDpFXwG+/gP76N3wUA03Jun5Hgy8f
+        T7p4EWC4Tx/4Wda6yawn8KEtbiyy/u7nzrQVH/j02aDlMurmvDylED6eK4EsVW8MCw1mEcYry8Ke
+        NTWAVZtiJwMxedE9HmjOn03Y/PTEr39s/umvXBxPJR0pu3o5XpoevPh4xXsJJzH3T10Dvv1pdDSj
+        S/ztLwqQV+0d1bGnDAv3byH49c+trz7llrE2FIAwxk5HMsDvpM2AdBYDbExA5GRRbgy0U6Z/+/FX
+        QPZxYalfPP/1I8yZwlqDWdfu6O3L70v5cSP49+9UwH/+46+//s/vhEHT3h/v78GA6bFM//yvowL/
+        zO7ZP9dr8Z9U/HMSgYxZ8fj7X/8+hPB3N7RNN/3fqX09PuPf//pr8+/jBn9P7ZS9//v1f3x/7T//
+        8f8AAAD//wMAJH+HuOMgAAA=
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3aaade19edf2f5-ADL
       Connection:
       - keep-alive
-      Content-Length:
-      - '8419'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 10 Mar 2023 04:57:28 GMT
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '33'
-      Openai-Version:
+      - Sun, 07 May 2023 15:58:58 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '213'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 6be553aa6dec1167a820e6d35164a5f8
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-request-id:
+      - eddd2228afd68055e7f6c7195d2c4c51
     status:
       code: 200
       message: OK
@@ -58,11 +211,11 @@ interactions:
       is nominating someone to serve on the United States Supreme Court. \n\nAnd I
       did that 4 days ago, when I nominated Circuit Court of Appeals Judge Ketanji
       Brown Jackson. One of our nation\u2019s top legal minds, who will continue Justice
-      Breyer\u2019s legacy of excellence.\nSource: 31\n---------------------\nGiven
+      Breyer\u2019s legacy of excellence.\nSource: tests/resources/state_of_the_union.txt\n---------------------\nGiven
       the context information and not prior knowledge, answer the question: What did
       the president say about Justice Breyer\n"], "model": "text-davinci-003", "temperature":
       0.0, "max_tokens": 500, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -71,44 +224,69 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1227'
+      - '1249'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.1
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6sP6oyFoYrkMlW2opVUfQemRcP88V","object":"text_completion","created":1678424250,"model":"text-davinci-003","choices":[{"text":"\nThe
-        president said that he wanted to honor Justice Breyer for his dedication to
-        serving the country and his legacy of excellence.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":220,"completion_tokens":25,"total_tokens":245}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0zQT0sDMRAF8LufYphzKv2/NUcVFevBgyBUpWST2d3YbGZJZmtL6XeXFqFe3/sd
+        Hu+A3qFG23ZhUNyX0838rihXs3a5eX/oH2/80+olvC65qFAhl99kBTUK7WRtue0CieeICm0iI+RQ
+        j+aLybSYjSYLhS07Cn984MzWR+sHw+Hk5Bv2ljLqj8O5Ro2f8a0h6BJl7ygKZOMdSGMEGoIfE4Uc
+        CEPDkRM891m8JbhNtKcEFSdofAZHzltz2nSimdLWxxqkIbDcR0l7MNGdZaDa2D1wBbSzFAJFS9eo
+        0EdHO9RDhYHrLnGZUcc+BIWVjz4360Qmc0SNWbjD45fCPpuaUB+wS9x2shbeUMyox5OxwstLl3ym
+        UFhM+JcUx+PVLwAAAP//AwBiFfg5iwEAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3aaae14a9ff2f5-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '395'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 10 Mar 2023 04:57:31 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:59:02 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '1505'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '3150'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 8151886efdfa9a1ffd09e543fb56e126
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249500'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 120ms
+      x-request-id:
+      - 70b85d47de6025efb03b67fa23babe37
     status:
       code: 200
       message: OK
@@ -130,105 +308,12 @@ interactions:
       dedicated immigration judges so families fleeing persecution and violence can
       have their cases heard faster. \n\nWe\u2019re securing commitments and supporting
       partners in South and Central America to host more refugees and secure their
-      own borders.\nSource: 32\n------------\nGiven the new context, refine the original
-      answer to better answer the question. If you do update it, please update the
-      sources as well. If the context isn''t useful, return the original answer."],
-      "model": "text-davinci-003", "temperature": 0.0, "max_tokens": 500, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias":
-      {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '1763'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.1
-    method: POST
-    uri: https://api.openai.com/v1/completions
-  response:
-    body:
-      string: '{"id":"cmpl-6sP6q8HcETJZGzXIiff6j39dzKiFE","object":"text_completion","created":1678424252,"model":"text-davinci-003","choices":[{"text":"\n\nThe
-        president said that he wanted to honor Justice Breyer for his dedication to
-        serving the country, his legacy of excellence, and his commitment to advancing
-        liberty and justice. He highlighted Justice Breyer''s background as a former
-        top litigator in private practice, a former federal public defender, and a
-        family of public school educators and police officers, as well as his ability
-        to build consensus. He also noted the broad range of support Justice Breyer
-        has received from the Fraternal Order of Police to former judges appointed
-        by Democrats and Republicans. The president also discussed his efforts to
-        secure the border and fix the immigration system, including installing new
-        technology, setting up joint patrols with Mexico and Guatemala, putting in
-        place dedicated immigration judges, and securing commitments and supporting
-        partners in South and Central America. \nSource: 32","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":321,"completion_tokens":161,"total_tokens":482}}
-
-        '
-    headers:
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - no-cache, must-revalidate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '1159'
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 10 Mar 2023 04:57:39 GMT
-      Openai-Model:
-      - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '7742'
-      Openai-Version:
-      - '2020-10-01'
-      Strict-Transport-Security:
-      - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 395355d70d312ed6815a9962b5d49407
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"prompt": ["The original question is as follows: What did the president
-      say about Justice Breyer\nWe have provided an existing answer, including sources:
-      \n\nThe president said that he wanted to honor Justice Breyer for his dedication
-      to serving the country, his legacy of excellence, and his commitment to advancing
-      liberty and justice. He highlighted Justice Breyer''s background as a former
-      top litigator in private practice, a former federal public defender, and a family
-      of public school educators and police officers, as well as his ability to build
-      consensus. He also noted the broad range of support Justice Breyer has received
-      from the Fraternal Order of Police to former judges appointed by Democrats and
-      Republicans. The president also discussed his efforts to secure the border and
-      fix the immigration system, including installing new technology, setting up
-      joint patrols with Mexico and Guatemala, putting in place dedicated immigration
-      judges, and securing commitments and supporting partners in South and Central
-      America. \nSource: 32\nWe have the opportunity to refine the existing answer(only
-      if needed) with some more context below.\n------------\nContent: We\u2019re
-      going after the criminals who stole billions in relief money meant for small
-      businesses and millions of Americans.  \n\nAnd tonight, I\u2019m announcing
-      that the Justice Department will name a chief prosecutor for pandemic fraud.
-      \n\nBy the end of this year, the deficit will be down to less than half what
-      it was before I took office.  \n\nThe only president ever to cut the deficit
-      by more than one trillion dollars in a single year. \n\nLowering your costs
-      also means demanding more competition. \n\nI\u2019m a capitalist, but capitalism
-      without competition isn\u2019t capitalism. \n\nIt\u2019s exploitation\u2014and
-      it drives up prices. \n\nWhen corporations don\u2019t have to compete, their
-      profits go up, your prices go up, and small businesses and family farmers and
-      ranchers go under. \n\nWe see it happening with ocean carriers moving goods
-      in and out of America. \n\nDuring the pandemic, these foreign-owned companies
-      raised prices by as much as 1,000% and made record profits.\nSource: 21\n------------\nGiven
+      own borders.\nSource: tests/resources/state_of_the_union.txt\n------------\nGiven
       the new context, refine the original answer to better answer the question. If
       you do update it, please update the sources as well. If the context isn''t useful,
       return the original answer."], "model": "text-davinci-003", "temperature": 0.0,
       "max_tokens": 500, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0,
-      "n": 1, "best_of": 1, "logit_bias": {}}'
+      "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -237,60 +322,75 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '2565'
+      - '1785'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.1
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6sP6y1WeV421eaiv99oqJACqIgEVT","object":"text_completion","created":1678424260,"model":"text-davinci-003","choices":[{"text":"\n\nThe
-        president said that he wanted to honor Justice Breyer for his dedication to
-        serving the country, his legacy of excellence, and his commitment to advancing
-        liberty and justice. He highlighted Justice Breyer''s background as a former
-        top litigator in private practice, a former federal public defender, and a
-        family of public school educators and police officers, as well as his ability
-        to build consensus. He also noted the broad range of support Justice Breyer
-        has received from the Fraternal Order of Police to former judges appointed
-        by Democrats and Republicans. The president also discussed his efforts to
-        secure the border and fix the immigration system, including installing new
-        technology, setting up joint patrols with Mexico and Guatemala, putting in
-        place dedicated immigration judges, and securing commitments and supporting
-        partners in South and Central America. Additionally, he discussed his efforts
-        to go after criminals who stole billions in relief money meant for small businesses
-        and millions of Americans, and his announcement of a chief prosecutor for
-        pandemic fraud. He also highlighted his success in lowering the deficit by
-        more than one trillion dollars in a single year, and his commitment to demanding
-        more competition and preventing exploitation of capitalism. \nSource: 32,
-        21","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":488,"completion_tokens":233,"total_tokens":721}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA2yUQW/dNgzH7/sUhC67OEGylzaZb92KtQsQbEh32joEtETbfJVFgaJfnhHkuxey
+        k6YBehX/JH9/ktCD4+Ba56ccTy7fdxdyc/Pu8lN3+PPD+dX+tvt38dcf+8PN7bVrnHR78uZaZ3S0
+        Oy9TjmQsyTXOK6FRcO3526vdxeWb84tfGjdJoPgkPwl44OT55OxsV/WjsKfi2v8e1rBr3ef0Of0z
+        EmSlwoGSQUEOYCMajAT3mIwCmMAoSRSu52LsCX5TWkihF4WRCwQK7LFSVWkhPXAawEYCL3MyXZpV
+        FmlAv4D0QEdPMVLy1ACmsEa9TBPbVBlMAMMBk69lInektqy6/db/FD4SjDyMkYexAr7m+rlAh/7L
+        oDKnAFgAK+lECiYZIhsPaKLACbLyAa36R18rNC/angIpRshzF9lDoJ5SIN2AEXqcOK5mngTFjyIR
+        KMy+Vi+rLkusXNL37EnLCo6xCCT5ITd2HNmWOoFu5hjASyqUylwa8GzPY+1UMIBiGmptKHPOouvG
+        Riyg5IkPFKBXmVb9H4pGmjDCXxpIa87fG5nJs9/9HAYqgDkLr1vvFnhPk3hF28zc0mYVUzmF11ez
+        evp+I7Ur9b2ole0m/Ky0scuKUAv2fFyfeJp40O2AylKMpgbK7Me6O07FMMbqPNE9GPkxSZRhaaCQ
+        rROZM+wrM2Q0lVjgnm2EGzqyl7XPhxmNJozYQJ63nLr7iJ6eb5fCK4ptGNuuV/aa83Kh2zyexl5D
+        GdUSacWFTzLbuAp+p2T1hN5NpOzx1DWOU6Cja88aF2XIKl1xbZpjbFzPict4p4RFkmtdMcnu8f/G
+        zQUHcu2DyypTtjuTL5SKa3e7XeNePoRv7+dv3jbOxDB+e7q4+vXx8aevAAAA//8DAHXXo9F3BAAA
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3aaaf9a8faf2f5-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '1576'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 10 Mar 2023 04:57:50 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:59:18 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '9638'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '15914'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - a7815685b0ece033fb3bef1555f48d35
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249500'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 120ms
+      x-request-id:
+      - 8d161c4b1f3aeab666f205b57b1b1d3f
     status:
       code: 200
       message: OK
@@ -301,37 +401,33 @@ interactions:
       to serving the country, his legacy of excellence, and his commitment to advancing
       liberty and justice. He highlighted Justice Breyer''s background as a former
       top litigator in private practice, a former federal public defender, and a family
-      of public school educators and police officers, as well as his ability to build
-      consensus. He also noted the broad range of support Justice Breyer has received
+      of public school educators and police officers. He also noted Justice Breyer''s
+      ability to build consensus, citing the broad range of support he has received
       from the Fraternal Order of Police to former judges appointed by Democrats and
-      Republicans. The president also discussed his efforts to secure the border and
-      fix the immigration system, including installing new technology, setting up
+      Republicans. The president also highlighted the efforts to secure the border
+      and fix the immigration system, such as installing new technology, setting up
       joint patrols with Mexico and Guatemala, putting in place dedicated immigration
       judges, and securing commitments and supporting partners in South and Central
-      America. Additionally, he discussed his efforts to go after criminals who stole
-      billions in relief money meant for small businesses and millions of Americans,
-      and his announcement of a chief prosecutor for pandemic fraud. He also highlighted
-      his success in lowering the deficit by more than one trillion dollars in a single
-      year, and his commitment to demanding more competition and preventing exploitation
-      of capitalism. \nSource: 32, 21\nWe have the opportunity to refine the existing
-      answer(only if needed) with some more context below.\n------------\nContent:
-      And for our LGBTQ+ Americans, let\u2019s finally get the bipartisan Equality
-      Act to my desk. The onslaught of state laws targeting transgender Americans
-      and their families is wrong. \n\nAs I said last year, especially to our younger
-      transgender Americans, I will always have your back as your President, so you
-      can be yourself and reach your God-given potential. \n\nWhile it often appears
-      that we never agree, that isn\u2019t true. I signed 80 bipartisan bills into
-      law last year. From preventing government shutdowns to protecting Asian-Americans
-      from still-too-common hate crimes to reforming military justice. \n\nAnd soon,
-      we\u2019ll strengthen the Violence Against Women Act that I first wrote three
-      decades ago. It is important for us to show the nation that we can come together
-      and do big things. \n\nSo tonight I\u2019m offering a Unity Agenda for the Nation.
-      Four big things we can do together.  \n\nFirst, beat the opioid epidemic.\nSource:
-      34\n------------\nGiven the new context, refine the original answer to better
-      answer the question. If you do update it, please update the sources as well.
-      If the context isn''t useful, return the original answer."], "model": "text-davinci-003",
-      "temperature": 0.0, "max_tokens": 500, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      America.\nWe have the opportunity to refine the existing answer(only if needed)
+      with some more context below.\n------------\nContent: We\u2019re going after
+      the criminals who stole billions in relief money meant for small businesses
+      and millions of Americans.  \n\nAnd tonight, I\u2019m announcing that the Justice
+      Department will name a chief prosecutor for pandemic fraud. \n\nBy the end of
+      this year, the deficit will be down to less than half what it was before I took
+      office.  \n\nThe only president ever to cut the deficit by more than one trillion
+      dollars in a single year. \n\nLowering your costs also means demanding more
+      competition. \n\nI\u2019m a capitalist, but capitalism without competition isn\u2019t
+      capitalism. \n\nIt\u2019s exploitation\u2014and it drives up prices. \n\nWhen
+      corporations don\u2019t have to compete, their profits go up, your prices go
+      up, and small businesses and family farmers and ranchers go under. \n\nWe see
+      it happening with ocean carriers moving goods in and out of America. \n\nDuring
+      the pandemic, these foreign-owned companies raised prices by as much as 1,000%
+      and made record profits.\nSource: tests/resources/state_of_the_union.txt\n------------\nGiven
+      the new context, refine the original answer to better answer the question. If
+      you do update it, please update the sources as well. If the context isn''t useful,
+      return the original answer."], "model": "text-davinci-003", "temperature": 0.0,
+      "max_tokens": 500, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0,
+      "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -340,97 +436,207 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '2926'
+      - '2571'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.1
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6sP7811bXvCdB0IVjlPOlgl3mqSXi","object":"text_completion","created":1678424270,"model":"text-davinci-003","choices":[{"text":"\n\nThe
-        president said that he wanted to honor Justice Breyer for his dedication to
-        serving the country, his legacy of excellence, and his commitment to advancing
-        liberty and justice. He highlighted Justice Breyer''s background as a former
-        top litigator in private practice, a former federal public defender, and a
-        family of public school educators and police officers, as well as his ability
-        to build consensus. He also noted the broad range of support Justice Breyer
-        has received from the Fraternal Order of Police to former judges appointed
-        by Democrats and Republicans. The president also discussed his efforts to
-        secure the border and fix the immigration system, including installing new
-        technology, setting up joint patrols with Mexico and Guatemala, putting in
-        place dedicated immigration judges, and securing commitments and supporting
-        partners in South and Central America. Additionally, he discussed his efforts
-        to go after criminals who stole billions in relief money meant for small businesses
-        and millions of Americans, and his announcement of a chief prosecutor for
-        pandemic fraud. He also highlighted his success in lowering the deficit by
-        more than one trillion dollars in a single year, and his commitment to demanding
-        more competition and preventing exploitation of capitalism. He also discussed
-        his commitment to the LGBTQ+ community, including his support for the Equality
-        Act and his promise to always have their backs. He also noted his success
-        in signing 80 bipartisan bills into law last year, from preventing government
-        shutdowns to protecting Asian-Americans from hate crimes to reforming military
-        justice, and his plans to strengthen the Violence Against Women Act. Finally,
-        he offered a Unity Agenda for the Nation, which includes beating the opioid
-        epidemic. \nSource: 32, 21, 34","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":538,"completion_tokens":324,"total_tokens":862}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA3xUXW/cNhD8Kwu++EW6sx27tu/NqdMaDdLmo0FQ1EVAkStpHYpLkCufD2n/e7GU
+        P3Jt0ScB5HA4MzvUV0PebIybUmjPrrrT09/eTZ9enV5NZyfddff61cXPJ2+uP76+ODGN4e4WnZiN
+        EbyXz46nFFCIo2mMy2gFvdkcfXf+4uTs9Oj0ojETewwP8NbbO4qO2sPDF4ofmRwWs/n9a902G3MT
+        b+KvI0LKWMhjFCiWPMhoBUaErY2CHoRh5MgZfpqLkEN4mXGHGXrOMFIBj56cVVUKLZjvKA4gI4Lj
+        OUreNRUWcLBuB9wD3jsMAaPDBmz0ddfxNJFMqkEYrL+z0SlNoA6z7Crudrl/BdcIIw1joGFUgfu6
+        Dgp01n0ZMs/Rgy1gVemEGYQTBBIarHAGipAy3VlR/9YpQ/OM7dFjtgHS3AVy4LHH6DEvgi30dqJQ
+        zTwAihuZA6CfnbKXikscVBf3PTnMpQq3oTBE/k/dtqNAstMEupmCB8exYCxzacCRPMbaZbYeso2D
+        ckOZU+JcJzbaAhkd0h166DNPFf9DtoI52gC/ZI9Zz7xdlAk/+r2d/YAFbEpMderdDq5wYpetLGbe
+        42LVxrKC/dZUT/87Eex7zlKWgrg542KEqx5l7+m+LtE00ZCXNpVdEZwaKLMbdZAUi9gQNIaIWxB0
+        Y+TAw66BglLjmRPcqgFIVjKHAluSEd7gPTmu9/w4W8HJBttAmpczWoRgHT4WGf2eiiWZZfBVu555
+        rusSzsMMdCvZLBGzyoUPPMtYAd9jFO3T5YSZnF3Bpfek/DaEXVOtP+eZsqXyrxifHtz+W+k1c724
+        z3b29TK8T4FJqv695jwSXqGqVIaDUrN0I2EPKbM61NehdyUbPU7kvmHe03lQgLfx29lm7f8yW489
+        OZJ6iqL+rIr+EKaEUn1rPIqbbP6CsoKb+IHn7HADN/HTSIJwzXPBBm7Me1RQ0Uq+fcropX5qxqJP
+        mPvK9jEq9aX3GUuBP+EyZQpwfN7A8eHxUXNjanP3+P8BgVEklc16vd1uV1sFjopbDXy37jJhT3Fo
+        M/O0LgnRjVjavOhb6/n14cn6+Hz9sNR2u/YprrbTT0uxLSq55b6VEdtZJbd2kbxemcZQ9HhvNoeN
+        CTykzF0xmziH0JieIpXxs4bJ0WxMEU7mrz8aMxc7oNl8NSnzlORvxZfkZ6fmFStZmVia6ighqg24
+        uJGloY5SSX5JYg5cyNzCrLaWCwAAAP//AwBEc+XpnQYAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3aab601dd7f2f5-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '2072'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 10 Mar 2023 04:58:02 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:59:45 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '11069'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '25818'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 6e691e58eed12065d95d04df7ba89a70
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249500'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 120ms
+      x-request-id:
+      - beab9c813ca5ec15d805a455da01f224
     status:
       code: 200
       message: OK
 - request:
-    body: ''
+    body: '{"prompt": ["The original question is as follows: What did the president
+      say about Justice Breyer\nWe have provided an existing answer, including sources:
+      \n\nThe president said that he wanted to honor Justice Breyer for his dedication
+      to serving the country, his legacy of excellence, and his commitment to advancing
+      liberty and justice. He highlighted Justice Breyer''s background as a former
+      top litigator in private practice, a former federal public defender, and a family
+      of public school educators and police officers. He also noted Justice Breyer''s
+      ability to build consensus, citing the broad range of support he has received
+      from the Fraternal Order of Police to former judges appointed by Democrats and
+      Republicans. The president also highlighted Justice Breyer''s efforts to secure
+      the border and fix the immigration system, such as installing new technology,
+      setting up joint patrols with Mexico and Guatemala, putting in place dedicated
+      immigration judges, and securing commitments and supporting partners in South
+      and Central America. Additionally, the president praised Justice Breyer for
+      his commitment to fighting fraud and exploitation, citing the Justice Department''s
+      new chief prosecutor for pandemic fraud and the president''s own efforts to
+      reduce the deficit and increase competition in the market. \nSource: \nWhite
+      House, \"Remarks by President Biden in State of the Union Address | April 28,
+      2021,\" The White House, April 28, 2021, https://www.whitehouse.gov/briefing-room/speeches-remarks/2021/04/28/remarks-by-president-biden-in-state-of-the-union-address/.\nWe
+      have the opportunity to refine the existing answer(only if needed) with some
+      more context below.\n------------\nContent: And for our LGBTQ+ Americans, let\u2019s
+      finally get the bipartisan Equality Act to my desk. The onslaught of state laws
+      targeting transgender Americans and their families is wrong. \n\nAs I said last
+      year, especially to our younger transgender Americans, I will always have your
+      back as your President, so you can be yourself and reach your God-given potential.
+      \n\nWhile it often appears that we never agree, that isn\u2019t true. I signed
+      80 bipartisan bills into law last year. From preventing government shutdowns
+      to protecting Asian-Americans from still-too-common hate crimes to reforming
+      military justice. \n\nAnd soon, we\u2019ll strengthen the Violence Against Women
+      Act that I first wrote three decades ago. It is important for us to show the
+      nation that we can come together and do big things. \n\nSo tonight I\u2019m
+      offering a Unity Agenda for the Nation. Four big things we can do together.  \n\nFirst,
+      beat the opioid epidemic.\nSource: tests/resources/state_of_the_union.txt\n------------\nGiven
+      the new context, refine the original answer to better answer the question. If
+      you do update it, please update the sources as well. If the context isn''t useful,
+      return the original answer."], "model": "text-davinci-003", "temperature": 0.0,
+      "max_tokens": 500, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0,
+      "n": 1, "logit_bias": {}}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      host:
-      - 0.0.0.0:8935
-      user-agent:
-      - python-httpx/0.23.3
-    method: GET
-    uri: http://0.0.0.0:8935/ping
+      Content-Length:
+      - '3065'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenAI/v1 PythonBindings/0.27.4
+    method: POST
+    uri: https://api.openai.com/v1/completions
   response:
-    content: ought-ice says pong
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA3xV227cNhB971cM+OKHSrtrO75k3+y6TVL0kiYuArRbGBQ5ksamOCw52gtc/3tB
+        ypdsm/ZJAHl4eM6ZGepekVVLZYbg6rOr5uSTXv90fSwX25N31+3i3enp+rc7OguvnaoUN7doRC2V
+        4FZuDA/BoRB7VSkTUQtatTw8PT9+dXZyeH5aqYEtukd4bfWavKF6sTjO+J7JYFLL3+/LtlqqlV/5
+        6x4hRExk0QskTRak1wI9wkZ7QQvC0LPnCN+PScggXEbcYYSWI/SUwKIlo7OqDE0Y1+Q7kB7B8Ogl
+        7qoCc9hpswNuAbcGnUNvsALtbdk1PAwkQ9YgDNqutTeZxlGDUXYFdzvdP4O3CD11vaOuzwL3dR0k
+        aLS56yKP3oJOoLPSASMIB3Ak1GnhCOQhRFpryf61yQzVC7ZFi1E7CGPjyIDFFr3FOAnW0OqBXDHz
+        CEimZ3aAdjSZPRVcYJd1cduSwZiKcO0Sg+cv6tYNOZJdTqAZyVkw7BP6NKYKDMlTrE1kbSFq32Vu
+        SGMIHEvFep0gokFao4U28lDw30UtGL128HO0GPOZ95My4Se/t6PtMIEOgalUvdnBFQ5sopbJzAec
+        rGqfZrDfNcXT/1YE25ajpKlBzBhxMsJFT2ZvaVuWaBioi1M3pV0SHCpIo+lzIckn0c7lGDxuQND0
+        nh13uwoSSolnDHCbDUDQEtkl2JD08CNuyXC5582oBQftdAVhnM7kRnDa4FMjo91TMSUzFb5oz2de
+        2nUK57EGeSvoKB5jlgsfeZS+AL5BL7mfLgaMZPQMLqylzK+d21XF+kueIWpK/4rxeeD2Z6XNmeeL
+        26hHWy7DbXBMUvTvdc4T4RVmlZnhIJUsTU/YQoicHebpyHcF7S0OZD5j3tN5kIA3/vPaxtz/U20t
+        tmRIyiny+bFK+UEYAkrxnePJuEHHO5QvdtR/TMm+/RBZ0Dw7jDmNlFv8hzeX1798/RS43x8hj9PD
+        FnRKZeHbP0ddZu/CTJpfqEGi9qkr8/9CN41Xkvx+OL1JIDp2+HTBMIOV/8hjNLiElf/UkyC85TFh
+        BSv1AbPrlGfs/bPly/wpTVM4uS26fvU5qwtrI6YEf8FFiOTg6LyCo8XRYbVSJbg9/n9AoBcJaTmf
+        bzab2SYD+4ybdbyeN5GwJd/VkXmYp4Boekx1nPTN8/n54tX86Hz+uFQ3u/q5SnWTPzX5usRQc1tL
+        j/WYJdd6kjyfrfw1JknziKnkkeYFfcPtjfR4U9Az2YqqFHmLW7VcVMpxFyI3SS396FylWvKU+pvc
+        RezVUiXhoB7+qNSYdIdqea9C5CHIjfAd+qSWp4vzSr38L5/Xj18dV0pYtHteen1y+PDw1d8AAAD/
+        /wMAp6kVoJYHAAA=
     headers:
-      cache-control:
-      - no-transform
-      content-length:
-      - '19'
-      content-type:
-      - text/plain; charset=utf-8
-      date:
-      - Fri, 10 Mar 2023 05:01:11 GMT
-      server:
-      - uvicorn
-    http_version: HTTP/1.1
-    status_code: 200
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3aac06b916f2f5-ADL
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 07 May 2023 16:00:08 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
+      - text-davinci-003
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '22896'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249500'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 120ms
+      x-request-id:
+      - f5d19c8377e125ad558969e3d5b5aa77
+    status:
+      code: 200
+      message: OK
 version: 1
