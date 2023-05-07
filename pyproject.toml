@@ -8,7 +8,7 @@ packages = [{include = "langchain_visualizer"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-langchain = ">=0.0.130,<0.1"
+langchain = "^0.0.161"
 ought-ice = "^0.5.0"
 gorilla = "^0.4.0"
 
@@ -23,7 +23,7 @@ openai = "^0.27.0"
 vcr-langchain = "^0.0.23"
 google-search-results = "^2.4.1"
 faiss-cpu = "^1.7.3"
-tiktoken = "^0.1.2"
+tiktoken = "^0.3.3"
 autoflake = "^2.0.1"
 pytest-asyncio = "^0.21.0"
 

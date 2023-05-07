@@ -5,7 +5,7 @@ interactions:
       If the AI does not know the answer to a question, it truthfully says it does
       not know.\n\nCurrent conversation:\n\nHuman: Hi, what''s up?\nAI:"], "model":
       "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty":
-      0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -14,44 +14,69 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '468'
+      - '454'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flP7sQMHKa1kQhCmHwUeg0PbfL36","object":"text_completion","created":1675411689,"model":"text-davinci-003","choices":[{"text":"
-        Hi there! I''m doing great. I''m currently helping a customer with a technical
-        issue. How about you?","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":67,"completion_tokens":23,"total_tokens":90}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0SQwU4CMRRF935FfRs3hQwMgtONiWGBCQtNTFwYQ0rnMa12+kr7KhDCvxuIwe05
+        J3dxj+BaUGD66AezuTZm+Rry+2i8bZ7eeLNdkp3OX+b34wYk0PoLDYMCxj2vDPXRIzsKIMEk1Iwt
+        qNH0oZ7M6rqZSOipRf+XD1r944Jxg6qqz70lZzCD+jheNCgQCyfYYsJb8XzXi5Zc6ER33h1egCkp
+        YWB/EBZ9PEstTMlMPSaxc2yFFozGBme0Fy7ngkOxoJ3QayosDlQeQYILLe5BVRI8dTHROoMKxXsJ
+        GxdctquEOlMABZkpwulTQsm6Q1BHiIn6yCumbwwZ1HQm4f+EKx7XEphY+ytpqtPp5hcAAP//AwA3
+        ELioaQEAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a804dbb19f301-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '361'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:08:11 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:29:56 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '1626'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '1275'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - cb0599f78befe45eae36b056d1caeaf0
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - ed84de86a179f2bc819878951f00063b
     status:
       code: 200
       message: OK
@@ -68,7 +93,7 @@ interactions:
       Hi, what''s up?\nAI:  Hi there! I''m doing great. I''m currently helping a customer
       with a technical issue. How about you?\n\nNew summary:"], "model": "text-davinci-003",
       "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -77,44 +102,69 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1038'
+      - '1024'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flP90XBxSQOkioIqNpKbvYwUE5ui","object":"text_completion","created":1675411691,"model":"text-davinci-003","choices":[{"text":"\nThe
-        AI is doing great and is helping a customer with a technical issue. The human
-        asked what the AI was doing.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":183,"completion_tokens":25,"total_tokens":208}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0SQy0oDQRBF935FUeuOTBxNYu9EEcxGFyKCSqh0l+k2/WK6xrzIv0uCmuU996zO
+        Dr1FjSaWMBjfkeGXzf3mqb/dTl+7R2+v2+10FMdRJqgwz7/YCGoUXsvM5FgCi88JFZqOSdiiHo4m
+        7eW4ba9HCmO2HH71gaVvn4wfNE178F32hivqt93xRo3v6dkxuD5SAqpLtrByJCCO4eYBVlShLyAZ
+        KNk/2HEJng+TBLwcJceh+LQAAtNXyZE7WHlxQCBsXPKGAvhaez5HhT5ZXqNuFIa8KF2eV9SpD0Hh
+        p0++ulnHVHNCjVVywf2Hwr7SglHvsHQ5FplJXnKqqIeTVuGpyT+/uFIoWSicSDPZ789+AAAA//8D
+        APoXuG55AQAA
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a8057fdf3f301-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '376'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:08:12 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:29:58 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '1233'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '1813'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 8a6dbf4b8a24b23b9e4a03dbe89003d6
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - 46b03e67a3814c062f467599e1f5d233
     status:
       code: 200
       message: OK
@@ -122,11 +172,11 @@ interactions:
     body: '{"prompt": ["The following is a friendly conversation between a human and
       an AI. The AI is talkative and provides lots of specific details from its context.
       If the AI does not know the answer to a question, it truthfully says it does
-      not know.\n\nCurrent conversation:\n\nThe AI is doing great and is helping a
-      customer with a technical issue. The human asked what the AI was doing.\nHuman:
+      not know.\n\nCurrent conversation:\n\nThe human asked what the AI was up to
+      and the AI replied that it was helping a customer with a technical issue.\nHuman:
       Tell me more about it!\nAI:"], "model": "text-davinci-003", "temperature": 0.0,
       "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0,
-      "n": 1, "best_of": 1, "logit_bias": {}}'
+      "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -135,46 +185,69 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '588'
+      - '575'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flPAkMIinDFYQkep4WzB9b9XuhMJ","object":"text_completion","created":1675411692,"model":"text-davinci-003","choices":[{"text":"
-        Sure! I''m helping a customer with a technical issue. They''re having trouble
-        connecting to their Wi-Fi network and I''m trying to troubleshoot the issue.
-        I''m currently running a diagnostic scan to see if I can identify the source
-        of the problem.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":92,"completion_tokens":53,"total_tokens":145}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0SQTU8CMRCG7/6Kcc6FAEsEevODBE9qJF6MIaU7bAvdzqadFRPCfzcLiNf3fZ43
+        kzmgL1GjrZvQmzwZW71u7/Yfm+Xjdr57Wyzm7uX+gbzPI1TI6y1ZQY1CP7KyXDeBxHNEhTaRESpR
+        D++mxXhSFLOpwppLChe8V5pvH63vDQZFxzv2ljLqz8OpRo3w3ia6haUjsG0WrinB3mRwnViBJG7X
+        gWDvxYE48gm6C1qhBJEFLMdIVk4odwD4KJQiSR+eT0Om04XBUWg6oP7bzI5ZzkrOLYGJJVQkZ+ay
+        S2UfFfpY0g/qgcLAVZN4nVHHNgSFGx99dqtEJnNEjVm4weOXwjabilAfsElcN7IS3lHMqGcjhf8v
+        vMbFSKGwmHBNhqPx8XjzCwAA//8DAIYrnzCoAQAA
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a806629e6f301-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '507'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:08:15 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:30:00 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '2731'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '1704'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 99576e78439625e0b4a70b1f93cfec08
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - f8277415d84d89f1ad770c039836708c
     status:
       code: 200
       message: OK
@@ -187,15 +260,14 @@ interactions:
       intelligence will help humans reach their full potential.\n\nNew summary:\nThe
       human asks what the AI thinks of artificial intelligence. The AI thinks artificial
       intelligence is a force for good because it will help humans reach their full
-      potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\nThe AI is doing great and
-      is helping a customer with a technical issue. The human asked what the AI was
-      doing.\n\nNew lines of conversation:\nHuman: Tell me more about it!\nAI:  Sure!
-      I''m helping a customer with a technical issue. They''re having trouble connecting
-      to their Wi-Fi network and I''m trying to troubleshoot the issue. I''m currently
-      running a diagnostic scan to see if I can identify the source of the problem.\n\nNew
+      potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\nThe human asked what the AI
+      was up to and the AI replied that it was helping a customer with a technical
+      issue.\n\nNew lines of conversation:\nHuman: Tell me more about it!\nAI:  Sure!
+      The customer was having trouble with their computer not connecting to the internet.
+      I was able to help them troubleshoot the issue and get them connected.\n\nNew
       summary:"], "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256,
-      "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of":
-      1, "logit_bias": {}}'
+      "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}}'
     headers:
       Accept:
       - '*/*'
@@ -204,46 +276,70 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1303'
+      - '1207'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flPEjNWCAzrzgGY7rsR1eZJKQygi","object":"text_completion","created":1675411696,"model":"text-davinci-003","choices":[{"text":"\n\nThe
-        AI is doing great and is helping a customer with a technical issue. The human
-        asked what the AI was doing and it replied that it was running a diagnostic
-        scan to try and identify the source of the customer''s problem with their
-        Wi-Fi network.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":239,"completion_tokens":53,"total_tokens":292}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0yRQWsbMRCF7/0Vw5zlYMdxHHRrk7aEQiml0ENbjKydrGRrZ4Q0GweM/3vROql7
+        1NP33rxhjhg7tOiHnGbrB+d3j1+Hp7AK+v3n7uNy//nDt09fbvv762c0KNsdeUWLSi+68TLkRBqF
+        0aAv5JQ6tIvbu+XNenkzXxgcpKP0is869xzZx9l8vmx8kOipov11nL7R4m/+EQjCODgGV/fUwSE4
+        BQ0E7x/h4CqMGVTAcfcmFsopUns6hagTFCjlyD048GNVGajAIWoAB0o+cPQuQax1pCto8y5Q87aO
+        PWiRcZvo7NNAsUBbdlQqwKLghZm8TqhMXSIrFSY1/7dria7lqEytmj68hdcgcl5uKjP5etIz8zqA
+        uis0GLmjF7Rzg0n6XGRb0fKYksGnyLGGTSFXhdFiVcl4+mNwrK4ntEfMRYasG5U9cUV7vbgzeLnb
+        P321NqiiLl3I9ep0evcXAAD//wMAZR+yeh0CAAA=
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a80743e90f301-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '513'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:08:19 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:30:04 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '3033'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '3092'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - ff696745d7f6a5084db8bccc69183171
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - 5c9bfdfbbfdd806f42704d655853ce2b
     status:
       code: 200
       message: OK
@@ -251,13 +347,13 @@ interactions:
     body: '{"prompt": ["The following is a friendly conversation between a human and
       an AI. The AI is talkative and provides lots of specific details from its context.
       If the AI does not know the answer to a question, it truthfully says it does
-      not know.\n\nCurrent conversation:\n\n\nThe AI is doing great and is helping
-      a customer with a technical issue. The human asked what the AI was doing and
-      it replied that it was running a diagnostic scan to try and identify the source
-      of the customer''s problem with their Wi-Fi network.\nHuman: Very cool -- what
-      is the scope of the project?\nAI:"], "model": "text-davinci-003", "temperature":
-      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      not know.\n\nCurrent conversation:\n\nThe human asked what the AI was up to
+      and the AI replied that it was helping a customer with a technical issue. The
+      customer was having trouble with their computer not connecting to the internet,
+      and the AI was able to help them troubleshoot the issue and get them connected.\nHuman:
+      Very cool -- what is the scope of the project?\nAI:"], "model": "text-davinci-003",
+      "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -266,47 +362,70 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '749'
+      - '763'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flPHoANh9Dq22bF0PcNUoszNB7bj","object":"text_completion","created":1675411699,"model":"text-davinci-003","choices":[{"text":"
-        The scope of the project is to identify the source of the customer''s problem
-        with their Wi-Fi network. I am running a diagnostic scan to check for any
-        potential issues with the network''s hardware, software, or settings. I am
-        also checking for any potential interference from other devices or networks
-        in the area.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":124,"completion_tokens":62,"total_tokens":186}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0SRQU8jMQyF7/yKyBcuKZrS0kKOLAe47WGRKiFUTRO3YzaJo9hTiqr+dzQDaq/v
+        fX5+lo9AARz4VOJk+dT6FPPfw+fq9fnRpz+b++fFyyqF6eqhAQu8+UCv4EDxoGvPqURU4gwWfMVW
+        MYCbLu5n8+Vs3swtJA4Yf/FJaPeUPU2aZjbwHZNHAfd2HG1wYP51aMRzQcNbox2aUnlYaEiMsukw
+        llH2vSgnrEYr95uI0jHr4FA1Q6lesRoS6dG0OZgdjmYynnNGrxiGtCGIsmLNqDfm5TqN+ZR3PywF
+        zErbr5ET7qs/t7oka4d5KLmncB78JO1GLKNHkbZ+GVEs4wUVheMeDekNWKAc8ACusRB5VypvBFzu
+        Y7SwpUzSrSu2whkciHKB07uFXtodgjtCqZyKrpX/YxZw09sHC5d/nPX5woKytvFCLu9Op6tvAAAA
+        //8DAPw/Hxj1AQAA
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a80893cb2f301-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '578'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:08:22 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:30:07 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '3448'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '3014'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 1188130d327fa91a9e42db89d90d7b83
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - 613366a84557ab9d7e66ada64aff8fec
     status:
       code: 200
       message: OK
@@ -319,18 +438,17 @@ interactions:
       intelligence will help humans reach their full potential.\n\nNew summary:\nThe
       human asks what the AI thinks of artificial intelligence. The AI thinks artificial
       intelligence is a force for good because it will help humans reach their full
-      potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\n\nThe AI is doing great and
-      is helping a customer with a technical issue. The human asked what the AI was
-      doing and it replied that it was running a diagnostic scan to try and identify
-      the source of the customer''s problem with their Wi-Fi network.\n\nNew lines
-      of conversation:\nHuman: Very cool -- what is the scope of the project?\nAI:  The
-      scope of the project is to identify the source of the customer''s problem with
-      their Wi-Fi network. I am running a diagnostic scan to check for any potential
-      issues with the network''s hardware, software, or settings. I am also checking
-      for any potential interference from other devices or networks in the area.\n\nNew
-      summary:"], "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256,
-      "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of":
-      1, "logit_bias": {}}'
+      potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\nThe human asked what the AI
+      was up to and the AI replied that it was helping a customer with a technical
+      issue. The customer was having trouble with their computer not connecting to
+      the internet, and the AI was able to help them troubleshoot the issue and get
+      them connected.\n\nNew lines of conversation:\nHuman: Very cool -- what is the
+      scope of the project?\nAI:  The scope of the project is to help the customer
+      troubleshoot their computer issue and get them connected to the internet. I''m
+      helping them identify the source of the issue and then providing them with the
+      necessary steps to resolve it.\n\nNew summary:"], "model": "text-davinci-003",
+      "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -339,50 +457,71 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1534'
+      - '1471'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flPLU569togg1DsOWsddyVCajXxA","object":"text_completion","created":1675411703,"model":"text-davinci-003","choices":[{"text":"\nThe
-        AI is doing great and is helping a customer with a technical issue. The human
-        asked what the AI was doing and it replied that it was running a diagnostic
-        scan to try and identify the source of the customer''s problem with their
-        Wi-Fi network. The scope of the project is to identify the source of the customer''s
-        problem with their Wi-Fi network. The AI is running a diagnostic scan to check
-        for any potential issues with the network''s hardware, software, or settings,
-        as well as checking for any potential interference from other devices or networks
-        in the area.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":280,"completion_tokens":115,"total_tokens":395}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA1SSQW8aMRCF7/0VozkvEYGUkL21zaWqeqjUS2krZOxh7cbrce0xECH+e2WTQHr0
+        m2/evLF9RGewRz1GP7l/VPovjfzt68cHe/CrH/PV47BKn7azRfmCHfLmD2nBHoUOstY8Rk/iOGCH
+        OpESMtjfLpbzu/v53XTZ4ciG/As+MWrngnaT6XReectOU8b+57GVscdf4bslsGVUAVR+IgN7qwTE
+        Enz4DHuVoUQQBhXMq5goekf1qAScNMiSjy4MoECXLDxSgr0TCwqEtA1OKw8u50I3UOddodpbMw4g
+        icvG07lPLLkEddkilCCwgOYQSEtDuWVxQSgFku5tuuqoqo9wS1X18dU8W+bzci1M6xtIzszLADLn
+        jFlzJOBtw2Pi+grNXRicoSBu+9xqmUvSF/JqHBPvnKGm/n8rVQmkKWeVniELxeaaKLPfETi5wQ5d
+        MHTAftqh5yEm3mTsQ/G+w60LLtt1IpU5YI9ZOOLpd4clq4GwP2JMPEZZCz9RyNjPFg8dXn/ORV/O
+        OhQW5S/K/P3t6fTuHwAAAP//AwBPTFNUnwIAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a809fea9df301-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '832'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:08:29 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:30:12 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '5839'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '3807'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - d560f5671c655ada2886eec86ca0d755
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - 66155557127bb0591a2e0d21f406bdca
     status:
       code: 200
       message: OK

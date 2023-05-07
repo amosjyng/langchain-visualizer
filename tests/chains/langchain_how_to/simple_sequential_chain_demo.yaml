@@ -4,7 +4,7 @@ interactions:
       job to write a synopsis for that title.\n\nTitle: Tragedy at sunset on the beach\nPlaywright:
       This is a synopsis for the above play:"], "model": "text-davinci-003", "temperature":
       0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -13,56 +13,76 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '373'
+      - '359'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flOkFYOPmf9NjgSJkYzGFOLLzCB5","object":"text_completion","created":1675411666,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
-        at Sunset on the Beach is a story of love, loss, and redemption. It follows
-        the story of two young lovers, Jack and Jill, who meet on a beach at sunset.
-        They quickly fall in love and plan to marry, but their plans are shattered
-        when Jack is tragically killed in a car accident. \n\nJill is left devastated
-        and struggles to cope with her grief. She finds solace in the company of her
-        best friend, Sarah, who helps her to come to terms with her loss. As Jill
-        begins to heal, she discovers that Jack had a secret past that he had kept
-        hidden from her. \n\nJill is determined to uncover the truth and embarks on
-        a journey of self-discovery. Along the way, she meets a mysterious stranger
-        who helps her to understand the truth about Jack''s past. With his help, Jill
-        is able to find closure and peace. \n\nIn the end, Jill is able to move on
-        with her life and find happiness again. Tragedy at Sunset on the Beach is
-        a story of love, loss, and redemption that will leave audiences moved and
-        inspired.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":49,"completion_tokens":234,"total_tokens":283}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA6xUwW7dNhC89ysWvORCC06e66S6pc3FOcYB2qIpjBW5EulHLWXuys+K4X8vSCVx
+        2l5zEkDu7MzOLPVooje9cfOSzl6/Q/fz3d3t6c/P+Nvw+XJ8yHdh/eM+feCrV8aaPNySU9MbpQe9
+        cXleEmnMbKxxhVDJm/7l5ZvDxevD4fKlNXP2lL6Un3m8j+zi2fn5odaHHB2J6f96bNemN5/4E38s
+        OJHfABWuVxZSyAwaCH4ldAGiAIJoLhvkEVK+Jwspi1hA9lDI07xUQR1cKYw5pXySBv+G0VOGLa88
+        NXQRC+/RHRv8fUzJwilkmGknRhgaLSpIU9PBx0Ab3K3RHdMGI6YEkVur1mJJyKAZZixlszCsWtlj
+        aRcCWAgkoCoV8nAKxDt7FNCCU3SY0gbHmBL52hfBYQF0Lnpi7aA6VFVWQKJRwdM9ilbjG71oWacp
+        kVQNLi8Ep6gBAhWYSqSxg+tAMEb2ApITOqos1Z+aJXJzqFYPJApjicTewjUWDLsxgdIiraIRzFS/
+        SmWWZ6aaRwdvpfkJA02Rm55AmCxIIPBRXDMfNKDuFgT0NVpyhRQWFN3vArWbIy0KIXpPDGPJcyX6
+        tx2eqozI5CvXyo2gjaZl1dDsoXnAcpQ92du8FqY2sVAaz76K2jp4mzJPDXvCbZdcN6Lu3ryJUol5
+        lWo28kTl/8as7KmIVsrvBAx53Wd9IW3ADn5vlkVpaAtfR8EhNV9rTuBSlrV82S5CR/vYV3tsLZ//
+        4ua6jZm/SySOe4PWMeCyRCYRwAkjd/CD3twe2KmKSYT1Qaw+EjuSpmjf0MiyxEK+M9ZE9vRg+nNr
+        Up6WkgcxPa8pWTNGjhJuCqFkNr0RzYt5+tuaVXAi0z+apeR50RvNR2Ix/cUv1jz/jr4dvzpcWKNZ
+        MT0fvTk8Pf30DwAAAP//AwCt/L7q9QQAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a7f7d2c22f301-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '1269'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:07:57 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:29:37 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '10606'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '16010'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - c506e17d93668d79a929dbf79f5fafb7
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - abf659a1829ccc7d605a3df725fbe4fa
     status:
       code: 200
       message: OK
@@ -84,7 +104,7 @@ interactions:
       and redemption that will leave audiences moved and inspired.\nReview from a
       New York Times play critic of the above play:"], "model": "text-davinci-003",
       "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -93,54 +113,75 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1391'
+      - '1377'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flOvnvyF2h0Wnmqjcb2r8WM7m8o2","object":"text_completion","created":1675411677,"model":"text-davinci-003","choices":[{"text":"\n\nTragedy
-        at Sunset on the Beach is a powerful and moving story of love, loss, and redemption.
-        The play follows the story of two young lovers, Jack and Jill, whose plans
-        for a future together are tragically cut short when Jack is killed in a car
-        accident. The play then follows Jill''s journey of self-discovery as she struggles
-        to come to terms with her grief and uncover the truth about Jack''s past.\n\nThe
-        play is beautifully written and the characters are well-developed and engaging.
-        The actors do a wonderful job of bringing the characters to life and conveying
-        the emotions of the story. The set design is also impressive, with the beach
-        setting providing a perfect backdrop for the story.\n\nOverall, Tragedy at
-        Sunset on the Beach is a touching and inspiring story that will leave audiences
-        moved and uplifted. It is a must-see for anyone looking for a powerful and
-        emotional theatrical experience.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":283,"completion_tokens":189,"total_tokens":472}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA4xTTW/cOAy9768gdOnFEyQ72c7At130sEgRtEV62xYBR6ZtZWRRECk7gyD/fSE5
+        mQTopUeT1Pvgo5+M60xr7BT9ZvcJ7a3u9vPt8vfX62/LXzu8k8//3hy/7NODaQwfHsiqaY3So95b
+        nqIndRxMY2wiVOpMe/Vxv73ebbe7fWMm7si/jG86nF2wbnN5uS3zIztLYtr/nmrbtOZH+BG+Jxyo
+        OwEq3OUgpMABdCT4h9CO4AQQIi+U+uwBQwcTzy4MIMrpBNyD55ka8CzS1H6ijqZYRF7A95EgejxB
+        z97zIhX4/FIXhhPnMFSMJA3coD1WkBvnfQPLyFIBgkDPCRD6rDkRKA+kIyXA8pFwcBa9P4HNCjJy
+        UlhGCiucEzg676kDFwDBYgK01nUUdBWIuXMULJVJxSOFsgEMQBMXF+jhgXMKdAKUKgxEUx4GTwLK
+        YDkSLE5HKIKG5KivFmg6YDpKBTsjcA9Cvt90TmzxfLqAGsLrnpzAgTCr63PxsySnSqHildVFSj2n
+        CYMlqd45qyiGzoXhxYxVTgKHVDIqT+yICa1SqmK962lNEY9U+2f3PZFfSdCtjMIp8VI0F9cfpIa8
+        0qwZOgGLUd2MWuheVb6jLBoX8n7T0UyeI3V16kDe0YwHT7/6R1DOdnwFdEGiS28XpyMqLCUFTzi/
+        6ZdymC/wOXrXK3UX8DvXPWXRjRCtJxZOHAg887FwrqV3p7B65DyMuomJ53WMHiOlKuPCNMaFjh5N
+        e9kYz0NMfBDThux9Y3oXnIz3iVA4mNaIcjTPPxuTBQcy7ZOJiaeo98pHCmLaP/fbxrz99uf61f6q
+        McqK/ly6/nj9/PzH/wAAAP//AwAUKpoFXQQAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a7fe39ba1f301-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '1173'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:08:06 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:29:50 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '8424'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '12351'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 1c6ca1fbf578bced2e5e0e54fa4581bf
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - f57fc233e8f0725b60d502b2d0544b1c
     status:
       code: 200
       message: OK

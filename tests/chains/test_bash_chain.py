@@ -6,7 +6,7 @@ from langchain.chains import LLMBashChain
 from langchain.llms import OpenAI
 
 llm = OpenAI(temperature=0)
-chain = LLMBashChain(llm=llm)
+chain = LLMBashChain.from_llm(llm=llm)
 
 
 # ================================== Execute example ==================================

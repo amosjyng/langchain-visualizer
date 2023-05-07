@@ -8,7 +8,7 @@ from langchain.llms import OpenAI
 from tests.sotu import load_sotu
 
 # ========================== Start of langchain example code ==========================
-# https://langchain.readthedocs.io/en/latest/modules/chains/combine_docs_examples/qa_with_sources.html
+# https://python.langchain.com/en/latest/modules/chains/index_examples/qa_with_sources.html
 
 
 docsearch = load_sotu()
@@ -30,7 +30,10 @@ async def quickstart_demo():
 def test_quickstart_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(quickstart_demo())
-    assert "The president thanked" in result["output_text"]
+    assert (
+        "The president thanked" in result["output_text"]
+        or "The president honored" in result["output_text"]
+    )
 
 
 if __name__ == "__main__":

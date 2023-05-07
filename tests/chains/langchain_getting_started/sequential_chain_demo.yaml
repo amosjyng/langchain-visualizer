@@ -2,8 +2,7 @@ interactions:
 - request:
     body: '{"prompt": ["What is a good name for a company that makes colorful socks?"],
       "model": "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias":
-      {}}'
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -12,50 +11,75 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '243'
+      - '229'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flOKPQ3aU6EDhguJCBm5q0ih0dLs","object":"text_completion","created":1675411640,"model":"text-davinci-003","choices":[{"text":"\n\nSocktastic!","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":13,"completion_tokens":7,"total_tokens":20}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0SOwUvDMBhH7/4X/s4ptKasNjdxuMtAwcNAJyVNszVbmi82X2VQ+r+LIvP63ju8
+        Ga6Dghmiz6q1btuXz3I3lYeHcVuvduvtc90/1m9P7QYC1J6sYSiwvXBjaIjesqMAATNazbaDKlb3
+        sqyklIXAQJ31f3nW6S8XjMvyXP70PTljE9T7/KuhsA/78ErmzDqxM7cQcKGzF6hcwNMxjtQmqDB5
+        L3BwwaW+Ga1OFKCQmCKWD4Ep6aOFmhFHGiI3TGcbElQhBf6Hr7gSYGLtr+AuX5abbwAAAP//AwA/
+        JsfhFAEAAA==
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a7ec13a472748-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '276'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:07:21 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:28:52 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '992'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '841'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 7d307586ce443006d856ba7335b638e4
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - 1cbd640869ca6615c8634595414aff99
     status:
       code: 200
       message: OK
 - request:
     body: '{"prompt": ["Write a catchphrase for the following company: \n\nSocktastic!"],
       "model": "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "best_of": 1, "logit_bias":
-      {}}'
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -64,43 +88,68 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '245'
+      - '231'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flOLjTLmjW0WjQgaozn5LMbmPOrx","object":"text_completion","created":1675411641,"model":"text-davinci-003","choices":[{"text":"\n\n\"Step
-        into Comfort with Socktastic!\"","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":17,"completion_tokens":12,"total_tokens":29}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0SPvU7DMBRGd54ifLMjpQkirdeWHyEhhooFgiLXcRtT29fYt1Ap6rsjEKLrOWc5
+        E+wACe2jK9uV2uj89DyvP1b3L+mOR8+3i4eb9KhnKwjQ5t1ohgSbI/eafHSGLQUI6GQUmwFydj1v
+        rtqmaWoBT4Nxf3k5qE8btC2rqvnpR7LaZMjX6VdDogtd6LBmEwsbmIol+S0lLr4sj8Wa9J5VZqsv
+        O0DAhsEcISsBR7uYaJMhw8E5ga0NNo99MipTgERmiji9CRyy2hnICTGRj9wz7U3IkLNW4PxyxrUA
+        Eyv3T+rF6XTxDQAA//8DABfDDxkwAQAA
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a7ec82ec62748-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '304'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:07:22 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:28:53 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-davinci-003
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '699'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '751'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - 0d442df82c896a5ef8ab44cc1a3c7780
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - 7dbd7dd785dfd0f77913df6855202087
     status:
       code: 200
       message: OK

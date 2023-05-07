@@ -2,7 +2,7 @@ interactions:
 - request:
     body: '{"prompt": ["Tell me a funny joke."], "model": "text-ada-001", "temperature":
       0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -11,43 +11,68 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '200'
+      - '186'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.26.4
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6flPatoxeAFIjtLrKHzX5pBYeOg15","object":"text_completion","created":1675411718,"model":"text-ada-001","choices":[{"text":"\n\nWhy
-        did the chicken cross the road?\n\nTo get to the other side!","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":6,"completion_tokens":19,"total_tokens":25}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA0TPwU4CMRSF4b1PMZ51SWYEQbsxQU1UiAs1MSpmUtorrXR6J9NLRAnvbiAGt9/5
+        N2eD4KBhmzb2RlfGfvnJ+OXhUspHur+epMn07vZ1GsY3P1Dg+SdZgYbQWmrLTRtJAico2I6MkIOu
+        hmf9wag/qAYKDTuKf3nPONMry2rXeg6WMvTbZj9BY5Zm6dl/Fy64QjwV1ge7pFTYjnPeS8fGXeyy
+        Jy4WJIXwnlk8dUUOjo6hEJKjNXSpEHnRdjzP0GkVo8JHSCH7uiOTOUEjC7fYviusslkQ9AZtx00r
+        tfCSUoYeKvwfPGh1riAsJh7k5HS7PfoFAAD//wMAhwHiaEUBAAA=
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a80c57fd33e69-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '325'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Feb 2023 08:08:38 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:30:14 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-ada-001
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '156'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '151'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Request-Id:
-      - aac6d16c15620754640d0b650e78dc71
+      x-ratelimit-limit-requests:
+      - '3000'
+      x-ratelimit-limit-tokens:
+      - '250000'
+      x-ratelimit-remaining-requests:
+      - '2999'
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
+      - 20ms
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - 44c22f2b295f95bd83da8dd16c7e3f52
     status:
       code: 200
       message: OK

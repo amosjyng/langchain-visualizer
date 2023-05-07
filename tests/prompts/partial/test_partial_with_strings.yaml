@@ -1,38 +1,8 @@
 interactions:
 - request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - 0.0.0.0:8935
-      user-agent:
-      - python-httpx/0.23.3
-    method: GET
-    uri: http://0.0.0.0:8935/ping
-  response:
-    content: ought-ice says pong
-    headers:
-      cache-control:
-      - no-transform
-      content-length:
-      - '19'
-      content-type:
-      - text/plain; charset=utf-8
-      date:
-      - Wed, 22 Mar 2023 23:10:33 GMT
-      server:
-      - uvicorn
-    http_version: HTTP/1.1
-    status_code: 200
-- request:
     body: '{"prompt": ["Why did the chicken cross the road?"], "model": "text-ada-001",
       "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "best_of": 1, "logit_bias": {}}'
+      0, "n": 1, "logit_bias": {}}'
     headers:
       Accept:
       - '*/*'
@@ -41,56 +11,69 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '214'
+      - '200'
       Content-Type:
       - application/json
       User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.2
+      - OpenAI/v1 PythonBindings/0.27.4
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
-      string: '{"id":"cmpl-6x1t4pNQf7Peq12AcEjfoJDtmsHu4","object":"text_completion","created":1679526626,"model":"text-ada-001","choices":[{"text":"\n\nThe
-        chicken crossed the road because it was looking for a place to go where it
-        could not go, but it could not find one.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":8,"completion_tokens":29,"total_tokens":37}}
-
-        '
+      string: !!binary |
+        H4sIAAAAAAAAA1TQTUsDMRDG8bufYphzKn1Zbc2tKAW9KnqwUrLJ7G7abCYks7ZS+t3FIhWvv+d/
+        eo7oHWq0fQqj+YOx+/un59eGvj7bpbk5xMfpSpbbVTW8oUKut2QFNQodZGO5T4HEc0SFNpMRcqgn
+        t4tZNZ9Vk0phz47Cbz4yzozG48lP27G3VFC/H88TalzHdXzpCGzn7Y4i2MylkAPpCDIbBzVZMxQC
+        L7A3BQLzzscWGs5gIAVjCYShZdh3lM+Z5SE4iCzQsoJ6kP/Y+OiAI12jQh8dHVCPFQZuU+a6oI5D
+        CAobH33pNplM4Ygai3DC04fCoZiWUB8xZe6TbIR3FAvqhcK/Xy46vVMoLCZcZDY/na6+AQAA//8D
+        AGvyVb58AQAA
     headers:
-      Access-Control-Allow-Origin:
-      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7c3a80c899903e69-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
       - keep-alive
-      Content-Length:
-      - '380'
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json
       Date:
-      - Wed, 22 Mar 2023 23:10:26 GMT
-      Openai-Model:
+      - Sun, 07 May 2023 15:30:14 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      openai-model:
       - text-ada-001
-      Openai-Organization: user-dummy
-      Openai-Processing-Ms:
-      - '324'
-      Openai-Version:
+      openai-organization:
+      - user-ns36y3iizxjt9cbrrl4tneqp
+      openai-processing-ms:
+      - '218'
+      openai-version:
       - '2020-10-01'
-      Strict-Transport-Security:
+      strict-transport-security:
       - max-age=15724800; includeSubDomains
-      X-Ratelimit-Limit-Requests:
+      x-ratelimit-limit-requests:
       - '3000'
-      X-Ratelimit-Limit-Tokens:
+      x-ratelimit-limit-tokens:
       - '250000'
-      X-Ratelimit-Remaining-Requests:
+      x-ratelimit-remaining-requests:
       - '2999'
-      X-Ratelimit-Remaining-Tokens:
-      - '249488'
-      X-Ratelimit-Reset-Requests:
+      x-ratelimit-remaining-tokens:
+      - '249744'
+      x-ratelimit-reset-requests:
       - 20ms
-      X-Ratelimit-Reset-Tokens:
-      - 122ms
-      X-Request-Id:
-      - 21684bc07216f40d118973763cc97a8e
+      x-ratelimit-reset-tokens:
+      - 61ms
+      x-request-id:
+      - 748cbc274d91d644b92195dcbde8b667
     status:
       code: 200
       message: OK
