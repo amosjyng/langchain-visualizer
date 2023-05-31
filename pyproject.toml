@@ -8,7 +8,7 @@ packages = [{include = "langchain_visualizer"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-langchain = ">=0.0.161,<0.1"
+langchain = ">=0.0.184,<0.1"
 ought-ice = "^0.5.0"
 gorilla = "^0.4.0"
 
@@ -20,7 +20,7 @@ isort = "^5.11.4"
 flake8 = "^6.0.0"
 pytest = "^7.2.1"
 openai = "^0.27.0"
-vcr-langchain = "^0.0.23"
+vcr-langchain = "^0.0.24"
 google-search-results = "^2.4.1"
 faiss-cpu = "^1.7.3"
 tiktoken = "^0.3.3"
@@ -38,7 +38,7 @@ filterwarnings = [
     'ignore:distutils Version classes are deprecated:DeprecationWarning',
     'ignore:unclosed <ssl.SSLSocket:ResourceWarning',
     'ignore:Dialect sqlite:sqlalchemy.exc.SAWarning',
-    'ignore:Deprecated API features detected!:sqlalchemy.exc.RemovedIn20Warning',
+    'ignore::sqlalchemy.exc.MovedIn20Warning',
 ]
 
 [tool.mypy]
