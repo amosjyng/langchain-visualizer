@@ -1,6 +1,6 @@
 # LangChain Visualizer
 
-Adapts [ICE](https://github.com/oughtinc/ice) for use with [LangChain](https://github.com/hwchase17/langchain) so that you can view LangChain interactions with a beautiful UI.
+Adapts [Ought's ICE visualizer](https://github.com/oughtinc/ice) for use with [LangChain](https://github.com/hwchase17/langchain) so that you can view LangChain interactions with a beautiful UI.
 
 ![Screenshot of an execution run](screenshots/serp_screenshot.png "SERP agent demonstration")
 
