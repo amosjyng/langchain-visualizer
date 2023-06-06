@@ -39,7 +39,8 @@ pip install langchain-visualizer google-search-results openai
 If you haven't yet set up your [OpenAI API keys](https://openai.com/api/) or SERP API keys, you can [replay the recorded interactions](https://github.com/amosjyng/vcr-langchain) by cloning this repository and running
 
 ```bash
-python tests/agents/test_langchain_getting_started.py
+$ pip install vcr-langchain
+$ OPENAI_API_KEY=dummy python tests/agents/test_langchain_getting_started.py
 ```
 
 If you have set them up, you can run the following script (adapted from [LangChain docs](https://langchain.readthedocs.io/en/latest/modules/agents/getting_started.html)):
