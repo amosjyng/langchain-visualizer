@@ -31,7 +31,7 @@ def new_server_and_browser(self):
         if not is_running:
             return
 
-        latest_viz_url = self.url.replace("0.0.0.0", "127.0.0.1")
+        latest_viz_url = self.url
         evt.set()
 
 

@@ -9,11 +9,11 @@ interactions:
       connection:
       - keep-alive
       host:
-      - 0.0.0.0:8935
+      - 127.0.0.1:8935
       user-agent:
       - python-httpx/0.24.1
     method: GET
-    uri: http://0.0.0.0:8935/ping
+    uri: http://127.0.0.1:8935/ping
   response:
     content: ought-ice says pong
     headers:
