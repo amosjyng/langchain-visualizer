@@ -26,6 +26,7 @@ faiss-cpu = "^1.7.3"
 tiktoken = "^0.3.3"
 autoflake = "^2.0.1"
 pytest-asyncio = "^0.21.0"
+playwright = "^1.34.0"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
