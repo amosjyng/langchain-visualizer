@@ -1,5 +1,27 @@
 interactions:
 - request:
+    body: ''
+    headers:
+      host:
+      - 127.0.0.1:8935
+    method: GET
+    uri: http://127.0.0.1:8935/ping
+  response:
+    content: ought-ice says pong
+    headers:
+      cache-control:
+      - no-transform
+      content-length:
+      - '19'
+      content-type:
+      - text/plain; charset=utf-8
+      date:
+      - Wed, 14 Jun 2023 05:57:00 GMT
+      server:
+      - uvicorn
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
     body: '{"prompt": ["If someone asks you to perform a task, your job is to come
       up with a series of bash commands that will perform the task. There is no need
       to put \"#!/bin/bash\" in your answer. Make sure to reason step by step, using
@@ -11,34 +33,22 @@ interactions:
       What files are in my current directory?"], "model": "text-davinci-003", "temperature":
       0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
       0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '860'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0SOwWqEMBRF9/2Mu45gx6EOWZZCGYaBFkoRatEYn2M6MS+YTJGK/14qBZf33LM4
-        M0wLCT14m+RPqile4/6k9fupo6N93D1PRffzUrwdzxDg5ot0hESkKVaaB28pGnYQ0COpSC3k/cMh
-        2+dZtssFBm7J/utJq76N0yZJ0+zP79loCpAf83pDonSlq+u6UaEvnQ3rgIBxLU2QqYDlix+5CZDu
-        Zq1AZ5wJfTWSCuwgESJ7LJ8Ct6AuBDnDjzz4WEW+kgtrm8CWvfFUIHJUdiP5YVnufgEAAP//AwAv
-        9eQlHAEAAA==
+        H4sIAAAAAAAAA0xPTWuDQBC9+yuGPVcwBjR4boP0UNpQyKEWXdeJbl13xF1LSsh/L7vaNJeBeV/z
+        5hIAMNmwDJgYRhWmh0e9PT3nyVuDT32Px/Y1/zmYfH45vu/Zg1NT/YXCOofFsy0FDaNCK0kvtJiQ
+        W3SJm2SXpHEcxxtPDNSg+rOFDf+WWsgwirarryMp0LAMPgIAgIufsMidrdCFrqqq5qYrtDJ+8Vav
+        krrBM8sguiGK2nGi2iXqWakbfpJamq6ckBvSLthYGplnrwHAp28zG94iy9YWbJxoGG1pqUdtlteW
+        PPb//h27lmCWLFd3eLoL3JFr8AsAAP//AwDcYc3odwEAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a7ea57f1a3e75-ADL
+      - 7d7055589ca53e76-ADL
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -48,45 +58,25 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:28:47 GMT
-      Server:
-      - cloudflare
+      - Wed, 14 Jun 2023 05:57:02 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '570'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
-      - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
-      - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
-      - 61ms
-      x-request-id:
-      - 71a3e412e2948f63ec2da3463330cec5
+      - '870'
     status:
       code: 200
       message: OK
 - request:
     body: '{"commands": ["ls"]}'
-    headers: {}
+    headers:
+      persistent:
+      - false
+      return_err_output:
+      - false
+      strip_newlines:
+      - false
     method: POST
     uri: tool://BashProcess/run
   response: 'LICENSE
