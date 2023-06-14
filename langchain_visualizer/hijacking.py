@@ -1,4 +1,5 @@
 import asyncio
+import inspect
 
 import gorilla
 from ice.trace import TracedABC
@@ -9,10 +10,13 @@ VCR_VIZ_INTEROP_PREFIX = "_vcr_"
 
 
 class VisualizationWrapper(TracedABC):
-    def __init__(self, og_obj, og_fn, is_async: bool):
+    def __init__(self, og_obj, og_fn):
         self.og_obj = og_obj
         self.og_fn = og_fn
-        self.is_async = is_async
+
+    @property
+    def is_async(self):
+        return inspect.iscoroutinefunction(self.og_fn)
 
     async def run(self, *args, **kwargs):
         # Async function that gets visualized.
@@ -29,7 +33,7 @@ class VisualizationWrapper(TracedABC):
             return self.og_fn(self.og_obj, *args, **kwargs)
 
 
-def get_viz_wrapper(viz_cls, og_self, og_fn_name: str, is_async: bool):
+def get_viz_wrapper(viz_cls, og_self, og_fn_name: str):
     """
     Return the visualization wrapper object.
 
@@ -44,7 +48,7 @@ def get_viz_wrapper(viz_cls, og_self, og_fn_name: str, is_async: bool):
         og_fn = gorilla.get_original_attribute(
             og_self.__class__, og_fn_name, LANGCHAIN_VISUALIZER_PATCH_ID
         )
-    return viz_cls(og_self, og_fn=og_fn, is_async=is_async)
+    return viz_cls(og_self, og_fn=og_fn)
 
 
 def get_overridden_call(viz_cls, og_method_name):
@@ -56,7 +60,7 @@ def get_overridden_call(viz_cls, og_method_name):
     """
 
     def overridden_call(og_self, *args, **kwargs):
-        ice_agent = get_viz_wrapper(viz_cls, og_self, og_method_name, is_async=False)
+        ice_agent = get_viz_wrapper(viz_cls, og_self, og_method_name)
         if (
             not hasattr(og_self.__class__, "_should_trace")
             or og_self.__class__._should_trace
@@ -82,7 +86,7 @@ def get_async_overridden_call(viz_cls, og_method_name):
     """
 
     async def overridden_call(og_self, *args, **kwargs):
-        ice_agent = get_viz_wrapper(viz_cls, og_self, og_method_name, is_async=True)
+        ice_agent = get_viz_wrapper(viz_cls, og_self, og_method_name)
         if (
             not hasattr(og_self.__class__, "_should_trace")
             or og_self.__class__._should_trace
@@ -113,6 +117,8 @@ def ice_hijack(
 
     The overridden call will have a chance to call the original function.
     """
+    og_fn = getattr(cls, og_method_name)
+    is_async = inspect.iscoroutinefunction(og_fn)
     overridden_call = (
         get_async_overridden_call(viz_cls, og_method_name)
         if is_async

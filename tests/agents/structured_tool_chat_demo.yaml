@@ -1,0 +1,417 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      host:
+      - 127.0.0.1:8935
+    method: GET
+    uri: http://127.0.0.1:8935/ping
+  response:
+    content: ought-ice says pong
+    headers:
+      cache-control:
+      - no-transform
+      content-length:
+      - '19'
+      content-type:
+      - text/plain; charset=utf-8
+      date:
+      - Wed, 14 Jun 2023 05:52:36 GMT
+      server:
+      - uvicorn
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: '{"messages": [{"role": "system", "content": "Respond to the human as helpfully
+      and accurately as possible. You have access to the following tools:\n\nclick_element:
+      Click on an element with the given CSS selector, args: {{''selector'': {{''title'':
+      ''Selector'', ''description'': ''CSS selector for the element to click'', ''type'':
+      ''string''}}}}\nnavigate_browser: Navigate a browser to the specified URL, args:
+      {{''url'': {{''title'': ''Url'', ''description'': ''url to navigate to'', ''type'':
+      ''string''}}}}\nprevious_webpage: Navigate back to the previous page in the
+      browser history, args: {{}}\nextract_text: Extract all the text on the current
+      webpage, args: {{}}\nextract_hyperlinks: Extract all hyperlinks on the current
+      webpage, args: {{''absolute_urls'': {{''title'': ''Absolute Urls'', ''description'':
+      ''Return absolute URLs instead of relative URLs'', ''default'': False, ''type'':
+      ''boolean''}}}}\nget_elements: Retrieve elements in the current web page matching
+      the given CSS selector, args: {{''selector'': {{''title'': ''Selector'', ''description'':
+      \"CSS selector, such as ''*'', ''div'', ''p'', ''a'', #id, .classname\", ''type'':
+      ''string''}}, ''attributes'': {{''title'': ''Attributes'', ''description'':
+      ''Set of attributes to retrieve for each element'', ''type'': ''array'', ''items'':
+      {{''type'': ''string''}}}}}}\ncurrent_webpage: Returns the URL of the current
+      page, args: {{}}\n\nUse a json blob to specify a tool by providing an action
+      key (tool name) and an action_input key (tool input).\n\nValid \"action\" values:
+      \"Final Answer\" or click_element, navigate_browser, previous_webpage, extract_text,
+      extract_hyperlinks, get_elements, current_webpage\n\nProvide only ONE action
+      per $JSON_BLOB, as shown:\n\n```\n{\n  \"action\": $TOOL_NAME,\n  \"action_input\":
+      $INPUT\n}\n```\n\nFollow this format:\n\nQuestion: input question to answer\nThought:
+      consider previous and subsequent steps\nAction:\n```\n$JSON_BLOB\n```\nObservation:
+      action result\n... (repeat Thought/Action/Observation N times)\nThought: I know
+      what to respond\nAction:\n```\n{\n  \"action\": \"Final Answer\",\n  \"action_input\":
+      \"Final response to human\"\n}\n```\n\nBegin! Reminder to ALWAYS respond with
+      a valid json blob of a single action. Use tools if necessary. Respond directly
+      if appropriate. Format is Action:```$JSON_BLOB```then Observation:.\nThought:"},
+      {"role": "user", "content": "Hi I''m Erica.\n\n"}], "model": "gpt-3.5-turbo",
+      "max_tokens": null, "stream": false, "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
+    headers: {}
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1SQXWvCQBBF3/MrhnlOxBj8aF6KUItCodC+tVt03axmm2QmZDeolfz3kkSrfb1n
+        7t7Dnj0ANAnGgCqVThVlHkzfngzto9XLMVssw8NrJnfF7KH++Dm+rzL02wZvv7Vy19ZAcVHm2hmm
+        HqtKS6fbV8PJbDIdhQ/jaQcKTnTe1valC6LBOHB1teVgGA3DvllbudcYw9kDAMCy4qJ0a8eZJosx
+        jMeh35Pb5I1Gowt07GR+15pFHkDTq6VslG7Tz+62H2rVtP233YUV522C0lpjnSSH/g0qJqep+4W5
+        ak1iQZvNRtBZEIBA2YUCYxD4bEjmMCd70JVA//5gbaisXX+21HnOsKiMkj6kfAAlCVbQz8OJa3Cc
+        yNOjQEHNZQ0vRs1VDXeGjE3XlZaWqdWzjss/czSU6CPGMOyCxgP48hrvFwAA//8DADLRWfQKAgAA
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7d704ee86ac8274a-ADL
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 14 Jun 2023 05:52:39 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - gpt-3.5-turbo-0301
+      openai-processing-ms:
+      - '2048'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "system", "content": "Respond to the human as helpfully
+      and accurately as possible. You have access to the following tools:\n\nclick_element:
+      Click on an element with the given CSS selector, args: {{''selector'': {{''title'':
+      ''Selector'', ''description'': ''CSS selector for the element to click'', ''type'':
+      ''string''}}}}\nnavigate_browser: Navigate a browser to the specified URL, args:
+      {{''url'': {{''title'': ''Url'', ''description'': ''url to navigate to'', ''type'':
+      ''string''}}}}\nprevious_webpage: Navigate back to the previous page in the
+      browser history, args: {{}}\nextract_text: Extract all the text on the current
+      webpage, args: {{}}\nextract_hyperlinks: Extract all hyperlinks on the current
+      webpage, args: {{''absolute_urls'': {{''title'': ''Absolute Urls'', ''description'':
+      ''Return absolute URLs instead of relative URLs'', ''default'': False, ''type'':
+      ''boolean''}}}}\nget_elements: Retrieve elements in the current web page matching
+      the given CSS selector, args: {{''selector'': {{''title'': ''Selector'', ''description'':
+      \"CSS selector, such as ''*'', ''div'', ''p'', ''a'', #id, .classname\", ''type'':
+      ''string''}}, ''attributes'': {{''title'': ''Attributes'', ''description'':
+      ''Set of attributes to retrieve for each element'', ''type'': ''array'', ''items'':
+      {{''type'': ''string''}}}}}}\ncurrent_webpage: Returns the URL of the current
+      page, args: {{}}\n\nUse a json blob to specify a tool by providing an action
+      key (tool name) and an action_input key (tool input).\n\nValid \"action\" values:
+      \"Final Answer\" or click_element, navigate_browser, previous_webpage, extract_text,
+      extract_hyperlinks, get_elements, current_webpage\n\nProvide only ONE action
+      per $JSON_BLOB, as shown:\n\n```\n{\n  \"action\": $TOOL_NAME,\n  \"action_input\":
+      $INPUT\n}\n```\n\nFollow this format:\n\nQuestion: input question to answer\nThought:
+      consider previous and subsequent steps\nAction:\n```\n$JSON_BLOB\n```\nObservation:
+      action result\n... (repeat Thought/Action/Observation N times)\nThought: I know
+      what to respond\nAction:\n```\n{\n  \"action\": \"Final Answer\",\n  \"action_input\":
+      \"Final response to human\"\n}\n```\n\nBegin! Reminder to ALWAYS respond with
+      a valid json blob of a single action. Use tools if necessary. Respond directly
+      if appropriate. Format is Action:```$JSON_BLOB```then Observation:.\nThought:"},
+      {"role": "user", "content": "Hi I''m Erica."}, {"role": "assistant", "content":
+      "Hello Erica, how can I assist you today?"}, {"role": "user", "content": "whats
+      my name?\n\n"}], "model": "gpt-3.5-turbo", "max_tokens": null, "stream": false,
+      "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
+    headers: {}
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1SQwU7CQBCG732KyZwpoRBa7NGoBy4kJBrRGLJsR7rS7jS7UzWSvrvZFgSv/zff
+        /JM5RgBoCswBdalE100VZ+s74/yqyBarr+nz4+3Tz+FluX6oNtn+c4mjYPDug7ScrbHmuqlIDNsB
+        a0dKKGxN0kWaTZObNOlBzQVVQds3Es/G81hat+N4Mpskg9l6tSfM4RgBAGDjuG5kK3wg6zGHeZaO
+        BnKpvKInJiyquooXSQTQDZeVbDSF9LWfHXrCZeT/Vfeh4yokqLw3XpQVHF2gZitk+ydsuHVgVU1g
+        PNw7o9UYT4Pd2cB3Y40vt46UZxssL9z8LURjC/rGHCZ90EUAb1EX/QIAAP//AwBryGY7oAEAAA==
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7d704effebad274a-ADL
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 14 Jun 2023 05:52:42 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - gpt-3.5-turbo-0301
+      openai-processing-ms:
+      - '812'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "system", "content": "Respond to the human as helpfully
+      and accurately as possible. You have access to the following tools:\n\nclick_element:
+      Click on an element with the given CSS selector, args: {{''selector'': {{''title'':
+      ''Selector'', ''description'': ''CSS selector for the element to click'', ''type'':
+      ''string''}}}}\nnavigate_browser: Navigate a browser to the specified URL, args:
+      {{''url'': {{''title'': ''Url'', ''description'': ''url to navigate to'', ''type'':
+      ''string''}}}}\nprevious_webpage: Navigate back to the previous page in the
+      browser history, args: {{}}\nextract_text: Extract all the text on the current
+      webpage, args: {{}}\nextract_hyperlinks: Extract all hyperlinks on the current
+      webpage, args: {{''absolute_urls'': {{''title'': ''Absolute Urls'', ''description'':
+      ''Return absolute URLs instead of relative URLs'', ''default'': False, ''type'':
+      ''boolean''}}}}\nget_elements: Retrieve elements in the current web page matching
+      the given CSS selector, args: {{''selector'': {{''title'': ''Selector'', ''description'':
+      \"CSS selector, such as ''*'', ''div'', ''p'', ''a'', #id, .classname\", ''type'':
+      ''string''}}, ''attributes'': {{''title'': ''Attributes'', ''description'':
+      ''Set of attributes to retrieve for each element'', ''type'': ''array'', ''items'':
+      {{''type'': ''string''}}}}}}\ncurrent_webpage: Returns the URL of the current
+      page, args: {{}}\n\nUse a json blob to specify a tool by providing an action
+      key (tool name) and an action_input key (tool input).\n\nValid \"action\" values:
+      \"Final Answer\" or click_element, navigate_browser, previous_webpage, extract_text,
+      extract_hyperlinks, get_elements, current_webpage\n\nProvide only ONE action
+      per $JSON_BLOB, as shown:\n\n```\n{\n  \"action\": $TOOL_NAME,\n  \"action_input\":
+      $INPUT\n}\n```\n\nFollow this format:\n\nQuestion: input question to answer\nThought:
+      consider previous and subsequent steps\nAction:\n```\n$JSON_BLOB\n```\nObservation:
+      action result\n... (repeat Thought/Action/Observation N times)\nThought: I know
+      what to respond\nAction:\n```\n{\n  \"action\": \"Final Answer\",\n  \"action_input\":
+      \"Final response to human\"\n}\n```\n\nBegin! Reminder to ALWAYS respond with
+      a valid json blob of a single action. Use tools if necessary. Respond directly
+      if appropriate. Format is Action:```$JSON_BLOB```then Observation:.\nThought:"},
+      {"role": "user", "content": "Hi I''m Erica."}, {"role": "assistant", "content":
+      "Hello Erica, how can I assist you today?"}, {"role": "user", "content": "whats
+      my name?"}, {"role": "assistant", "content": "Your name is Erica."}, {"role":
+      "user", "content": "What''s the latest xkcd comic about? Navigate to the xkcd
+      website and tell me.\n\n"}], "model": "gpt-3.5-turbo", "max_tokens": null, "stream":
+      false, "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
+    headers: {}
+    method: post
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"chatcmpl-7RDisNdBtgenV1gVFyaG6Zsy3I0hx\",\n  \"object\":
+        \"chat.completion\",\n  \"created\": 1686721962,\n  \"model\": \"gpt-3.5-turbo-0301\",\n
+        \ \"usage\": {\n    \"prompt_tokens\": 612,\n    \"completion_tokens\": 41,\n
+        \   \"total_tokens\": 653\n  },\n  \"choices\": [\n    {\n      \"message\":
+        {\n        \"role\": \"assistant\",\n        \"content\": \"Sure, I can do
+        that. \\n\\nAction:\\n```\\n{\\n  \\\"action\\\": \\\"navigate_browser\\\",\\n
+        \ \\\"action_input\\\": {\\\"url\\\": \\\"https://xkcd.com/\\\"}\\n}\\n```\\n\\n\"\n
+        \     },\n      \"finish_reason\": \"stop\",\n      \"index\": 0\n    }\n
+        \ ]\n}\n"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7d704f07bba13e69-ADL
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 14 Jun 2023 05:52:45 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - gpt-3.5-turbo-0301
+      openai-processing-ms:
+      - '3270'
+    status:
+      code: 200
+      message: OK
+    url: https://api.openai.com/v1/chat/completions
+- request:
+    body: '{"url": "https://xkcd.com/"}'
+    headers: {}
+    method: POST
+    uri: tool://NavigateTool/_arun
+  response: Navigating to https://xkcd.com/ returned status code 200
+- request:
+    body: '{"messages": [{"role": "system", "content": "Respond to the human as helpfully
+      and accurately as possible. You have access to the following tools:\n\nclick_element:
+      Click on an element with the given CSS selector, args: {{''selector'': {{''title'':
+      ''Selector'', ''description'': ''CSS selector for the element to click'', ''type'':
+      ''string''}}}}\nnavigate_browser: Navigate a browser to the specified URL, args:
+      {{''url'': {{''title'': ''Url'', ''description'': ''url to navigate to'', ''type'':
+      ''string''}}}}\nprevious_webpage: Navigate back to the previous page in the
+      browser history, args: {{}}\nextract_text: Extract all the text on the current
+      webpage, args: {{}}\nextract_hyperlinks: Extract all hyperlinks on the current
+      webpage, args: {{''absolute_urls'': {{''title'': ''Absolute Urls'', ''description'':
+      ''Return absolute URLs instead of relative URLs'', ''default'': False, ''type'':
+      ''boolean''}}}}\nget_elements: Retrieve elements in the current web page matching
+      the given CSS selector, args: {{''selector'': {{''title'': ''Selector'', ''description'':
+      \"CSS selector, such as ''*'', ''div'', ''p'', ''a'', #id, .classname\", ''type'':
+      ''string''}}, ''attributes'': {{''title'': ''Attributes'', ''description'':
+      ''Set of attributes to retrieve for each element'', ''type'': ''array'', ''items'':
+      {{''type'': ''string''}}}}}}\ncurrent_webpage: Returns the URL of the current
+      page, args: {{}}\n\nUse a json blob to specify a tool by providing an action
+      key (tool name) and an action_input key (tool input).\n\nValid \"action\" values:
+      \"Final Answer\" or click_element, navigate_browser, previous_webpage, extract_text,
+      extract_hyperlinks, get_elements, current_webpage\n\nProvide only ONE action
+      per $JSON_BLOB, as shown:\n\n```\n{\n  \"action\": $TOOL_NAME,\n  \"action_input\":
+      $INPUT\n}\n```\n\nFollow this format:\n\nQuestion: input question to answer\nThought:
+      consider previous and subsequent steps\nAction:\n```\n$JSON_BLOB\n```\nObservation:
+      action result\n... (repeat Thought/Action/Observation N times)\nThought: I know
+      what to respond\nAction:\n```\n{\n  \"action\": \"Final Answer\",\n  \"action_input\":
+      \"Final response to human\"\n}\n```\n\nBegin! Reminder to ALWAYS respond with
+      a valid json blob of a single action. Use tools if necessary. Respond directly
+      if appropriate. Format is Action:```$JSON_BLOB```then Observation:.\nThought:"},
+      {"role": "user", "content": "Hi I''m Erica."}, {"role": "assistant", "content":
+      "Hello Erica, how can I assist you today?"}, {"role": "user", "content": "whats
+      my name?"}, {"role": "assistant", "content": "Your name is Erica."}, {"role":
+      "user", "content": "What''s the latest xkcd comic about? Navigate to the xkcd
+      website and tell me.\n\nThis was your previous work (but I haven''t seen any
+      of it! I only see what you return as final answer):\nSure, I can do that. \n\nAction:\n```\n{\n  \"action\":
+      \"navigate_browser\",\n  \"action_input\": {\"url\": \"https://xkcd.com/\"}\n}\n```\n\n\nObservation:
+      Navigating to https://xkcd.com/ returned status code 200\nThought:"}], "model":
+      "gpt-3.5-turbo", "max_tokens": null, "stream": false, "n": 1, "temperature":
+      0.0, "stop": ["Observation:"]}'
+    headers: {}
+    method: post
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"chatcmpl-7RDix0eQBAouDtmcgiHGdABWVW3nL\",\n  \"object\":
+        \"chat.completion\",\n  \"created\": 1686721967,\n  \"model\": \"gpt-3.5-turbo-0301\",\n
+        \ \"usage\": {\n    \"prompt_tokens\": 700,\n    \"completion_tokens\": 63,\n
+        \   \"total_tokens\": 763\n  },\n  \"choices\": [\n    {\n      \"message\":
+        {\n        \"role\": \"assistant\",\n        \"content\": \"To answer the
+        question, I need to extract the title of the latest xkcd comic from the webpage.
+        \\n\\nAction:\\n```\\n{\\n  \\\"action\\\": \\\"get_elements\\\",\\n  \\\"action_input\\\":
+        {\\n    \\\"selector\\\": \\\"#comic > img\\\",\\n    \\\"attributes\\\":
+        [\\\"title\\\"]\\n  }\\n}\\n``` \\n\\n\"\n      },\n      \"finish_reason\":
+        \"stop\",\n      \"index\": 0\n    }\n  ]\n}\n"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7d704f252cb83e5d-ADL
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 14 Jun 2023 05:52:51 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - gpt-3.5-turbo-0301
+      openai-processing-ms:
+      - '4078'
+    status:
+      code: 200
+      message: OK
+    url: https://api.openai.com/v1/chat/completions
+- request:
+    body: '{"attributes": ["title"], "selector": "#comic > img"}'
+    headers: {}
+    method: POST
+    uri: tool://GetElementsTool/_arun
+  response: '[{"title": "In the Hall of the Mountain King was accidentally composed
+    on log/log paper."}]'
+- request:
+    body: '{"messages": [{"role": "system", "content": "Respond to the human as helpfully
+      and accurately as possible. You have access to the following tools:\n\nclick_element:
+      Click on an element with the given CSS selector, args: {{''selector'': {{''title'':
+      ''Selector'', ''description'': ''CSS selector for the element to click'', ''type'':
+      ''string''}}}}\nnavigate_browser: Navigate a browser to the specified URL, args:
+      {{''url'': {{''title'': ''Url'', ''description'': ''url to navigate to'', ''type'':
+      ''string''}}}}\nprevious_webpage: Navigate back to the previous page in the
+      browser history, args: {{}}\nextract_text: Extract all the text on the current
+      webpage, args: {{}}\nextract_hyperlinks: Extract all hyperlinks on the current
+      webpage, args: {{''absolute_urls'': {{''title'': ''Absolute Urls'', ''description'':
+      ''Return absolute URLs instead of relative URLs'', ''default'': False, ''type'':
+      ''boolean''}}}}\nget_elements: Retrieve elements in the current web page matching
+      the given CSS selector, args: {{''selector'': {{''title'': ''Selector'', ''description'':
+      \"CSS selector, such as ''*'', ''div'', ''p'', ''a'', #id, .classname\", ''type'':
+      ''string''}}, ''attributes'': {{''title'': ''Attributes'', ''description'':
+      ''Set of attributes to retrieve for each element'', ''type'': ''array'', ''items'':
+      {{''type'': ''string''}}}}}}\ncurrent_webpage: Returns the URL of the current
+      page, args: {{}}\n\nUse a json blob to specify a tool by providing an action
+      key (tool name) and an action_input key (tool input).\n\nValid \"action\" values:
+      \"Final Answer\" or click_element, navigate_browser, previous_webpage, extract_text,
+      extract_hyperlinks, get_elements, current_webpage\n\nProvide only ONE action
+      per $JSON_BLOB, as shown:\n\n```\n{\n  \"action\": $TOOL_NAME,\n  \"action_input\":
+      $INPUT\n}\n```\n\nFollow this format:\n\nQuestion: input question to answer\nThought:
+      consider previous and subsequent steps\nAction:\n```\n$JSON_BLOB\n```\nObservation:
+      action result\n... (repeat Thought/Action/Observation N times)\nThought: I know
+      what to respond\nAction:\n```\n{\n  \"action\": \"Final Answer\",\n  \"action_input\":
+      \"Final response to human\"\n}\n```\n\nBegin! Reminder to ALWAYS respond with
+      a valid json blob of a single action. Use tools if necessary. Respond directly
+      if appropriate. Format is Action:```$JSON_BLOB```then Observation:.\nThought:"},
+      {"role": "user", "content": "Hi I''m Erica."}, {"role": "assistant", "content":
+      "Hello Erica, how can I assist you today?"}, {"role": "user", "content": "whats
+      my name?"}, {"role": "assistant", "content": "Your name is Erica."}, {"role":
+      "user", "content": "What''s the latest xkcd comic about? Navigate to the xkcd
+      website and tell me.\n\nThis was your previous work (but I haven''t seen any
+      of it! I only see what you return as final answer):\nSure, I can do that. \n\nAction:\n```\n{\n  \"action\":
+      \"navigate_browser\",\n  \"action_input\": {\"url\": \"https://xkcd.com/\"}\n}\n```\n\n\nObservation:
+      Navigating to https://xkcd.com/ returned status code 200\nThought:To answer
+      the question, I need to extract the title of the latest xkcd comic from the
+      webpage. \n\nAction:\n```\n{\n  \"action\": \"get_elements\",\n  \"action_input\":
+      {\n    \"selector\": \"#comic > img\",\n    \"attributes\": [\"title\"]\n  }\n}\n```
+      \n\n\nObservation: [{\"title\": \"In the Hall of the Mountain King was accidentally
+      composed on log/log paper.\"}]\nThought:"}], "model": "gpt-3.5-turbo", "max_tokens":
+      null, "stream": false, "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
+    headers: {}
+    method: post
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"chatcmpl-7RDj1AhfTHgFyPbcIezxjrXQ4CylN\",\n  \"object\":
+        \"chat.completion\",\n  \"created\": 1686721971,\n  \"model\": \"gpt-3.5-turbo-0301\",\n
+        \ \"usage\": {\n    \"prompt_tokens\": 788,\n    \"completion_tokens\": 24,\n
+        \   \"total_tokens\": 812\n  },\n  \"choices\": [\n    {\n      \"message\":
+        {\n        \"role\": \"assistant\",\n        \"content\": \"The latest xkcd
+        comic is titled \\\"In the Hall of the Mountain King was accidentally composed
+        on log/log paper.\\\"\"\n      },\n      \"finish_reason\": \"stop\",\n      \"index\":
+        0\n    }\n  ]\n}\n"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7d704f41ee7e3e5d-ADL
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 14 Jun 2023 05:52:53 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - gpt-3.5-turbo-0301
+      openai-processing-ms:
+      - '1381'
+    status:
+      code: 200
+      message: OK
+    url: https://api.openai.com/v1/chat/completions
+version: 1
