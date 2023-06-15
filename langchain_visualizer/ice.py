@@ -14,10 +14,14 @@ from langchain.schema import (
     SystemMessage,
 )
 
+
 og_json_value = json_value.to_json_value
 
 
 def to_json_value(x: Any) -> json_value.JSONValue:
+    if hasattr(x, "dict") and callable(x.dict):
+        if hasattr(x, "memory"):
+            x.memory = None
     if isinstance(x, LLMResult):
         regular_generations = x.generations
         regular_texts: Union[List[List[str]], List[str], str] = [
@@ -62,7 +66,7 @@ def to_json_value(x: Any) -> json_value.JSONValue:
         }
     elif isinstance(x, BaseMessage):
         warn(f"Unknown message type: {x.type}")
-
+    # Hack required to get around LangChain not having serializable Memory for now
     return og_json_value(x)
 
 
