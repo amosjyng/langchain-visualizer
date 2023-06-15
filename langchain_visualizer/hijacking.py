@@ -109,9 +109,7 @@ def hijack(cls, fn_name, get_replacement):
     setattr(cls, fn_name, replacement)
 
 
-def ice_hijack(
-    cls, og_method_name, viz_cls=VisualizationWrapper, is_async: bool = False
-):
+def ice_hijack(cls, og_method_name, viz_cls=VisualizationWrapper):
     """
     Hijack cls.og_method_name to refer to an overridden call.
 
