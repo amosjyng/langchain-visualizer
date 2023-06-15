@@ -1,33 +1,8 @@
-from typing import Iterable
-
 from fvalues import F
 from langchain import FewShotPromptTemplate
 from langchain.prompts.prompt import PromptTemplate
 
 from langchain_visualizer.hijacking import hijack
-
-
-def preserved_join(self, iterable: Iterable[str]) -> "F":
-    """Copied from https://github.com/oughtinc/fvalues/pull/11 pending merge."""
-    joined = ""
-    parts = []
-    for substring in iterable:
-        joined += substring
-        parts.append(substring)
-
-        # avoid polluting parts when joining with empty string
-        if str(self) != "":
-            joined += self
-            parts.append(self)
-
-    if len(parts) > 0 and str(self) != "":  # pop the last joiner
-        joined = joined[: -len(self)]
-        parts.pop()
-
-    return F(joined, parts=tuple(parts))
-
-
-setattr(F, "preserved_join", preserved_join)
 
 
 def get_new_format(og_format):
