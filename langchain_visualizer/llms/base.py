@@ -47,6 +47,22 @@ class LlmSyncVisualizer(LlmVisualizer):
             self.determine_cost(result)
         return result
 
+class LlmAsyncVisualizer(LlmVisualizer):
+    """Overrides the async generate function for regular LLMs."""
+
+    async def _agenerate(
+        self,
+        prompts: List[str],
+        stop: Optional[List[str]] = None,
+        callbacks: Callbacks = None,
+    ) -> LLMResult:
+        """Run the LLM on the given prompt and input."""
+        result: LLMResult = self.og_fn(
+            self.og_obj, prompts=prompts, stop=stop, callbacks=callbacks
+        )
+        if isinstance(self.og_obj, OpenAI):
+            self.determine_cost(result)
+        return result
 
 class ChatLlmSyncVisualizer(LlmVisualizer):
     """Overrides the sync _generate function for chat LLMs."""
@@ -88,5 +104,6 @@ class ChatLlmAsyncVisualizer(LlmVisualizer):
 
 
 ice_hijack(BaseLLM, "generate", LlmSyncVisualizer)
+ice_hijack(BaseLLM, "agenerate", LlmAsyncVisualizer)
 ice_hijack(ChatOpenAI, "_generate", ChatLlmSyncVisualizer)
 ice_hijack(ChatOpenAI, "_agenerate", ChatLlmAsyncVisualizer, is_async=True)
