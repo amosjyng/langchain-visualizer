@@ -106,4 +106,4 @@ class ChatLlmAsyncVisualizer(LlmVisualizer):
 ice_hijack(BaseLLM, "generate", LlmSyncVisualizer)
 ice_hijack(BaseLLM, "agenerate", LlmAsyncVisualizer)
 ice_hijack(ChatOpenAI, "_generate", ChatLlmSyncVisualizer)
-ice_hijack(ChatOpenAI, "_agenerate", ChatLlmAsyncVisualizer, is_async=True)
+ice_hijack(ChatOpenAI, "_agenerate", ChatLlmAsyncVisualizer)

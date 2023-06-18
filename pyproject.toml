@@ -10,6 +10,7 @@ packages = [{include = "langchain_visualizer"}]
 python = "^3.9"
 langchain = ">=0.0.199,<0.1"
 ought-ice = "^0.5.0"
+fvalues = "^0.0.4"
 gorilla = "^0.4.0"
 
 
