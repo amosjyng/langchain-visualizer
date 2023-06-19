@@ -1,0 +1,234 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      host:
+      - 127.0.0.1:8935
+    method: GET
+    uri: http://127.0.0.1:8935/ping
+  response:
+    content: ought-ice says pong
+    headers:
+      cache-control:
+      - no-transform
+      content-length:
+      - '19'
+      content-type:
+      - text/plain; charset=utf-8
+      date:
+      - Mon, 19 Jun 2023 03:16:20 GMT
+      server:
+      - uvicorn
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: '{"prompt": ["What is a good name for a company that makes toothpaste?"],
+      "model": "text-davinci-003", "temperature": 0.9, "max_tokens": 256, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
+    headers: {}
+    method: post
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"cmpl-7SzfHruZMeCiqXhYcvtyb2V7ZOSSX\",\n  \"object\":
+        \"text_completion\",\n  \"created\": 1687144579,\n  \"model\": \"text-davinci-003\",\n
+        \ \"choices\": [\n    {\n      \"text\": \"\\n\\nMinty Fresh Inc.\",\n      \"index\":
+        0,\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n
+        \ ],\n  \"usage\": {\n    \"prompt_tokens\": 13,\n    \"completion_tokens\":
+        8,\n    \"total_tokens\": 21\n  }\n}\n"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7d989cd2aca81f5b-MEL
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 19 Jun 2023 03:16:19 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '392'
+    status:
+      code: 200
+      message: OK
+    url: https://api.openai.com/v1/completions
+- request:
+    body: '{"prompt": ["What is a good name for a company that makes toothpaste?"],
+      "model": "text-davinci-003", "temperature": 0.9, "max_tokens": 256, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
+    headers: {}
+    method: post
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"cmpl-7SzfH5pA3VgmSFwFRMIujxXOpdGE4\",\n  \"object\":
+        \"text_completion\",\n  \"created\": 1687144579,\n  \"model\": \"text-davinci-003\",\n
+        \ \"choices\": [\n    {\n      \"text\": \"\\n\\nBright Smile Dental Care.\",\n
+        \     \"index\": 0,\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n
+        \   }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 13,\n    \"completion_tokens\":
+        8,\n    \"total_tokens\": 21\n  }\n}\n"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7d989cd2ae111f6b-MEL
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 19 Jun 2023 03:16:20 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '677'
+    status:
+      code: 200
+      message: OK
+    url: https://api.openai.com/v1/completions
+- request:
+    body: '{"prompt": ["What is a good name for a company that makes toothpaste?"],
+      "model": "text-davinci-003", "temperature": 0.9, "max_tokens": 256, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
+    headers: {}
+    method: post
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"cmpl-7SzfHCZ7L9SofsOQgnNC1scDVxng5\",\n  \"object\":
+        \"text_completion\",\n  \"created\": 1687144579,\n  \"model\": \"text-davinci-003\",\n
+        \ \"choices\": [\n    {\n      \"text\": \"\\n\\nAquaWhite Toothpaste Solutions\",\n
+        \     \"index\": 0,\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n
+        \   }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 13,\n    \"completion_tokens\":
+        8,\n    \"total_tokens\": 21\n  }\n}\n"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7d989cd2a8e32ea6-MEL
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 19 Jun 2023 03:16:20 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '846'
+    status:
+      code: 200
+      message: OK
+    url: https://api.openai.com/v1/completions
+- request:
+    body: '{"prompt": ["What is a good name for a company that makes toothpaste?"],
+      "model": "text-davinci-003", "temperature": 0.9, "max_tokens": 256, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
+    headers: {}
+    method: post
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"cmpl-7SzfHXXGCZHT6e1A6egIZo5Vwx527\",\n  \"object\":
+        \"text_completion\",\n  \"created\": 1687144579,\n  \"model\": \"text-davinci-003\",\n
+        \ \"choices\": [\n    {\n      \"text\": \"\\n\\nBright Smile Toothpaste Company\",\n
+        \     \"index\": 0,\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n
+        \   }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 13,\n    \"completion_tokens\":
+        7,\n    \"total_tokens\": 20\n  }\n}\n"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7d989cd2a8d85aa4-MEL
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 19 Jun 2023 03:16:20 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '979'
+    status:
+      code: 200
+      message: OK
+    url: https://api.openai.com/v1/completions
+- request:
+    body: '{"prompt": ["What is a good name for a company that makes toothpaste?"],
+      "model": "text-davinci-003", "temperature": 0.9, "max_tokens": 256, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
+    headers: {}
+    method: post
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"cmpl-7SzfHVNWDPLJ5LjGyp10mWWnBeDmT\",\n  \"object\":
+        \"text_completion\",\n  \"created\": 1687144579,\n  \"model\": \"text-davinci-003\",\n
+        \ \"choices\": [\n    {\n      \"text\": \"\\n\\nDentiFresh\",\n      \"index\":
+        0,\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n
+        \ ],\n  \"usage\": {\n    \"prompt_tokens\": 13,\n    \"completion_tokens\":
+        6,\n    \"total_tokens\": 19\n  }\n}\n"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7d989cd2cc4a17c8-MEL
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 19 Jun 2023 03:16:21 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '2278'
+    status:
+      code: 200
+      message: OK
+    url: https://api.openai.com/v1/completions
+version: 1
