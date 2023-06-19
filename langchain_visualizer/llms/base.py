@@ -13,9 +13,14 @@ from langchain.schema import BaseMessage, ChatResult, LLMResult
 
 from langchain_visualizer.hijacking import VisualizationWrapper, ice_hijack
 
+# todo: ideally we would stop tying costs to Davinci tokens, but this would involve
+# changing ICE's frontend logic
 MODEL_COST_MAP = {
+    # model names: https://platform.openai.com/docs/models/gpt-3-5
+    # model costs: https://openai.com/pricing
     "text-davinci-003": 1,
     "gpt-3.5-turbo": 0.1,
+    "gpt-3.5-turbo-16k": 0.2,
 }
 
 
