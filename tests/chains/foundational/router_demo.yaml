@@ -1,0 +1,316 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      host:
+      - 127.0.0.1:8935
+    method: GET
+    uri: http://127.0.0.1:8935/ping
+  response:
+    content: ought-ice says pong
+    headers:
+      cache-control:
+      - no-transform
+      content-length:
+      - '19'
+      content-type:
+      - text/plain; charset=utf-8
+      date:
+      - Tue, 27 Jun 2023 10:35:44 GMT
+      server:
+      - uvicorn
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: '{"prompt": ["Given a raw text input to a language model select the model
+      prompt best suited for the input. You will be given the names of the available
+      prompts and a description of what the prompt is best suited for. You may also
+      revise the original input if you think that revising it will ultimately lead
+      to a better response from the language model.\n\n<< FORMATTING >>\nReturn a
+      markdown code snippet with a JSON object formatted to look like:\n```json\n{\n    \"destination\":
+      string \\ name of the prompt to use or \"DEFAULT\"\n    \"next_inputs\": string
+      \\ a potentially modified version of the original input\n}\n```\n\nREMEMBER:
+      \"destination\" MUST be one of the candidate prompt names specified below OR
+      it can be \"DEFAULT\" if the input is not well suited for any of the candidate
+      prompts.\nREMEMBER: \"next_inputs\" can just be the original input if you don''t
+      think any modifications are needed.\n\n<< CANDIDATE PROMPTS >>\nphysics: Good
+      for answering questions about physics\nmath: Good for answering math questions\n\n<<
+      INPUT >>\nWhat is black body radiation?\n\n<< OUTPUT >>\n"], "model": "text-davinci-003",
+      "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "logit_bias": {}}'
+    headers: {}
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0yQzW7CMBCE73mK1Z5BMlAC5NJLL21Rq56oVFfEcVxicNZWbNogxLtXTvi7+LDf
+        zOysjwkA6hIzQFk7M5yt2JJVD0+aLdpm+bnYjV7T9N19PLdvL384iGpbbJUM0RFUG9bS1s6ooC31
+        WDZKBBUTR+l8Nk/HoynrQG1LZS62YSl+NUk9ZGxy9lVWS+Uxg68EAODYvdDLoy3P8623xOnIKQKO
+        pfJBk4i7OWbA0VUHr6XnOLhIKFbU5PbB95JVJQJoD4URcgeFLQ/QiFJ3IY8cOZ045XnederWaypV
+        ixmw68TYjWtsEavS3pjr/EeT9tW6UcJbio19sA47ekoAvrsz915sFGbn89A1tnZhHexOUQwcT6d9
+        Ht7+9UYnFxhsEObOtWBJXHJK/gEAAP//AwDM2asm0AEAAA==
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7ddd0ba66edf4487-SIN
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 27 Jun 2023 10:35:53 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '2611'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"prompt": ["You are a very smart physics professor. You are great at answering
+      questions about physics in a concise and easy to understand manner. When you
+      don''t know the answer to a question you admit that you don''t know.\n\nHere
+      is a question:\nWhat is black body radiation?"], "model": "text-davinci-003",
+      "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "logit_bias": {}}'
+    headers: {}
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0xSTU9bMRC8v1+x8pmgFyJImhugqoqE1CIOHEoV7bM3eVv8hb2vEBD/vbLzQnLx
+        YWZnxp71RwOg2KglKO2incwf27vZw/3323t3Exfx2931auV/vmf+1T38UGdlOnR/SUtRCL3JWgcX
+        LQkHv6d1IhQqjtOrxXxxdTG9nFXCBUP2IJsY/Mde86RtZ6OuD6wpqyX8bgAAPuoJ+/Eie/JP/sai
+        foYumB0kNIwlFjiD9ARkSUsKDreehPXJADkWIQPdDhC6owX7IkwumJ1HxxroZWDLXeLBncNKijNC
+        ojxYgbCpKVWAFlyo1iMaMQlrS3n0rP5n8Nqz7mv8yW1eWXpA2CR6GcjrHRjOkrgbKis91lzdY0It
+        lDiXxxzSyUVKKEOiA1SSzmuFtS32ht7UEtovxIZtTKErzfrB2i98w55zv06EOfhScJYQVWU/G4A/
+        dStDxi2p5bgNFVNwUdYSnskXw8v53k4df8EJOR1JCYL2iE/bRVMyPpv/AAAA//8DANEAJcJ+AgAA
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7ddd0bbc4ad34487-SIN
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 27 Jun 2023 10:35:58 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '4932'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"prompt": ["Given a raw text input to a language model select the model
+      prompt best suited for the input. You will be given the names of the available
+      prompts and a description of what the prompt is best suited for. You may also
+      revise the original input if you think that revising it will ultimately lead
+      to a better response from the language model.\n\n<< FORMATTING >>\nReturn a
+      markdown code snippet with a JSON object formatted to look like:\n```json\n{\n    \"destination\":
+      string \\ name of the prompt to use or \"DEFAULT\"\n    \"next_inputs\": string
+      \\ a potentially modified version of the original input\n}\n```\n\nREMEMBER:
+      \"destination\" MUST be one of the candidate prompt names specified below OR
+      it can be \"DEFAULT\" if the input is not well suited for any of the candidate
+      prompts.\nREMEMBER: \"next_inputs\" can just be the original input if you don''t
+      think any modifications are needed.\n\n<< CANDIDATE PROMPTS >>\nphysics: Good
+      for answering questions about physics\nmath: Good for answering math questions\n\n<<
+      INPUT >>\nWhat is the first prime number greater than 40 such that one plus
+      the prime number is divisible by 3\n\n<< OUTPUT >>\n"], "model": "text-davinci-003",
+      "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "logit_bias": {}}'
+    headers: {}
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1SRTU/DMAyG7/0VVs6bVDbYR2+7AUJIIGAHgta0NashdaLGnQbT/jtK9yUukezH
+        r+3X2SUAiiqVgSobb4fTZfownyzu+Y5f326bp1+zeN08r2fz+kUe1SBWu+ILS4kKwa2sStd4i0KO
+        D7hs0QjGjleT2XQ2GV3dzHvQuArtSTaszIa4pGGajo+62lGJQWXwngAA7PoXDuVRluf5V3Cseac5
+        Aq0qDEJs4mytMtCqMVJrNThxjvsR+07CgS9rI0ABpEb4pDYI+JYaBO6aAltY96u3ILVhuE4hdGUd
+        AwHHCN52B+U/DQWoaEOBCotQ/MBYK817zXme9756C8QVblUG6Tlj3dq3roh2ubP2nP8kplCvWjTB
+        cXQdxHnV030C8NGfqgtmjSo7nkj51jVeVuK+kWPD0fQ4R13+5kJvTlCcGHvJj0dpEofskz8AAAD/
+        /wMARJ6qqxQCAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7ddd0bdd5a464487-SIN
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 27 Jun 2023 10:36:04 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '4327'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"prompt": ["You are a very good mathematician. You are great at answering
+      math questions. You are so good because you are able to break down hard problems
+      into their component parts, answer the component parts, and then put them together
+      to answer the broader question.\n\nHere is a question:\nWhat is the first prime
+      number greater than 40 such that one plus the prime number is divisible by 3"],
+      "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
+    headers: {}
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0SPTW+DMAyG7/wKK+cihZUB4zLtUGmaetlpmtYJQXBL1mBHJF0rVf3vU4CViw/v
+        x2P7GgEI3YoShOqtifMPud28ysb4bJ2cPx3x9km+d+3xDe2jWIU0Nz+ofGh4vPhKcW8Nes002WrA
+        2mMgJlmRF9lDkqWj0XOL5r8Wt/WvJqVjKddzr2Ot0IkSviIAgOs4YYqH2vOOdvRC7oxDCenUGgOa
+        WryIEuRdMXywAzcBRidj7vpek3ZdNWDtmALTebZidG8RwPd4yMnVBxTlfICwA/fWV56PSAGYFxNO
+        LI8vZjZ7nn1tFrlIo7DhFv0BAAD//wMALiixqG8BAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7ddd0bfdd8ef4487-SIN
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 27 Jun 2023 10:36:05 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '786'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"prompt": ["Given a raw text input to a language model select the model
+      prompt best suited for the input. You will be given the names of the available
+      prompts and a description of what the prompt is best suited for. You may also
+      revise the original input if you think that revising it will ultimately lead
+      to a better response from the language model.\n\n<< FORMATTING >>\nReturn a
+      markdown code snippet with a JSON object formatted to look like:\n```json\n{\n    \"destination\":
+      string \\ name of the prompt to use or \"DEFAULT\"\n    \"next_inputs\": string
+      \\ a potentially modified version of the original input\n}\n```\n\nREMEMBER:
+      \"destination\" MUST be one of the candidate prompt names specified below OR
+      it can be \"DEFAULT\" if the input is not well suited for any of the candidate
+      prompts.\nREMEMBER: \"next_inputs\" can just be the original input if you don''t
+      think any modifications are needed.\n\n<< CANDIDATE PROMPTS >>\nphysics: Good
+      for answering questions about physics\nmath: Good for answering math questions\n\n<<
+      INPUT >>\nWhat is the name of the type of cloud that rins\n\n<< OUTPUT >>\n"],
+      "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
+    headers: {}
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0RQyW7CMBC95ytGPoMUoAool6pVW1qJHrqJQ10RkwzE4IyteNJFiH+vbLaLNZq3
+        zHveJQBCVyIHUTbO9MfzdDYdM75tn19+XkfNxpvH227ZzqdPEyN6gW2XGyw5KBh/eVHaxhlkbekA
+        ly0qxuA4yCbjSTYcZFkEGluhOcn6lfrWVOp+mo6OutrqEr3I4TMBANjFFw70ICuKYuMtSdpJCoAU
+        FXrWpMJtKXKQ4u7+4eZj9i5F70ShEFGT69gfKPNaMWgPXCOQahDsKs785+JcGttVwIHVKk3+WgpJ
+        e0lFUcScMZKmCn9FDul5Y+zatXYZ4lNnzHm/0qR9vWhReUuhhWfrRET3CcBXrN55tUaRHysL19rG
+        8YLtFikYDrPBwU9c/vqCXp1AtqzMZT9Kh0k4sk/+AQAA//8DAMyS/IvkAQAA
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7ddd0c0549c04487-SIN
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 27 Jun 2023 10:36:09 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '3631'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"prompt": ["The following is a friendly conversation between a human and
+      an AI. The AI is talkative and provides lots of specific details from its context.
+      If the AI does not know the answer to a question, it truthfully says it does
+      not know.\n\nCurrent conversation:\n\nHuman: What is the name of the type of
+      cloud that rains?\nAI:"], "model": "text-davinci-003", "temperature": 0.7, "max_tokens":
+      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}}'
+    headers: {}
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0RRS0sDMRC+768YcrZla7W77FHFSz0oKIIiJd1Mu6lJJiazfVD875JsbS8h+V7z
+        yLEAEFqJBkRrvRlV7+XT/MXWH/6NXX0nbx/mP8/GW7V73KzFVVLTcoMtJwfjnhctWW+QNbmBbgNK
+        xpQ4mdVVPbueVGUmLCk0/7aRklvtWj0qy+nJ15FuMYoGPgsAgGM+YZAnG7x2CE5aBFoBdwh88Pne
+        GuoVcCcZgtQugo4g4b63vSGn7bKPg2ScEiIOjwgyIGwxHIClMSCdygitGB3IGKnVaQ7Yae6Au94p
+        DJEp2Ji1HcrtIdcb5/5zq9op3IsGyjNiaO0DLdNYrjfmjK+007FbBJSRXJouMnmR2d8C4CuvpI9y
+        jaI5rUL4QNbzgukbXQqspkOcuHzBhZzenEgmluaCT8qqSDV+iz8AAAD//wMAbeFssPsBAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7ddd0c211a2a4487-SIN
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 27 Jun 2023 10:36:12 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '1803'
+    status:
+      code: 200
+      message: OK
+version: 1
