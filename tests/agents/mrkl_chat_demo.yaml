@@ -2,16 +2,8 @@ interactions:
 - request:
     body: ''
     headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
       host:
       - 127.0.0.1:8935
-      user-agent:
-      - python-httpx/0.24.1
     method: GET
     uri: http://127.0.0.1:8935/ping
   response:
@@ -24,7 +16,7 @@ interactions:
       content-type:
       - text/plain; charset=utf-8
       date:
-      - Tue, 30 May 2023 05:24:15 GMT
+      - Thu, 29 Jun 2023 01:59:28 GMT
       server:
       - uvicorn
     http_version: HTTP/1.1
@@ -52,38 +44,25 @@ interactions:
       the Calm'' and are they in the FooBar database? If so, what albums of theirs
       are in the FooBar database?\n\n"}], "model": "gpt-3.5-turbo", "max_tokens":
       null, "stream": false, "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '1770'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.7
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA6SRzY8SQRDF7/4VlbrsZSCwfIhzMYtGs4lZP9iEg2OWpqeGbrenauyuCYuE/90w
-        sOjFePD6qt+v3qveoy8xR+uM2roJvZcf6tlsOHr/5e7jbvJ4U4WGB6/46dPdYln9xAxl/Z2snh19
-        K3UTSL0wZmgjGaUS8+F0Nhlfj68n0wxrKSlgjptGe6P+pKdtXEtvMBoMMcM2mQ1hvscmSt3og8oj
-        ccJ8NJ1k+Jt90YfDWYYqasJFGs9GhwytE28pYf51jzWlZ2yUQJijScknNazHkMJKfCzwuaV0pOew
-        dEbBJ1BHULUhAJuaQKpOMFF9Utg6gUiWWMMOIgUyiUowDCas2xqsCYFKuLp3BAuVWMOcKonUId6Y
-        UF+B4RLMSdmB527yTmRuIpRGzdokeg23FSTJYHtM1JHTOYePqXP/xVjwvZN24zSHW0hO2lBCm07r
-        F2SidaAiAVSg8lyemnHaUjxKXXEfk0Jjoj43/3E+UJdcHfGFeN7+dv4vaCIrXHbUfsE3trt3wavV
-        quB9wQAFmk4sMIcCT0kLzP4cPXhuWj09WP7vLxRY8OEcAA8ZVp59cg+RTBLGHJNKgxl6LukJ88Hh
-        2+HFLwAAAP//AwCM4a98IgMAAA==
+        H4sIAAAAAAAAA6xSTW8TMRC951eMfOkliRIW0mZvlA+BOFRVq4LAKJn1TmJTr2exZwVRlP9e2QkN
+        3Lns4X3t0xvvRwDKtaoGZSyK6Xo/ufzcvLv9+WkpNw/zm6UZ4tfdrsHtl7cPdPtBjbODmx9k5I9r
+        arjrPYnjcKRNJBTKqfPF1dVsVi0vZ4XouCWfbdteJtX01USG2PBktphXJ6dlZyipGr6NAAD25Zs7
+        hpZ+qxpKTkE6Sgm3pOpnEYCK7DOiMCWXBIOo8Zk0HIRCqX1vedhaqeEjBKIWhCERRmNhwxHEEmAU
+        lwR+WYZIhoL4HUTyhIlawADom6EDg95TCxf3luBOOHZwTRuOVCLeoO8uAEMLxpJ5BLfJ8A4wErhQ
+        JO+ZrzFCi4INJprqoMNrk5esdViv1zrsdQDQCguoVQ1a3ZWmWo3/plYu9IMcBf+ru1Y6HEoPdVrx
+        8Dz/xgWX7CoSJg550iTcH2WHEcD3cs7hnwupPnLXy0r4kUK+cbWojnnq/ILO7GJ5IoUF/Rl/Wb0Y
+        5Z8cRk8AAAD//wMANb4dfL4CAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7cf48cc05a653e6a-ADL
+      - 7dea920a29fea1b0-BKK
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -93,166 +72,167 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 30 May 2023 05:24:26 GMT
-      Server:
-      - cloudflare
+      - Thu, 29 Jun 2023 01:59:33 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400
       openai-model:
-      - gpt-3.5-turbo-0301
-      openai-organization:
-      - user-dpc5ftw8bvmpxblb49hwviq5
+      - gpt-3.5-turbo-0613
       openai-processing-ms:
-      - '10105'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3500'
-      x-ratelimit-limit-tokens:
-      - '90000'
-      x-ratelimit-remaining-requests:
-      - '3499'
-      x-ratelimit-remaining-tokens:
-      - '89599'
-      x-ratelimit-reset-requests:
-      - 17ms
-      x-ratelimit-reset-tokens:
-      - 267ms
-      x-request-id:
-      - 8ed8fc24e678b7f5ff89d25095c2779f
+      - '3306'
     status:
       code: 200
       message: OK
 - request:
     body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.31.0
+    headers: {}
     method: GET
-    uri: https://serpapi.com/search?engine=google&gl=us&google_domain=google.com&hl=en&output=json&q=Who+recently+released+an+album+called+%27The+Storm+Before+the+Calm%27&source=python
+    uri: https://serpapi.com/search?engine=google&gl=us&google_domain=google.com&hl=en&output=json&q=artist+who+recently+released+an+album+called+%27The+Storm+Before+the+Calm%27&source=python
   response:
     body:
       string: !!binary |
-        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
+        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
+        dl2YAAA=
     headers:
-      Age:
-      - '149'
       CF-Cache-Status:
-      - HIT
+      - MISS
       CF-Ray:
-      - 7cf48d07ea2b3e76-ADL
+      - 7dea92260c5de692-HKG
       Cache-Control:
       - max-age=3600, public
       Connection:
@@ -262,21 +242,17 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 30 May 2023 05:24:27 GMT
+      - Thu, 29 Jun 2023 01:59:37 GMT
       ETag:
-      - W/"9cc114ab6cd6779d6533803ebd9fafcd"
-      Server:
-      - cloudflare
+      - W/"4268410697bd699b909dd73485831ebf"
       Transfer-Encoding:
       - chunked
       Vary:
       - Accept-Encoding
-      alt-svc:
-      - h3=":443"; ma=86400
       referrer-policy:
       - strict-origin-when-cross-origin
       serpapi-search-id:
-      - 647587ef37b24a391a8e2ebc
+      - 649ce58638242799abea7069
       x-content-type-options:
       - nosniff
       x-download-options:
@@ -285,12 +261,10 @@ interactions:
       - SAMEORIGIN
       x-permitted-cross-domain-policies:
       - none
-      x-request-id:
-      - 54df337e-6af1-4d35-9f37-53133809757b
       x-robots-tag:
       - noindex, nofollow
       x-runtime:
-      - '7.300053'
+      - '3.242298'
       x-xss-protection:
       - 1; mode=block
     status:
@@ -318,45 +292,32 @@ interactions:
       full name of the artist who recently released an album called ''The Storm Before
       the Calm'' and are they in the FooBar database? If so, what albums of theirs
       are in the FooBar database?\n\nThis was your previous work (but I haven''t seen
-      any of it! I only see what you return as final answer):\nQuestion: What is the
-      full name of the artist who recently released an album called ''The Storm Before
-      the Calm'' and are they in the FooBar database? If so, what albums of theirs
-      are in the FooBar database?\nThought: I should use the Search tool to find the
-      answer to the first part of the question and then use the FooBar DB tool to
-      find the answer to the second part.\nAction:\n```\n{\n  \"action\": \"Search\",\n  \"action_input\":
-      \"Who recently released an album called ''The Storm Before the Calm''\"\n}\n```\n\nObservation:
-      Alanis Morissette\nThought:"}], "model": "gpt-3.5-turbo", "max_tokens": null,
-      "stream": false, "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '2430'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.7
+      any of it! I only see what you return as final answer):\nThought: I need to
+      search for the artist who recently released an album called ''The Storm Before
+      the Calm'' and check if they are in the FooBar database.\n\nAction:\n```\n{\n  \"action\":
+      \"Search\",\n  \"action_input\": \"artist who recently released an album called
+      ''The Storm Before the Calm''\"\n}\n```\nObservation: Alanis Morissette \u2013
+      The Storm Before The Calm.\nThought:"}], "model": "gpt-3.5-turbo", "max_tokens":
+      null, "stream": false, "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA2SPzW4aUQyF930Ky5tuLghICMndVERVJao2tFLVVOqtwMyYcJsZezT2lKSId68g
-        v1J31vHnc453mEuMWGzIi7qpepNP9fnHyubDUeVft/b975fZfXf1427+bTufYkBd/ebCHy/6hdZN
-        xZ5VMGDRMjmXGIdn5+PT0enobBKw1pIrjHjTeO+kP+551660NzgZDDFgZ3TDGHfYtFo3vnC9ZTGM
-        4+FFwBfvZ30yDOjqVL2QF4N9wGKjuWDD+HOHNduTa6sVY0Qyy+Ykfuio4iyH/le6Bd+Qwwxu5Tgz
-        UOvZ/K2BUM0BZlCQQGd8XH5QvaQW3l+Cq1bgCussJWjnkNcH4h6oZchypEtyWpExkJSwPeRQtepq
-        Az2yubUnOns/ybQ4PBqTLJfLJLskAAnpKCaMkPA5PWF4vV1kaTp/YK5fxZTKBtOKJBt81jabsTvD
-        hv78V/FdwiT7x+gkuA+4zpJts2iZTAUjmmuDAbOUfIdxsP+1f/MPAAD//wMAhcyaGDkCAAA=
+        H4sIAAAAAAAAA2RSS28aMRC+8ytGvuQCCER47S30IbVVI0WNlLbZCgbvLOvGO7Oyh5IW8d8rLxBS
+        9eLD9/L4G+87AMYVJgNjK1RbN743fVi/+343/bbgX8Pmq5/f3fNmdFuWnz4+PP8x3eSQ9U+yenb1
+        rdSNJ3XCR9oGQqWUOpzMZoPBaD6dt0QtBflk2zTaG/XHPd2GtfQGk+Ho5KzEWYomg8cOAMC+PdOM
+        XNCzyWDQPSM1xYgbMtmLCMAE8QkxGKOLiqymeyGtsBK3Y99XBBjURYVdJRDIEqv/DYE8YaQCkAH9
+        eluDRe+pgKvk+KISalhQKYFAK4I36OsrcBFuPLKL8FmCi5FUqQ+3soMPwEQFqICtyD6BKyFWlAyO
+        24D3IgsMUKDiGiMBctGKpAu7CvU4QwQpoaIQAQOdnWdLP+ecb2wqP8t5tVrlvM8ZIDfYgrnJIDen
+        e94uctN9zS4dN1s9av57Q25yPpwyzanGw0v/pWMXq2UgjMKp06jSHGWHDsCPdp/bf1ZkmiB1o0uV
+        J+K05Ovp5JhnLl/owk5nJ1JF0V/w8fi6ky45dP4CAAD//wMAcfVJhL8CAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7cf48d0849d73e6a-ADL
+      - 7dea923eaf27a1b0-BKK
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -366,39 +327,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 30 May 2023 05:24:34 GMT
-      Server:
-      - cloudflare
+      - Thu, 29 Jun 2023 01:59:42 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400
       openai-model:
-      - gpt-3.5-turbo-0301
-      openai-organization:
-      - user-dpc5ftw8bvmpxblb49hwviq5
+      - gpt-3.5-turbo-0613
       openai-processing-ms:
-      - '6561'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3500'
-      x-ratelimit-limit-tokens:
-      - '90000'
-      x-ratelimit-remaining-requests:
-      - '3499'
-      x-ratelimit-remaining-tokens:
-      - '89439'
-      x-ratelimit-reset-requests:
-      - 17ms
-      x-ratelimit-reset-tokens:
-      - 374ms
-      x-request-id:
-      - 66a59fa0cbdb362ecc0a7371c0a06b7b
+      - '3673'
     status:
       code: 200
       message: OK
@@ -416,9 +351,22 @@ interactions:
       is in which table.\nPay attention to use date(''now'') function to get the current
       date, if the question involves \"today\".\n\nUse the following format:\n\nQuestion:
       Question here\nSQLQuery: SQL Query to run\nSQLResult: Result of the SQLQuery\nAnswer:
-      Final answer here\n\nOnly use the following tables:\n\nCREATE TABLE \"Artist\"
-      (\n\t\"ArtistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120), \n\tPRIMARY
-      KEY (\"ArtistId\")\n)\n\n/*\n3 rows from Artist table:\nArtistId\tName\n1\tAC/DC\n2\tAccept\n3\tAerosmith\n*/\n\n\nCREATE
+      Final answer here\n\nOnly use the following tables:\n\nCREATE TABLE \"Album\"
+      (\n\t\"AlbumId\" INTEGER NOT NULL, \n\t\"Title\" NVARCHAR(160) NOT NULL, \n\t\"ArtistId\"
+      INTEGER NOT NULL, \n\tPRIMARY KEY (\"AlbumId\"), \n\tFOREIGN KEY(\"ArtistId\")
+      REFERENCES \"Artist\" (\"ArtistId\")\n)\n\n/*\n3 rows from Album table:\nAlbumId\tTitle\tArtistId\n1\tFor
+      Those About To Rock We Salute You\t1\n2\tBalls to the Wall\t2\n3\tRestless and
+      Wild\t2\n*/\n\n\nCREATE TABLE \"Artist\" (\n\t\"ArtistId\" INTEGER NOT NULL,
+      \n\t\"Name\" NVARCHAR(120), \n\tPRIMARY KEY (\"ArtistId\")\n)\n\n/*\n3 rows
+      from Artist table:\nArtistId\tName\n1\tAC/DC\n2\tAccept\n3\tAerosmith\n*/\n\n\nCREATE
+      TABLE \"Customer\" (\n\t\"CustomerId\" INTEGER NOT NULL, \n\t\"FirstName\" NVARCHAR(40)
+      NOT NULL, \n\t\"LastName\" NVARCHAR(20) NOT NULL, \n\t\"Company\" NVARCHAR(80),
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60) NOT NULL,
+      \n\t\"SupportRepId\" INTEGER, \n\tPRIMARY KEY (\"CustomerId\"), \n\tFOREIGN
+      KEY(\"SupportRepId\") REFERENCES \"Employee\" (\"EmployeeId\")\n)\n\n/*\n3 rows
+      from Customer table:\nCustomerId\tFirstName\tLastName\tCompany\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\tSupportRepId\n\n*/\n\n\nCREATE
       TABLE \"Employee\" (\n\t\"EmployeeId\" INTEGER NOT NULL, \n\t\"LastName\" NVARCHAR(20)
       NOT NULL, \n\t\"FirstName\" NVARCHAR(20) NOT NULL, \n\t\"Title\" NVARCHAR(30),
       \n\t\"ReportsTo\" INTEGER, \n\t\"BirthDate\" DATETIME, \n\t\"HireDate\" DATETIME,
@@ -429,84 +377,58 @@ interactions:
       (\"EmployeeId\")\n)\n\n/*\n3 rows from Employee table:\nEmployeeId\tLastName\tFirstName\tTitle\tReportsTo\tBirthDate\tHireDate\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\n\n*/\n\n\nCREATE
       TABLE \"Genre\" (\n\t\"GenreId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
       \n\tPRIMARY KEY (\"GenreId\")\n)\n\n/*\n3 rows from Genre table:\nGenreId\tName\n1\tRock\n2\tJazz\n3\tMetal\n*/\n\n\nCREATE
-      TABLE \"MediaType\" (\n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
-      \n\tPRIMARY KEY (\"MediaTypeId\")\n)\n\n/*\n3 rows from MediaType table:\nMediaTypeId\tName\n1\tMPEG
-      audio file\n2\tProtected AAC audio file\n3\tProtected MPEG-4 video file\n*/\n\n\nCREATE
-      TABLE \"Playlist\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
-      \n\tPRIMARY KEY (\"PlaylistId\")\n)\n\n/*\n3 rows from Playlist table:\nPlaylistId\tName\n\n*/\n\n\nCREATE
-      TABLE \"Album\" (\n\t\"AlbumId\" INTEGER NOT NULL, \n\t\"Title\" NVARCHAR(160)
-      NOT NULL, \n\t\"ArtistId\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"AlbumId\"),
-      \n\tFOREIGN KEY(\"ArtistId\") REFERENCES \"Artist\" (\"ArtistId\")\n)\n\n/*\n3
-      rows from Album table:\nAlbumId\tTitle\tArtistId\n1\tFor Those About To Rock
-      We Salute You\t1\n2\tBalls to the Wall\t2\n3\tRestless and Wild\t2\n*/\n\n\nCREATE
-      TABLE \"Customer\" (\n\t\"CustomerId\" INTEGER NOT NULL, \n\t\"FirstName\" NVARCHAR(40)
-      NOT NULL, \n\t\"LastName\" NVARCHAR(20) NOT NULL, \n\t\"Company\" NVARCHAR(80),
-      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
-      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
-      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60) NOT NULL,
-      \n\t\"SupportRepId\" INTEGER, \n\tPRIMARY KEY (\"CustomerId\"), \n\tFOREIGN
-      KEY(\"SupportRepId\") REFERENCES \"Employee\" (\"EmployeeId\")\n)\n\n/*\n3 rows
-      from Customer table:\nCustomerId\tFirstName\tLastName\tCompany\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\tSupportRepId\n\n*/\n\n\nCREATE
       TABLE \"Invoice\" (\n\t\"InvoiceId\" INTEGER NOT NULL, \n\t\"CustomerId\" INTEGER
       NOT NULL, \n\t\"InvoiceDate\" DATETIME NOT NULL, \n\t\"BillingAddress\" NVARCHAR(70),
       \n\t\"BillingCity\" NVARCHAR(40), \n\t\"BillingState\" NVARCHAR(40), \n\t\"BillingCountry\"
       NVARCHAR(40), \n\t\"BillingPostalCode\" NVARCHAR(10), \n\t\"Total\" NUMERIC(10,
       2) NOT NULL, \n\tPRIMARY KEY (\"InvoiceId\"), \n\tFOREIGN KEY(\"CustomerId\")
       REFERENCES \"Customer\" (\"CustomerId\")\n)\n\n/*\n3 rows from Invoice table:\nInvoiceId\tCustomerId\tInvoiceDate\tBillingAddress\tBillingCity\tBillingState\tBillingCountry\tBillingPostalCode\tTotal\n\n*/\n\n\nCREATE
-      TABLE \"Track\" (\n\t\"TrackId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(200)
-      NOT NULL, \n\t\"AlbumId\" INTEGER, \n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"GenreId\"
-      INTEGER, \n\t\"Composer\" NVARCHAR(220), \n\t\"Milliseconds\" INTEGER NOT NULL,
-      \n\t\"Bytes\" INTEGER, \n\t\"UnitPrice\" NUMERIC(10, 2) NOT NULL, \n\tPRIMARY
-      KEY (\"TrackId\"), \n\tFOREIGN KEY(\"MediaTypeId\") REFERENCES \"MediaType\"
-      (\"MediaTypeId\"), \n\tFOREIGN KEY(\"GenreId\") REFERENCES \"Genre\" (\"GenreId\"),
-      \n\tFOREIGN KEY(\"AlbumId\") REFERENCES \"Album\" (\"AlbumId\")\n)\n\n/*\n3
-      rows from Track table:\nTrackId\tName\tAlbumId\tMediaTypeId\tGenreId\tComposer\tMilliseconds\tBytes\tUnitPrice\n1\tFor
-      Those About To Rock (We Salute You)\t1\t1\t1\tAngus Young, Malcolm Young, Brian
-      Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
-      As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\n\nCREATE
       TABLE \"InvoiceLine\" (\n\t\"InvoiceLineId\" INTEGER NOT NULL, \n\t\"InvoiceId\"
       INTEGER NOT NULL, \n\t\"TrackId\" INTEGER NOT NULL, \n\t\"UnitPrice\" NUMERIC(10,
       2) NOT NULL, \n\t\"Quantity\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"InvoiceLineId\"),
       \n\tFOREIGN KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN
       KEY(\"InvoiceId\") REFERENCES \"Invoice\" (\"InvoiceId\")\n)\n\n/*\n3 rows from
       InvoiceLine table:\nInvoiceLineId\tInvoiceId\tTrackId\tUnitPrice\tQuantity\n\n*/\n\n\nCREATE
+      TABLE \"MediaType\" (\n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"MediaTypeId\")\n)\n\n/*\n3 rows from MediaType table:\nMediaTypeId\tName\n1\tMPEG
+      audio file\n2\tProtected AAC audio file\n3\tProtected MPEG-4 video file\n*/\n\n\nCREATE
+      TABLE \"Playlist\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"PlaylistId\")\n)\n\n/*\n3 rows from Playlist table:\nPlaylistId\tName\n\n*/\n\n\nCREATE
       TABLE \"PlaylistTrack\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"TrackId\"
       INTEGER NOT NULL, \n\tPRIMARY KEY (\"PlaylistId\", \"TrackId\"), \n\tFOREIGN
       KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN KEY(\"PlaylistId\")
       REFERENCES \"Playlist\" (\"PlaylistId\")\n)\n\n/*\n3 rows from PlaylistTrack
-      table:\nPlaylistId\tTrackId\n\n*/\n\nQuestion: What albums does Alanis Morissette
-      have in the database?\nSQLQuery:"], "model": "text-davinci-003", "temperature":
+      table:\nPlaylistId\tTrackId\n\n*/\n\n\nCREATE TABLE \"Track\" (\n\t\"TrackId\"
+      INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(200) NOT NULL, \n\t\"AlbumId\" INTEGER,
+      \n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"GenreId\" INTEGER, \n\t\"Composer\"
+      NVARCHAR(220), \n\t\"Milliseconds\" INTEGER NOT NULL, \n\t\"Bytes\" INTEGER,
+      \n\t\"UnitPrice\" NUMERIC(10, 2) NOT NULL, \n\tPRIMARY KEY (\"TrackId\"), \n\tFOREIGN
+      KEY(\"MediaTypeId\") REFERENCES \"MediaType\" (\"MediaTypeId\"), \n\tFOREIGN
+      KEY(\"GenreId\") REFERENCES \"Genre\" (\"GenreId\"), \n\tFOREIGN KEY(\"AlbumId\")
+      REFERENCES \"Album\" (\"AlbumId\")\n)\n\n/*\n3 rows from Track table:\nTrackId\tName\tAlbumId\tMediaTypeId\tGenreId\tComposer\tMilliseconds\tBytes\tUnitPrice\n1\tFor
+      Those About To Rock (We Salute You)\t1\t1\t1\tAngus Young, Malcolm Young, Brian
+      Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
+      As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\nQuestion:
+      Alanis Morissette\nSQLQuery:"], "model": "text-davinci-003", "temperature":
       0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
       0, "n": 1, "logit_bias": {}, "stop": ["\nSQLResult:"]}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '6608'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.7
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA1TQT0/CMBjH8buvovlduBQz5safGg+EzDj+jDgxHpwho6tQ7dplLbhIeO8GoqLX
-        3/eT5/DsIQsw8LJS7d607N/3HkfDycc4HESTlKudDT95M/LGV6AwqzfBHRicaNySm7JSwkmjQcFr
-        kTtRgHW6/TDwA78XUJSmEOqbt4t8JzWXbc87nuIbI7mwYM/7UwYDeYim0WhBMiykUyIDuU3nM5Jh
-        qFbbMgOJkyRKyXgeJ8exdtK6DGSenMnlzx4XGcjNH/a/PN1FaUQyJHkpTrA1VLmWlsxMLa0VzokW
-        mcazeEHCa1BIXYgGzKNQZl3VZmXB9FYpileppd0sa5Fbo8FgnalweKHY2nwtwPaoalNWbunMu9AW
-        zO90uxTn3/2GYEDhjMvVmfqd8HC4+AIAAP//AwCeahD/ogEAAA==
+        H4sIAAAAAAAAA0yQQU/CQBCF7/0Vk0kIF0laK1DriZg1EKgokmBiDVnaAVa3u013MSDhv5stCFzm
+        MN+892Zm7wGgyDEGzIpStrqzBctn43fW73SHv+tl+BL0jHptB7uELfHGTevFF2XWKSxt7TzTRSnJ
+        Cq2OOKuIW3KOQSeKfD+8j8IaFDon+S9r5fxHqEy0fD886dZaZGQwhg8PAGBfVziOOxm8sRF7nEKK
+        z7ygFOFpMk4gxV5lhbEpwqzPJuyCR4Mhg2ajJ7kSBhJdCWPIWmo0YTRIBlNoP9TJdYhQOW0xBv/c
+        kXpVVnrhFlIbKc/9pVDCrOcVcaOV28tYXWJNDx7AZ33MxvAVYXw6AstKF6WdW/1NyhneBu3oaIiX
+        913hzglabbm8lkV3nos5eH8AAAD//wMAdMw/RbgBAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7cf48d32ec2c3e6a-ADL
+      - 7dea925b386ea1b0-BKK
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -516,39 +438,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 30 May 2023 05:24:42 GMT
-      Server:
-      - cloudflare
+      - Thu, 29 Jun 2023 01:59:47 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-dpc5ftw8bvmpxblb49hwviq5
       openai-processing-ms:
-      - '8099'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
-      - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
-      - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
-      - 61ms
-      x-request-id:
-      - 182d6eb57578e31d4eb78daa4cbe3b14
+      - '4269'
     status:
       code: 200
       message: OK
@@ -566,9 +462,22 @@ interactions:
       is in which table.\nPay attention to use date(''now'') function to get the current
       date, if the question involves \"today\".\n\nUse the following format:\n\nQuestion:
       Question here\nSQLQuery: SQL Query to run\nSQLResult: Result of the SQLQuery\nAnswer:
-      Final answer here\n\nOnly use the following tables:\n\nCREATE TABLE \"Artist\"
-      (\n\t\"ArtistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120), \n\tPRIMARY
-      KEY (\"ArtistId\")\n)\n\n/*\n3 rows from Artist table:\nArtistId\tName\n1\tAC/DC\n2\tAccept\n3\tAerosmith\n*/\n\n\nCREATE
+      Final answer here\n\nOnly use the following tables:\n\nCREATE TABLE \"Album\"
+      (\n\t\"AlbumId\" INTEGER NOT NULL, \n\t\"Title\" NVARCHAR(160) NOT NULL, \n\t\"ArtistId\"
+      INTEGER NOT NULL, \n\tPRIMARY KEY (\"AlbumId\"), \n\tFOREIGN KEY(\"ArtistId\")
+      REFERENCES \"Artist\" (\"ArtistId\")\n)\n\n/*\n3 rows from Album table:\nAlbumId\tTitle\tArtistId\n1\tFor
+      Those About To Rock We Salute You\t1\n2\tBalls to the Wall\t2\n3\tRestless and
+      Wild\t2\n*/\n\n\nCREATE TABLE \"Artist\" (\n\t\"ArtistId\" INTEGER NOT NULL,
+      \n\t\"Name\" NVARCHAR(120), \n\tPRIMARY KEY (\"ArtistId\")\n)\n\n/*\n3 rows
+      from Artist table:\nArtistId\tName\n1\tAC/DC\n2\tAccept\n3\tAerosmith\n*/\n\n\nCREATE
+      TABLE \"Customer\" (\n\t\"CustomerId\" INTEGER NOT NULL, \n\t\"FirstName\" NVARCHAR(40)
+      NOT NULL, \n\t\"LastName\" NVARCHAR(20) NOT NULL, \n\t\"Company\" NVARCHAR(80),
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60) NOT NULL,
+      \n\t\"SupportRepId\" INTEGER, \n\tPRIMARY KEY (\"CustomerId\"), \n\tFOREIGN
+      KEY(\"SupportRepId\") REFERENCES \"Employee\" (\"EmployeeId\")\n)\n\n/*\n3 rows
+      from Customer table:\nCustomerId\tFirstName\tLastName\tCompany\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\tSupportRepId\n\n*/\n\n\nCREATE
       TABLE \"Employee\" (\n\t\"EmployeeId\" INTEGER NOT NULL, \n\t\"LastName\" NVARCHAR(20)
       NOT NULL, \n\t\"FirstName\" NVARCHAR(20) NOT NULL, \n\t\"Title\" NVARCHAR(30),
       \n\t\"ReportsTo\" INTEGER, \n\t\"BirthDate\" DATETIME, \n\t\"HireDate\" DATETIME,
@@ -579,85 +488,59 @@ interactions:
       (\"EmployeeId\")\n)\n\n/*\n3 rows from Employee table:\nEmployeeId\tLastName\tFirstName\tTitle\tReportsTo\tBirthDate\tHireDate\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\n\n*/\n\n\nCREATE
       TABLE \"Genre\" (\n\t\"GenreId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
       \n\tPRIMARY KEY (\"GenreId\")\n)\n\n/*\n3 rows from Genre table:\nGenreId\tName\n1\tRock\n2\tJazz\n3\tMetal\n*/\n\n\nCREATE
-      TABLE \"MediaType\" (\n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
-      \n\tPRIMARY KEY (\"MediaTypeId\")\n)\n\n/*\n3 rows from MediaType table:\nMediaTypeId\tName\n1\tMPEG
-      audio file\n2\tProtected AAC audio file\n3\tProtected MPEG-4 video file\n*/\n\n\nCREATE
-      TABLE \"Playlist\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
-      \n\tPRIMARY KEY (\"PlaylistId\")\n)\n\n/*\n3 rows from Playlist table:\nPlaylistId\tName\n\n*/\n\n\nCREATE
-      TABLE \"Album\" (\n\t\"AlbumId\" INTEGER NOT NULL, \n\t\"Title\" NVARCHAR(160)
-      NOT NULL, \n\t\"ArtistId\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"AlbumId\"),
-      \n\tFOREIGN KEY(\"ArtistId\") REFERENCES \"Artist\" (\"ArtistId\")\n)\n\n/*\n3
-      rows from Album table:\nAlbumId\tTitle\tArtistId\n1\tFor Those About To Rock
-      We Salute You\t1\n2\tBalls to the Wall\t2\n3\tRestless and Wild\t2\n*/\n\n\nCREATE
-      TABLE \"Customer\" (\n\t\"CustomerId\" INTEGER NOT NULL, \n\t\"FirstName\" NVARCHAR(40)
-      NOT NULL, \n\t\"LastName\" NVARCHAR(20) NOT NULL, \n\t\"Company\" NVARCHAR(80),
-      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
-      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
-      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60) NOT NULL,
-      \n\t\"SupportRepId\" INTEGER, \n\tPRIMARY KEY (\"CustomerId\"), \n\tFOREIGN
-      KEY(\"SupportRepId\") REFERENCES \"Employee\" (\"EmployeeId\")\n)\n\n/*\n3 rows
-      from Customer table:\nCustomerId\tFirstName\tLastName\tCompany\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\tSupportRepId\n\n*/\n\n\nCREATE
       TABLE \"Invoice\" (\n\t\"InvoiceId\" INTEGER NOT NULL, \n\t\"CustomerId\" INTEGER
       NOT NULL, \n\t\"InvoiceDate\" DATETIME NOT NULL, \n\t\"BillingAddress\" NVARCHAR(70),
       \n\t\"BillingCity\" NVARCHAR(40), \n\t\"BillingState\" NVARCHAR(40), \n\t\"BillingCountry\"
       NVARCHAR(40), \n\t\"BillingPostalCode\" NVARCHAR(10), \n\t\"Total\" NUMERIC(10,
       2) NOT NULL, \n\tPRIMARY KEY (\"InvoiceId\"), \n\tFOREIGN KEY(\"CustomerId\")
       REFERENCES \"Customer\" (\"CustomerId\")\n)\n\n/*\n3 rows from Invoice table:\nInvoiceId\tCustomerId\tInvoiceDate\tBillingAddress\tBillingCity\tBillingState\tBillingCountry\tBillingPostalCode\tTotal\n\n*/\n\n\nCREATE
-      TABLE \"Track\" (\n\t\"TrackId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(200)
-      NOT NULL, \n\t\"AlbumId\" INTEGER, \n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"GenreId\"
-      INTEGER, \n\t\"Composer\" NVARCHAR(220), \n\t\"Milliseconds\" INTEGER NOT NULL,
-      \n\t\"Bytes\" INTEGER, \n\t\"UnitPrice\" NUMERIC(10, 2) NOT NULL, \n\tPRIMARY
-      KEY (\"TrackId\"), \n\tFOREIGN KEY(\"MediaTypeId\") REFERENCES \"MediaType\"
-      (\"MediaTypeId\"), \n\tFOREIGN KEY(\"GenreId\") REFERENCES \"Genre\" (\"GenreId\"),
-      \n\tFOREIGN KEY(\"AlbumId\") REFERENCES \"Album\" (\"AlbumId\")\n)\n\n/*\n3
-      rows from Track table:\nTrackId\tName\tAlbumId\tMediaTypeId\tGenreId\tComposer\tMilliseconds\tBytes\tUnitPrice\n1\tFor
-      Those About To Rock (We Salute You)\t1\t1\t1\tAngus Young, Malcolm Young, Brian
-      Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
-      As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\n\nCREATE
       TABLE \"InvoiceLine\" (\n\t\"InvoiceLineId\" INTEGER NOT NULL, \n\t\"InvoiceId\"
       INTEGER NOT NULL, \n\t\"TrackId\" INTEGER NOT NULL, \n\t\"UnitPrice\" NUMERIC(10,
       2) NOT NULL, \n\t\"Quantity\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"InvoiceLineId\"),
       \n\tFOREIGN KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN
       KEY(\"InvoiceId\") REFERENCES \"Invoice\" (\"InvoiceId\")\n)\n\n/*\n3 rows from
       InvoiceLine table:\nInvoiceLineId\tInvoiceId\tTrackId\tUnitPrice\tQuantity\n\n*/\n\n\nCREATE
+      TABLE \"MediaType\" (\n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"MediaTypeId\")\n)\n\n/*\n3 rows from MediaType table:\nMediaTypeId\tName\n1\tMPEG
+      audio file\n2\tProtected AAC audio file\n3\tProtected MPEG-4 video file\n*/\n\n\nCREATE
+      TABLE \"Playlist\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"PlaylistId\")\n)\n\n/*\n3 rows from Playlist table:\nPlaylistId\tName\n\n*/\n\n\nCREATE
       TABLE \"PlaylistTrack\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"TrackId\"
       INTEGER NOT NULL, \n\tPRIMARY KEY (\"PlaylistId\", \"TrackId\"), \n\tFOREIGN
       KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN KEY(\"PlaylistId\")
       REFERENCES \"Playlist\" (\"PlaylistId\")\n)\n\n/*\n3 rows from PlaylistTrack
-      table:\nPlaylistId\tTrackId\n\n*/\n\nQuestion: What albums does Alanis Morissette
-      have in the database?\nSQLQuery:SELECT \"Title\" FROM \"Album\" INNER JOIN \"Artist\"
-      ON \"Album\".\"ArtistId\" = \"Artist\".\"ArtistId\" WHERE \"Name\" = ''Alanis
-      Morissette'' LIMIT 5;\nSQLResult: [(''Jagged Little Pill'',)]\nAnswer:"], "model":
-      "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty":
-      0, "presence_penalty": 0, "n": 1, "logit_bias": {}, "stop": ["\nSQLResult:"]}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '6806'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.7
+      table:\nPlaylistId\tTrackId\n\n*/\n\n\nCREATE TABLE \"Track\" (\n\t\"TrackId\"
+      INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(200) NOT NULL, \n\t\"AlbumId\" INTEGER,
+      \n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"GenreId\" INTEGER, \n\t\"Composer\"
+      NVARCHAR(220), \n\t\"Milliseconds\" INTEGER NOT NULL, \n\t\"Bytes\" INTEGER,
+      \n\t\"UnitPrice\" NUMERIC(10, 2) NOT NULL, \n\tPRIMARY KEY (\"TrackId\"), \n\tFOREIGN
+      KEY(\"MediaTypeId\") REFERENCES \"MediaType\" (\"MediaTypeId\"), \n\tFOREIGN
+      KEY(\"GenreId\") REFERENCES \"Genre\" (\"GenreId\"), \n\tFOREIGN KEY(\"AlbumId\")
+      REFERENCES \"Album\" (\"AlbumId\")\n)\n\n/*\n3 rows from Track table:\nTrackId\tName\tAlbumId\tMediaTypeId\tGenreId\tComposer\tMilliseconds\tBytes\tUnitPrice\n1\tFor
+      Those About To Rock (We Salute You)\t1\t1\t1\tAngus Young, Malcolm Young, Brian
+      Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
+      As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\nQuestion:
+      Alanis Morissette\nSQLQuery:SELECT \"Name\" FROM \"Artist\" WHERE \"Name\" LIKE
+      ''%Alanis Morissette%'' LIMIT 5;\nSQLResult: [(''Alanis Morissette'',)]\nAnswer:"],
+      "model": "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {},
+      "stop": ["\nSQLResult:"]}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0zPzUrDQBSG4b1XMXzrqaRpbMvs7MJFf6AgIihSJpnTZOpkTsyclmLovYtF1PX7
-        bN4B3sGgarswmq3b+ctTzqvDabb9bD82D8vn/WLV7x8XWQENLg9UCQyEzrKruO0CiecIjaonK+Rg
-        xtP5XZEX+Xyi0bKj8MNHzp58rPwoyybfvmFfUYJ5Ha4ZBuo+2OiT2nDvUyIRUo1NShpSNpTHVi1t
-        XZNTay8SSG19CMrHa3dWbGkT3ULDR0dnmEwjcN31XCaYeAxBY++jT82uJ5s4wiAJd7i8aRyTrQlm
-        QNdz28lO+J1igsnzSabx9/kbxlMNYbHhHy2ml8vNFwAAAP//AwDDd59qTgEAAA==
+        H4sIAAAAAAAAA1SPwU7DMAyG730KK2cqhU7bSm8MAQeEhHYBhNCUpqYNS+Oo8djQtHdHycqmXXLw
+        93+/nX0GIEwjKhC69zafv9b3XSF/n1787O5tuV00a/m4fFi8Y7FtxVVMU/2NmqPBuOOVpt5bZEPu
+        iPWAijE2Xs/KUsrJTTlPoKcG7b+WN+rHOG1yKSej15HRGEQFHxkAwD69cIxHDW6tcibAMw0mBGTG
+        JKaMcQ3uRAXyNLHU+oHq2Oc21p7mX8aZ0K0GVIFcrA1MXiR6yAA+0y2boFoU1XiD8AP1nldMa3Sx
+        sCjkuEicf3/G05ExsbIX1jSLWw7ZHwAAAP//AwCdNcuCdgEAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7cf48d674ac63e6a-ADL
+      - 7dea9279ddcca1b0-BKK
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -667,39 +550,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 30 May 2023 05:24:45 GMT
-      Server:
-      - cloudflare
+      - Thu, 29 Jun 2023 01:59:49 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-dpc5ftw8bvmpxblb49hwviq5
       openai-processing-ms:
-      - '2298'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
-      - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
-      - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
-      - 61ms
-      x-request-id:
-      - 506847947c994054e89cc6c1d93652ea
+      - '1847'
     status:
       code: 200
       message: OK
@@ -725,49 +582,35 @@ interactions:
       full name of the artist who recently released an album called ''The Storm Before
       the Calm'' and are they in the FooBar database? If so, what albums of theirs
       are in the FooBar database?\n\nThis was your previous work (but I haven''t seen
-      any of it! I only see what you return as final answer):\nQuestion: What is the
-      full name of the artist who recently released an album called ''The Storm Before
-      the Calm'' and are they in the FooBar database? If so, what albums of theirs
-      are in the FooBar database?\nThought: I should use the Search tool to find the
-      answer to the first part of the question and then use the FooBar DB tool to
-      find the answer to the second part.\nAction:\n```\n{\n  \"action\": \"Search\",\n  \"action_input\":
-      \"Who recently released an album called ''The Storm Before the Calm''\"\n}\n```\n\nObservation:
-      Alanis Morissette\nThought:Now that I know the artist''s name, I can use the
-      FooBar DB tool to find out if they are in the database and what albums of theirs
-      are in it.\nAction:\n```\n{\n  \"action\": \"FooBar DB\",\n  \"action_input\":
-      \"What albums does Alanis Morissette have in the database?\"\n}\n```\n\n\nObservation:
-      Alanis Morissette has the album Jagged Little Pill in the database.\nThought:"}],
-      "model": "gpt-3.5-turbo", "max_tokens": null, "stream": false, "n": 1, "temperature":
-      0.0, "stop": ["Observation:"]}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '2803'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.7
+      any of it! I only see what you return as final answer):\nThought: I need to
+      search for the artist who recently released an album called ''The Storm Before
+      the Calm'' and check if they are in the FooBar database.\n\nAction:\n```\n{\n  \"action\":
+      \"Search\",\n  \"action_input\": \"artist who recently released an album called
+      ''The Storm Before the Calm''\"\n}\n```\nObservation: Alanis Morissette \u2013
+      The Storm Before The Calm.\nThought:The artist who recently released an album
+      called ''The Storm Before the Calm'' is Alanis Morissette. Now I need to check
+      if she is in the FooBar database and if so, what albums of hers are in the database.\n\nAction:\n```\n{\n  \"action\":
+      \"FooBar DB\",\n  \"action_input\": \"Alanis Morissette\"\n}\n```\n\nObservation:
+      Alanis Morissette\nThought:"}], "model": "gpt-3.5-turbo", "max_tokens": null,
+      "stream": false, "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA7SOzU7DMBCE7zyFtWenSvpH5Vs5FAmKBBIIiR9Vm3ibGBw7eDdQUeXdURHQJ+A6
-        M9/M7MFZMFA1KFXb+ex03S7KrX1/W99fhpuwezj9rKW/K87LnR+Dhli+UCU/xKiKbedJXAygoUqE
-        QhZMMV/MpuPpeDHT0EZLHgzUnWST0SyTPpUxyyd5ARp6xprA7KFLse1kI/GVAoOZF4WGY/efPss1
-        SBT0x+S8GDRUTXQVMZjHPbTEv60pegIDyOxYMMjhYwxC4fD/tiGFSRyLWnoMjtVVTI6ZREg5Vi4o
-        aUitYjzDpCwKlsikMFjVIH976Mu+VRdY12TV2ol4UtfO+wPrZKSewsoF9GoZ+IOS+a8dGDRsXXDc
-        bBIhxwAGWGIHGlywtAOTD8/DyRcAAAD//wMA39ofuuoBAAA=
+        H4sIAAAAAAAAA2RRTU/bQBC9+1eM9pxE+SAh+BagICSgVS8c2CpZryd4iz3j7oxFqyj/HdkxCRWX
+        Pbw3783bN7sEwITcpGB84dRXdTk8f8q+vf68f/z+52p+6x8KuT2blDfX5z+mK1mZQavg7Dd6/VCN
+        PFd1iRqYDrSP6BRb18liuRyPZxcX446oOMeylb3UOpyN5kNtYsbD8WIy65UFB49iUnhOAAB23dtm
+        pBz/mhQ6nw6pUMS9oEmPQwAmctkixokEUUdqBifSMylSF3tVOgoCDxyDCKoiBIFAoAXCDfOli5A7
+        dZkTHMEjv8EdEGIOyrANlAM3Cm+FU3Bl1lQCvIUCo4CL+GFz1FuytPJtO6mlzWZjaWcJwBrXgdak
+        YE2/9PrSmsFndh2obvQw0+/K/sGX+NZY2vfulkz/5/2xrG2gIMU6ohOmtgBRrg9j+wTgV1d+81+f
+        po5c1bpWfkVqLzJfnB38zOnen9hlTyqrK0/4YjpN2iX75B0AAP//AwCdWslMbAIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7cf48d7768543e6a-ADL
+      - 7dea92880ebda1b0-BKK
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -777,39 +620,314 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 30 May 2023 05:24:49 GMT
-      Server:
-      - cloudflare
+      - Thu, 29 Jun 2023 01:59:53 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400
       openai-model:
-      - gpt-3.5-turbo-0301
-      openai-organization:
-      - user-dpc5ftw8bvmpxblb49hwviq5
+      - gpt-3.5-turbo-0613
       openai-processing-ms:
-      - '4300'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3500'
-      x-ratelimit-limit-tokens:
-      - '90000'
-      x-ratelimit-remaining-requests:
-      - '3499'
-      x-ratelimit-remaining-tokens:
-      - '89350'
-      x-ratelimit-reset-requests:
-      - 17ms
-      x-ratelimit-reset-tokens:
-      - 432ms
-      x-request-id:
-      - ed3df3b2394d3c123a17d3a8abad0828
+      - '2713'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"prompt": ["You are a SQLite expert. Given an input question, first create
+      a syntactically correct SQLite query to run, then look at the results of the
+      query and return the answer to the input question.\nUnless the user specifies
+      in the question a specific number of examples to obtain, query for at most 5
+      results using the LIMIT clause as per SQLite. You can order the results to return
+      the most informative data in the database.\nNever query for all columns from
+      a table. You must query only the columns that are needed to answer the question.
+      Wrap each column name in double quotes (\") to denote them as delimited identifiers.\nPay
+      attention to use only the column names you can see in the tables below. Be careful
+      to not query for columns that do not exist. Also, pay attention to which column
+      is in which table.\nPay attention to use date(''now'') function to get the current
+      date, if the question involves \"today\".\n\nUse the following format:\n\nQuestion:
+      Question here\nSQLQuery: SQL Query to run\nSQLResult: Result of the SQLQuery\nAnswer:
+      Final answer here\n\nOnly use the following tables:\n\nCREATE TABLE \"Album\"
+      (\n\t\"AlbumId\" INTEGER NOT NULL, \n\t\"Title\" NVARCHAR(160) NOT NULL, \n\t\"ArtistId\"
+      INTEGER NOT NULL, \n\tPRIMARY KEY (\"AlbumId\"), \n\tFOREIGN KEY(\"ArtistId\")
+      REFERENCES \"Artist\" (\"ArtistId\")\n)\n\n/*\n3 rows from Album table:\nAlbumId\tTitle\tArtistId\n1\tFor
+      Those About To Rock We Salute You\t1\n2\tBalls to the Wall\t2\n3\tRestless and
+      Wild\t2\n*/\n\n\nCREATE TABLE \"Artist\" (\n\t\"ArtistId\" INTEGER NOT NULL,
+      \n\t\"Name\" NVARCHAR(120), \n\tPRIMARY KEY (\"ArtistId\")\n)\n\n/*\n3 rows
+      from Artist table:\nArtistId\tName\n1\tAC/DC\n2\tAccept\n3\tAerosmith\n*/\n\n\nCREATE
+      TABLE \"Customer\" (\n\t\"CustomerId\" INTEGER NOT NULL, \n\t\"FirstName\" NVARCHAR(40)
+      NOT NULL, \n\t\"LastName\" NVARCHAR(20) NOT NULL, \n\t\"Company\" NVARCHAR(80),
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60) NOT NULL,
+      \n\t\"SupportRepId\" INTEGER, \n\tPRIMARY KEY (\"CustomerId\"), \n\tFOREIGN
+      KEY(\"SupportRepId\") REFERENCES \"Employee\" (\"EmployeeId\")\n)\n\n/*\n3 rows
+      from Customer table:\nCustomerId\tFirstName\tLastName\tCompany\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\tSupportRepId\n\n*/\n\n\nCREATE
+      TABLE \"Employee\" (\n\t\"EmployeeId\" INTEGER NOT NULL, \n\t\"LastName\" NVARCHAR(20)
+      NOT NULL, \n\t\"FirstName\" NVARCHAR(20) NOT NULL, \n\t\"Title\" NVARCHAR(30),
+      \n\t\"ReportsTo\" INTEGER, \n\t\"BirthDate\" DATETIME, \n\t\"HireDate\" DATETIME,
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60), \n\tPRIMARY
+      KEY (\"EmployeeId\"), \n\tFOREIGN KEY(\"ReportsTo\") REFERENCES \"Employee\"
+      (\"EmployeeId\")\n)\n\n/*\n3 rows from Employee table:\nEmployeeId\tLastName\tFirstName\tTitle\tReportsTo\tBirthDate\tHireDate\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\n\n*/\n\n\nCREATE
+      TABLE \"Genre\" (\n\t\"GenreId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"GenreId\")\n)\n\n/*\n3 rows from Genre table:\nGenreId\tName\n1\tRock\n2\tJazz\n3\tMetal\n*/\n\n\nCREATE
+      TABLE \"Invoice\" (\n\t\"InvoiceId\" INTEGER NOT NULL, \n\t\"CustomerId\" INTEGER
+      NOT NULL, \n\t\"InvoiceDate\" DATETIME NOT NULL, \n\t\"BillingAddress\" NVARCHAR(70),
+      \n\t\"BillingCity\" NVARCHAR(40), \n\t\"BillingState\" NVARCHAR(40), \n\t\"BillingCountry\"
+      NVARCHAR(40), \n\t\"BillingPostalCode\" NVARCHAR(10), \n\t\"Total\" NUMERIC(10,
+      2) NOT NULL, \n\tPRIMARY KEY (\"InvoiceId\"), \n\tFOREIGN KEY(\"CustomerId\")
+      REFERENCES \"Customer\" (\"CustomerId\")\n)\n\n/*\n3 rows from Invoice table:\nInvoiceId\tCustomerId\tInvoiceDate\tBillingAddress\tBillingCity\tBillingState\tBillingCountry\tBillingPostalCode\tTotal\n\n*/\n\n\nCREATE
+      TABLE \"InvoiceLine\" (\n\t\"InvoiceLineId\" INTEGER NOT NULL, \n\t\"InvoiceId\"
+      INTEGER NOT NULL, \n\t\"TrackId\" INTEGER NOT NULL, \n\t\"UnitPrice\" NUMERIC(10,
+      2) NOT NULL, \n\t\"Quantity\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"InvoiceLineId\"),
+      \n\tFOREIGN KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN
+      KEY(\"InvoiceId\") REFERENCES \"Invoice\" (\"InvoiceId\")\n)\n\n/*\n3 rows from
+      InvoiceLine table:\nInvoiceLineId\tInvoiceId\tTrackId\tUnitPrice\tQuantity\n\n*/\n\n\nCREATE
+      TABLE \"MediaType\" (\n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"MediaTypeId\")\n)\n\n/*\n3 rows from MediaType table:\nMediaTypeId\tName\n1\tMPEG
+      audio file\n2\tProtected AAC audio file\n3\tProtected MPEG-4 video file\n*/\n\n\nCREATE
+      TABLE \"Playlist\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"PlaylistId\")\n)\n\n/*\n3 rows from Playlist table:\nPlaylistId\tName\n\n*/\n\n\nCREATE
+      TABLE \"PlaylistTrack\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"TrackId\"
+      INTEGER NOT NULL, \n\tPRIMARY KEY (\"PlaylistId\", \"TrackId\"), \n\tFOREIGN
+      KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN KEY(\"PlaylistId\")
+      REFERENCES \"Playlist\" (\"PlaylistId\")\n)\n\n/*\n3 rows from PlaylistTrack
+      table:\nPlaylistId\tTrackId\n\n*/\n\n\nCREATE TABLE \"Track\" (\n\t\"TrackId\"
+      INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(200) NOT NULL, \n\t\"AlbumId\" INTEGER,
+      \n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"GenreId\" INTEGER, \n\t\"Composer\"
+      NVARCHAR(220), \n\t\"Milliseconds\" INTEGER NOT NULL, \n\t\"Bytes\" INTEGER,
+      \n\t\"UnitPrice\" NUMERIC(10, 2) NOT NULL, \n\tPRIMARY KEY (\"TrackId\"), \n\tFOREIGN
+      KEY(\"MediaTypeId\") REFERENCES \"MediaType\" (\"MediaTypeId\"), \n\tFOREIGN
+      KEY(\"GenreId\") REFERENCES \"Genre\" (\"GenreId\"), \n\tFOREIGN KEY(\"AlbumId\")
+      REFERENCES \"Album\" (\"AlbumId\")\n)\n\n/*\n3 rows from Track table:\nTrackId\tName\tAlbumId\tMediaTypeId\tGenreId\tComposer\tMilliseconds\tBytes\tUnitPrice\n1\tFor
+      Those About To Rock (We Salute You)\t1\t1\t1\tAngus Young, Malcolm Young, Brian
+      Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
+      As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\nQuestion:
+      albums by Alanis Morissette\nSQLQuery:"], "model": "text-davinci-003", "temperature":
+      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "logit_bias": {}, "stop": ["\nSQLResult:"]}'
+    headers: {}
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1SRXU/CMBSG7/crTs4NN2IGKLIZL4iZYQojTiImzpBuK1Dp2qUtgiH8d9MxPrzp
+        xfu87/nqzgFAlqMPmBUlb95N00Bshu/kI2iTxTx/Wb2qTVQoMoh+u3hl3TL9ppmxCUO3ZpbJouTU
+        MCkOOFOUGGortrq9nut2PK9TgULmlB9jzZz8MJGxput26txSsoxq9OHTAQDYVS8c7DYGb8EweJxA
+        ghNmOE0QnuLxCBLs83RdJAhhFAUxPI/DyIrKMG0ShHF0tlwf9TBPEB4ubP/JdBDEASQYkYJWxkaf
+        E8E0jKRiWlNjaAOG4SicwO19NX41KRM53aIP7knhclEqmdqtxJrzkz5ngunlTFGipbDLaSNLrOje
+        AfiqLrLWZEHRry+BpZJFaWZGrqiwBdutbt0Iz39wxjdeDY00hF/E2q7n2DZ75w8AAP//AwDWmfyd
+        /QEAAA==
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7dea929d3c8da1b0-BKK
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 Jun 2023 01:59:59 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '6234'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"prompt": ["You are a SQLite expert. Given an input question, first create
+      a syntactically correct SQLite query to run, then look at the results of the
+      query and return the answer to the input question.\nUnless the user specifies
+      in the question a specific number of examples to obtain, query for at most 5
+      results using the LIMIT clause as per SQLite. You can order the results to return
+      the most informative data in the database.\nNever query for all columns from
+      a table. You must query only the columns that are needed to answer the question.
+      Wrap each column name in double quotes (\") to denote them as delimited identifiers.\nPay
+      attention to use only the column names you can see in the tables below. Be careful
+      to not query for columns that do not exist. Also, pay attention to which column
+      is in which table.\nPay attention to use date(''now'') function to get the current
+      date, if the question involves \"today\".\n\nUse the following format:\n\nQuestion:
+      Question here\nSQLQuery: SQL Query to run\nSQLResult: Result of the SQLQuery\nAnswer:
+      Final answer here\n\nOnly use the following tables:\n\nCREATE TABLE \"Album\"
+      (\n\t\"AlbumId\" INTEGER NOT NULL, \n\t\"Title\" NVARCHAR(160) NOT NULL, \n\t\"ArtistId\"
+      INTEGER NOT NULL, \n\tPRIMARY KEY (\"AlbumId\"), \n\tFOREIGN KEY(\"ArtistId\")
+      REFERENCES \"Artist\" (\"ArtistId\")\n)\n\n/*\n3 rows from Album table:\nAlbumId\tTitle\tArtistId\n1\tFor
+      Those About To Rock We Salute You\t1\n2\tBalls to the Wall\t2\n3\tRestless and
+      Wild\t2\n*/\n\n\nCREATE TABLE \"Artist\" (\n\t\"ArtistId\" INTEGER NOT NULL,
+      \n\t\"Name\" NVARCHAR(120), \n\tPRIMARY KEY (\"ArtistId\")\n)\n\n/*\n3 rows
+      from Artist table:\nArtistId\tName\n1\tAC/DC\n2\tAccept\n3\tAerosmith\n*/\n\n\nCREATE
+      TABLE \"Customer\" (\n\t\"CustomerId\" INTEGER NOT NULL, \n\t\"FirstName\" NVARCHAR(40)
+      NOT NULL, \n\t\"LastName\" NVARCHAR(20) NOT NULL, \n\t\"Company\" NVARCHAR(80),
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60) NOT NULL,
+      \n\t\"SupportRepId\" INTEGER, \n\tPRIMARY KEY (\"CustomerId\"), \n\tFOREIGN
+      KEY(\"SupportRepId\") REFERENCES \"Employee\" (\"EmployeeId\")\n)\n\n/*\n3 rows
+      from Customer table:\nCustomerId\tFirstName\tLastName\tCompany\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\tSupportRepId\n\n*/\n\n\nCREATE
+      TABLE \"Employee\" (\n\t\"EmployeeId\" INTEGER NOT NULL, \n\t\"LastName\" NVARCHAR(20)
+      NOT NULL, \n\t\"FirstName\" NVARCHAR(20) NOT NULL, \n\t\"Title\" NVARCHAR(30),
+      \n\t\"ReportsTo\" INTEGER, \n\t\"BirthDate\" DATETIME, \n\t\"HireDate\" DATETIME,
+      \n\t\"Address\" NVARCHAR(70), \n\t\"City\" NVARCHAR(40), \n\t\"State\" NVARCHAR(40),
+      \n\t\"Country\" NVARCHAR(40), \n\t\"PostalCode\" NVARCHAR(10), \n\t\"Phone\"
+      NVARCHAR(24), \n\t\"Fax\" NVARCHAR(24), \n\t\"Email\" NVARCHAR(60), \n\tPRIMARY
+      KEY (\"EmployeeId\"), \n\tFOREIGN KEY(\"ReportsTo\") REFERENCES \"Employee\"
+      (\"EmployeeId\")\n)\n\n/*\n3 rows from Employee table:\nEmployeeId\tLastName\tFirstName\tTitle\tReportsTo\tBirthDate\tHireDate\tAddress\tCity\tState\tCountry\tPostalCode\tPhone\tFax\tEmail\n\n*/\n\n\nCREATE
+      TABLE \"Genre\" (\n\t\"GenreId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"GenreId\")\n)\n\n/*\n3 rows from Genre table:\nGenreId\tName\n1\tRock\n2\tJazz\n3\tMetal\n*/\n\n\nCREATE
+      TABLE \"Invoice\" (\n\t\"InvoiceId\" INTEGER NOT NULL, \n\t\"CustomerId\" INTEGER
+      NOT NULL, \n\t\"InvoiceDate\" DATETIME NOT NULL, \n\t\"BillingAddress\" NVARCHAR(70),
+      \n\t\"BillingCity\" NVARCHAR(40), \n\t\"BillingState\" NVARCHAR(40), \n\t\"BillingCountry\"
+      NVARCHAR(40), \n\t\"BillingPostalCode\" NVARCHAR(10), \n\t\"Total\" NUMERIC(10,
+      2) NOT NULL, \n\tPRIMARY KEY (\"InvoiceId\"), \n\tFOREIGN KEY(\"CustomerId\")
+      REFERENCES \"Customer\" (\"CustomerId\")\n)\n\n/*\n3 rows from Invoice table:\nInvoiceId\tCustomerId\tInvoiceDate\tBillingAddress\tBillingCity\tBillingState\tBillingCountry\tBillingPostalCode\tTotal\n\n*/\n\n\nCREATE
+      TABLE \"InvoiceLine\" (\n\t\"InvoiceLineId\" INTEGER NOT NULL, \n\t\"InvoiceId\"
+      INTEGER NOT NULL, \n\t\"TrackId\" INTEGER NOT NULL, \n\t\"UnitPrice\" NUMERIC(10,
+      2) NOT NULL, \n\t\"Quantity\" INTEGER NOT NULL, \n\tPRIMARY KEY (\"InvoiceLineId\"),
+      \n\tFOREIGN KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN
+      KEY(\"InvoiceId\") REFERENCES \"Invoice\" (\"InvoiceId\")\n)\n\n/*\n3 rows from
+      InvoiceLine table:\nInvoiceLineId\tInvoiceId\tTrackId\tUnitPrice\tQuantity\n\n*/\n\n\nCREATE
+      TABLE \"MediaType\" (\n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"MediaTypeId\")\n)\n\n/*\n3 rows from MediaType table:\nMediaTypeId\tName\n1\tMPEG
+      audio file\n2\tProtected AAC audio file\n3\tProtected MPEG-4 video file\n*/\n\n\nCREATE
+      TABLE \"Playlist\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(120),
+      \n\tPRIMARY KEY (\"PlaylistId\")\n)\n\n/*\n3 rows from Playlist table:\nPlaylistId\tName\n\n*/\n\n\nCREATE
+      TABLE \"PlaylistTrack\" (\n\t\"PlaylistId\" INTEGER NOT NULL, \n\t\"TrackId\"
+      INTEGER NOT NULL, \n\tPRIMARY KEY (\"PlaylistId\", \"TrackId\"), \n\tFOREIGN
+      KEY(\"TrackId\") REFERENCES \"Track\" (\"TrackId\"), \n\tFOREIGN KEY(\"PlaylistId\")
+      REFERENCES \"Playlist\" (\"PlaylistId\")\n)\n\n/*\n3 rows from PlaylistTrack
+      table:\nPlaylistId\tTrackId\n\n*/\n\n\nCREATE TABLE \"Track\" (\n\t\"TrackId\"
+      INTEGER NOT NULL, \n\t\"Name\" NVARCHAR(200) NOT NULL, \n\t\"AlbumId\" INTEGER,
+      \n\t\"MediaTypeId\" INTEGER NOT NULL, \n\t\"GenreId\" INTEGER, \n\t\"Composer\"
+      NVARCHAR(220), \n\t\"Milliseconds\" INTEGER NOT NULL, \n\t\"Bytes\" INTEGER,
+      \n\t\"UnitPrice\" NUMERIC(10, 2) NOT NULL, \n\tPRIMARY KEY (\"TrackId\"), \n\tFOREIGN
+      KEY(\"MediaTypeId\") REFERENCES \"MediaType\" (\"MediaTypeId\"), \n\tFOREIGN
+      KEY(\"GenreId\") REFERENCES \"Genre\" (\"GenreId\"), \n\tFOREIGN KEY(\"AlbumId\")
+      REFERENCES \"Album\" (\"AlbumId\")\n)\n\n/*\n3 rows from Track table:\nTrackId\tName\tAlbumId\tMediaTypeId\tGenreId\tComposer\tMilliseconds\tBytes\tUnitPrice\n1\tFor
+      Those About To Rock (We Salute You)\t1\t1\t1\tAngus Young, Malcolm Young, Brian
+      Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
+      As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\nQuestion:
+      albums by Alanis Morissette\nSQLQuery:SELECT \"Title\" FROM \"Album\" INNER
+      JOIN \"Artist\" ON \"Album\".\"ArtistId\" = \"Artist\".\"ArtistId\" WHERE \"Name\"
+      = ''Alanis Morissette'' LIMIT 5;\nSQLResult: [(''Jagged Little Pill'',)]\nAnswer:"],
+      "model": "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {},
+      "stop": ["\nSQLResult:"]}'
+    headers: {}
+    method: POST
+    uri: https://api.openai.com/v1/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0yQy26DMBBF93zFyOtSGUJTyq6qsulDyiJSFlWFDEzBjfFQPLRUUf69MuS18WLO
+        3HNH3gcAQlciA1G2nQnvt8VqeHiqhzb5Hdbfdy+77ZjEuIpi2izFjd+m4gtL9gnGkfOS2s4ga7Iz
+        LntUjN4YLdNUykRKOYGWKjSnWFipH21LHUq5OOYa0iU6kcF7AACwn16Y130MNg2CMsXQOij+4NEo
+        qx28Ua+dQ2YE1SM8q7rGCl41s0FYa2NuJ/1k0rbCUWQgzxNDdddT4VvtYMx5/qmtdk3eo3Jkfblj
+        6sREDwHAx3Tx4FSNIjteKrqe2o5zph1aL4zjOJmF4vJHFxydIBMrcx1bpIGvOQT/AAAA//8DAKfV
+        xPedAQAA
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7dea92c6c921a1b0-BKK
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 Jun 2023 02:00:04 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - text-davinci-003
+      openai-processing-ms:
+      - '4371'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "system", "content": "Answer the following questions
+      as best you can. You have access to the following tools:\n\nSearch: useful for
+      when you need to answer questions about current events. You should ask targeted
+      questions\nCalculator: useful for when you need to answer questions about math\nFooBar
+      DB: useful for when you need to answer questions about FooBar. Input should
+      be in the form of a question containing full context\n\nThe way you use the
+      tools is by specifying a json blob.\nSpecifically, this json should have a `action`
+      key (with the name of the tool to use) and a `action_input` key (with the input
+      to the tool going here).\n\nThe only values that should be in the \"action\"
+      field are: Search, Calculator, FooBar DB\n\nThe $JSON_BLOB should only contain
+      a SINGLE action, do NOT return a list of multiple actions. Here is an example
+      of a valid $JSON_BLOB:\n\n```\n{\n  \"action\": $TOOL_NAME,\n  \"action_input\":
+      $INPUT\n}\n```\n\nALWAYS use the following format:\n\nQuestion: the input question
+      you must answer\nThought: you should always think about what to do\nAction:\n```\n$JSON_BLOB\n```\nObservation:
+      the result of the action\n... (this Thought/Action/Observation can repeat N
+      times)\nThought: I now know the final answer\nFinal Answer: the final answer
+      to the original input question\n\nBegin! Reminder to always use the exact characters
+      `Final Answer` when responding."}, {"role": "user", "content": "What is the
+      full name of the artist who recently released an album called ''The Storm Before
+      the Calm'' and are they in the FooBar database? If so, what albums of theirs
+      are in the FooBar database?\n\nThis was your previous work (but I haven''t seen
+      any of it! I only see what you return as final answer):\nThought: I need to
+      search for the artist who recently released an album called ''The Storm Before
+      the Calm'' and check if they are in the FooBar database.\n\nAction:\n```\n{\n  \"action\":
+      \"Search\",\n  \"action_input\": \"artist who recently released an album called
+      ''The Storm Before the Calm''\"\n}\n```\nObservation: Alanis Morissette \u2013
+      The Storm Before The Calm.\nThought:The artist who recently released an album
+      called ''The Storm Before the Calm'' is Alanis Morissette. Now I need to check
+      if she is in the FooBar database and if so, what albums of hers are in the database.\n\nAction:\n```\n{\n  \"action\":
+      \"FooBar DB\",\n  \"action_input\": \"Alanis Morissette\"\n}\n```\n\nObservation:
+      Alanis Morissette\nThought:Alanis Morissette is in the FooBar database. Now
+      I need to find out what albums of hers are in the database.\n\nAction:\n```\n{\n  \"action\":
+      \"FooBar DB\",\n  \"action_input\": \"albums by Alanis Morissette\"\n}\n```\n\n\nObservation:
+      The albums by Alanis Morissette are Jagged Little Pill.\nThought:"}], "model":
+      "gpt-3.5-turbo", "max_tokens": null, "stream": false, "n": 1, "temperature":
+      0.0, "stop": ["Observation:"]}'
+    headers: {}
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6xSTU/bQBC9+1eM9sIlsRwFQuobQU1VVCRaKnFoKjRej+OF9Yy1OxEFlP+O1gmJ
+        qra3XvYw72Pf6M1rBmBcbUowtkW1Xe/H53fVx5eHhV5/+kbN8uZq2l1+fqHHu8XXOLdmlBRSPZDV
+        d1Vupes9qRPewTYQKiXXyWw+L4rTojgbgE5q8km27nU8zc/GugmVjIvZZLpXtuIsRVPCjwwA4HV4
+        U0au6ZcpoRi9TzqKEddkygMJwATxaWIwRhcVWc3oCFphJR5if28Jmo33wNgRSAPaEmBQFxWeWoFA
+        llj9MwTyhJFqQAb01aYDi95TDSfJ4lYldLCgRgINFpfouxNwES48sotwLcHFSKqUw21LCXE8MJci
+        CwxQo2KFkQC5HubC/nn/kzTQUjgoDlQXYWWucL2mGr44VU9w47xfmXzFK146Rg8XHJ8olH/mSOr/
+        uWwOCdux/57q30vnZl/O9tBq49jF9j4QRuHUVFTpd7RtBvBzuJLNb8WbPkjX673KI3E6ndnpZOdn
+        jod5RD/sT8ioKPrj/Hw6ydIn2+wNAAD//wMAWCbqSRUDAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7dea92e5fc85a1b0-BKK
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 Jun 2023 02:00:09 GMT
+      Transfer-Encoding:
+      - chunked
+      openai-model:
+      - gpt-3.5-turbo-0613
+      openai-processing-ms:
+      - '3892'
     status:
       code: 200
       message: OK
