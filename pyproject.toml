@@ -8,7 +8,7 @@ packages = [{include = "langchain_visualizer"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-langchain = ">=0.0.199,<0.1"
+langchain = ">=0.0.215,<0.1"
 ought-ice = "^0.5.0"
 fvalues = "^0.0.4"
 gorilla = "^0.4.0"
@@ -43,6 +43,8 @@ filterwarnings = [
     'ignore:unclosed <ssl.SSLSocket:ResourceWarning',
     'ignore:Dialect sqlite:sqlalchemy.exc.SAWarning',
     'ignore::sqlalchemy.exc.MovedIn20Warning',
+    # avoid "UserWarning: A newer version of deeplake (3.6.7) is available."
+    'ignore::UserWarning',
 ]
 
 [tool.mypy]
