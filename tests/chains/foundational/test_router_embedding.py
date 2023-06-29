@@ -9,6 +9,7 @@ from langchain.chains.router.embedding_router import EmbeddingRouterChain
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.llms import OpenAI
 from langchain.vectorstores import FAISS
+from tiktoken_ext.openai_public import cl100k_base
 
 # ========================== Start of langchain example code ==========================
 # https://python.langchain.com/docs/modules/chains/foundational/router
@@ -85,6 +86,10 @@ async def router_embedding_demo():
 
 # ================================== Execute example ==================================
 
+# run this before cassette to download blob first
+# avoids errors in CI such as:
+# No match for the request (<Request (GET) https://.../cl100k_base.tiktoken>) was found
+cl100k_base()
 
 def test_llm_usage_succeeds():
     """Check that the chain can run normally"""
