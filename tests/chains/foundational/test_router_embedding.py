@@ -91,6 +91,7 @@ async def router_embedding_demo():
 # No match for the request (<Request (GET) https://.../cl100k_base.tiktoken>) was found
 cl100k_base()
 
+
 def test_llm_usage_succeeds():
     """Check that the chain can run normally"""
     results = asyncio.get_event_loop().run_until_complete(router_embedding_demo())
