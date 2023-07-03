@@ -19,6 +19,12 @@ Install this library:
 pip install langchain-visualizer
 ```
 
+Note that if you're on a Linux distribution, you may need to install libyaml first:
+
+```bash
+apt install -y libyaml-dev
+```
+
 Then:
 
 1. Add `import langchain_visualizer` as **the first import** in your Python entrypoint file
