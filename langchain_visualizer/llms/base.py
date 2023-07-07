@@ -1,4 +1,4 @@
-from typing import List, Optional, Union
+from typing import Any, List, Optional, Union
 
 from ice.trace import add_fields
 from langchain.callbacks.manager import (
@@ -43,10 +43,11 @@ class LlmSyncVisualizer(LlmVisualizer):
         prompts: List[str],
         stop: Optional[List[str]] = None,
         callbacks: Callbacks = None,
+        **kwargs: Any,
     ) -> LLMResult:
         """Run the LLM on the given prompt and input."""
         result: LLMResult = self.og_fn(
-            self.og_obj, prompts=prompts, stop=stop, callbacks=callbacks
+            self.og_obj, prompts=prompts, stop=stop, callbacks=callbacks, **kwargs
         )
         if isinstance(self.og_obj, OpenAI):
             self.determine_cost(result)
@@ -61,10 +62,15 @@ class LlmAsyncVisualizer(LlmVisualizer):
         prompts: List[str],
         stop: Optional[List[str]] = None,
         callbacks: Callbacks = None,
+        **kwargs: Any,
     ) -> LLMResult:
         """Run the LLM on the given prompt and input."""
         result: LLMResult = await self.og_fn(
-            self.og_obj, prompts=prompts, stop=stop, callbacks=callbacks
+            self.og_obj,
+            prompts=prompts,
+            stop=stop,
+            callbacks=callbacks,
+            **kwargs,
         )
         if isinstance(self.og_obj, OpenAI):
             self.determine_cost(result)
@@ -79,10 +85,11 @@ class ChatLlmSyncVisualizer(LlmVisualizer):
         messages: List[BaseMessage],
         stop: Optional[List[str]] = None,
         run_manager: Optional[CallbackManagerForLLMRun] = None,
+        **kwargs,
     ) -> ChatResult:
         """Run the LLM on the given prompt and input."""
         result: ChatResult = self.og_fn(
-            self.og_obj, messages=messages, stop=stop, run_manager=run_manager
+            self.og_obj, messages=messages, stop=stop, run_manager=run_manager, **kwargs
         )
         if isinstance(self.og_obj, OpenAIChat) or isinstance(self.og_obj, ChatOpenAI):
             self.determine_cost(result)
@@ -97,6 +104,7 @@ class ChatLlmAsyncVisualizer(LlmVisualizer):
         messages: List[BaseMessage],
         stop: Optional[List[str]] = None,
         run_manager: Optional[AsyncCallbackManagerForLLMRun] = None,
+        **kwargs,
     ) -> ChatResult:
         """Run the LLM on the given prompt and input."""
         result: ChatResult = await self.og_fn(
@@ -104,6 +112,7 @@ class ChatLlmAsyncVisualizer(LlmVisualizer):
             messages=messages,
             stop=stop,
             run_manager=run_manager,
+            **kwargs,
         )
         if isinstance(self.og_obj, OpenAIChat) or isinstance(self.og_obj, ChatOpenAI):
             self.determine_cost(result)

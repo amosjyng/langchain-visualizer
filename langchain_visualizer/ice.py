@@ -5,6 +5,7 @@ from ice import json_value, server
 from ice import settings as ice_settings
 from langchain.schema import (
     AIMessage,
+    BaseMessage,
     ChatResult,
     HumanMessage,
     LLMResult,
@@ -28,20 +29,26 @@ def to_json_value(x: Any) -> json_value.JSONValue:
         return og_json_value(regular_texts)
     elif isinstance(x, ChatResult):
         chat_generations = x.generations
-        chat_texts: Union[List[str], str] = [
-            chat_generation.text for chat_generation in chat_generations
+        chat_messages: List[BaseMessage] = [
+            chat_generation.message for chat_generation in chat_generations
         ]
-        if len(chat_texts) == 1:
-            regular_texts = chat_texts[0]
-        return og_json_value(chat_texts)
+        if len(chat_messages) == 1:
+            return og_json_value(chat_messages[0])
+        return og_json_value(chat_messages)
     elif isinstance(x, SystemMessage):
         return {
             "System": x.content,
         }
     elif isinstance(x, AIMessage):
-        return {
-            "AI": x.content,
-        }
+        if "function_call" in x.additional_kwargs:
+            function_call = x.additional_kwargs["function_call"]
+            return {
+                "AI (function call)": function_call,
+            }
+        else:
+            return {
+                "AI": x.content,
+            }
     elif isinstance(x, HumanMessage):
         return {
             "Human": x.content,
