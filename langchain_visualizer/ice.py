@@ -1,5 +1,6 @@
 import time
 from typing import Any, List, Union
+from warnings import warn
 
 from ice import json_value, server
 from ice import settings as ice_settings
@@ -7,6 +8,7 @@ from langchain.schema import (
     AIMessage,
     BaseMessage,
     ChatResult,
+    FunctionMessage,
     HumanMessage,
     LLMResult,
     SystemMessage,
@@ -53,6 +55,13 @@ def to_json_value(x: Any) -> json_value.JSONValue:
         return {
             "Human": x.content,
         }
+    elif isinstance(x, FunctionMessage):
+        return {
+            "Function": x.name,
+            "Result": x.content,
+        }
+    elif isinstance(x, BaseMessage):
+        warn(f"Unknown message type: {x.type}")
 
     return og_json_value(x)
 
