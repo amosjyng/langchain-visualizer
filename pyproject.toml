@@ -45,6 +45,7 @@ filterwarnings = [
     'ignore::sqlalchemy.exc.MovedIn20Warning',
     # avoid "UserWarning: A newer version of deeplake (3.6.7) is available."
     'ignore::UserWarning',
+    "ignore:invalid escape sequence:DeprecationWarning"
 ]
 
 [tool.mypy]
