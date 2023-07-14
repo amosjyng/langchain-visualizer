@@ -14,6 +14,9 @@ def get_new_format(og_format):
         kwargs = self._merge_partial_and_user_variables(**kwargs)
         # Get the examples to use.
         examples = self._get_examples(**kwargs)
+        examples = [
+            {k: e[k] for k in self.example_prompt.input_variables} for e in examples
+        ]
         # Format the examples.
         example_strings = [
             self.example_prompt.format(**example) for example in examples
