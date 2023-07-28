@@ -27,9 +27,9 @@ def test_few_shot_f():
     )
 
     s = few_shot_prompt.format(input="big")
-    assert (
-        s
-        == "Give the antonym of every input:  w=happy,a=sad  w=tall,a=short  w=better,a=worse  w=big,a="
+    assert s == (
+        "Give the antonym of every input:  "
+        "w=happy,a=sad  w=tall,a=short  w=better,a=worse  w=big,a="
     )
     print([repr(x) for x in s.flatten().parts])
     assert s.flatten().parts == (
