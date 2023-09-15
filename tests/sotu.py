@@ -2,7 +2,6 @@ import os
 import pickle
 from io import BufferedWriter
 
-import vcr_langchain as vcr
 from langchain.document_loaders import TextLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
@@ -11,7 +10,6 @@ from langchain.vectorstores.faiss import FAISS
 FAISS_PATH = "tests/resources/sotu_faiss.pkl"
 
 
-@vcr.use_cassette
 def load_sotu() -> FAISS:
     if os.path.isfile(FAISS_PATH):
         with open(FAISS_PATH, "rb") as f:

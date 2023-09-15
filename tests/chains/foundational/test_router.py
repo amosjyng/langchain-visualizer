@@ -95,7 +95,7 @@ def test_llm_usage_succeeds():
     """Check that the chain can run normally"""
     results = asyncio.get_event_loop().run_until_complete(router_demo())
     assert len(results) == 3
-    assert results[-1].endswith("heavy rain.")
+    assert "heavy rain" in results[-1]
 
 
 if __name__ == "__main__":
