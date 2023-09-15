@@ -28,7 +28,10 @@ async def search_agent_demo():
 def test_llm_usage_succeeds():
     """Check that the chain can run normally"""
     result = asyncio.get_event_loop().run_until_complete(search_agent_demo())
-    assert "years old and his age raised to the 0.23 power is" in result.strip()
+    assert (
+        "years old and his age raised to the 0.23 power is" in result
+        or "boyfriend and his current age raised to the 0.23 power is" in result
+    )
 
 
 if __name__ == "__main__":

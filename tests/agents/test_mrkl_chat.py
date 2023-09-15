@@ -2,15 +2,10 @@ import langchain_visualizer  # isort:skip  # noqa: F401
 import asyncio
 
 import vcr_langchain as vcr
-from langchain import (
-    LLMMathChain,
-    OpenAI,
-    SerpAPIWrapper,
-    SQLDatabase,
-    SQLDatabaseChain,
-)
+from langchain import LLMMathChain, OpenAI, SerpAPIWrapper, SQLDatabase
 from langchain.agents import Tool, initialize_agent
 from langchain.chat_models import ChatOpenAI
+from langchain_experimental.sql import SQLDatabaseChain
 
 # ========================== Start of langchain example code ==========================
 # https://langchain.readthedocs.io/en/latest/modules/agents/implementations/mrkl_chat.html

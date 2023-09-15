@@ -16,7 +16,7 @@ interactions:
       content-type:
       - text/plain; charset=utf-8
       date:
-      - Tue, 27 Jun 2023 10:35:44 GMT
+      - Fri, 15 Sep 2023 05:36:58 GMT
       server:
       - uvicorn
     http_version: HTTP/1.1
@@ -35,26 +35,29 @@ interactions:
       prompts.\nREMEMBER: \"next_inputs\" can just be the original input if you don''t
       think any modifications are needed.\n\n<< CANDIDATE PROMPTS >>\nphysics: Good
       for answering questions about physics\nmath: Good for answering math questions\n\n<<
-      INPUT >>\nWhat is black body radiation?\n\n<< OUTPUT >>\n"], "model": "text-davinci-003",
-      "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}}'
+      INPUT >>\nWhat is black body radiation?\n\n<< OUTPUT (must include ```json at
+      the start of the response) >>\n<< OUTPUT (must end with ```) >>\n"], "model":
+      "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0yQzW7CMBCE73mK1Z5BMlAC5NJLL21Rq56oVFfEcVxicNZWbNogxLtXTvi7+LDf
-        zOysjwkA6hIzQFk7M5yt2JJVD0+aLdpm+bnYjV7T9N19PLdvL384iGpbbJUM0RFUG9bS1s6ooC31
-        WDZKBBUTR+l8Nk/HoynrQG1LZS62YSl+NUk9ZGxy9lVWS+Uxg68EAODYvdDLoy3P8623xOnIKQKO
-        pfJBk4i7OWbA0VUHr6XnOLhIKFbU5PbB95JVJQJoD4URcgeFLQ/QiFJ3IY8cOZ045XnederWaypV
-        ixmw68TYjWtsEavS3pjr/EeT9tW6UcJbio19sA47ekoAvrsz915sFGbn89A1tnZhHexOUQwcT6d9
-        Ht7+9UYnFxhsEObOtWBJXHJK/gEAAP//AwDM2asm0AEAAA==
+        H4sIAAAAAAAAA0xQO2/bMBDe/SsOnP1+JdVSdCjapmmnAi1aBRZFnq2zpTuCpNwIhv97QNlOsnC4
+        783TAED9156JdyoD9auiAI1YrOGIPpAwUACLzqPREe0YftDO64hQ4lY8woPmVvsOlkOYT+dLiAL6
+        KGTBUvCti8lBthDQH8ngGB5Re4YmSasYXcgmE1fruBXfjMUhaxobaSZWTJjcYkk4qGFqSjaVNI2r
+        R3fdkfHT4utj933199ChtV++rT//KXG/e/h5YUu5RxOTIuJz3BhpXI3J7QIbj2mSymC2/rC8W63n
+        s/se6PffZCOrj8SGRtPp4qqrhAwGlcG/AQDAqX/hQk+yoij2QTjnU84JyJXFEIn7JbnKIFeu6gKZ
+        kKvhjcKpIrFrY7hQflc6ps8va20OUIrtwGtLvcnHXOV8zrkoir5TH09s8VllMH291LJzXspUldu6
+        fr1viSlUG486CKfGIYpTPXoeADz1M9ugd6iy6zzlvDQubqIckJPh/P6ao97+9Q1drK5glKjrd/fZ
+        apBCzoMXAAAA//8DAJNnkMp6AgAA
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7ddd0ba66edf4487-SIN
+      - 806e83e01d25ef6f-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -64,13 +67,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 27 Jun 2023 10:35:53 GMT
+      - Fri, 15 Sep 2023 05:36:59 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '2611'
+      - '862'
+      x-ratelimit-limit-tokens_usage_based:
+      - '250000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '249744'
+      x-ratelimit-reset-tokens_usage_based:
+      - 61ms
     status:
       code: 200
       message: OK
@@ -87,18 +96,21 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0xSTU9bMRC8v1+x8pmgFyJImhugqoqE1CIOHEoV7bM3eVv8hb2vEBD/vbLzQnLx
-        YWZnxp71RwOg2KglKO2incwf27vZw/3323t3Exfx2931auV/vmf+1T38UGdlOnR/SUtRCL3JWgcX
-        LQkHv6d1IhQqjtOrxXxxdTG9nFXCBUP2IJsY/Mde86RtZ6OuD6wpqyX8bgAAPuoJ+/Eie/JP/sai
-        foYumB0kNIwlFjiD9ARkSUsKDreehPXJADkWIQPdDhC6owX7IkwumJ1HxxroZWDLXeLBncNKijNC
-        ojxYgbCpKVWAFlyo1iMaMQlrS3n0rP5n8Nqz7mv8yW1eWXpA2CR6GcjrHRjOkrgbKis91lzdY0It
-        lDiXxxzSyUVKKEOiA1SSzmuFtS32ht7UEtovxIZtTKErzfrB2i98w55zv06EOfhScJYQVWU/G4A/
-        dStDxi2p5bgNFVNwUdYSnskXw8v53k4df8EJOR1JCYL2iE/bRVMyPpv/AAAA//8DANEAJcJ+AgAA
+        H4sIAAAAAAAAA3RSy27cMAy871cQvvSSeB/NA9lb20tSpKfm1hQLWeLabCRRpWhv3CD/XsibzSaH
+        XASIwxkONXqaAVQ7I5FiW62huusoQ2CHHgaUTByBMjhMgtYouhp+UCtGERrcsiB8N7E3MsLZCawW
+        qzNQBjMwOXCUpU9aFHgLGWUgizXcopEIoVA71ZTX83nyRrcsoeaE0VBtOcwd2zw/jCWOuTopTskV
+        kzYkf3o5DrG9uY7Bs/xcDWm8dV/ab/3u/Hp5/W/fzc0ftFoYio+6sRySx6K2h61gWalaw/Li6uzy
+        /GK1WkzAtP+BdurMQNHS6WLx+YXXMVnM1Rp+zQAAnqYT9u2Fdh/v41dv7AM07EYQ42haojyldgjo
+        0apwMG1EJfumAQOpooOtcAADzVGEYqFKYDdGE8gC/u3JUyPUhxpu9KAtmHuv5cnLbaIYDxhR2vFQ
+        LYKfMiQjStZjhgYptmA5DihlPEXlj13WcNch5FTgPhxE323pUFECRXTQjHsnGBKK0V7wrY0T2JF2
+        0FHbobxtypCEXW+LMQONsHEo74buzIAeY6tdrqdgpgwoOnys1rB4rXhuk3BT8oq996/1LUXK3UbQ
+        ZI4ltqycqgl9ngH8nrLus2mxWr9kXCXhkHSj/ICxCJ5f7uWq4986gherF1BZjT/Wl8urWZnxPPsP
+        AAD//wMAvM1fxH4DAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7ddd0bbc4ad34487-SIN
+      - 806e83e629abef6f-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -108,13 +120,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 27 Jun 2023 10:35:58 GMT
+      - Fri, 15 Sep 2023 05:37:01 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '4932'
+      - '1672'
+      x-ratelimit-limit-tokens_usage_based:
+      - '250000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '249744'
+      x-ratelimit-reset-tokens_usage_based:
+      - 61ms
     status:
       code: 200
       message: OK
@@ -133,7 +151,8 @@ interactions:
       think any modifications are needed.\n\n<< CANDIDATE PROMPTS >>\nphysics: Good
       for answering questions about physics\nmath: Good for answering math questions\n\n<<
       INPUT >>\nWhat is the first prime number greater than 40 such that one plus
-      the prime number is divisible by 3\n\n<< OUTPUT >>\n"], "model": "text-davinci-003",
+      the prime number is divisible by 3\n\n<< OUTPUT (must include ```json at the
+      start of the response) >>\n<< OUTPUT (must end with ```) >>\n"], "model": "text-davinci-003",
       "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
       0, "n": 1, "logit_bias": {}}'
     headers: {}
@@ -142,18 +161,20 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA1SRTU/DMAyG7/0VVs6bVDbYR2+7AUJIIGAHgta0NashdaLGnQbT/jtK9yUukezH
-        r+3X2SUAiiqVgSobb4fTZfownyzu+Y5f326bp1+zeN08r2fz+kUe1SBWu+ILS4kKwa2sStd4i0KO
-        D7hs0QjGjleT2XQ2GV3dzHvQuArtSTaszIa4pGGajo+62lGJQWXwngAA7PoXDuVRluf5V3Cseac5
-        Aq0qDEJs4mytMtCqMVJrNThxjvsR+07CgS9rI0ABpEb4pDYI+JYaBO6aAltY96u3ILVhuE4hdGUd
-        AwHHCN52B+U/DQWoaEOBCotQ/MBYK817zXme9756C8QVblUG6Tlj3dq3roh2ubP2nP8kplCvWjTB
-        cXQdxHnV030C8NGfqgtmjSo7nkj51jVeVuK+kWPD0fQ4R13+5kJvTlCcGHvJj0dpEofskz8AAAD/
-        /wMARJ6qqxQCAAA=
+        H4sIAAAAAAAAA1RRy27bQAy8+yuIPfv9CqJLDwFaIEhzalG0VWCtJNpiKpGLXUq1Yfjfi5XsGL0s
+        sBzOcIY8jwDMX+uZ+GASMN8qCtBIiTV06AMJAwUo0XksrGI5ha908FYRctyLR3i23Fp/gvUYlvPl
+        GlTAdkIllBR86zQqyB4C+o4KnMILWs/QRGql6kIym7na6l58MxWHbGlaSDMrpQiz21gSDmYcnVIZ
+        TRaNqycPp46r7SuVn4/bxffjz/Xzr9fmpfqyeOLt09At+TsWGhmKR90V0rgao9oAFx5jJJPAYvu4
+        fthsl8tFD/T5b7RJaTvigibz+erKq4QKDCaB3yMAgHP/wtAeaVmWvQfhlM8pRyA1JQYl7pOkJoHU
+        NFar1IxvOEd/xK7VMOA/Kqtx81oh7MkHBeepQeC2ydHDobfuQSvLsJ5DaIsqfhSEEVzdDsz/OPGO
+        1FGgvEbIT7D6lJqULylnWdYH6zMQl3g0Ccw/KrUcnJc85uW2rj/qe2IK1c6jDcIxdlBxpkcvI4C3
+        fldtsAc0yXVHxnlpnO5U/iBHweXjZtAz9+Pc0c3VhFFRW9/rq/VmFIdcRv8AAAD//wMA8f8eR78C
+        AAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7ddd0bdd5a464487-SIN
+      - 806e83f14907ef6f-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -163,13 +184,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 27 Jun 2023 10:36:04 GMT
+      - Fri, 15 Sep 2023 05:37:03 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '4327'
+      - '1605'
+      x-ratelimit-limit-tokens_usage_based:
+      - '250000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '249744'
+      x-ratelimit-reset-tokens_usage_based:
+      - 61ms
     status:
       code: 200
       message: OK
@@ -178,7 +205,7 @@ interactions:
       math questions. You are so good because you are able to break down hard problems
       into their component parts, answer the component parts, and then put them together
       to answer the broader question.\n\nHere is a question:\nWhat is the first prime
-      number greater than 40 such that one plus the prime number is divisible by 3"],
+      number greater than 40 such that one plus the prime number is divisible by 3?"],
       "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p":
       1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
     headers: {}
@@ -187,16 +214,19 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0SPTW+DMAyG7/wKK+cihZUB4zLtUGmaetlpmtYJQXBL1mBHJF0rVf3vU4CViw/v
-        x2P7GgEI3YoShOqtifMPud28ysb4bJ2cPx3x9km+d+3xDe2jWIU0Nz+ofGh4vPhKcW8Nes002WrA
-        2mMgJlmRF9lDkqWj0XOL5r8Wt/WvJqVjKddzr2Ot0IkSviIAgOs4YYqH2vOOdvRC7oxDCenUGgOa
-        WryIEuRdMXywAzcBRidj7vpek3ZdNWDtmALTebZidG8RwPd4yMnVBxTlfICwA/fWV56PSAGYFxNO
-        LI8vZjZ7nn1tFrlIo7DhFv0BAAD//wMALiixqG8BAAA=
+        H4sIAAAAAAAAA1RRy27bMBC86ysGPMe2Iitxo2OBAkUfQA+BL01hUNRKWlfiEiSlxg3y7wVlJ0Yv
+        BDizszNDvmSA+qO9ZdupCuqx54BRGhowkw8sFhzQkPNkdKRmje/ceR0JNbXiCV+0nbQ/obxBkRcl
+        okDPwg0aDn5yMW2QFoH8zIbW+EbaW4xJ2sfoQrXZuEHHVvy4FkdW89rIuGnEhM2bLYsN6iYl5SaF
+        NKMbVrvTbI97s+9/fPj6+e7TXPDfj65sjrRv96fztNRHMjEpIj3Hg5HRDZS2nWnjKVVSFW7vH8rd
+        3X1RbBdi6f8mWzV6Zmt4lefbi64XNhRUhZ8ZALwsJ87jSfZkn+xjT2jZhwjneSTYaazJo1s8PWKv
+        LcocYTJ9ukSIJbhhCog9/a9JH8AzB64HQn3CNiHldr2kWYzZNvSsKuTvyCCd81KnkHYahne8Zcuh
+        P3jSQWzKGqI4tbCvGfBrKTgF3ZGqLsWU8zK6eIjym2xauHs4r1PXB72SRXkho0Q9XPHbfJslj9fs
+        HwAAAP//AwDoGMIAcwIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7ddd0bfdd8ef4487-SIN
+      - 806e83fbf81eef6f-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -206,13 +236,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 27 Jun 2023 10:36:05 GMT
+      - Fri, 15 Sep 2023 05:37:04 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '786'
+      - '843'
+      x-ratelimit-limit-tokens_usage_based:
+      - '250000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '249744'
+      x-ratelimit-reset-tokens_usage_based:
+      - 61ms
     status:
       code: 200
       message: OK
@@ -230,26 +266,30 @@ interactions:
       prompts.\nREMEMBER: \"next_inputs\" can just be the original input if you don''t
       think any modifications are needed.\n\n<< CANDIDATE PROMPTS >>\nphysics: Good
       for answering questions about physics\nmath: Good for answering math questions\n\n<<
-      INPUT >>\nWhat is the name of the type of cloud that rins\n\n<< OUTPUT >>\n"],
-      "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
+      INPUT >>\nWhat is the name of the type of cloud that rins\n\n<< OUTPUT (must
+      include ```json at the start of the response) >>\n<< OUTPUT (must end with ```)
+      >>\n"], "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256,
+      "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0RQyW7CMBC95ytGPoMUoAool6pVW1qJHrqJQ10RkwzE4IyteNJFiH+vbLaLNZq3
-        zHveJQBCVyIHUTbO9MfzdDYdM75tn19+XkfNxpvH227ZzqdPEyN6gW2XGyw5KBh/eVHaxhlkbekA
-        ly0qxuA4yCbjSTYcZFkEGluhOcn6lfrWVOp+mo6OutrqEr3I4TMBANjFFw70ICuKYuMtSdpJCoAU
-        FXrWpMJtKXKQ4u7+4eZj9i5F70ShEFGT69gfKPNaMWgPXCOQahDsKs785+JcGttVwIHVKk3+WgpJ
-        e0lFUcScMZKmCn9FDul5Y+zatXYZ4lNnzHm/0qR9vWhReUuhhWfrRET3CcBXrN55tUaRHysL19rG
-        8YLtFikYDrPBwU9c/vqCXp1AtqzMZT9Kh0k4sk/+AQAA//8DAMyS/IvkAQAA
+        H4sIAAAAAAAAA0RQS2/iMBC+8ytGPvMIKYVtLtW+V6vujVUPm4oYeyDTJjNe22FLEf995QDlYlnz
+        Peb75jAAUP+0Z+KtKkAtawrQisUGdugDCQMFsOg8Gh3RjuEXbb2OCGvciEf4qbnTfg+zIeRZPoMo
+        oHdCFiwF37mYHGQDAf2ODI7hAbVnaJO0jtGFYjJxjY4b8e1YHLKmsZF2YsWEyWUtCQc1TEnJppCm
+        dc1osd/xy4/lss1uSehx+vltGj55+tstv9u7E1vWz2hiUkR8jSsjrWswuZ1g4zFVUgVM53ezxe08
+        z2c90Pe/yEZW74gNjbLs5qyrhQwGVcCfAQDAoX/hRE+yqqqeg3DJh5ITUCqLIRL3TUpVQKm+fP32
+        8ffDslTDC4VTRGLXxXCiPNY6puPHGoF1i+mM6R/3rv+bRjoLMbG8Jg73pSr5WHJVVX3OPhKxxVdV
+        QPY+aWTrvKxTfO6a5n2+IaZQrzzqIJxahChO9ehxAPDUV++C3qIqzpWV89K6uIrygpwM8w/zk5+6
+        3vqKzqZnMErUzXV+ky8Gaclx8B8AAP//AwCcwAHIjgIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7ddd0c0549c04487-SIN
+      - 806e8401fbdbef6f-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -259,13 +299,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 27 Jun 2023 10:36:09 GMT
+      - Fri, 15 Sep 2023 05:37:05 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '3631'
+      - '1099'
+      x-ratelimit-limit-tokens_usage_based:
+      - '250000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '249744'
+      x-ratelimit-reset-tokens_usage_based:
+      - 61ms
     status:
       code: 200
       message: OK
@@ -283,17 +329,20 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0RRS0sDMRC+768YcrZla7W77FHFSz0oKIIiJd1Mu6lJJiazfVD875JsbS8h+V7z
-        yLEAEFqJBkRrvRlV7+XT/MXWH/6NXX0nbx/mP8/GW7V73KzFVVLTcoMtJwfjnhctWW+QNbmBbgNK
-        xpQ4mdVVPbueVGUmLCk0/7aRklvtWj0qy+nJ15FuMYoGPgsAgGM+YZAnG7x2CE5aBFoBdwh88Pne
-        GuoVcCcZgtQugo4g4b63vSGn7bKPg2ScEiIOjwgyIGwxHIClMSCdygitGB3IGKnVaQ7Yae6Au94p
-        DJEp2Ji1HcrtIdcb5/5zq9op3IsGyjNiaO0DLdNYrjfmjK+007FbBJSRXJouMnmR2d8C4CuvpI9y
-        jaI5rUL4QNbzgukbXQqspkOcuHzBhZzenEgmluaCT8qqSDV+iz8AAAD//wMAbeFssPsBAAA=
+        H4sIAAAAAAAAA0xRy24bMQy8+ysGe+nFr7pujPoeFCnSQ4EU6AOFwZVoLxstKUjaTdyg/15onQS9
+        6EDOjGaGTzOgeaCkoqdmj+auk4zePAeMnLKYQjI8x8SOCvslPsspUWG0fLTE+EQ6UDpjO8dmvdmi
+        GGg08fCS0xBLVbAjMqdRHC9xy5QUfaV2pcS8X61ioHK01C8tspIsnfUrby6vXr4V09zMq1Px1aTr
+        Y1jszqP21/72uzj348u3P8fhhtpw/VF2+rW9oK39za5URuHHcnDWx8BV7bJ2iWukZo+3Vx+2u/dX
+        m83VtJjyv9AWnkZRJ4v1+t0zrzNxnJs9fs4A4Gl6cYFXGu46RjlHrsldsMGjdFSQSDTXPh2FwB4E
+        N/RDMJW+HfIFucRNeZNBKBTCHJ7S/f8SkmHHwgpyNQ6psEd7RukG9ZxA6hHk1JV60Kp1+S5SGyY3
+        MZkfnOgJHdN4nizN0ZGE+cTlkRVZ7aHenNVXpClKDcR95ERlSLycipgyi3p+bPZYv06CnWKytvaj
+        Qwiv86Oo5O6QmLJprSkXi820/TsDfk3dDplO3OyfO21isj6WQ7F71n8CGWhuDDFOCRGXCElTqBuU
+        SvJLEnMQ4oZGxlwgO2q5AAAAAP//AwD1dAMT7gIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7ddd0c211a2a4487-SIN
+      - 806e84097929ef6f-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -303,13 +352,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 27 Jun 2023 10:36:12 GMT
+      - Fri, 15 Sep 2023 05:37:07 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '1803'
+      - '1547'
+      x-ratelimit-limit-tokens_usage_based:
+      - '250000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '249744'
+      x-ratelimit-reset-tokens_usage_based:
+      - 61ms
     status:
       code: 200
       message: OK

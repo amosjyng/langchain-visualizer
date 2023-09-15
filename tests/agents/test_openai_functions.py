@@ -2,9 +2,10 @@ import langchain_visualizer  # isort:skip  # noqa: F401
 import asyncio
 
 import vcr_langchain as vcr
-from langchain import LLMMathChain, SerpAPIWrapper, SQLDatabase, SQLDatabaseChain
+from langchain import LLMMathChain, SerpAPIWrapper, SQLDatabase
 from langchain.agents import AgentType, Tool, initialize_agent
 from langchain.chat_models import ChatOpenAI
+from langchain_experimental.sql import SQLDatabaseChain
 
 # ========================== Start of langchain example code ==========================
 # https://python.langchain.com/docs/modules/agents/agent_types/openai_functions_agent
