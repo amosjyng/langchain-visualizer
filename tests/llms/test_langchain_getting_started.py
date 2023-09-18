@@ -8,7 +8,7 @@ from langchain.llms import OpenAI
 # https://langchain.readthedocs.io/en/latest/modules/prompts/getting_started.html
 
 
-llm = OpenAI(model_name="text-davinci-003", n=2, best_of=2, temperature=1)
+llm = OpenAI(model="text-davinci-003", n=2, best_of=2, temperature=1)
 
 # ================================== Execute example ==================================
 
