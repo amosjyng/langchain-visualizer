@@ -8,7 +8,7 @@ from langchain.tools.playwright.extract_text import ExtractTextTool
 from langchain.tools.playwright.get_elements import GetElementsTool
 from langchain.tools.playwright.navigate import NavigateTool
 from langchain.tools.playwright.navigate_back import NavigateBackTool
-from langchain.utilities.bash import BashProcess
+from langchain_experimental.llm_bash.base import BashProcess
 
 from langchain_visualizer.hijacking import ice_hijack
 

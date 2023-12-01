@@ -1,6 +1,6 @@
 from fvalues import F, FValue
 from langchain.formatting import formatter as og_formatter
-from langchain.prompts.base import DEFAULT_FORMATTER_MAPPING
+from langchain_core.prompts.string import DEFAULT_FORMATTER_MAPPING
 
 
 def new_format(format_string, /, *args, **kwargs):
