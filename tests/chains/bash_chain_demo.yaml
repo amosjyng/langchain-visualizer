@@ -1,27 +1,5 @@
 interactions:
 - request:
-    body: ''
-    headers:
-      host:
-      - 127.0.0.1:8935
-    method: GET
-    uri: http://127.0.0.1:8935/ping
-  response:
-    content: ought-ice says pong
-    headers:
-      cache-control:
-      - no-transform
-      content-length:
-      - '19'
-      content-type:
-      - text/plain; charset=utf-8
-      date:
-      - Wed, 14 Jun 2023 05:57:00 GMT
-      server:
-      - uvicorn
-    http_version: HTTP/1.1
-    status_code: 200
-- request:
     body: '{"prompt": ["If someone asks you to perform a task, your job is to come
       up with a series of bash commands that will perform the task. There is no need
       to put \"#!/bin/bash\" in your answer. Make sure to reason step by step, using
@@ -31,24 +9,26 @@ interactions:
       a new directory\n- Copy the files from the first directory into the second directory\n```bash\nls\nmkdir
       myNewDirectory\ncp -r target/* myNewDirectory\n```\n\nThat is the format. Begin!\n\nQuestion:
       What files are in my current directory?"], "model": "text-davinci-003", "temperature":
-      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}}'
+      0.0, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}, "max_tokens": 256}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0xPTWuDQBC9+yuGPVcwBjR4boP0UNpQyKEWXdeJbl13xF1LSsh/L7vaNJeBeV/z
-        5hIAMNmwDJgYRhWmh0e9PT3nyVuDT32Px/Y1/zmYfH45vu/Zg1NT/YXCOofFsy0FDaNCK0kvtJiQ
-        W3SJm2SXpHEcxxtPDNSg+rOFDf+WWsgwirarryMp0LAMPgIAgIufsMidrdCFrqqq5qYrtDJ+8Vav
-        krrBM8sguiGK2nGi2iXqWakbfpJamq6ckBvSLthYGplnrwHAp28zG94iy9YWbJxoGG1pqUdtlteW
-        PPb//h27lmCWLFd3eLoL3JFr8AsAAP//AwDcYc3odwEAAA==
+        H4sIAAAAAAAAA0xPyU4jMRC991eUfM7SaZpJ6BuBC4g5IBhppAlKHLuSLnC7PHYlMCD+feROWC6W
+        /LZ6760AUM86evJb1YC6bylBxxYd7DEmYg+UwGKIaLSgHcFP2kYtCGvccES41n6n4z+oB1CVVQ3C
+        oPdMFiyluAuSE3gDCeOeDI7gBnX00GVrKxJSMx4Hp2XDsRtxQK9pZLgbWzZp/HGW2Cc1yE3J5pKm
+        C244u5Xn9u9VPasu5k8n/HhZz89/Vb/PXuX1/O6g5vUjGskOwRdZGu6Cw5x2oE3EPEk1MJmWk7qq
+        qulpT/T7P2xDq/fkDQ3L8uToa5kMJtXAnwIA4K1/4SDPtoVf+NVqtdapXXiX+k9v7VXkLb6oBspP
+        xPE2RF7nRL9z7hPfkKfULiPqxD4HJ+Ggeva9AHjo2+yS3qJqji1UiNwFWQo/oc+Bkx+zQ576mv+N
+        PZZQwqLdN3w6K/KR9+I/AAAA//8DAG8ZRGohAgAA
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7d7055589ca53e76-ADL
+      - 82ea3d67f92f5ed2-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -58,13 +38,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 14 Jun 2023 05:57:02 GMT
+      - Fri, 01 Dec 2023 09:17:56 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '870'
+      - '260'
+      x-ratelimit-limit-tokens_usage_based:
+      - '250000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '249744'
+      x-ratelimit-reset-tokens_usage_based:
+      - 61ms
     status:
       code: 200
       message: OK
@@ -79,25 +65,23 @@ interactions:
       - false
     method: POST
     uri: tool://BashProcess/run
-  response: 'LICENSE
-
-    Makefile
-
-    README.md
-
-    dist
+  response: 'dist
 
     langchain_visualizer
+
+    LICENSE
+
+    Makefile
 
     poetry.lock
 
     pyproject.toml
 
+    README.md
+
     screenshots
 
     tests
-
-    venv
 
     '
 version: 1

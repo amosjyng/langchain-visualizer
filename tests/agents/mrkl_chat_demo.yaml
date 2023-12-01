@@ -1,27 +1,5 @@
 interactions:
 - request:
-    body: ''
-    headers:
-      host:
-      - 127.0.0.1:8935
-    method: GET
-    uri: http://127.0.0.1:8935/ping
-  response:
-    content: ought-ice says pong
-    headers:
-      cache-control:
-      - no-transform
-      content-length:
-      - '19'
-      content-type:
-      - text/plain; charset=utf-8
-      date:
-      - Thu, 29 Jun 2023 01:59:28 GMT
-      server:
-      - uvicorn
-    http_version: HTTP/1.1
-    status_code: 200
-- request:
     body: '{"messages": [{"role": "system", "content": "Answer the following questions
       as best you can. You have access to the following tools:\n\nSearch: useful for
       when you need to answer questions about current events. You should ask targeted
@@ -42,27 +20,27 @@ interactions:
       `Final Answer` when responding."}, {"role": "user", "content": "What is the
       full name of the artist who recently released an album called ''The Storm Before
       the Calm'' and are they in the FooBar database? If so, what albums of theirs
-      are in the FooBar database?\n\n"}], "model": "gpt-3.5-turbo", "max_tokens":
-      null, "stream": false, "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
+      are in the FooBar database?\n\n"}], "model": "gpt-3.5-turbo", "stream": false,
+      "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA6xSTW8TMRC951eMfOkliRIW0mZvlA+BOFRVq4LAKJn1TmJTr2exZwVRlP9e2QkN
-        3Lns4X3t0xvvRwDKtaoGZSyK6Xo/ufzcvLv9+WkpNw/zm6UZ4tfdrsHtl7cPdPtBjbODmx9k5I9r
-        arjrPYnjcKRNJBTKqfPF1dVsVi0vZ4XouCWfbdteJtX01USG2PBktphXJ6dlZyipGr6NAAD25Zs7
-        hpZ+qxpKTkE6Sgm3pOpnEYCK7DOiMCWXBIOo8Zk0HIRCqX1vedhaqeEjBKIWhCERRmNhwxHEEmAU
-        lwR+WYZIhoL4HUTyhIlawADom6EDg95TCxf3luBOOHZwTRuOVCLeoO8uAEMLxpJ5BLfJ8A4wErhQ
-        JO+ZrzFCi4INJprqoMNrk5esdViv1zrsdQDQCguoVQ1a3ZWmWo3/plYu9IMcBf+ru1Y6HEoPdVrx
-        8Dz/xgWX7CoSJg550iTcH2WHEcD3cs7hnwupPnLXy0r4kUK+cbWojnnq/ILO7GJ5IoUF/Rl/Wb0Y
-        5Z8cRk8AAAD//wMANb4dfL4CAAA=
+        H4sIAAAAAAAAA6xSTW/TQBC9+1eM9tJLEiVxE6hvLQipEoeiBpBgUTJej+2lu7PW7hiIovz3yk7a
+        wJ3LHt7H6Om9PWQAylaqAGVaFOM7N337SX593Mzvv/pV3JvSf27yB3y4fb/6Vn6p1GRwhPInGXlx
+        zUzwnSOxgU+0iYRCw9XFm/nierlc3CxGwoeK3GBrOpnms9VU+liG6Xy9yM/ONlhDSRXwPQMAOIzv
+        kJEr+qMKmE9eEE8pYUOqeBUBqBjcgChMySZBFjW5kCawEI+xN23om1YKuAcmqkACJMJoWqhDBGkJ
+        MIpNAr/bAJEMsbg9RHKEiSpABnRl78Ggc1TB1aYleJQQPdxRHSKNJ96h81eAXIFpyTyBrQd4DxgJ
+        LI+SDyHcYYQKBUtMNNOs+dYMTRaad7ud5oNmAK1wBLUqQKvHMalWk7+preWul5Pgf2XXSvNxzKHO
+        LR5f668t29RuI2EKPFSaJHQn2TED+DHO2f+zkOpi8J1sJTwRDxvn6/x0T11+0IVd35xJCYLugl/n
+        y+ycRKV9EvLb2nJDsYt2XJd757Jj9gwAAP//AwB5tu/p3AIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7dea920a29fea1b0-BKK
+      - 82ea3b5a68795ee5-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -72,13 +50,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 29 Jun 2023 01:59:33 GMT
+      - Fri, 01 Dec 2023 09:16:38 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - gpt-3.5-turbo-0613
       openai-processing-ms:
-      - '3306'
+      - '6864'
+      x-ratelimit-limit-tokens_usage_based:
+      - '60000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '59599'
+      x-ratelimit-reset-tokens_usage_based:
+      - 401ms
     status:
       code: 200
       message: OK
@@ -90,149 +74,152 @@ interactions:
   response:
     body:
       string: !!binary |
-        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
-        dl2YAAA=
+        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
+        //8DAOpDEKsusQAA
     headers:
       CF-Cache-Status:
       - MISS
       CF-Ray:
-      - 7dea92260c5de692-HKG
+      - 82ea3b864fc1efce-PDX
       Cache-Control:
       - max-age=3600, public
       Connection:
@@ -242,9 +229,9 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 29 Jun 2023 01:59:37 GMT
+      - Fri, 01 Dec 2023 09:16:41 GMT
       ETag:
-      - W/"4268410697bd699b909dd73485831ebf"
+      - W/"e3b96fc2ce6da28a646c129f14484327"
       Transfer-Encoding:
       - chunked
       Vary:
@@ -252,7 +239,7 @@ interactions:
       referrer-policy:
       - strict-origin-when-cross-origin
       serpapi-search-id:
-      - 649ce58638242799abea7069
+      - 6569a476c56d930786375d80
       x-content-type-options:
       - nosniff
       x-download-options:
@@ -264,7 +251,7 @@ interactions:
       x-robots-tag:
       - noindex, nofollow
       x-runtime:
-      - '3.242298'
+      - '2.414641'
       x-xss-protection:
       - 1; mode=block
     status:
@@ -296,28 +283,44 @@ interactions:
       search for the artist who recently released an album called ''The Storm Before
       the Calm'' and check if they are in the FooBar database.\n\nAction:\n```\n{\n  \"action\":
       \"Search\",\n  \"action_input\": \"artist who recently released an album called
-      ''The Storm Before the Calm''\"\n}\n```\nObservation: Alanis Morissette \u2013
-      The Storm Before The Calm.\nThought:"}], "model": "gpt-3.5-turbo", "max_tokens":
-      null, "stream": false, "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
+      ''The Storm Before the Calm''\"\n}\n```\nObservation: [''The Storm Before the
+      Calm (stylized in all lowercase) is the tenth (and eighth international) studio
+      album by Canadian-American singer-songwriter Alanis ...'', ''Alanis Morissette
+      - the storm before the calm - Amazon.com Music.'', \"The Storm Before The Calm
+      is Alanis''s first meditation album and features 11 song meditations written
+      and recorded during the 2020/2021 pandemic.\", ''When the pandemic took hold
+      in 2020, Alanis Morissette was on the verge of releasing a new album (Such Pretty
+      Forks in the Road) as well as ...'', ''Discover The Storm Before the Calm by
+      Alanis Morissette released in 2022. Find album reviews, track lists, credits,
+      awards and more at ...'', ''View credits, reviews, tracks and shop for the 2022
+      CD release of \"The Storm Before The Calm\" on Discogs ... Alanis Morissette
+      - So-Called Chaos.'', ''Alanis Morissette gets super-chill. Welcome to \u201cStill
+      Got It.\u201d New music from vintage musicians. Fresh every Wednesday.'', ''Seven-time
+      GRAMMY\u00ae Award-winning singer/songwriter Alanis Morissette releases her
+      first meditation album, the storm before the calm ...'', ''Alanis recently dropped
+      an album titled The Storm Before The Calm. It is neither unplugged nor brash
+      nor are the lyrics confessional ...'']\nThought:"}], "model": "gpt-3.5-turbo",
+      "stream": false, "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA2RSS28aMRC+8ytGvuQCCER47S30IbVVI0WNlLbZCgbvLOvGO7Oyh5IW8d8rLxBS
-        9eLD9/L4G+87AMYVJgNjK1RbN743fVi/+343/bbgX8Pmq5/f3fNmdFuWnz4+PP8x3eSQ9U+yenb1
-        rdSNJ3XCR9oGQqWUOpzMZoPBaD6dt0QtBflk2zTaG/XHPd2GtfQGk+Ho5KzEWYomg8cOAMC+PdOM
-        XNCzyWDQPSM1xYgbMtmLCMAE8QkxGKOLiqymeyGtsBK3Y99XBBjURYVdJRDIEqv/DYE8YaQCkAH9
-        eluDRe+pgKvk+KISalhQKYFAK4I36OsrcBFuPLKL8FmCi5FUqQ+3soMPwEQFqICtyD6BKyFWlAyO
-        24D3IgsMUKDiGiMBctGKpAu7CvU4QwQpoaIQAQOdnWdLP+ecb2wqP8t5tVrlvM8ZIDfYgrnJIDen
-        e94uctN9zS4dN1s9av57Q25yPpwyzanGw0v/pWMXq2UgjMKp06jSHGWHDsCPdp/bf1ZkmiB1o0uV
-        J+K05Ovp5JhnLl/owk5nJ1JF0V/w8fi6ky45dP4CAAD//wMAcfVJhL8CAAA=
+        H4sIAAAAAAAAA2SST08bMRDF7/spRr5wSaL8o8DeSCgVqopEi3qpq2TinWQN3pmVPWlKo3z3ajcJ
+        AXHxYd77jZ/8vM0AjC9MDsaVqK6qQ/fyQf/8/DoK9eDqu38M9+PbL5/vpqVMn/49XJlOQ8jiiZwe
+        qZ6Tqg6kXngvu0io1GwdXPQH4+Fw2B+0QiUFhQZb1dod9c67uo4L6fY/DUYHshTvKJkcfmUAANv2
+        bDJyQX9NDv3OcVJRSrgik7+aAEyU0EwMpuSTIqvpnEQnrMRt7MeSAKP6pLApBSI5Yg0vECkQJioA
+        GTAs1hU4DIEKOGuIHyqxggktJRJoSTDFUJ2BT3AdkH2CbxJ9SqRKPbiXDdwBExWgAq4k9wx++dHZ
+        4J7bdbciE4xQoOICEwFy0SBJOrApUfeJEsgSSooJMNKRPCI9y5avXVNFbnk+n1veWgawBtuhNTlY
+        c7jnZmJN560681yvde/5kNMay7vDTsvm8Ky71z6Wnn0qZ5EwCTdvnFTqvW2XAfxu+12/q8zUUapa
+        ZyrPxE3pF+fD/T5z+lIn9fIoqiiGN/PRODskMeklKVWzpecVxTr6tm5eh5Dtsv8AAAD//wMAOnFS
+        2u0CAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7dea923eaf27a1b0-BKK
+      - 82ea3b9789365ee5-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -327,13 +330,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 29 Jun 2023 01:59:42 GMT
+      - Fri, 01 Dec 2023 09:16:54 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - gpt-3.5-turbo-0613
       openai-processing-ms:
-      - '3673'
+      - '13182'
+      x-ratelimit-limit-tokens_usage_based:
+      - '60000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '59190'
+      x-ratelimit-reset-tokens_usage_based:
+      - 810ms
     status:
       code: 200
       message: OK
@@ -410,25 +419,27 @@ interactions:
       Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
       As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\nQuestion:
       Alanis Morissette\nSQLQuery:"], "model": "text-davinci-003", "temperature":
-      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}, "stop": ["\nSQLResult:"]}'
+      0.0, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}, "max_tokens": 256, "stop": ["\nSQLResult:"]}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0yQQU/CQBCF7/0Vk0kIF0laK1DriZg1EKgokmBiDVnaAVa3u013MSDhv5stCFzm
-        MN+892Zm7wGgyDEGzIpStrqzBctn43fW73SHv+tl+BL0jHptB7uELfHGTevFF2XWKSxt7TzTRSnJ
-        Cq2OOKuIW3KOQSeKfD+8j8IaFDon+S9r5fxHqEy0fD886dZaZGQwhg8PAGBfVziOOxm8sRF7nEKK
-        z7ygFOFpMk4gxV5lhbEpwqzPJuyCR4Mhg2ajJ7kSBhJdCWPIWmo0YTRIBlNoP9TJdYhQOW0xBv/c
-        kXpVVnrhFlIbKc/9pVDCrOcVcaOV28tYXWJNDx7AZ33MxvAVYXw6AstKF6WdW/1NyhneBu3oaIiX
-        913hzglabbm8lkV3nos5eH8AAAD//wMAdMw/RbgBAAA=
+        H4sIAAAAAAAAA0xQS2/bMAy++1cQAopemsRx3TXwTkHnYVmTFc0CtMAyBLJMJ2wtUZMUr0PR/z7I
+        SR8XHvjxe/E5ARB/pTNktqIAsdqRB801ttCh88QGyEON1qGSAeshLGjrZECosGGH8F2avXT/ID+D
+        LM1yCAyyY6qhJu/2NkQFbsCj60jhEOYonQEdqbsQrC9GI9vK0LDTQ7ZoJA0V61HNyo9ebYmNF2cx
+        KdUxpNK2HUxuQ0dXt9c307tzqi7vl3+4etSr5kF/6e4P11w9oAqREfApbBRr22JUO8DKYawkChhf
+        puM8y7Jx3gN9/1faoJYdGUWDND0/8nZMCr0o4FcCAPDcTzicRxr8LOfl1QrW4ofUuBbwdXmzgLWY
+        ukA+rAXcfSuX5Ts8n12XcHoybaUhDwt25D2GgCenMJ8tZiu4+Nw79yZkanwSBaRvm5a31nEVA5l9
+        277tGzLkdxuH0rOJuXxgK3r0JQH43ZfZe7lFURxLCOtY27AJ/IgmCmbji8lBULy/7wP86QgGDrL9
+        SJvkSbR5Sf4DAAD//wMAeIbTamICAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7dea925b386ea1b0-BKK
+      - 82ea3beabe515ee5-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -438,13 +449,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 29 Jun 2023 01:59:47 GMT
+      - Fri, 01 Dec 2023 09:16:55 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '4269'
+      - '842'
+      x-ratelimit-limit-tokens_usage_based:
+      - '250000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '249744'
+      x-ratelimit-reset-tokens_usage_based:
+      - 61ms
     status:
       code: 200
       message: OK
@@ -522,25 +539,27 @@ interactions:
       As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\nQuestion:
       Alanis Morissette\nSQLQuery:SELECT \"Name\" FROM \"Artist\" WHERE \"Name\" LIKE
       ''%Alanis Morissette%'' LIMIT 5;\nSQLResult: [(''Alanis Morissette'',)]\nAnswer:"],
-      "model": "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {},
-      "stop": ["\nSQLResult:"]}'
+      "model": "text-davinci-003", "temperature": 0.0, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 1, "logit_bias": {}, "max_tokens": 256, "stop":
+      ["\nSQLResult:"]}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA1SPwU7DMAyG730KK2cqhU7bSm8MAQeEhHYBhNCUpqYNS+Oo8djQtHdHycqmXXLw
-        93+/nX0GIEwjKhC69zafv9b3XSF/n1787O5tuV00a/m4fFi8Y7FtxVVMU/2NmqPBuOOVpt5bZEPu
-        iPWAijE2Xs/KUsrJTTlPoKcG7b+WN+rHOG1yKSej15HRGEQFHxkAwD69cIxHDW6tcibAMw0mBGTG
-        JKaMcQ3uRAXyNLHU+oHq2Oc21p7mX8aZ0K0GVIFcrA1MXiR6yAA+0y2boFoU1XiD8AP1nldMa3Sx
-        sCjkuEicf3/G05ExsbIX1jSLWw7ZHwAAAP//AwCdNcuCdgEAAA==
+        H4sIAAAAAAAAA1SPQU8bQQyF7/srrDmTZLOElO4NuFSFULXihlA0mXESw+x4NPYuqRD/vZpNAPXi
+        g9/7np/fKgDzanOkuDMtmIc9CXTsMcCAWYgjkIDHlNFZRT+FFe2yVYQNbjkj/LSxt/kvLM6gqZsF
+        KIMdmDx4ktwnLQm8BcE8kMMp3KHNEbqC7lWTtLNZCla3nLspJ4yWpo67mWcns4+zxFHMWWlKvpR0
+        XQqTy986vFzLzfPN9/v+9fYgnpfLH+cPv+q71Z+jmzfP6LQQigddO+5SwJJ2lF3G8pJpYf6tni+a
+        ppkvR2H8/wObeDtQdDSp6/MTt2dyKKaFxwoA4G2ccLQXDK6CjSSw4kwiqIojOHooejyYFurPTeBd
+        yrwpebEP4XO/pUiyX2e0wrHEinIyo/peATyNXXqxOzTtqYNJmbuka+UXjCWwaerTIfP1/Zd8cdKU
+        1Yb/qIuqXHmv/gEAAP//AwCgw+JTIAIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7dea9279ddcca1b0-BKK
+      - 82ea3bf1385a5ee5-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -550,13 +569,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 29 Jun 2023 01:59:49 GMT
+      - Fri, 01 Dec 2023 09:16:56 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '1847'
+      - '532'
+      x-ratelimit-limit-tokens_usage_based:
+      - '250000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '248154'
+      x-ratelimit-reset-tokens_usage_based:
+      - 442ms
     status:
       code: 200
       message: OK
@@ -586,31 +611,48 @@ interactions:
       search for the artist who recently released an album called ''The Storm Before
       the Calm'' and check if they are in the FooBar database.\n\nAction:\n```\n{\n  \"action\":
       \"Search\",\n  \"action_input\": \"artist who recently released an album called
-      ''The Storm Before the Calm''\"\n}\n```\nObservation: Alanis Morissette \u2013
-      The Storm Before The Calm.\nThought:The artist who recently released an album
-      called ''The Storm Before the Calm'' is Alanis Morissette. Now I need to check
-      if she is in the FooBar database and if so, what albums of hers are in the database.\n\nAction:\n```\n{\n  \"action\":
-      \"FooBar DB\",\n  \"action_input\": \"Alanis Morissette\"\n}\n```\n\nObservation:
-      Alanis Morissette\nThought:"}], "model": "gpt-3.5-turbo", "max_tokens": null,
-      "stream": false, "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
+      ''The Storm Before the Calm''\"\n}\n```\nObservation: [''The Storm Before the
+      Calm (stylized in all lowercase) is the tenth (and eighth international) studio
+      album by Canadian-American singer-songwriter Alanis ...'', ''Alanis Morissette
+      - the storm before the calm - Amazon.com Music.'', \"The Storm Before The Calm
+      is Alanis''s first meditation album and features 11 song meditations written
+      and recorded during the 2020/2021 pandemic.\", ''When the pandemic took hold
+      in 2020, Alanis Morissette was on the verge of releasing a new album (Such Pretty
+      Forks in the Road) as well as ...'', ''Discover The Storm Before the Calm by
+      Alanis Morissette released in 2022. Find album reviews, track lists, credits,
+      awards and more at ...'', ''View credits, reviews, tracks and shop for the 2022
+      CD release of \"The Storm Before The Calm\" on Discogs ... Alanis Morissette
+      - So-Called Chaos.'', ''Alanis Morissette gets super-chill. Welcome to \u201cStill
+      Got It.\u201d New music from vintage musicians. Fresh every Wednesday.'', ''Seven-time
+      GRAMMY\u00ae Award-winning singer/songwriter Alanis Morissette releases her
+      first meditation album, the storm before the calm ...'', ''Alanis recently dropped
+      an album titled The Storm Before The Calm. It is neither unplugged nor brash
+      nor are the lyrics confessional ...'']\nThought:The artist who recently released
+      an album called ''The Storm Before the Calm'' is Alanis Morissette. Now I need
+      to check if Alanis Morissette is in the FooBar database and if so, what albums
+      of hers are in the database.\n\nAction:\n```\n{\n  \"action\": \"FooBar DB\",\n  \"action_input\":
+      \"Alanis Morissette\"\n}\n```\n\n\nObservation: Alanis Morissette\nThought:"}],
+      "model": "gpt-3.5-turbo", "stream": false, "n": 1, "temperature": 0.0, "stop":
+      ["Observation:"]}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA2RRTU/bQBC9+1eM9pxE+SAh+BagICSgVS8c2CpZryd4iz3j7oxFqyj/HdkxCRWX
-        Pbw3783bN7sEwITcpGB84dRXdTk8f8q+vf68f/z+52p+6x8KuT2blDfX5z+mK1mZQavg7Dd6/VCN
-        PFd1iRqYDrSP6BRb18liuRyPZxcX446oOMeylb3UOpyN5kNtYsbD8WIy65UFB49iUnhOAAB23dtm
-        pBz/mhQ6nw6pUMS9oEmPQwAmctkixokEUUdqBifSMylSF3tVOgoCDxyDCKoiBIFAoAXCDfOli5A7
-        dZkTHMEjv8EdEGIOyrANlAM3Cm+FU3Bl1lQCvIUCo4CL+GFz1FuytPJtO6mlzWZjaWcJwBrXgdak
-        YE2/9PrSmsFndh2obvQw0+/K/sGX+NZY2vfulkz/5/2xrG2gIMU6ohOmtgBRrg9j+wTgV1d+81+f
-        po5c1bpWfkVqLzJfnB38zOnen9hlTyqrK0/4YjpN2iX75B0AAP//AwCdWslMbAIAAA==
+        H4sIAAAAAAAAA2RRXWvbQBB8169Y9tk2kuOPVG8JoZBACoVASnvFPklr6xppV9yt4hjj/14ky3ZL
+        Xu5hZmdudvYQAaArMAXMS6t53VTj2+/6/iYvom0c+93y9f1p8THN5/MfP/dPBY46hWR/KNezapJL
+        3VSkTvhE556sUueaLONkNp1Ok0VP1FJQ1cm2jY5vJvOxtj6TcbxIbgZlKS6ngCn8igAADv3bZeSC
+        PjCFeHRGagrBbgnTyxAAeqk6BG0ILqhlxdGVzIWVuI99V1l2AZ7FuxBIlcAFcAxaEnwVubceCqs2
+        s4Em8E128AhMVIAKbBwXIK3CrrQKtsraOoBsoCQfwHo621z0hg3f5V07qeH1em34YBjAoO1BgykY
+        HD59uDc4+pddOW5aPc0Mf2V7+BTfoOFj747DvsdLURvHLpQrTzYId8sHleY0dowAfvfFt/91iY2X
+        utGVyhtxd43b2ezkh9dbX9n5ciBV1FZX/EucREMSDPugVK82jrfkG+/6O3BbVdEx+gsAAP//AwCH
+        O0hMhgIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7dea92880ebda1b0-BKK
+      - 82ea3bf529a45ee5-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -620,13 +662,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 29 Jun 2023 01:59:53 GMT
+      - Fri, 01 Dec 2023 09:17:03 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - gpt-3.5-turbo-0613
       openai-processing-ms:
-      - '2713'
+      - '7206'
+      x-ratelimit-limit-tokens_usage_based:
+      - '60000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '59104'
+      x-ratelimit-reset-tokens_usage_based:
+      - 896ms
     status:
       code: 200
       message: OK
@@ -703,26 +751,27 @@ interactions:
       Johnson\t343719\t11170334\t0.99\n2\tBalls to the Wall\t2\t2\t1\tNone\t342562\t5510424\t0.99\n3\tFast
       As a Shark\t3\t2\t1\tF. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\t230619\t3990994\t0.99\n*/\n\nQuestion:
       albums by Alanis Morissette\nSQLQuery:"], "model": "text-davinci-003", "temperature":
-      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}, "stop": ["\nSQLResult:"]}'
+      0.0, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}, "max_tokens": 256, "stop": ["\nSQLResult:"]}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA1SRXU/CMBSG7/crTs4NN2IGKLIZL4iZYQojTiImzpBuK1Dp2qUtgiH8d9MxPrzp
-        xfu87/nqzgFAlqMPmBUlb95N00Bshu/kI2iTxTx/Wb2qTVQoMoh+u3hl3TL9ppmxCUO3ZpbJouTU
-        MCkOOFOUGGortrq9nut2PK9TgULmlB9jzZz8MJGxput26txSsoxq9OHTAQDYVS8c7DYGb8EweJxA
-        ghNmOE0QnuLxCBLs83RdJAhhFAUxPI/DyIrKMG0ShHF0tlwf9TBPEB4ubP/JdBDEASQYkYJWxkaf
-        E8E0jKRiWlNjaAOG4SicwO19NX41KRM53aIP7knhclEqmdqtxJrzkz5ngunlTFGipbDLaSNLrOje
-        AfiqLrLWZEHRry+BpZJFaWZGrqiwBdutbt0Iz39wxjdeDY00hF/E2q7n2DZ75w8AAP//AwDWmfyd
-        /QEAAA==
+        H4sIAAAAAAAAA1RRTW8aMRC98ytGvuQSYNnSptmqh6ha1E1gaQAph26FjHeASb0eyzYkVZT/XnmB
+        kFx8eB8z741fOgDiSTpDZiMyEIsteWi4Rg17dJ7YAHmo0TpUMmDdgwltnAwIK1yzQ7iVZifdPxhe
+        QpqkQwgMcs9UQ03e7WyIE3gNHt2eFPZgjNIZaKJ1G4L1Wb9vtQxrdk2PLRpJPcVNv2bl+6e1xMaL
+        y5iU6hhSNVZ3v96Hvbfp42w9mt/Z0dXdiHIu7tWveen4oObVI6oQHQGfw1JxYzXGaQdaOYyVRAaD
+        q2QwTNM0HbZE2/9k69ZyT0ZRN0k+HX1bJoVeZPC7AwDw0r5wkEcbzPNx/mMBlVhQ0FgJGM2mE6jE
+        jV7tmkpAUZb5DG6nRRlBF8iHSsC0PEt6J7yoKwHf38k+Mg8/81kOlShlg63w4kZLQx4m7Mh7DAEv
+        YFxMigV8/tbGb5OSqfFZZJC8IZo31vEqtjI7rd/wNRny26VD6dnEcj6wFS372gH4015k5+UGRXa8
+        hLCOGxuWgf+iiQPTwZfjInH+gzM9vD6SgYPU72xpct2Ja147/wEAAP//AwC9zt0KpwIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7dea929d3c8da1b0-BKK
+      - 82ea3c23aa1b5ee5-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -732,13 +781,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 29 Jun 2023 01:59:59 GMT
+      - Fri, 01 Dec 2023 09:17:05 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '6234'
+      - '1049'
+      x-ratelimit-limit-tokens_usage_based:
+      - '250000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '249744'
+      x-ratelimit-reset-tokens_usage_based:
+      - 61ms
     status:
       code: 200
       message: OK
@@ -817,26 +872,27 @@ interactions:
       albums by Alanis Morissette\nSQLQuery:SELECT \"Title\" FROM \"Album\" INNER
       JOIN \"Artist\" ON \"Album\".\"ArtistId\" = \"Artist\".\"ArtistId\" WHERE \"Name\"
       = ''Alanis Morissette'' LIMIT 5;\nSQLResult: [(''Jagged Little Pill'',)]\nAnswer:"],
-      "model": "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {},
-      "stop": ["\nSQLResult:"]}'
+      "model": "text-davinci-003", "temperature": 0.0, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 1, "logit_bias": {}, "max_tokens": 256, "stop":
+      ["\nSQLResult:"]}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0yQy26DMBBF93zFyOtSGUJTyq6qsulDyiJSFlWFDEzBjfFQPLRUUf69MuS18WLO
-        3HNH3gcAQlciA1G2nQnvt8VqeHiqhzb5Hdbfdy+77ZjEuIpi2izFjd+m4gtL9gnGkfOS2s4ga7Iz
-        LntUjN4YLdNUykRKOYGWKjSnWFipH21LHUq5OOYa0iU6kcF7AACwn16Y130MNg2CMsXQOij+4NEo
-        qx28Ua+dQ2YE1SM8q7rGCl41s0FYa2NuJ/1k0rbCUWQgzxNDdddT4VvtYMx5/qmtdk3eo3Jkfblj
-        6sREDwHAx3Tx4FSNIjteKrqe2o5zph1aL4zjOJmF4vJHFxydIBMrcx1bpIGvOQT/AAAA//8DAKfV
-        xPedAQAA
+        H4sIAAAAAAAAA0yQQU/cMBCF7/kVI5/ZbDZsWZRb1VMRCChIPVTVyrEnyWwdj2VPAgjx35GzLPTi
+        g998772Z1wJAPenoyfeqAfU4UIKRLTqYMSZiD5TAYohotKAt4Yb6qAWhxY4jwpX2k44vsD2Duqq3
+        IAx6ZrJgKcUpSHbgDhLGmQyWcI06ehgzOoiE1KzXwWnpOI4lB/SaSsPj2rJJ61MssU/qLDclm0ua
+        MbjV5b3Mcm8O8ZYk/TxcULe7/XE1PDzg7vev4zS3BzSSCcFn2Rseg8PsdpRNxLySamCzqzbbuq7r
+        b4uw7H/CVlbP5A2tqur8gxuYDCbVwJ8CAOB1eeE4njF4HBC0a6cxQfsC3532lOCGI6WEIgh6OVzf
+        o4VrEnEId+RcudgvTuQtPqsGqs8fx32I3OZUPzn3+d+RpzTsI+rEPocn4aAW9a0A+Ls0npLuUTUf
+        TVWIPAbZC/9Dnw3rut4eDdXXjb7kzUkUFu3+x84vixzzVrwDAAD//wMAFyf8nkcCAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7dea92c6c921a1b0-BKK
+      - 82ea3c2adcb85ee5-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -846,13 +902,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 29 Jun 2023 02:00:04 GMT
+      - Fri, 01 Dec 2023 09:17:05 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '4371'
+      - '478'
+      x-ratelimit-limit-tokens_usage_based:
+      - '250000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '248085'
+      x-ratelimit-reset-tokens_usage_based:
+      - 459ms
     status:
       code: 200
       message: OK
@@ -882,36 +944,51 @@ interactions:
       search for the artist who recently released an album called ''The Storm Before
       the Calm'' and check if they are in the FooBar database.\n\nAction:\n```\n{\n  \"action\":
       \"Search\",\n  \"action_input\": \"artist who recently released an album called
-      ''The Storm Before the Calm''\"\n}\n```\nObservation: Alanis Morissette \u2013
-      The Storm Before The Calm.\nThought:The artist who recently released an album
-      called ''The Storm Before the Calm'' is Alanis Morissette. Now I need to check
-      if she is in the FooBar database and if so, what albums of hers are in the database.\n\nAction:\n```\n{\n  \"action\":
-      \"FooBar DB\",\n  \"action_input\": \"Alanis Morissette\"\n}\n```\n\nObservation:
-      Alanis Morissette\nThought:Alanis Morissette is in the FooBar database. Now
-      I need to find out what albums of hers are in the database.\n\nAction:\n```\n{\n  \"action\":
-      \"FooBar DB\",\n  \"action_input\": \"albums by Alanis Morissette\"\n}\n```\n\n\nObservation:
-      The albums by Alanis Morissette are Jagged Little Pill.\nThought:"}], "model":
-      "gpt-3.5-turbo", "max_tokens": null, "stream": false, "n": 1, "temperature":
-      0.0, "stop": ["Observation:"]}'
+      ''The Storm Before the Calm''\"\n}\n```\nObservation: [''The Storm Before the
+      Calm (stylized in all lowercase) is the tenth (and eighth international) studio
+      album by Canadian-American singer-songwriter Alanis ...'', ''Alanis Morissette
+      - the storm before the calm - Amazon.com Music.'', \"The Storm Before The Calm
+      is Alanis''s first meditation album and features 11 song meditations written
+      and recorded during the 2020/2021 pandemic.\", ''When the pandemic took hold
+      in 2020, Alanis Morissette was on the verge of releasing a new album (Such Pretty
+      Forks in the Road) as well as ...'', ''Discover The Storm Before the Calm by
+      Alanis Morissette released in 2022. Find album reviews, track lists, credits,
+      awards and more at ...'', ''View credits, reviews, tracks and shop for the 2022
+      CD release of \"The Storm Before The Calm\" on Discogs ... Alanis Morissette
+      - So-Called Chaos.'', ''Alanis Morissette gets super-chill. Welcome to \u201cStill
+      Got It.\u201d New music from vintage musicians. Fresh every Wednesday.'', ''Seven-time
+      GRAMMY\u00ae Award-winning singer/songwriter Alanis Morissette releases her
+      first meditation album, the storm before the calm ...'', ''Alanis recently dropped
+      an album titled The Storm Before The Calm. It is neither unplugged nor brash
+      nor are the lyrics confessional ...'']\nThought:The artist who recently released
+      an album called ''The Storm Before the Calm'' is Alanis Morissette. Now I need
+      to check if Alanis Morissette is in the FooBar database and if so, what albums
+      of hers are in the database.\n\nAction:\n```\n{\n  \"action\": \"FooBar DB\",\n  \"action_input\":
+      \"Alanis Morissette\"\n}\n```\n\n\nObservation: Alanis Morissette\nThought:Alanis
+      Morissette is in the FooBar database. Now I need to find out what albums of
+      hers are in the database.\n\nAction:\n```\n{\n  \"action\": \"FooBar DB\",\n  \"action_input\":
+      \"albums by Alanis Morissette\"\n}\n```\nObservation: The albums by Alanis Morissette
+      are Jagged Little Pill.\nThought:"}], "model": "gpt-3.5-turbo", "stream": false,
+      "n": 1, "temperature": 0.0, "stop": ["Observation:"]}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/chat/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA6xSTU/bQBC9+1eM9sIlsRwFQuobQU1VVCRaKnFoKjRej+OF9Yy1OxEFlP+O1gmJ
-        qra3XvYw72Pf6M1rBmBcbUowtkW1Xe/H53fVx5eHhV5/+kbN8uZq2l1+fqHHu8XXOLdmlBRSPZDV
-        d1Vupes9qRPewTYQKiXXyWw+L4rTojgbgE5q8km27nU8zc/GugmVjIvZZLpXtuIsRVPCjwwA4HV4
-        U0au6ZcpoRi9TzqKEddkygMJwATxaWIwRhcVWc3oCFphJR5if28Jmo33wNgRSAPaEmBQFxWeWoFA
-        llj9MwTyhJFqQAb01aYDi95TDSfJ4lYldLCgRgINFpfouxNwES48sotwLcHFSKqUw21LCXE8MJci
-        CwxQo2KFkQC5HubC/nn/kzTQUjgoDlQXYWWucL2mGr44VU9w47xfmXzFK146Rg8XHJ8olH/mSOr/
-        uWwOCdux/57q30vnZl/O9tBq49jF9j4QRuHUVFTpd7RtBvBzuJLNb8WbPkjX673KI3E6ndnpZOdn
-        jod5RD/sT8ioKPrj/Hw6ydIn2+wNAAD//wMAWCbqSRUDAAA=
+        H4sIAAAAAAAAA6xSwW7TQBC9+ytGe8klseIUAuTWIhUBLQIVqQKKook9iRdmd6ydcUta5d+RHTcB
+        ATcue3gz7+3bfe8hA3C+cgtwZY1WhoYnzz/YbXt//Un5+lX9+kIuy/nt5+lbmr/zAd24Y8jqG5X2
+        yMpLCQ2TeYn7cZkIjTrV4tm0eDKbzWbzfhCkIu5om8YmJ/nTibVpJZPpvDgZmLX4ktQt4EsGAPDQ
+        n53HWNEPt4Dp+BEJpIobcovDEoBLwh3iUNWrYTQ3Pg5LiUaxt33KGL3CpSSvSmYEXsFqAkzm1eCu
+        FkhUUjTeQiImVKoAIyCv2gAlMlMFo481wZVJCnBGa0nUS7xEDqMcrupe1McePBc5wwQVGq5QCTBW
+        PS6Rt4OorKGmdGAcVr3C6A1uNlTBhTdjgveeeZTfxJt47iMynEa9o7SAzs66ZYaIgTq9//mizscf
+        35b3d+4l/mby3z+QuyGY3SHRtY9e62UiVIldSmrS7Nd2GcDXviHtb6G7JklobGnynWJXmxezYq/n
+        jqX8ZTrUx5kY8hEvpkWRDVacbtUoLNc+big1yfeNiS1ztst+AgAA//8DADgB+60wAwAA
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7dea92e5fc85a1b0-BKK
+      - 82ea3c2e7df95ee5-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -921,13 +998,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 29 Jun 2023 02:00:09 GMT
+      - Fri, 01 Dec 2023 09:17:17 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - gpt-3.5-turbo-0613
       openai-processing-ms:
-      - '3892'
+      - '11587'
+      x-ratelimit-limit-tokens_usage_based:
+      - '60000'
+      x-ratelimit-remaining-tokens_usage_based:
+      - '59034'
+      x-ratelimit-reset-tokens_usage_based:
+      - 966ms
     status:
       code: 200
       message: OK

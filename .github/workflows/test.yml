@@ -31,6 +31,8 @@ jobs:
           cache: "poetry"
       - name: Install dependencies
         run: poetry install
+      - name: Download playwright browsers
+        run: poetry run playwright install
       - name: Run unit tests
         run: |
           make tests-ci

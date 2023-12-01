@@ -1,41 +1,31 @@
 interactions:
 - request:
     body: '{"prompt": ["Tell me a joke", "Tell me a poem", "Tell me a joke", "Tell
-      me a poem"], "model": "text-davinci-003", "temperature": 1.0, "max_tokens":
-      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 2, "logit_bias":
-      {}, "best_of": 2}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '251'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      me a poem"], "model": "text-davinci-003", "temperature": 1.0, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 2, "logit_bias": {}, "max_tokens": 256, "best_of":
+      2}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA7SU32saQRDH3/tXTOelL6totJrcSzDkpaVS0l+h9Iqst+Pd6t7OdXdOc4j/ezkt
-        mBoKaZq+LbMDnw8zX2aL1mCCWVm5zvhaZ3oy52b4eTRdLqfvpvTj5n15q1dvqw0q5PmSMsEEhe5k
-        lnFZORLLHhVmgbSQwaQ/Oh8Mx4PBxZnCkg25X+0do9fWZ7bT6w3a/oJtRhGTb9v9NyaY+tTfJHBb
-        aAFjDUhBsLCxgKgb2BTkwQoUVvYfG+3cZeonCVzr8iUqtN7QHSY9hY7zKvA8YuJr5xQurLexmAXS
-        kT0mGIUr3Knfud2/5HZPuP2ncT9wpAg6EAQyCr5YdiSHwtzVpOBjnesANkLcEImCiTcQed/QcN09
-        Cpw9g8AD/gkermoBz1JYn0O7fh0owifeT8bxmuANFHpNsODQ6h3tBk9cy0kc2ne7FTkgY6bD4pCC
-        r1xDoX0OOnDtDWwK61qdnIE96IK0uTes4T/oNGDYvxKImSUvNkoECXUU0MJlvGz7JglcUabrSK1m
-        A6VeEdQV0JpCs5/eveS8/i/JeXxwRs/CT/2D7Kb+1CH1f7QYP9biu8I66pww2WIVuKxkJrwiH9vT
-        o/B4lI7l875CYdHuWLoY73YvfgIAAP//AwCJ+psi+wQAAA==
+        H4sIAAAAAAAAA9SVTW8TMRCG7/kVw164pPnYlJYuB9RKqKiiQFtUhAiqHHuya7o7Y+xx0qXqf0fe
+        pC2ISEigCrjsYT6f1zP2XvcAsqXyZKnMCsjeVTZAwwZrWKAPlglsAIPOo1aCZgDHtvRKEGY4Z49w
+        pCgq38J2H/JRvg3CoBZsDRgbfHSSKvAcAvqF1TiAV6g8QZNSKxEXiuHQ1Urm7JsBOyRlB5qboWEd
+        hrdtLVPI+onUmgSpG1dvPT2Rq9nOi3j6gRy3Xzzlh4evj1++yY/Oy8NVNM8+o5aUIXglF5obV2Oq
+        tnJrj0lSVsB4dzTezvPJZNw5Ov23aVtGLSxpuzUaTdZ5FVuNISvgYw8A4Lr7wio8pU1pSicFvK9a
+        MNaAVAhBK4/a8xKWljrLa55hDW+9/YrPp7RfwAFqFQNChbBUAThKEEXGUgmWIM1lbrE2gw6i62fJ
+        4FVWwOjOUnPpPM8SG8W6vrPPLdlQXXhUgSkhBmGXdd6b/i9EKOlUMCEsVOOsRwiqTYNOMlgq9LeO
+        lZAzRGg5Qq0EfR9cJH356Gfq8UNRn3LAAMojeDT9KZ1brlFWllkdsT+ls1gqnzY7LBGlP6V9MhC4
+        C2k5bqDN/13aDRsxefCN4G7EWtU1KJih8rC0UnEUUASo/GoV9uFgw1luPyhdC4bpsUDQFklskADi
+        YxBQwk348a5JhS006hIhOsAF+lYqS+UG5if/1fx3/hbts9+h3f0j2h7Ap+5djkGVmBVr8Mx5bpxc
+        CF8ipYLj9aFk9/+B75x76yuTCYuq7x35aK+Xmtz0vgEAAP//AwCQHDpeKwcAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a803de80d3e6f-ADL
+      - 82ea3ec62fe25eeb-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -45,39 +35,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:29:54 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:52 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '2179'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '574'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '245903'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 983ms
-      x-request-id:
-      - 2bea53cc975f902267948fe6288ea43b
     status:
       code: 200
       message: OK
