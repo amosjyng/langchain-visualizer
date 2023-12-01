@@ -4,7 +4,7 @@ version = "0.0.31"
 description = "Visualization and debugging tool for LangChain workflows"
 authors = ["Amos Jun-yeung Ng <me@amos.ng>"]
 readme = "README.md"
-packages = [{include = "langchain_visualizer"}]
+packages = [{ include = "langchain_visualizer" }]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -31,13 +31,11 @@ pytest-asyncio = "^0.21.0"
 playwright = "^1.34.0"
 beautifulsoup4 = "^4.12.2"
 lxml = "^4.9.2"
-langchain-experimental = "^0.0.17"
+langchain-experimental = "^0.0.43"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
-markers = [
-    "network: marks tests as requiring network services",
-]
+markers = ["network: marks tests as requiring network services"]
 filterwarnings = [
     "error",
     'ignore:There is no current event loop:DeprecationWarning',
@@ -47,7 +45,7 @@ filterwarnings = [
     'ignore::sqlalchemy.exc.MovedIn20Warning',
     # avoid "UserWarning: A newer version of deeplake (3.6.7) is available."
     'ignore::UserWarning',
-    "ignore:invalid escape sequence:DeprecationWarning"
+    "ignore:invalid escape sequence:DeprecationWarning",
 ]
 
 [tool.mypy]
