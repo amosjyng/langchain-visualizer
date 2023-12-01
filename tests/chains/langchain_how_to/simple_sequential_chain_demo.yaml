@@ -3,44 +3,34 @@ interactions:
     body: '{"prompt": ["You are a playwright. Given the title of play, it is your
       job to write a synopsis for that title.\n\nTitle: Tragedy at sunset on the beach\nPlaywright:
       This is a synopsis for the above play:"], "model": "text-davinci-003", "temperature":
-      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '359'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      0.0, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA6xUwW7dNhC89ysWvORCC06e66S6pc3FOcYB2qIpjBW5EulHLWXuys+K4X8vSCVx
-        2l5zEkDu7MzOLPVooje9cfOSzl6/Q/fz3d3t6c/P+Nvw+XJ8yHdh/eM+feCrV8aaPNySU9MbpQe9
-        cXleEmnMbKxxhVDJm/7l5ZvDxevD4fKlNXP2lL6Un3m8j+zi2fn5odaHHB2J6f96bNemN5/4E38s
-        OJHfABWuVxZSyAwaCH4ldAGiAIJoLhvkEVK+Jwspi1hA9lDI07xUQR1cKYw5pXySBv+G0VOGLa88
-        NXQRC+/RHRv8fUzJwilkmGknRhgaLSpIU9PBx0Ab3K3RHdMGI6YEkVur1mJJyKAZZixlszCsWtlj
-        aRcCWAgkoCoV8nAKxDt7FNCCU3SY0gbHmBL52hfBYQF0Lnpi7aA6VFVWQKJRwdM9ilbjG71oWacp
-        kVQNLi8Ep6gBAhWYSqSxg+tAMEb2ApITOqos1Z+aJXJzqFYPJApjicTewjUWDLsxgdIiraIRzFS/
-        SmWWZ6aaRwdvpfkJA02Rm55AmCxIIPBRXDMfNKDuFgT0NVpyhRQWFN3vArWbIy0KIXpPDGPJcyX6
-        tx2eqozI5CvXyo2gjaZl1dDsoXnAcpQ92du8FqY2sVAaz76K2jp4mzJPDXvCbZdcN6Lu3ryJUol5
-        lWo28kTl/8as7KmIVsrvBAx53Wd9IW3ADn5vlkVpaAtfR8EhNV9rTuBSlrV82S5CR/vYV3tsLZ//
-        4ua6jZm/SySOe4PWMeCyRCYRwAkjd/CD3twe2KmKSYT1Qaw+EjuSpmjf0MiyxEK+M9ZE9vRg+nNr
-        Up6WkgcxPa8pWTNGjhJuCqFkNr0RzYt5+tuaVXAi0z+apeR50RvNR2Ix/cUv1jz/jr4dvzpcWKNZ
-        MT0fvTk8Pf30DwAAAP//AwCt/L7q9QQAAA==
+        H4sIAAAAAAAAA6xUTW8bNxC961cM9tLLei3LChLrlt5stAVSu0iBpjBG5OySEZekObOSF0H+ezBc
+        f7W99iIBO3zz3rxHzrcVQHPCEn0cmh00d84zjMlSgCMV9imCZ7CUCxkUsh386oeCQrCnPhWCG4wT
+        lhm2LWzWmy1IAjwmb8F6LlMW7ZB6YCpHb6iDXwhLhFGhTiTz7vw8B5Q+lbFLmSL6zqTx3CbD58+0
+        PkVuWlXqrYo0Yw5nHz7J47s/fnswvx8u/szvps+zT9efwunhfb7pl9Np/5WMKELoUe5NGnMg7baU
+        TSEdqdnBxfv1xXaz2Vxd1UKd/xl2ZvHoo/Fn6/XlE84lb4ibHfy1AgD4Vn9hOa6wL/FLvCs4kJ0B
+        BW6nyCSQIogj+JnQODUVgSWVWd0J6UgthMTcAkYLhSyN1bsOrgX6FEI6cYW/YOSUYE5THCq6cAs3
+        aA4VfuNDaOHkEoy0ECPsKy0KcFXTwZ2jGR4mbw5hhh5DAB9rq9oiB4ya5YilzC3sJ1F2X2qBAQsB
+        OxShQhZOjuLC7hmk4OANhjDDwYdAVvsiGCyAxnhLUTpQh1SlAgL1ApaOyKJxVHqWMg1DIFYNJmWC
+        kxcHjgoMxVPfwa0j6H20DJwCGlIW9UdDxlgd0tN7YoG+eIq2hVss6BZjHIXM9UQlGEn/hcrIr0ya
+        RwcfufoJexp8rHocYWiBHekdN9V8EIeyWODQarRkCglkZFlqjmrlQFnAeWspQl/SqET/tMOSyvCR
+        rHJNsRLU0aRM4qo9NO6xHHhJ9muaSqR5eWWhP3sWNXfwMaQ4VOwJ50Wy3gi9e+PMQsWnidVsjAOV
+        /xozRUuFRSnfCNinaZn1J64DdvC5Wua5olt4HgX3ofqqOYEJiafydLsIdRfo2NdLbDWff+NGvY0p
+        vknE90uD2tFhzj4SM+CAPnbwP725JbCTigmE+iAm6yka4qpouaE+cvaFbFd3Qn3+Plp6bHawfvkS
+        0pBL2uuqiFMIL997Hz27+0LIKerGYEm5qdXvK4C/65qZGAdqdk/rpckljVnuJR0oasPt1dKueV1r
+        r8XN5fapKkkwvCl8uFwpyffVDwAAAP//AwAEiy84+gUAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a7f7d2c22f301-ADL
+      - 82ea3dfbeda0ef1c-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -50,39 +40,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:29:37 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:23 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '16010'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '3851'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - abf659a1829ccc7d605a3df725fbe4fa
     status:
       code: 200
       message: OK
@@ -103,43 +73,34 @@ interactions:
       find happiness again. Tragedy at Sunset on the Beach is a story of love, loss,
       and redemption that will leave audiences moved and inspired.\nReview from a
       New York Times play critic of the above play:"], "model": "text-davinci-003",
-      "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '1377'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      "temperature": 0.0, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA4xTTW/cOAy9768gdOnFEyQ72c7At130sEgRtEV62xYBR6ZtZWRRECk7gyD/fSE5
-        mQTopUeT1Pvgo5+M60xr7BT9ZvcJ7a3u9vPt8vfX62/LXzu8k8//3hy/7NODaQwfHsiqaY3So95b
-        nqIndRxMY2wiVOpMe/Vxv73ebbe7fWMm7si/jG86nF2wbnN5uS3zIztLYtr/nmrbtOZH+BG+Jxyo
-        OwEq3OUgpMABdCT4h9CO4AQQIi+U+uwBQwcTzy4MIMrpBNyD55ka8CzS1H6ijqZYRF7A95EgejxB
-        z97zIhX4/FIXhhPnMFSMJA3coD1WkBvnfQPLyFIBgkDPCRD6rDkRKA+kIyXA8pFwcBa9P4HNCjJy
-        UlhGCiucEzg676kDFwDBYgK01nUUdBWIuXMULJVJxSOFsgEMQBMXF+jhgXMKdAKUKgxEUx4GTwLK
-        YDkSLE5HKIKG5KivFmg6YDpKBTsjcA9Cvt90TmzxfLqAGsLrnpzAgTCr63PxsySnSqHildVFSj2n
-        CYMlqd45qyiGzoXhxYxVTgKHVDIqT+yICa1SqmK962lNEY9U+2f3PZFfSdCtjMIp8VI0F9cfpIa8
-        0qwZOgGLUd2MWuheVb6jLBoX8n7T0UyeI3V16kDe0YwHT7/6R1DOdnwFdEGiS28XpyMqLCUFTzi/
-        6ZdymC/wOXrXK3UX8DvXPWXRjRCtJxZOHAg887FwrqV3p7B65DyMuomJ53WMHiOlKuPCNMaFjh5N
-        e9kYz0NMfBDThux9Y3oXnIz3iVA4mNaIcjTPPxuTBQcy7ZOJiaeo98pHCmLaP/fbxrz99uf61f6q
-        McqK/ly6/nj9/PzH/wAAAP//AwAUKpoFXQQAAA==
+        H4sIAAAAAAAAA4xUQW/sRAy+91dYubzL7na7W+m1e0Q9QAEBogIkHqq8M04y7WQ82E7S5en9dzST
+        bgucuERJbH/+bH/25wuAZkZJIXXNAZqHPigM7CnCRKKBEwQFT1nIoZHfwPehEzSCI7UsBPeYRpQT
+        XK9gt91dgzHgxMGDDypjtoLALSjJFBxt4DtCSTCU0N4s6+HyMke0lmXYcKaEYeN4uPTs9PKcNnDS
+        ZlWYBl9IuiHH9c1P9nL79NuP+7vb7ts/21/Hv/Rud3u33+6/Pv6yePPxiZyVCKMXe3Q85EgFbTE7
+        oVJSc4Crj9ur691uv91XQ63/HLb2OIXkwnq73b/G9RwcaXOA3y8AAD7XJyzuJexT+pQeBDvyJ0CD
+        n8ekZMAJrCf4itD1pakImWeSdoyAycPAU0gdqLGcSsciT7SCyKqrahfyNNR+buChJ8gRT9ByjDxr
+        BX6LtJnhxGPqKoboCu7RPVeQ+xDjCuaetQIkhZYFENrRRiEw7sh6EsDyIdgFhzGewI0G2rMYzD2l
+        BS4oPIcYyUNIgOBQAJ0LnpL9g6AV/zPLkv2DwhOPkui0yCK2ax/UFaInQAWtlcjYdZG0qMnxUIiB
+        kQwKc7AeCsNOArW1pjHV6NoDk9F6wCOPVll+UMiotqkTOXMKCkfC0UI7luJmCWaUKlbBcD0KOiPR
+        2oaZYlx7mihyJl+9KHXYhdQtdaIzFgXPgDBz8stIn/hYCjxKSMX1v8jGEENLFc5xmuh0dqKBq+Dr
+        JM9jXTIVFXnS0NWlxKgMYchCqqFopfamhByrxJTMCmgWnoIvbwiZpCVncET37IVzHf97ltKmHyYS
+        LCr5Pwo2Hl1foVPRgeYg7yK2Hg3mECNEwokARx8oOSoHZnpt5ZhjaOtd+cYWyGFUWyvRosx04kQQ
+        mZ8L7iLWf63Na7swFmpoUhQL9JJJaq5NXdm6nSF5emkOsH37E7nLwseyyWmM8e1/G1LQ/lEIlVNZ
+        aDXOTbV+uQD4o16BUbGj5vC6/U0WHrI9Gj9TKoC7m/2C17yfnXfr1c3tq9XYML4brj/uLkqWLxd/
+        AwAA//8DAE/hMsiaBQAA
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a7fe39ba1f301-ADL
+      - 82ea3e149fa0ef1c-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -149,39 +110,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:29:50 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:27 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '12351'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '3942'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - f57fc233e8f0725b60d502b2d0544b1c
     status:
       code: 200
       message: OK

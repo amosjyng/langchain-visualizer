@@ -4,37 +4,27 @@ interactions:
       an AI. The AI is talkative and provides lots of specific details from its context.
       If the AI does not know the answer to a question, it truthfully says it does
       not know.\n\nCurrent conversation:\n\nHuman: Hi, what''s up?\nAI:"], "model":
-      "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty":
-      0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '454'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      "text-davinci-003", "temperature": 0.0, "top_p": 1, "frequency_penalty": 0,
+      "presence_penalty": 0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0SQwU4CMRRF935FfRs3hQwMgtONiWGBCQtNTFwYQ0rnMa12+kr7KhDCvxuIwe05
-        J3dxj+BaUGD66AezuTZm+Rry+2i8bZ7eeLNdkp3OX+b34wYk0PoLDYMCxj2vDPXRIzsKIMEk1Iwt
-        qNH0oZ7M6rqZSOipRf+XD1r944Jxg6qqz70lZzCD+jheNCgQCyfYYsJb8XzXi5Zc6ER33h1egCkp
-        YWB/EBZ9PEstTMlMPSaxc2yFFozGBme0Fy7ngkOxoJ3QayosDlQeQYILLe5BVRI8dTHROoMKxXsJ
-        GxdctquEOlMABZkpwulTQsm6Q1BHiIn6yCumbwwZ1HQm4f+EKx7XEphY+ytpqtPp5hcAAP//AwA3
-        ELioaQEAAA==
+        H4sIAAAAAAAAA0RQTW/TQBC9+1cMe+HSOK4dteALF4QCagNIRUJFKFqvJ/bAeme1O3YSqv53tE7a
+        XPbw3ryvfcoA1F4HR65TNaiHniIM3KKFCUMkdkARWvQBjRZsc7inLmhBaHDHAeGLdqMOR1hdQVmU
+        KxAGPTG10FIMo5fkwDuIGCYymMMd6uBgSNJexMd6ufRWy47DkLNHpyk3PCxbNnH5EkvsorpKTalN
+        Jc3g7eLddzmYTTXd3N99+/nj09ePj27zb/3Ycb9pxtM1N3/QSFIIHmRrePAWk9uJNgHTJFXD9W1x
+        vSrLqipnYt7/Ilu0eiJnaFEU1VnXMxmMqoZfGQDA0/zC6TzJYE0gPQZ8A5/fDtAyuQ66lJbPgBlD
+        QCf2CD1an0gNZozCAwbYk/SgQdD0joy2QDGOmMOa96AbHgWOPH6Ym8yh5Fo8qBqKV8Ry5wM3qaAb
+        rX3Fd+Qo9tuAOrJLPaOwVzP7nAH8nseNUXeo6vMo5QMPXrbCf9Elw5vbk526fOaFLKszKSzaXvD3
+        RZYinrP/AAAA//8DAIsr2vVuAgAA
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a804dbb19f301-ADL
+      - 82ea3ecacba1ef8c-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -44,39 +34,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:29:56 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:53 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '1275'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '414'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - ed84de86a179f2bc819878951f00063b
     status:
       code: 200
       message: OK
@@ -92,37 +62,27 @@ interactions:
       potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\n\nNew lines of conversation:\nHuman:
       Hi, what''s up?\nAI:  Hi there! I''m doing great. I''m currently helping a customer
       with a technical issue. How about you?\n\nNew summary:"], "model": "text-davinci-003",
-      "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '1024'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      "temperature": 0.7, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0SQy0oDQRBF935FUeuOTBxNYu9EEcxGFyKCSqh0l+k2/WK6xrzIv0uCmuU996zO
-        Dr1FjSaWMBjfkeGXzf3mqb/dTl+7R2+v2+10FMdRJqgwz7/YCGoUXsvM5FgCi88JFZqOSdiiHo4m
-        7eW4ba9HCmO2HH71gaVvn4wfNE178F32hivqt93xRo3v6dkxuD5SAqpLtrByJCCO4eYBVlShLyAZ
-        KNk/2HEJng+TBLwcJceh+LQAAtNXyZE7WHlxQCBsXPKGAvhaez5HhT5ZXqNuFIa8KF2eV9SpD0Hh
-        p0++ulnHVHNCjVVywf2Hwr7SglHvsHQ5FplJXnKqqIeTVuGpyT+/uFIoWSicSDPZ789+AAAA//8D
-        APoXuG55AQAA
+        H4sIAAAAAAAAA0xQy24bMQy8+ysInf1YPwCnewtQFGjRFi2QQ9E2MGSJu2IqiYLE9aNB/r3Q2k56
+        ESgOZzjD5wmAOuocKfaqBfXgqEBgix4OmAtxBCpgMWU0WtDO4Qv1WQvCHjvOCJ90HHQ+w2YKq2a1
+        AWHQByYLlkoeklQF7qBgPpDBOXxGnSOESnUiqbSLRfJaOs5hzgmjprnhsLBsyuK2ljgWNa1OyVaT
+        JiQ/u/suJ/vu6eeHPPyQcK/fh/PfYfstN+cjfb1M8/4JjVSG4El2hkPyWNUusMlYI6kWlttmuVmt
+        1uv1CIz5b7SZ1QeKhmZNs77yHJPBolr4NQEAeB5fuIxX2u/44BDcEHSEPiNKAXEI9x9BR3srM5bE
+        0RYwDjF3g/fnKRTRQrEHknp2hz7VnwYzFOGAGY4kDjQIGhfJaA9UyoDz0djogaLFk2qhee147lPm
+        ffUbB+9f+x1FKm6XUReO1XYRTmpEXyYAj2PWoegeVXvNqFLmkGQn/AdjFVzerS966u24b+hqcwWF
+        Rfv/+s12Upe8TP4BAAD//wMAo9ZavX8CAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a8057fdf3f301-ADL
+      - 82ea3ecdfcd6ef8c-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -132,39 +92,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:29:58 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:53 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '1813'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '561'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - 46b03e67a3814c062f467599e1f5d233
     status:
       code: 200
       message: OK
@@ -172,40 +112,31 @@ interactions:
     body: '{"prompt": ["The following is a friendly conversation between a human and
       an AI. The AI is talkative and provides lots of specific details from its context.
       If the AI does not know the answer to a question, it truthfully says it does
-      not know.\n\nCurrent conversation:\n\nThe human asked what the AI was up to
-      and the AI replied that it was helping a customer with a technical issue.\nHuman:
+      not know.\n\nCurrent conversation:\n\nThe human greets the AI and the AI responds
+      cheerfully, stating it is helping a customer with a technical issue.\nHuman:
       Tell me more about it!\nAI:"], "model": "text-davinci-003", "temperature": 0.0,
-      "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0,
-      "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '575'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0SQTU8CMRCG7/6Kcc6FAEsEevODBE9qJF6MIaU7bAvdzqadFRPCfzcLiNf3fZ43
-        kzmgL1GjrZvQmzwZW71u7/Yfm+Xjdr57Wyzm7uX+gbzPI1TI6y1ZQY1CP7KyXDeBxHNEhTaRESpR
-        D++mxXhSFLOpwppLChe8V5pvH63vDQZFxzv2ljLqz8OpRo3w3ia6haUjsG0WrinB3mRwnViBJG7X
-        gWDvxYE48gm6C1qhBJEFLMdIVk4odwD4KJQiSR+eT0Om04XBUWg6oP7bzI5ZzkrOLYGJJVQkZ+ay
-        S2UfFfpY0g/qgcLAVZN4nVHHNgSFGx99dqtEJnNEjVm4weOXwjabilAfsElcN7IS3lHMqGcjhf8v
-        vMbFSKGwmHBNhqPx8XjzCwAA//8DAIYrnzCoAQAA
+        H4sIAAAAAAAAA0RRy27bQAy8+yumuuSSyM+grf/ARYoiaIICLYpgvUtJdKSlwKXsuEH+vVjZiS8C
+        lsN5cPQ6AYqD08ixLtYoHhpO6CRQiz1pYonghEC9kndGocR3rtUZYUuVKOGbi4PTI1bXWMwWK5jA
+        7YUDAicdessKUiGR7tlTiTtyGtFlamPWp/V02rfOKtGulJ6i49JLNw3i0/TdliWm4jon5ZBD+q5v
+        b77c20t4dqS/Hx7ndxtPP37tlo9yuP+3C+60LdsdecsMoxd78tL1LWW1E+yV8knFGvPPs/lqsVgu
+        lyMw3v9Ouwluz9HzzWy2PPMaYU+pWOPPBABexy9O65mGn4PSJ2yuOjTU9hxrOPghmXSkMJVh21Jq
+        RAwu95sGwoGtgTXEipxzMNISDw0dr3JTOUL9zoSXGMnbOJJMAkcjjZT1wuhrejzDOUHe6VBxPShB
+        BsOhcTYSe5VtSx04lSPPD6oUrT1ChxhPyQO7Okoy9kjexSyaiMAVNshvDhSNq+MpSb6mHIsaO+EY
+        6KVYY/YxaaXOrrm/OLTtx7ziyKl5UnJJYq4xmfTFiL5NgL9j90NyNRXrc+dFr9L19mTyTDELfp2f
+        5IrLv76At6szaGKuvcznq9tJ9nib/AcAAP//AwB/GV9PDgMAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a806629e6f301-ADL
+      - 82ea3ed21e69ef8c-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -215,39 +146,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:30:00 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:54 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '1704'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '872'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - f8277415d84d89f1ad770c039836708c
     status:
       code: 200
       message: OK
@@ -260,44 +171,35 @@ interactions:
       intelligence will help humans reach their full potential.\n\nNew summary:\nThe
       human asks what the AI thinks of artificial intelligence. The AI thinks artificial
       intelligence is a force for good because it will help humans reach their full
-      potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\nThe human asked what the AI
-      was up to and the AI replied that it was helping a customer with a technical
+      potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\nThe human greets the AI and
+      the AI responds cheerfully, stating it is helping a customer with a technical
       issue.\n\nNew lines of conversation:\nHuman: Tell me more about it!\nAI:  Sure!
-      The customer was having trouble with their computer not connecting to the internet.
-      I was able to help them troubleshoot the issue and get them connected.\n\nNew
-      summary:"], "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256,
-      "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
-      {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '1207'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      I''m helping a customer troubleshoot an issue with their computer. They''re
+      having trouble connecting to the internet and I''m trying to help them figure
+      out what the problem is. I''m currently running a diagnostic scan to see if
+      I can identify the issue.\n\nNew summary:"], "model": "text-davinci-003", "temperature":
+      0.7, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0yRQWsbMRCF7/0Vw5zlYMdxHHRrk7aEQiml0ENbjKydrGRrZ4Q0GweM/3vROql7
-        1NP33rxhjhg7tOiHnGbrB+d3j1+Hp7AK+v3n7uNy//nDt09fbvv762c0KNsdeUWLSi+68TLkRBqF
-        0aAv5JQ6tIvbu+XNenkzXxgcpKP0is869xzZx9l8vmx8kOipov11nL7R4m/+EQjCODgGV/fUwSE4
-        BQ0E7x/h4CqMGVTAcfcmFsopUns6hagTFCjlyD048GNVGajAIWoAB0o+cPQuQax1pCto8y5Q87aO
-        PWiRcZvo7NNAsUBbdlQqwKLghZm8TqhMXSIrFSY1/7dria7lqEytmj68hdcgcl5uKjP5etIz8zqA
-        uis0GLmjF7Rzg0n6XGRb0fKYksGnyLGGTSFXhdFiVcl4+mNwrK4ntEfMRYasG5U9cUV7vbgzeLnb
-        P321NqiiLl3I9ep0evcXAAD//wMAZR+yeh0CAAA=
+        H4sIAAAAAAAAA0xSwW7bMAy95ysIn9skTdJtzW1de9iwDViXnbahUGTa4iaTgkin6Yr+eyE7SXcx
+        ZD6+96hHPU0AqgeXmbit1lBtAil0UmOEHWYlYSCFGlNG7wzrKXyhNjtD2GIjGeGT497lR1idwWK+
+        WIEJuJ1QDTVp7pMVBWlAMe/I4xQ+o8sMXaEGs6Tr2SxFZ43kbioJ2dHUSzerxevsaEvCWp2VSaku
+        Q/ouxfN332yPdHe9uG0++LvrH2nnbr8+3Nx8V9z+G7tl+we9FYbh3u69dCliURthn7FcqVrDxdv5
+        xWqxWC5XAzDc/0g7r92O2NP5fL488IKQR63W8HMCAPA0fGFsL7RfvAkIoe8cQ5sRTcECwvuP4Lg+
+        HjNqEq4VfEDMTR/j4xmoOSNugazEHjCm8ufA92rSYYYHsgAODH1g8i4CqfY4hc0oivsUHXHxc3ZQ
+        yT3zqFKTa1nUyIN6x2VXxWKY6ORgWfptRA0iBo5Hg9HXAlKGEmNvpXPwUEgZd8jD3BawgyZLB16Y
+        0Y9FGRyIDTOjTYcUh8CIa9xXa5ifKlHalGVbwuU+xlO9ISYN9xmdCpeM1SRVA/o8Afg9LKZX12K1
+        PiykSlm6ZPcmf5GL4GJ5NepVry/hFb18cwBNzMX/WFeXk2LyPHkBAAD//wMAgJcZjiwDAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a80743e90f301-ADL
+      - 82ea3ed828baef8c-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -307,39 +209,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:30:04 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:55 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '3092'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '980'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - 5c9bfdfbbfdd806f42704d655853ce2b
     status:
       code: 200
       message: OK
@@ -347,43 +229,33 @@ interactions:
     body: '{"prompt": ["The following is a friendly conversation between a human and
       an AI. The AI is talkative and provides lots of specific details from its context.
       If the AI does not know the answer to a question, it truthfully says it does
-      not know.\n\nCurrent conversation:\n\nThe human asked what the AI was up to
-      and the AI replied that it was helping a customer with a technical issue. The
-      customer was having trouble with their computer not connecting to the internet,
-      and the AI was able to help them troubleshoot the issue and get them connected.\nHuman:
-      Very cool -- what is the scope of the project?\nAI:"], "model": "text-davinci-003",
-      "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '763'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      not know.\n\nCurrent conversation:\n\nThe human greets the AI and the AI responds
+      cheerfully, stating it is helping a customer with a technical issue. The AI
+      explains that it is running a diagnostic scan to help the customer troubleshoot
+      an issue with their computer that is preventing them from connecting to the
+      internet.\nHuman: Very cool -- what is the scope of the project?\nAI:"], "model":
+      "text-davinci-003", "temperature": 0.0, "top_p": 1, "frequency_penalty": 0,
+      "presence_penalty": 0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0SRQU8jMQyF7/yKyBcuKZrS0kKOLAe47WGRKiFUTRO3YzaJo9hTiqr+dzQDaq/v
-        fX5+lo9AARz4VOJk+dT6FPPfw+fq9fnRpz+b++fFyyqF6eqhAQu8+UCv4EDxoGvPqURU4gwWfMVW
-        MYCbLu5n8+Vs3swtJA4Yf/FJaPeUPU2aZjbwHZNHAfd2HG1wYP51aMRzQcNbox2aUnlYaEiMsukw
-        llH2vSgnrEYr95uI0jHr4FA1Q6lesRoS6dG0OZgdjmYynnNGrxiGtCGIsmLNqDfm5TqN+ZR3PywF
-        zErbr5ET7qs/t7oka4d5KLmncB78JO1GLKNHkbZ+GVEs4wUVheMeDekNWKAc8ACusRB5VypvBFzu
-        Y7SwpUzSrSu2whkciHKB07uFXtodgjtCqZyKrpX/YxZw09sHC5d/nPX5woKytvFCLu9Op6tvAAAA
-        //8DAPw/Hxj1AQAA
+        H4sIAAAAAAAAA1RSwW4aQQy98xXWnhMgBATiWKkHqqRVpPRUVWiY8bJuZu3p2LuBRvn3apZAkssc
+        /Pyen5/nZQRQPbvMxPtqDdVjQwqtBIzQY1YSBlIImDJ6ZxjGcE/77Axhh7VkhG+OO5ePML+C2XQ2
+        BxNwvVCAQJq7ZEVBalDMPXkcwx26zNAWamOWdD2ZpOisltyOJSE7GntpJ0G8Ts5jSVirq+KUQjHp
+        2xSvVw92qB//anf3sDys7txX3fz8sjl8/3f/pPNTt+z+oLfCMDzY1kubIha1E+wzlpWqNdwspzfz
+        2ez2djEAw/5n2nVwPbGn6+n09o3XCHnUag2/RgAAL8MLp/ZCg8cGQb0kLKtbg5CyFCslSxMI5PYs
+        iuA4gGXpdhG1EbGhl1S7wsAe2Yj3Q9F3atJihjpLC16Y0Z9AOZHYMDPaGDbgWvBdzsgWj5A7LrcF
+        d55q5EG948KkUEbUx0FCpcv+4nhwMYYf7PEjSnomEYYr2MAzxVjW6yngZ6fPZA04UInd8AtMIKNK
+        7PHDgCHRITzigIdqDdNLJco+ZdmVoLmL8VKviUmbbUanwiVvNUnVgL6OAH4PR+rU7bFavx2nSlna
+        ZFuTJ+QieDNbnfSq91/xji6Wb6CJufiBtVqMypDX0X8AAAD//wMA0A4xszgDAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a80893cb2f301-ADL
+      - 82ea3edeebd0ef8c-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -393,39 +265,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:30:07 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:57 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '3014'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '1103'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - 613366a84557ab9d7e66ada64aff8fec
     status:
       code: 200
       message: OK
@@ -438,48 +290,40 @@ interactions:
       intelligence will help humans reach their full potential.\n\nNew summary:\nThe
       human asks what the AI thinks of artificial intelligence. The AI thinks artificial
       intelligence is a force for good because it will help humans reach their full
-      potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\nThe human asked what the AI
-      was up to and the AI replied that it was helping a customer with a technical
-      issue. The customer was having trouble with their computer not connecting to
-      the internet, and the AI was able to help them troubleshoot the issue and get
-      them connected.\n\nNew lines of conversation:\nHuman: Very cool -- what is the
-      scope of the project?\nAI:  The scope of the project is to help the customer
-      troubleshoot their computer issue and get them connected to the internet. I''m
-      helping them identify the source of the issue and then providing them with the
-      necessary steps to resolve it.\n\nNew summary:"], "model": "text-davinci-003",
-      "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '1471'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      potential.\nEND OF EXAMPLE\n\nCurrent summary:\n\nThe human greets the AI and
+      the AI responds cheerfully, stating it is helping a customer with a technical
+      issue. The AI explains that it is running a diagnostic scan to help the customer
+      troubleshoot an issue with their computer that is preventing them from connecting
+      to the internet.\n\nNew lines of conversation:\nHuman: Very cool -- what is
+      the scope of the project?\nAI:  The scope of the project is to diagnose and
+      troubleshoot the issue preventing the customer from connecting to the internet.
+      I am currently running a diagnostic scan to identify the source of the issue.
+      Once the source is identified, I will provide the customer with a solution to
+      resolve the issue.\n\nNew summary:"], "model": "text-davinci-003", "temperature":
+      0.7, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA1SSQW8aMRCF7/0VozkvEYGUkL21zaWqeqjUS2krZOxh7cbrce0xECH+e2WTQHr0
-        m2/evLF9RGewRz1GP7l/VPovjfzt68cHe/CrH/PV47BKn7azRfmCHfLmD2nBHoUOstY8Rk/iOGCH
-        OpESMtjfLpbzu/v53XTZ4ciG/As+MWrngnaT6XReectOU8b+57GVscdf4bslsGVUAVR+IgN7qwTE
-        Enz4DHuVoUQQBhXMq5goekf1qAScNMiSjy4MoECXLDxSgr0TCwqEtA1OKw8u50I3UOddodpbMw4g
-        icvG07lPLLkEddkilCCwgOYQSEtDuWVxQSgFku5tuuqoqo9wS1X18dU8W+bzci1M6xtIzszLADLn
-        jFlzJOBtw2Pi+grNXRicoSBu+9xqmUvSF/JqHBPvnKGm/n8rVQmkKWeVniELxeaaKLPfETi5wQ5d
-        MHTAftqh5yEm3mTsQ/G+w60LLtt1IpU5YI9ZOOLpd4clq4GwP2JMPEZZCz9RyNjPFg8dXn/ORV/O
-        OhQW5S/K/P3t6fTuHwAAAP//AwBPTFNUnwIAAA==
+        H4sIAAAAAAAAA1RSXW/bMAx8z68g/JwmaZIuXd42dAM2dA9Fi2HANhSKRFvcZFKQaCdp0f8+yPlo
+        92LAPB3vjuTzCKDamsTETbWG6sFThlYcBugxZRIGyuAwJrRG0U3gGzXJKMIGa0kIXw13Ju1hOYb5
+        bL4EFTC9kANHOXVRSwepIWPqyeIEbtEkhrZQvWrM6+k0BqO1pHYiEdnQxEo7dWLz9CRLwrkaF6fk
+        iknbxnBxfac7f1XbT08fL+3qtrn/cdfT/c3nm+9PLR5ey+YPWi0MxZ0+WmljwNLtANuEJVK1hsvV
+        7HI5ny8WqwEY8p9oF870xJYuZrPFkeeFLOZqDT9HAADPwxcOzwvtFz94BN+1hqFJiIoO1CN8+DKG
+        rSfrIWGOwg4dWI+Y6i6EPRh2gLsYDDE6IIWtyeAxROIGDNguq7SYYEvqwYCi9UzWBKCcO5zAwyAB
+        DrNNtDlqZisRywbKT0xSJnJyQbmsy5FpWDIO+pqk2wTMXkQHytAbYsIeWYuRUjxbqZO0YIUZ7QGU
+        A4kVE6OePVEG26WErGEPqWM+RDpKK1nI1nChkys69f5gXrpkz+4HK+PB5pZCKGl6cvi/o+NwsoRu
+        uD2VMmwJPb6JI2zxrQDlky6hmwxbHhZK7HBXrWF2rgRpYpJNWT53IZzrNTFl/5jQZOFyA1klVgP6
+        MgL4PRxOl02D1fp4MFVM0kZ9VPmLXBrOV+8P/arXS31Fr6+OoIqa8FpfvFuOisjL6B8AAAD//wMA
+        oPwQLMwDAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a809fea9df301-ADL
+      - 82ea3ee65f30ef8c-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -489,39 +333,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:30:12 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:58 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '3807'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '1505'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - 66155557127bb0591a2e0d21f406bdca
     status:
       code: 200
       message: OK

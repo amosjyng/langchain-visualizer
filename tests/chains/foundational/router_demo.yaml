@@ -1,27 +1,5 @@
 interactions:
 - request:
-    body: ''
-    headers:
-      host:
-      - 127.0.0.1:8935
-    method: GET
-    uri: http://127.0.0.1:8935/ping
-  response:
-    content: ought-ice says pong
-    headers:
-      cache-control:
-      - no-transform
-      content-length:
-      - '19'
-      content-type:
-      - text/plain; charset=utf-8
-      date:
-      - Fri, 15 Sep 2023 05:36:58 GMT
-      server:
-      - uvicorn
-    http_version: HTTP/1.1
-    status_code: 200
-- request:
     body: '{"prompt": ["Given a raw text input to a language model select the model
       prompt best suited for the input. You will be given the names of the available
       prompts and a description of what the prompt is best suited for. You may also
@@ -37,27 +15,27 @@ interactions:
       for answering questions about physics\nmath: Good for answering math questions\n\n<<
       INPUT >>\nWhat is black body radiation?\n\n<< OUTPUT (must include ```json at
       the start of the response) >>\n<< OUTPUT (must end with ```) >>\n"], "model":
-      "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty":
-      0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
+      "text-davinci-003", "temperature": 0.7, "top_p": 1, "frequency_penalty": 0,
+      "presence_penalty": 0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0xQO2/bMBDe/SsOnP1+JdVSdCjapmmnAi1aBRZFnq2zpTuCpNwIhv97QNlOsnC4
-        783TAED9156JdyoD9auiAI1YrOGIPpAwUACLzqPREe0YftDO64hQ4lY8woPmVvsOlkOYT+dLiAL6
-        KGTBUvCti8lBthDQH8ngGB5Re4YmSasYXcgmE1fruBXfjMUhaxobaSZWTJjcYkk4qGFqSjaVNI2r
-        R3fdkfHT4utj933199ChtV++rT//KXG/e/h5YUu5RxOTIuJz3BhpXI3J7QIbj2mSymC2/rC8W63n
-        s/se6PffZCOrj8SGRtPp4qqrhAwGlcG/AQDAqX/hQk+yoij2QTjnU84JyJXFEIn7JbnKIFeu6gKZ
-        kKvhjcKpIrFrY7hQflc6ps8va20OUIrtwGtLvcnHXOV8zrkoir5TH09s8VllMH291LJzXspUldu6
-        fr1viSlUG486CKfGIYpTPXoeADz1M9ugd6iy6zzlvDQubqIckJPh/P6ao97+9Q1drK5glKjrd/fZ
-        apBCzoMXAAAA//8DAJNnkMp6AgAA
+        H4sIAAAAAAAAA0xQyW7bMBC9+ysGPHtV7MbQpeihRZsuQBcgKKrCosiRNYk0Q5CUFxj+94KynfTC
+        w7ydpxGA2mvPxFuVg/rVUIBOLLawQx9IGCiARefR6Ih2Cl9p63VEqLAWj/Cgudf+CMsxZPNsCVFA
+        74QsWAq+dzE5SA0B/Y4MTuELas/QJWkTowv5bOZaHWvx3VQcsqapkW5mxYTZLZaEgxqnpmRTSdO5
+        drL+Hve0+rj++a5+iIcfnz4s+oX9vO32739/e7ywpXpCE5Mi4iFujHSuxeR2gY3HNEnlsLifL5ZZ
+        lt2/GYBh/002sXpHbGgyn99ddY2QwaBy+DMCADgNL1zoSVaW5VMQLvhUcAIKZTFE4mFJoXIolGuO
+        gUwo1PhG4VSR2PUxXCiPjY7p86tWm2eoxB7Ba0uDydtCFXwuuCzLodMQT2zxoHKYv1xa2TovVarK
+        fdu+3GtiCs3Gow7CqXGI4tSAnkcAf4eZfdBbVPl1nnJeOhc3UZ6Rk2G2vuao1399Re9WVzBK1O1/
+        98VqlELOo38AAAD//wMAt8i0u3oCAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 806e83e01d25ef6f-PDX
+      - 82ea3d6a8cde5ece-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -67,13 +45,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 15 Sep 2023 05:36:59 GMT
+      - Fri, 01 Dec 2023 09:17:57 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '862'
+      - '835'
       x-ratelimit-limit-tokens_usage_based:
       - '250000'
       x-ratelimit-remaining-tokens_usage_based:
@@ -88,29 +66,31 @@ interactions:
       questions about physics in a concise and easy to understand manner. When you
       don''t know the answer to a question you admit that you don''t know.\n\nHere
       is a question:\nWhat is black body radiation?"], "model": "text-davinci-003",
-      "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}}'
+      "temperature": 0.7, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA3RSy27cMAy871cQvvSSeB/NA9lb20tSpKfm1hQLWeLabCRRpWhv3CD/XsibzSaH
-        XASIwxkONXqaAVQ7I5FiW62huusoQ2CHHgaUTByBMjhMgtYouhp+UCtGERrcsiB8N7E3MsLZCawW
-        qzNQBjMwOXCUpU9aFHgLGWUgizXcopEIoVA71ZTX83nyRrcsoeaE0VBtOcwd2zw/jCWOuTopTskV
-        kzYkf3o5DrG9uY7Bs/xcDWm8dV/ab/3u/Hp5/W/fzc0ftFoYio+6sRySx6K2h61gWalaw/Li6uzy
-        /GK1WkzAtP+BdurMQNHS6WLx+YXXMVnM1Rp+zQAAnqYT9u2Fdh/v41dv7AM07EYQ42haojyldgjo
-        0apwMG1EJfumAQOpooOtcAADzVGEYqFKYDdGE8gC/u3JUyPUhxpu9KAtmHuv5cnLbaIYDxhR2vFQ
-        LYKfMiQjStZjhgYptmA5DihlPEXlj13WcNch5FTgPhxE323pUFECRXTQjHsnGBKK0V7wrY0T2JF2
-        0FHbobxtypCEXW+LMQONsHEo74buzIAeY6tdrqdgpgwoOnys1rB4rXhuk3BT8oq996/1LUXK3UbQ
-        ZI4ltqycqgl9ngH8nrLus2mxWr9kXCXhkHSj/ICxCJ5f7uWq4986gherF1BZjT/Wl8urWZnxPPsP
-        AAD//wMAvM1fxH4DAAA=
+        H4sIAAAAAAAAA4xTTW/bMAy951cQvuySr6YtuuZYoBiwL2zYdtjWoaAl2mYji6pEJ/WK/vdBdpJ2
+        hwG7GJLI9/hIPj9OAIodRs++LtZQfG04QSuWHGwpJhYPnMBSiGRQyc7hA9cRlaCkSiLBW/Qdxh7O
+        prBars5ABXArbMFyil3QzCAVJIpbNjSH94TRQ5uhjWpI68UiONRKYjuXQB55bqRdWDFpcSjL4lMx
+        zUrZZpGmDW72+rPu7n68uerOw+Xvu+sv3zd4fVp9e/exLO/jmC3lHRnNCKUHvTXSBkeZbQybSLml
+        Yg0nF8uTs9VqdXExBIb+D7CZxS17w7Pl8nSPa4QNpWINPycAAI/DF8b0DLvxN/7KodlAKbaHiJaH
+        JvIotSEgR0ajtFh7UjYvEqhlVbJQRWkBPbAldPybLISmT2zQjZTaoAKWSWKZAJ17WcMbtuQVupBv
+        Oodhp6EhLy35w0KTiVyShbKHTw692bxK4HAH6C1U4pzsEiCYBiMapcgpC60i3XfkTT+zFMgPZSwn
+        jVx2Q/GNl50HHNss8wgGuSnkhrs2a6HjbRSiFFv2o5KMUmoDRdQuUjbOQCS2n8KOtYFGVCnCuNk0
+        zot9PRqKPMW6B1RouG4oHvUypaExI+L+A+1k9zd4Dv9aZyLKIwfaUuwt9uC4ovyQdWdTD+bvvOO6
+        0Skkxbg/Zj05qXayy0nNYMaDtvlgtcFV7C09FGtYHl+c1CFKmR3oO+eO7xV7Ts1tJEzisxGTSiiG
+        6NME4Nfg3i5hTcV679oiRGmD3qpsyGfC84uRrnj+W56DJ8vVPqqi6F4Ezi8nucjT5A8AAAD//wMA
+        9aBC0VEEAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 806e83e629abef6f-PDX
+      - 82ea3d705ebd5ece-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -120,13 +100,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 15 Sep 2023 05:37:01 GMT
+      - Fri, 01 Dec 2023 09:17:59 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '1672'
+      - '2046'
       x-ratelimit-limit-tokens_usage_based:
       - '250000'
       x-ratelimit-remaining-tokens_usage_based:
@@ -153,28 +133,28 @@ interactions:
       INPUT >>\nWhat is the first prime number greater than 40 such that one plus
       the prime number is divisible by 3\n\n<< OUTPUT (must include ```json at the
       start of the response) >>\n<< OUTPUT (must end with ```) >>\n"], "model": "text-davinci-003",
-      "temperature": 0.7, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}}'
+      "temperature": 0.7, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA1RRy27bQAy8+yuIPfv9CqJLDwFaIEhzalG0VWCtJNpiKpGLXUq1Yfjfi5XsGL0s
-        sBzOcIY8jwDMX+uZ+GASMN8qCtBIiTV06AMJAwUo0XksrGI5ha908FYRctyLR3i23Fp/gvUYlvPl
-        GlTAdkIllBR86zQqyB4C+o4KnMILWs/QRGql6kIym7na6l58MxWHbGlaSDMrpQiz21gSDmYcnVIZ
-        TRaNqycPp46r7SuVn4/bxffjz/Xzr9fmpfqyeOLt09At+TsWGhmKR90V0rgao9oAFx5jJJPAYvu4
-        fthsl8tFD/T5b7RJaTvigibz+erKq4QKDCaB3yMAgHP/wtAeaVmWvQfhlM8pRyA1JQYl7pOkJoHU
-        NFar1IxvOEd/xK7VMOA/Kqtx81oh7MkHBeepQeC2ydHDobfuQSvLsJ5DaIsqfhSEEVzdDsz/OPGO
-        1FGgvEbIT7D6lJqULylnWdYH6zMQl3g0Ccw/KrUcnJc85uW2rj/qe2IK1c6jDcIxdlBxpkcvI4C3
-        fldtsAc0yXVHxnlpnO5U/iBHweXjZtAz9+Pc0c3VhFFRW9/rq/VmFIdcRv8AAAD//wMA8f8eR78C
-        AAA=
+        H4sIAAAAAAAAA1RRXW/bMAx8z68g9JwP10mQ1S972joU2YANwwZsHmJZZmJ2MiVIdNoiyH8fZCcN
+        9iJAPN7xjjxNANSzDkx8UAWo7y1F6FyDFo4YIjkGitCgD2i0YDOHz3QIWhBq3LuA8Ki51+EVVlPI
+        s3wF4kAfHTXQUAy9l6Tg9hAxHMngHLaoA0OXqK2Ij8Vi4a2WvQvd3HlkTXPjukXjTFxcx5LjqKbJ
+        KTXJpOm8nb37Ks+26x767Q+/sZ+25uOXbx/sevvrge3j2O3qJzSSGIIvsjOu8xaT2gibgCmSKuBu
+        k92t8jzf3A/AkP9KmzX6SGxolmXLC691ZDCqAn5PAABOwwtje6JVVfUUHZd8KjkBpWowCvGQpFQF
+        lKrT0pZqesU5+SP2vcQR/9lqSZuXFmFPIQr4QB0C912NAQ6D9QDSaoZVBrE3bfoIOEbwth+Z/3HS
+        HelIkWqLUL/C8n2pSj6XXFXVEGzIQNzgiyoge6tYd/DB1Skv99a+1ffEFNtdQB0dp9hRnFcDep4A
+        /Bl21Ud9QFVcdqR8cJ2Xnbi/yEkwv1+Peup2nBu6vphQ4kTbW325Wk/SkPPkHwAAAP//AwBKei/U
+        vwIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 806e83f14907ef6f-PDX
+      - 82ea3d7dcb635ece-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -184,13 +164,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 15 Sep 2023 05:37:03 GMT
+      - Fri, 01 Dec 2023 09:18:00 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '1605'
+      - '1058'
       x-ratelimit-limit-tokens_usage_based:
       - '250000'
       x-ratelimit-remaining-tokens_usage_based:
@@ -206,27 +186,27 @@ interactions:
       into their component parts, answer the component parts, and then put them together
       to answer the broader question.\n\nHere is a question:\nWhat is the first prime
       number greater than 40 such that one plus the prime number is divisible by 3?"],
-      "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
+      "model": "text-davinci-003", "temperature": 0.7, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA1RRy27bMBC86ysGPMe2Iitxo2OBAkUfQA+BL01hUNRKWlfiEiSlxg3y7wVlJ0Yv
-        BDizszNDvmSA+qO9ZdupCuqx54BRGhowkw8sFhzQkPNkdKRmje/ceR0JNbXiCV+0nbQ/obxBkRcl
-        okDPwg0aDn5yMW2QFoH8zIbW+EbaW4xJ2sfoQrXZuEHHVvy4FkdW89rIuGnEhM2bLYsN6iYl5SaF
-        NKMbVrvTbI97s+9/fPj6+e7TXPDfj65sjrRv96fztNRHMjEpIj3Hg5HRDZS2nWnjKVVSFW7vH8rd
-        3X1RbBdi6f8mWzV6Zmt4lefbi64XNhRUhZ8ZALwsJ87jSfZkn+xjT2jZhwjneSTYaazJo1s8PWKv
-        LcocYTJ9ukSIJbhhCog9/a9JH8AzB64HQn3CNiHldr2kWYzZNvSsKuTvyCCd81KnkHYahne8Zcuh
-        P3jSQWzKGqI4tbCvGfBrKTgF3ZGqLsWU8zK6eIjym2xauHs4r1PXB72SRXkho0Q9XPHbfJslj9fs
-        HwAAAP//AwDoGMIAcwIAAA==
+        H4sIAAAAAAAAA4RRXWvbMBR9z6846GmDxHEcjzZ+LaPQboNCn7aWIMvX8e1kSZVkt6H0vw85acLY
+        w14EOueec+7H2wwQL9IbNjtRQdx3HNDbhjRG8oGtAQc05DwpGanJ8J13XkZCTa31hBtpBun3KOco
+        8qJEtJCj5QYNBz+4mBxsi0B+ZEUZvpH0Bn2SdjG6UC2XTsvYWt9n1pGRnCnbLxurwvIjlq0JYp46
+        5SY1qXqnF5d38aWXxY8rFeXV82q8ebredHe3t/vrr88/D9W2fiIVkyLSa9wq2ztNye1AK09pJFFh
+        dZGvyqIoLvOJmOb/kC0aObJRvMjz9VHXWVYURIVfMwB4m14cypPswTyY+47Qsg8RznNPMENfk8du
+        yvSInTQoc4RBdekTYQ3B6SEgdvS3Jh2ARw5ca0K9xzoh5TrDdCwOqEnJIRDKiUn60Eut6T/hc0jT
+        oCzx6ZRdrj//G5dNY08TsmnoVVTIT4i2O+dtnbZhBq1PeMuGQ7f1JIM1aSkhWicm9n0GPE6bHILc
+        kaiOGxTO297FbbS/ySTDi83BTpwvdya/HHsQ0Uapz/iq2MxSxvvsDwAAAP//AwDtynjk3AIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 806e83fbf81eef6f-PDX
+      - 82ea3d84fe405ece-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -236,13 +216,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 15 Sep 2023 05:37:04 GMT
+      - Fri, 01 Dec 2023 09:18:01 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '843'
+      - '1338'
       x-ratelimit-limit-tokens_usage_based:
       - '250000'
       x-ratelimit-remaining-tokens_usage_based:
@@ -268,28 +248,27 @@ interactions:
       for answering questions about physics\nmath: Good for answering math questions\n\n<<
       INPUT >>\nWhat is the name of the type of cloud that rins\n\n<< OUTPUT (must
       include ```json at the start of the response) >>\n<< OUTPUT (must end with ```)
-      >>\n"], "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256,
-      "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
-      {}}'
+      >>\n"], "model": "text-davinci-003", "temperature": 0.7, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0RQS2/iMBC+8ytGPvMIKYVtLtW+V6vujVUPm4oYeyDTJjNe22FLEf995QDlYlnz
-        Peb75jAAUP+0Z+KtKkAtawrQisUGdugDCQMFsOg8Gh3RjuEXbb2OCGvciEf4qbnTfg+zIeRZPoMo
-        oHdCFiwF37mYHGQDAf2ODI7hAbVnaJO0jtGFYjJxjY4b8e1YHLKmsZF2YsWEyWUtCQc1TEnJppCm
-        dc1osd/xy4/lss1uSehx+vltGj55+tstv9u7E1vWz2hiUkR8jSsjrWswuZ1g4zFVUgVM53ezxe08
-        z2c90Pe/yEZW74gNjbLs5qyrhQwGVcCfAQDAoX/hRE+yqqqeg3DJh5ITUCqLIRL3TUpVQKm+fP32
-        8ffDslTDC4VTRGLXxXCiPNY6puPHGoF1i+mM6R/3rv+bRjoLMbG8Jg73pSr5WHJVVX3OPhKxxVdV
-        QPY+aWTrvKxTfO6a5n2+IaZQrzzqIJxahChO9ehxAPDUV++C3qIqzpWV89K6uIrygpwM8w/zk5+6
-        3vqKzqZnMErUzXV+ky8Gaclx8B8AAP//AwCcwAHIjgIAAA==
+        H4sIAAAAAAAAA0RQ24rbMBB9z1cMes7F8abd4JfSpV1K2S0NZGmhLrEiTWJt7RkhjXMh5N+LnGT3
+        RYg5lzlnTgMAtdeBHG1VAWpZuwgtW2xghyE6JnARLPqARgvaMTy7bdCCsMYNB4TvmjodjjAbQp7l
+        MxAGvWNnwboYOi/JgTcQMeycwTE8oQ4EbZLWIj4Wk4lvtGw4tGP2SNqNDbcTyyZObmsdU1TDlNTZ
+        FNK0vhnNF7LnH/7x+Px78cHXh8VD1v1crvEh23ffLmxev6KRpBA8yMpw6xtMbhfYBEyVVAHT+2w6
+        y/N8nvdA3/8mG1m9c2TcKMvurrqancGoCvgzAAA49S9c6ElWVdVrZCrpVFICSmUxiqO+SakKKNWX
+        r4+fX56WpRreKJQiOvKdxAvlV60lHV9qBNItpjOmvxx9/zcNdxYksYJ2FD+VqqRzSVVV9Tn7SI4s
+        HlQB2duk4a0PvE7xqWuat/nGkYv1KqCOTKlFFPaqR88DgL999S7qLariWln5wK2XlfA/pGSYzz9e
+        /NT7rd/R2fQKCotu3ud3+f0gLTkP/gMAAP//AwAoOFTTjgIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 806e8401fbdbef6f-PDX
+      - 82ea3d8df96a5ece-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -299,13 +278,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 15 Sep 2023 05:37:05 GMT
+      - Fri, 01 Dec 2023 09:18:02 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '1099'
+      - '941'
       x-ratelimit-limit-tokens_usage_based:
       - '250000'
       x-ratelimit-remaining-tokens_usage_based:
@@ -320,29 +299,28 @@ interactions:
       an AI. The AI is talkative and provides lots of specific details from its context.
       If the AI does not know the answer to a question, it truthfully says it does
       not know.\n\nCurrent conversation:\n\nHuman: What is the name of the type of
-      cloud that rains?\nAI:"], "model": "text-davinci-003", "temperature": 0.7, "max_tokens":
-      256, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
-      {}}'
+      cloud that rains?\nAI:"], "model": "text-davinci-003", "temperature": 0.7, "top_p":
+      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {},
+      "max_tokens": 256}'
     headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0xRy24bMQy8+ysGe+nFr7pujPoeFCnSQ4EU6AOFwZVoLxstKUjaTdyg/15onQS9
-        6EDOjGaGTzOgeaCkoqdmj+auk4zePAeMnLKYQjI8x8SOCvslPsspUWG0fLTE+EQ6UDpjO8dmvdmi
-        GGg08fCS0xBLVbAjMqdRHC9xy5QUfaV2pcS8X61ioHK01C8tspIsnfUrby6vXr4V09zMq1Px1aTr
-        Y1jszqP21/72uzj348u3P8fhhtpw/VF2+rW9oK39za5URuHHcnDWx8BV7bJ2iWukZo+3Vx+2u/dX
-        m83VtJjyv9AWnkZRJ4v1+t0zrzNxnJs9fs4A4Gl6cYFXGu46RjlHrsldsMGjdFSQSDTXPh2FwB4E
-        N/RDMJW+HfIFucRNeZNBKBTCHJ7S/f8SkmHHwgpyNQ6psEd7RukG9ZxA6hHk1JV60Kp1+S5SGyY3
-        MZkfnOgJHdN4nizN0ZGE+cTlkRVZ7aHenNVXpClKDcR95ERlSLycipgyi3p+bPZYv06CnWKytvaj
-        Qwiv86Oo5O6QmLJprSkXi820/TsDfk3dDplO3OyfO21isj6WQ7F71n8CGWhuDDFOCRGXCElTqBuU
-        SvJLEnMQ4oZGxlwgO2q5AAAAAP//AwD1dAMT7gIAAA==
+        H4sIAAAAAAAAA0xQTW/bMAy951cQOieO42Rr4NuwL3TdhrUIhgLFENASE2uRRUGi3QZF//sgJ212
+        4YHvg+/xeQKgHjF66/eqBrVpbYKODTkYKCbLHmwCQyGSRiFTwA+7jygEDe04EnxD32M8wmoKVVmt
+        QBhwYGvA2BT7INmBd5AoDlZTAd8Jo4cuS1uRkOr5PDiUHceu4EAebaG5mxvWaf561rJPapqTWpND
+        6i642fpWHhnfm5+fr7/e3R9+390OzY3+9OHX5stNPLG5+UtaskLoSbaau+Aou51gHSlXUjUsrsrF
+        qqqqdTUCY/9X2czgYL22s7JcnnUtW01J1fAwAQB4Hiec6FkGm5ZAjoFyc+24NyAtCkS0PuV/anSO
+        DCB87Lvesbdd06cTs4BryRQEQeemYDAe/vfQ6KGJ1u9B2t4bikk4dmkKLVo3BY7QEg7H8VYx5h2j
+        WW/oSdVQvm0c70PkJtfwvXNv+531NrXbSJjY5zZJOKgRfZkA/Blf0Cfck6rP1VWI3AXZCh/IZ8Or
+        5clOXV5+AZfvzqCwoLvsF+V6km+8TP4BAAD//wMAXBqQ25UCAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 806e84097929ef6f-PDX
+      - 82ea3d946bc65ece-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -352,13 +330,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 15 Sep 2023 05:37:07 GMT
+      - Fri, 01 Dec 2023 09:18:03 GMT
       Transfer-Encoding:
       - chunked
       openai-model:
       - text-davinci-003
       openai-processing-ms:
-      - '1547'
+      - '797'
       x-ratelimit-limit-tokens_usage_based:
       - '250000'
       x-ratelimit-remaining-tokens_usage_based:

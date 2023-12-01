@@ -1,36 +1,26 @@
 interactions:
 - request:
     body: '{"prompt": ["Tell me a funny joke."], "model": "text-ada-001", "temperature":
-      0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '186'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      0.0, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias":
+      {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0TPwU4CMRSF4b1PMZ51SWYEQbsxQU1UiAs1MSpmUtorrXR6J9NLRAnvbiAGt9/5
-        N2eD4KBhmzb2RlfGfvnJ+OXhUspHur+epMn07vZ1GsY3P1Dg+SdZgYbQWmrLTRtJAico2I6MkIOu
-        hmf9wag/qAYKDTuKf3nPONMry2rXeg6WMvTbZj9BY5Zm6dl/Fy64QjwV1ge7pFTYjnPeS8fGXeyy
-        Jy4WJIXwnlk8dUUOjo6hEJKjNXSpEHnRdjzP0GkVo8JHSCH7uiOTOUEjC7fYviusslkQ9AZtx00r
-        tfCSUoYeKvwfPGh1riAsJh7k5HS7PfoFAAD//wMAhwHiaEUBAAA=
+        H4sIAAAAAAAAA0RQTU8jMQy9z68wOdN2Zuiy27lwQCutEBxWIO2BoipN3BlDEkeJW1oh/vsq00Iv
+        PrwvP/ujAlDvOgUKvepAPQ2UwbNFBztMmTgAZbAYExotaKfwQH3SgrDGDSeEOx22Oh1gfglt3c5B
+        GPSOyYKlnLZRSgJvIGPakcEp3KNOAXyxDiIxd7NZdFo2nPyUIwZNU8N+Ztnk2dda4pDVZWlKtpQ0
+        PrrJr7+yf/1Tu54X2t/dXh/e93Xz27v+0T7Go5rXr2ikOAT3sjLso8OSdqRNwnKS6qD5WTfztr26
+        WozEeP+XbaKtntR1c/IMTAaz6uC5AgD4GCccpcWyDMvwbziAJQsyIJiBzBsGMIlzHpHE2t4U2RND
+        j1I+VmCWARNksngxrhpTKVjcqw7qb8RxHxOvS4Owde4b31CgPKwS6syhFMnCUY3sZwXwMrbfZt2j
+        6k6tVUzso6yE3zCUwOtjmjo/6sw1ixMpLNqd8fZHVTZ8Vv8BAAD//wMA7+kV8EoCAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a80c57fd33e69-ADL
+      - 82ea3ef80a3b5ed3-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -40,39 +30,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:30:14 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:19:00 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-ada-001
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '151'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '170'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - 44c22f2b295f95bd83da8dd16c7e3f52
     status:
       code: 200
       message: OK

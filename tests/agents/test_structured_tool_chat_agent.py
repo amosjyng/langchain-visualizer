@@ -40,7 +40,8 @@ async def structured_tool_chat_demo() -> str:
     return await agent_chain.arun(
         input=(
             "What's the latest xkcd comic about? "
-            "Navigate to the xkcd website and tell me."
+            "Navigate to the xkcd website and tell me. "
+            "Use the tools in your subsequent responses."
         )
     )
 

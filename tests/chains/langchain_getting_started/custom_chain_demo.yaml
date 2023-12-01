@@ -1,36 +1,26 @@
 interactions:
 - request:
     body: '{"prompt": ["What is a good name for a company that makes colorful socks?"],
-      "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '229'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      "model": "text-davinci-003", "temperature": 0.7, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0SOQUvDQBQG7/4K+c4bSZpq6t4Ee6koYhBEK2G7ebZrN/uW3RcplPx3UaReZ+Yw
-        R7geGnaIvmhujW9u7jmsHubkls3lsn19TKuX6m7x9AwF3nySFWgIHaSzPERP4jhAwSYyQj10dbWo
-        5019PasUBu7J/+VFb75csK4oy/qn37GzlKHfjr8aGuuwDi3b/XkbyYqxozfpAgou9HSALhU8b2Pi
-        TYYOo/cKHy64vOsSmcwBGlk4YnpXGLPZEvQRMfEQpRPeU8jQVa3wv33CjYKwGH8Cs3Kazr4BAAD/
-        /wMAh/kLYxoBAAA=
+        H4sIAAAAAAAAA0RPTU8CMRC9768YexZYVhJwbxJPRg5GoyRqSGlnYWS3U9thwRD+u+mCcpnD+5r3
+        DhmA2ungyK1UCeplTREatlhDiyESO6AIFn1AowVtH2a0CloQllhxQHjQbqvDD4yuociLEQiDbpks
+        WIph6yUlcAURQ0sG+/CIOjhoknUt4mM5GPhaS8Wh6bNHp6lvuBlYNnHw95bYRXWdmpJNJU3j697k
+        SXbtXH9XxfRuPr6f4mg+eX17CfPp/Wx8UvPyC40kh+BeFoYbX2NKO9EmYJqkShiO8+GoKIrJbUd0
+        +/9sPatbcoZ6eX5z9q2ZDEZVwnsGAHDoLpzkyfbhPtwzm43oKGSuOlcnIGdxr0rI/5GaVz7wMoW5
+        bV3/4xU5iutFQB3Zpcwo7FXHHjOAz67INuoVqvJcQPnAjZeF8AZdChzenOLUZfiFHJ85YdH1BS7y
+        LH04Zr8AAAD//wMAska3ohkCAAA=
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a8d282c702748-ADL
+      - 82ea3dba7cc1efc2-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -40,74 +30,44 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:38:42 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:09 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '1168'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '230'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - e84d972db90dc5705f3fa1fe0f47ead3
     status:
       code: 200
       message: OK
 - request:
     body: '{"prompt": ["What is a good slogan for a company that makes colorful socks?"],
-      "model": "text-davinci-003", "temperature": 0.7, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '231'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      "model": "text-davinci-003", "temperature": 0.7, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA1SPzUrDQBRG9z5F/NZTSBvpz+zEKgoqSBQsRko6uU3GTuYOmZtaCX13UURxe87Z
-        nAG2goZpgxvNlqWbX92eN9f18nH1cH+T7mkR03h5Z5+nUODNGxmBhtBB1obb4EgseyiYjkqhCno8
-        nWdns2wxmSi0XJH7yUdVubfe2FGaZl99w9ZQhH4ZvjU0Cl/4ArlQSJ5CsuK+S3L5cJS8W2mSC3bc
-        bXuX5Gx28bQAFKyv6ACdKjiuQ8ebCO175xS21tvYrDsqI3toROGA46tCH8uaoAeEjtsga+Ed+Qg9
-        zhT+hv5hYSndL5lMj8eTTwAAAP//AwBI0GkxNQEAAA==
+        H4sIAAAAAAAAA0yQT0/jMBDF7/kUg8/9k4ZKQI4gQXdZtFrBja4q154mszgey56kVIjvjpwW2IsP
+        8+b33hu/FQBqr6Mn36ga1FNLCTq26GDAmIg9UAKLIaLRgnYGD9RELQhb3HFE+Kl9r+MBlhOoymoJ
+        wqAHJguWUuyDZAfeQcI4kMEZ/EIdPXQZbUVCqufz4LTsOHYzDug1zQx3c8smzT9jiX1Sk9yUbC5p
+        uuCml39kP2h9aB5iexH294f7u1W4fbpe3VR3ctzm7T80kgnBV9kY7oLD7HaUTcR8kqphcVEullVV
+        XV6Nwnj/Jza1eiBvaFqW5yeuZTKYVA3PBQDA2/jCcT1ja7/2a/UoGOCHF4YbdhxhT9LC7z7CI5uX
+        dLZWo9sIkrf4qmoovyaOmxB5m0N879zXfEeeUruJqBP7nJWEgxrV9wLg71iwT7pBVZ+KqRC5C7IR
+        fkGfDRfnRzv1/SH/iYuTKCzafc+rZZEj3osPAAAA//8DALdSeNIyAgAA
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a8d314a7c2748-ADL
+      - 82ea3dbc8daeefc2-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -117,39 +77,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:38:43 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:09 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '772'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '407'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - 025c6c37c22dd8632e342d5d8e521c83
     status:
       code: 200
       message: OK

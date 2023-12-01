@@ -1,36 +1,26 @@
 interactions:
 - request:
     body: '{"prompt": ["What is a good name for a company that makes colorful socks?"],
-      "model": "text-davinci-003", "temperature": 0.0, "max_tokens": 256, "top_p":
-      1, "frequency_penalty": 0, "presence_penalty": 0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '229'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      "model": "text-davinci-003", "temperature": 0.0, "top_p": 1, "frequency_penalty":
+      0, "presence_penalty": 0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0SOTUsDMRRF9/4L7zoDU1McybJYEFxJqR9YGTLJaxubyYuT11IY5r+LInV77uFy
-        RgQPA9fnWDX3trPxa7Funten1fypeXt5XLxul7E8LDUUuPskJzAQOkvruM+RJHCCghvICnmY2e2d
-        njda61qhZ0/xT6+8PYXkQlXXP1duz8FRgXkff2cYbNImrdgdxBYJ7hoKIXk6w9QKkXd54K7ApGOM
-        CtuQQtm3A9nCCQZFOGP6UDgWuyOYEXngPksrfKBUYGZa4T/4ghsFYbHxAm7qabr6BgAA//8DAPVJ
-        BewUAQAA
+        H4sIAAAAAAAAA0RP207bQBB991dM95kkjklL8CfQoBYBqqpSRZvdiT3Fnlntjh0Q4t+rdQJ5mYdz
+        m3PeCgBzsJGJG1ODeWgpQS8eOxgxJhIGSuAxRHRW0c/hlppoFWGHe4kIN5YHG19hdQFVWa1ABewo
+        5MFTikPQnCB7SBhHcjiHDdrI0GdrqxpSvViEzupeYj+XgGxp7qRfeHFp8fGWhJO5yE3J55KuD91s
+        faeH8fdhkMef7bc1f7dfdR1+/LptePO6Oapl9w+dZofii26d9KHDnHakXcQ8ydSwvCqXq6qq1tcT
+        Me3/sM28HYkdzcry8uRrhRwmU8OfAgDgbbpwlGfbEz/xvbhntUnJfZlck4DY44upofxEOmlClF0O
+        46HrPvE9MaV2G9Em4ZyZVIKZ2PcC4O9UZEi2QVOfCpgQpQ+6VXlGzoHLy2OcOQ8/k1cnTkVtd4ar
+        ssgf3ov/AAAA//8DANVagEMZAgAA
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a7eb8cc723e6a-ADL
+      - 82ea3dc01b6befda-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -40,39 +30,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:28:51 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:10 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-davinci-003
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '1004'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '230'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - 7053be346e686c6f45903fa8f3929278
     status:
       code: 200
       message: OK

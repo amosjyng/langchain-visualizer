@@ -37,9 +37,13 @@ async def openai_multifunctions_demo():
 
 def test_llm_usage_succeeds():
     """Check that the chain can run normally"""
-    result = asyncio.get_event_loop().run_until_complete(openai_multifunctions_demo())
-    assert "The weather in Los Angeles" in result
-    assert "In San Francisco" in result
+    result = (
+        asyncio.get_event_loop()
+        .run_until_complete(openai_multifunctions_demo())
+        .lower()
+    )
+    assert "the weather in los angeles" in result
+    assert "in san francisco" in result
 
 
 if __name__ == "__main__":

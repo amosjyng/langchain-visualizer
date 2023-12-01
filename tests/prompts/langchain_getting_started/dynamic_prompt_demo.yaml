@@ -3,36 +3,26 @@ interactions:
     body: '{"prompt": ["Give the antonym of every input\n\nWord: happy\nAntonym: sad\n\nWord:
       big and huge and massive and large and gigantic and tall and much much much
       much much bigger than everything else\nAntonym: "], "model": "text-ada-001",
-      "temperature": 0.0, "max_tokens": 256, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
-      0, "n": 1, "logit_bias": {}}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '359'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - OpenAI/v1 PythonBindings/0.27.4
+      "temperature": 0.0, "top_p": 1, "frequency_penalty": 0, "presence_penalty":
+      0, "n": 1, "logit_bias": {}, "max_tokens": 256}'
+    headers: {}
     method: POST
     uri: https://api.openai.com/v1/completions
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA0SPsWqEQBRF+3yF3HoMGt24TL1dQJIiRQhBRuepk4zzxHmGXcR/DwnLpruce5qz
-        wVlodNPs0+pkuvWluNTS12xfSZ6fZBlrkmJ6O0GB20/qBBpCZ2k6nmZP4jhAoVvICFno/PFYlFVR
-        5g8KE1vyVz011qRZlv+6I7uOIvT79ndBI4mT8T4xwV5X6yThPqFvWi4yujDcQ8EFS2foTMHzMC/c
-        Ruiweq/Qu+Di2CxkIgdoROEZ+4fCGs1A0BvmhadZGuEvChG6PCr8B9xwpSAsxt/A4bDvdz8AAAD/
-        /wMAUNmHJCQBAAA=
+        H4sIAAAAAAAAAwAAAP//RFBNb9swDL37VxA6N47jpqjh265Dd2hXYIdhCGSJttlJoiAxbrqi/32Q
+        kzYXQXiP74N8rwDUq06BwqR6UM8zZfBs0cGCKRMHoAwWY0KjBW0NP2hKWhAGHDkhfNfhqNMb7G+g
+        bdo9CINemCxYyukYpTjwCBnTQgZreECdAvginUVi7rfb6LSMnHzNEYOm2rDfWjZ5+xlLHLK6KU3J
+        lpLGR7fpHuVEv/S3+O+5XX56Pz647oXsa0eDezpP8/CCRopC8CQHwz46LG5n2iQsK6kedvfNbt+2
+        t7fdSqz7f8o22upN0+wumpnJYFY9/K4AAN7XF86jRQLZa+dAB3v5DSTlALhgepOZwlSvTquIgsWT
+        6qH5QhxPMfFQAsLRuS98pEB5PiTUmUPJycJRrexHBfBnLXfMekLVX0qpmNhHOQj/xVAM993ZTl0P
+        cSXvL5ywaHeF7+6qkvBR/QcAAP//AwDRohDIKQIAAA==
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7c3a80ba4b06f2fd-ADL
+      - 82ea3ef0da6fefca-PDX
       Cache-Control:
       - no-cache, must-revalidate
       Connection:
@@ -42,39 +32,19 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 07 May 2023 15:30:12 GMT
-      Server:
-      - cloudflare
+      - Fri, 01 Dec 2023 09:18:58 GMT
       Transfer-Encoding:
       - chunked
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       openai-model:
       - text-ada-001
-      openai-organization:
-      - user-ns36y3iizxjt9cbrrl4tneqp
       openai-processing-ms:
-      - '68'
-      openai-version:
-      - '2020-10-01'
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-ratelimit-limit-requests:
-      - '3000'
-      x-ratelimit-limit-tokens:
+      - '191'
+      x-ratelimit-limit-tokens_usage_based:
       - '250000'
-      x-ratelimit-remaining-requests:
-      - '2999'
-      x-ratelimit-remaining-tokens:
+      x-ratelimit-remaining-tokens_usage_based:
       - '249744'
-      x-ratelimit-reset-requests:
-      - 20ms
-      x-ratelimit-reset-tokens:
+      x-ratelimit-reset-tokens_usage_based:
       - 61ms
-      x-request-id:
-      - eaf62fbdaa7d10d0038090ba32f339ad
     status:
       code: 200
       message: OK
