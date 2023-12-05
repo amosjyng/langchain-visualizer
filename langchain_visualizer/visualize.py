@@ -62,8 +62,8 @@ def visualize(fn: FunctionBasedRecipe):
             self._mode = mode
             if trace:
                 enable_trace()
-            asyncio.run(untraced_wrapper(*args, **kwargs))
+            return asyncio.run(untraced_wrapper(*args, **kwargs))
 
-        cli()
+        return cli()
 
     return new_main(recipe, fn)
