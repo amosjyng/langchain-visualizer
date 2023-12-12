@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "langchain-visualizer"
-version = "0.0.32"
+version = "0.0.33"
 description = "Visualization and debugging tool for LangChain workflows"
 authors = ["Amos Jun-yeung Ng <me@amos.ng>"]
 readme = "README.md"
