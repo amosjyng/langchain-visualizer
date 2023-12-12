@@ -1835,6 +1835,47 @@ files = [
 ]
 
 [[package]]
+name = "numexpr"
+version = "2.8.8"
+description = "Fast numerical expression evaluator for NumPy"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "numexpr-2.8.8-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:85c9f79e346c26aa0d425ecfc9e5de7184567d5e48d0bdb02d468bb927e92525"},
+    {file = "numexpr-2.8.8-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:dbac846f713b4c82333e6af0814ebea0b4e74dfb2649e76c58953fd4862322dd"},
+    {file = "numexpr-2.8.8-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:0d7bfc8b77d8a7b04cd64ae42b62b3bf824a8c751ca235692bfd5231c6e90127"},
+    {file = "numexpr-2.8.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:307b49fd15ef2ca292f381e67759e5b477410341f2f499a377234f1b42f529a6"},
+    {file = "numexpr-2.8.8-cp310-cp310-musllinux_1_1_x86_64.whl", hash = "sha256:aab17d65751c039d13ed9d49c9a7517b130ef488c1885c4666af9b5c6ad59520"},
+    {file = "numexpr-2.8.8-cp310-cp310-win32.whl", hash = "sha256:6459dc6ed6abcdeab3cd3667c79f29e4a0f0a02c29ad71ee5cff065e880ee9ef"},
+    {file = "numexpr-2.8.8-cp310-cp310-win_amd64.whl", hash = "sha256:22ccd67c0fbeae091f2c577f5b9c8046de6631d46b1cbe22aad46a08d2b42c2d"},
+    {file = "numexpr-2.8.8-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:47c05007cd1c553515492c1a78b5477eaaba9cadc5d7b795d49f7aae53ccdf68"},
+    {file = "numexpr-2.8.8-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:b4649c1dcf9b0c2ae0a7b767dbbbde4e05ee68480c1ba7f06fc7963f1f73acf4"},
+    {file = "numexpr-2.8.8-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:a82d710145b0fbaec919dde9c90ed9df1e6785625cc36d1c71f3a53112b66fc5"},
+    {file = "numexpr-2.8.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5a92f230dd9d6c42803f855970e93677b44290b6dad15cb6796fd85edee171ce"},
+    {file = "numexpr-2.8.8-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:ccef9b09432d59229c2a737882e55de7906006452003323e107576f264cec373"},
+    {file = "numexpr-2.8.8-cp311-cp311-win32.whl", hash = "sha256:bf8c517bbbb82c07c23c17f9d52b4c9f86601f57d48e87c0cbda24af5907f4dd"},
+    {file = "numexpr-2.8.8-cp311-cp311-win_amd64.whl", hash = "sha256:4f01d71db6fdb97a68def5407e2dbd748eaea9d98929db08816de40aa4ae3084"},
+    {file = "numexpr-2.8.8-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:76f0f010f9c6318bae213b21c5c0e381c2fc9c9ecb8b35f99f5030e7ac96c9ce"},
+    {file = "numexpr-2.8.8-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:3f168b4b42d4cb120fe1993676dcf74b77a3e8e45b58855566da037cfd938ca3"},
+    {file = "numexpr-2.8.8-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f031ac4e70f9ad867543bfbde8452e9d1a14f0525346b4b8bd4e5c0f1380a11c"},
+    {file = "numexpr-2.8.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:121b049b6909787111daf92919c052c4fd87b5691172e8f19f702b96f20aaafa"},
+    {file = "numexpr-2.8.8-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:2ae264c35fa67cd510191ab8144f131fddd0f1d13413af710913ea6fc0c6aa61"},
+    {file = "numexpr-2.8.8-cp312-cp312-win32.whl", hash = "sha256:399cb914b41c4027ba88a18f6b8ccfc3af5c32bc3b1758403a7c44c72530618a"},
+    {file = "numexpr-2.8.8-cp312-cp312-win_amd64.whl", hash = "sha256:925927cd1f610593e7783d8f2e12e3d800d5928601e077e4910e2b50bde624b6"},
+    {file = "numexpr-2.8.8-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:cd07793b074cc38e478637cbe738dff7d8eb92b5cf8ffaacff0c4f0bca5270a0"},
+    {file = "numexpr-2.8.8-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:290f91c7ba7772abaf7107f3cc0601d93d6a3f21c13ee3da93f1b8a9ca3e8d39"},
+    {file = "numexpr-2.8.8-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:296dc1f79d386166dec3bdb45f51caba29ffd8dc91db15447108c04d3001d921"},
+    {file = "numexpr-2.8.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7badc50efbb2f1c8b78cd68089031e0fd29cbafa6a9e6d730533f22d88168406"},
+    {file = "numexpr-2.8.8-cp39-cp39-musllinux_1_1_x86_64.whl", hash = "sha256:4d83a542d9deefb050e389aacaddea0f09d68ec617dd37e45b9a7cfbcba6d729"},
+    {file = "numexpr-2.8.8-cp39-cp39-win32.whl", hash = "sha256:17104051f0bd83fd350212e268d8b48017d5eff522b09b573fdbcc560c5e7ab3"},
+    {file = "numexpr-2.8.8-cp39-cp39-win_amd64.whl", hash = "sha256:12146521b1730073859a20454e75004e38cd0cb61333e763c58ef5171e101eb2"},
+    {file = "numexpr-2.8.8.tar.gz", hash = "sha256:e76ce4d25372f46170cf7eb1ff14ed5d9c69a0b162a405063cbe481bafe3af34"},
+]
+
+[package.dependencies]
+numpy = ">=1.13.3"
+
+[[package]]
 name = "numpy"
 version = "1.26.2"
 description = "Fundamental package for array computing in Python"
@@ -3873,4 +3914,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "28aee9a92ee25eb5c920dbceeb665366802a91715268656b6beee6534286d70c"
+content-hash = "a3da49d73c876401a85bb3a3807010679013870347e9245f48b36dd6ef9b5c7c"
